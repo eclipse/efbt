@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<components:RegulatoryTextComponent xmlns:components="http://www.eclipse.org/components">
-  <modules>
-    <regulatoryTextModules name="requirements v1"/>
-    <regulatoryTextModules name="requirements v2"/>
-  </modules>
-</components:RegulatoryTextComponent>

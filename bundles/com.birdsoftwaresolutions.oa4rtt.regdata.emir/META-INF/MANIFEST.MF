@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: Emir
-Bundle-SymbolicName: com.birdsoftwaresolutions.oa4rtt.regdata.emir
-Bundle-Version: 1.0.0.qualifier
-Bundle-Vendor: BIRDSOFTWARESOLUTIONS
-Automatic-Module-Name: com.birdsoftwaresolutions.oa4rtt.regdata.emir
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
