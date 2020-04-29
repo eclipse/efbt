@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components:ExecutionEnvironmentComponent xmlns:components="http://www.eclipse.org/components">
+  <modules>
+    <modules name="modv1">
+      <testexecutionEnvironments>
+        <inputStructures href="DeepStructures.components#deep_structures_v2"/>
+        <outputStructuresModule href="ReportStructuresComponent.components#emirReports_v2"/>
+      </testexecutionEnvironments>
+    </modules>
+  </modules>
+</components:ExecutionEnvironmentComponent>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components:DeepStructuresComponent xmlns:components="http://www.eclipse.org/components">
+  <modules>
+    <deepStructuresModules name="deep_structures_v2">
+      <structures structureDefinitionID="cdm_v2.045"/>
+    </deepStructuresModules>
+    <deepStructuresModules name="deep_structures_v1">
+      <structures structureDefinitionID="cdm_v2.044"/>
+    </deepStructuresModules>
+  </modules>
+</components:DeepStructuresComponent>

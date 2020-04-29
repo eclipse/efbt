@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="components" nsURI="http://www.eclipse.org/components" nsPrefix="components">
+  <eClassifiers xsi:type="ecore:EClass" name="Component"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RegulatoryTextComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modules" eType="#//RegulatoryTextComponentModules"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RegulatoryTextComponentModules">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="regulatoryTextModules"
+        upperBound="-1" eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.requirements_text/model/requirements_text.ecore#//RequirementsModule"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReportBasedFunctionalDomainBreakdownComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modules" eType="#//ReportBasedFunctionalDomainBreakdownComponentModules"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calls" eType="#//ReportBasedFunctionalDomainBreakdownComponentCalls"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReportBasedFunctionalDomainBreakdownComponentModules">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functionalityModuleModules"
+        upperBound="-1" eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.functionality_breakdown/model/functionality_module.ecore#//FunctionalityModuleModule"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReportBasedFunctionalDomainBreakdownComponentCalls">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="component_calls" upperBound="-1"
+        eType="#//ReportBasedFunctionalDomainBreakdownComponentCall" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReportBasedFunctionalDomainBreakdownComponentCall"
+      eSuperTypes="#//ComponentCall"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ReportBasedFunctionalDomainBreakdownComponentCall_CreateTrialVersion"
+      eSuperTypes="#//ReportBasedFunctionalDomainBreakdownComponentCall">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="oldVersion" eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.report_based_functional_domain_breakdown/model/report_based_functional_domain_breakdown.ecore#//ReportBasedFunctionalityModuleModule"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dependantRequirementsVersion"
+        eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.requirements_text/model/requirements_text.ecore#//RequirementsModule"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="outputDataStructureModule"
+        eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.report_structures/model/report_structures.ecore#//RegReportModule"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReportBasedFunctionalDomainBreakdownComponentCall_SetTrialModuleAsFinal"
+      eSuperTypes="#//ReportBasedFunctionalDomainBreakdownComponentCall">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReportBasedFunctionalDomainBreakdownComponentCall_RemoveInvalidItemsFromTrialModule"
+      eSuperTypes="#//ReportBasedFunctionalDomainBreakdownComponentCall">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ComponentCall"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ReportStructuresComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modules" eType="#//ReportStructureModules"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ReportStructureModules">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reportModules" upperBound="-1"
+        eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.report_structures/model/report_structures.ecore#//RegReportModule"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="E2EFunctionalTestDefinitionsComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calls" eType="#//E2EFunctionalTestDefinitionsComponentCalls"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modules" eType="#//E2EFunctionalTestDefinitionsComponentModules"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="E2EFunctionalTestDefinitionsComponentCalls">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calls" upperBound="-1"
+        eType="#//E2EFunctionalTestDefinitionsComponentCall" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="E2EFunctionalTestDefinitionsComponentModules">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modules" upperBound="-1"
+        eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.requirements_based_test_definitions/model/requirements_based_test_definition.ecore#//E2ERequirementsBasedTestDefinitionModule"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="E2EFunctionalTestDefinitionsComponentCall"/>
+  <eClassifiers xsi:type="ecore:EClass" name="E2EFunctionalTestDefinitionsComponentCall_CreateTrialVersion"
+      eSuperTypes="#//E2EFunctionalTestDefinitionsComponentCall">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="oldVersion" eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.requirements_based_test_definitions/model/requirements_based_test_definition.ecore#//E2ERequirementsBasedTestDefinitionModule"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dependantVersion" eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.functionality_breakdown/model/functionality_module.ecore#//FunctionalityModuleModule"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="E2EFunctionalTestDefinitionsComponentCall_SetTrialModuleAsFinal"
+      eSuperTypes="#//E2EFunctionalTestDefinitionsComponentCall">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="E2EFunctionalTestDefinitionsComponentCall_RemoveInvalidItemsFromTrialModule"
+      eSuperTypes="#//E2EFunctionalTestDefinitionsComponentCall">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="E2EFunctionalTestsComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calls" eType="#//E2EFunctionalTestsComponentCalls"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modules" eType="#//E2EFunctionalTestsComponentModules"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="E2EFunctionalTestsComponentCalls">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calls" upperBound="-1"
+        eType="#//E2EFunctionalTestsComponentCall" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="E2EFunctionalTestsComponentModules">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modules" upperBound="-1"
+        eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.test/model/test.ecore#//TestModule"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="E2EFunctionalTestsComponentCall"/>
+  <eClassifiers xsi:type="ecore:EClass" name="E2EFunctionalTestsComponentCall_CreateTrialVersion"
+      eSuperTypes="#//E2EFunctionalTestsComponentCall">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dependantTestDefintionVersion"
+        eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.requirements_based_test_definitions/model/requirements_based_test_definition.ecore#//E2ERequirementsBasedTestDefinitionModule"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="dependantExecutionEnvironmnt"
+        eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.execution_environments/model/execution_environments.ecore#//TestExecutionEnvironmentModule"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="oldVersion" eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.test/model/test.ecore#//TestModule"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="E2EFunctionalTestsComponentCall_SetTrialModuleAsFinal"
+      eSuperTypes="#//E2EFunctionalTestsComponentCall">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="E2EFunctionalTestsComponentCall_RemoveInvalidItemsFromTrialModule"
+      eSuperTypes="#//E2EFunctionalTestsComponentCall">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DeepStructuresComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modules" eType="#//DeepStructuresComponentModules"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DeepStructuresComponentModules">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="deepStructuresModules"
+        upperBound="-1" eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.deep_structures/model/deep_structures.ecore#//DeepStructureDefinitionProxyModule"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExecutionEnvironmentComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calls" eType="#//ExecutionEnvironmentComponentCalls"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modules" eType="#//ExecutionEnvironmentComponentModules"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExecutionEnvironmentComponentCalls">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calls" upperBound="-1"
+        eType="#//ExecutionEnvironmentComponentCall" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExecutionEnvironmentComponentModules">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modules" upperBound="-1"
+        eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.execution_environments/model/execution_environments.ecore#//TestExecutionEnvironmentModule"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExecutionEnvironmentComponentCall"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExecutionEnvironmentComponentCall_CreateNewExecutionEnvironmentModule"
+      eSuperTypes="#//ExecutionEnvironmentComponentCall">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="idsModule" eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.input_data_structures/model/input_data_structures.ecore#//InputDatastructureModule"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="odsModule" eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.output_data_structures/model/output_data_structures.ecore#//OutputDataStructureModule"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="version" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExecutedTestsComponent">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calls" eType="#//ExecutedTestsComponentCalls"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modules" eType="#//ExecutedTestsComponentModules"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExecutedTestsComponentCalls">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="calls" upperBound="-1"
+        eType="#//ExecutedTestsComponentCall" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExecutedTestsComponentModules">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="modules" upperBound="-1"
+        eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.test/model/test.ecore#//ExecutedTestModule"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExecutedTestsComponentCall"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ExecutedTestsComponentCall_CreateNewExecutedTestsModule"
+      eSuperTypes="#//ExecutedTestsComponentCall">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="testEnvironment" eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.execution_environments/model/execution_environments.ecore#//TestExecutionEnvironmentModule"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="testModule" eType="ecore:EClass ../../org.eclipse.efbt.oa4rtt.model.test/model/test.ecore#//TestModule"/>
+  </eClassifiers>
+</ecore:EPackage>

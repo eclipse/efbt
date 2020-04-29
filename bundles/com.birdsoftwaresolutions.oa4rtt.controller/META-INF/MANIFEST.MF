@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Controller
+Bundle-SymbolicName: com.birdsoftwaresolutions.oa4rtt.controller
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: BIRDSOFTWARESOLUTIONS
+Automatic-Module-Name: com.birdsoftwaresolutions.oa4rtt.controller
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: com.birdsoftwaresolutions.oa4rtt.controller
+Require-Bundle: com.birdsoftwaresolutions.oa4rtt.model.components;bundle-version="1.0.0",
+ com.birdsoftwaresolutions.oa4rtt.refimp.component.functional_domain_breakdown;bundle-version="1.0.0",
+ com.birdsoftwaresolutions.oa4rtt.refimp.component.report_based_functional_domain_breakdown,
+ org.eclipse.efbt.oa4rtt.component.report_based_functional_domain_breakdown.java_interface;bundle-version="1.0.0"

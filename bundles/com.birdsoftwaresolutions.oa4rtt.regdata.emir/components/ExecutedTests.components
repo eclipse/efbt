@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components:ExecutedTestsComponent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:components="http://www.eclipse.org/components">
+  <calls>
+    <calls xsi:type="components:ExecutedTestsComponentCall_CreateNewExecutedTestsModule">
+      <testEnvironment href="ExecutionEnvironments.components#modv1"/>
+      <testModule href="E2EFunctionalTests.components#e2e_test_v2"/>
+    </calls>
+  </calls>
+  <modules>
+    <modules>
+      <executedTests>
+        <testEnvironmentUsed href="ExecutionEnvironments.components#//@modules/@modules.0/@testexecutionEnvironments"/>
+        <test href="E2EFunctionalTests.components#test1"/>
+      </executedTests>
+      <executedTests/>
+      <executedTests/>
+    </modules>
+  </modules>
+</components:ExecutedTestsComponent>

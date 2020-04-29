@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:components="http://www.eclipse.org/components" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description">
+  <viewpoint:DAnalysis uid="_s5MokIcKEeqSSPKmaRXmQw" selectedViews="_f5YnQIiLEeqyCbLwTQCLFA" version="14.3.0.201909031200">
+    <semanticResources>components/RegulatoryTextComponent.components</semanticResources>
+    <semanticResources>components/ReportStructuresComponent.components</semanticResources>
+    <semanticResources>components/FunctionalDomainBreakdownComponent.components</semanticResources>
+    <semanticResources>components/ReportBasedFunctionalBreakDown.components</semanticResources>
+    <semanticResources>components/E2EFunctionalTestDefinitions.components</semanticResources>
+    <semanticResources>components/DeepStructures.components</semanticResources>
+    <semanticResources>components/E2EFunctionalTests.components</semanticResources>
+    <semanticResources>components/ExecutionEnvironments.components</semanticResources>
+    <semanticResources>components/ExecutedTests.components</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_f5YnQIiLEeqyCbLwTQCLFA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/com.birdsoftwaresolutions.oa4rtt.ui.sirius/description/oa4rtt.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_gH16AIiLEeqyCbLwTQCLFA" name="new ComponentCall" repPath="#_gG77EIiLEeqyCbLwTQCLFA" changeId="66a8ca99-12f8-453d-b430-e790d2ebdf9c">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/com.birdsoftwaresolutions.oa4rtt.ui.sirius/description/oa4rtt.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='ComponentCall']"/>
+        <target xmi:type="components:ReportBasedFunctionalDomainBreakdownComponentCall_CreateTrialVersion" href="components/ReportBasedFunctionalDomainBreakdownComponent.components#//@calls/@component_calls.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_YTXaoIiXEeqdO4lFd52KZw" name="new ComponentCall" repPath="#_YS1PIIiXEeqdO4lFd52KZw" changeId="034d6a66-c6fd-409e-8c79-66ff4a9d978b">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/com.birdsoftwaresolutions.oa4rtt.ui.sirius/description/oa4rtt.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='ComponentCall']"/>
+        <target xmi:type="components:ReportBasedFunctionalDomainBreakdownComponentCall_CreateTrialVersion" href="components/ReportBasedFunctionalBreakDown.components#//@calls/@component_calls.0"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_AEMcsIieEeqLzO5nNcDuLg" name="new ComponentCall" repPath="#_ADvwwIieEeqLzO5nNcDuLg" changeId="aa1a9d5f-6634-44ec-96e0-dd79e0f29f98">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/com.birdsoftwaresolutions.oa4rtt.ui.sirius/description/oa4rtt.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='ComponentCall']"/>
+        <target xmi:type="components:ReportBasedFunctionalDomainBreakdownComponentCall_CreateTrialVersion" href="components/ReportBasedFunctionalBreakDown.components#//@calls/@component_calls.0"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_gG77EIiLEeqyCbLwTQCLFA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_gHswEIiLEeqyCbLwTQCLFA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_gHswEYiLEeqyCbLwTQCLFA"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_gJPoMIiLEeqyCbLwTQCLFA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_gJQPQIiLEeqyCbLwTQCLFA" type="Sirius" element="_gG77EIiLEeqyCbLwTQCLFA" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_gJQPQYiLEeqyCbLwTQCLFA"/>
+      </data>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/com.birdsoftwaresolutions.oa4rtt.ui.sirius/description/oa4rtt.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='ComponentCall']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_gHOO8IiLEeqyCbLwTQCLFA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/com.birdsoftwaresolutions.oa4rtt.ui.sirius/description/oa4rtt.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='ComponentCall']/@defaultLayer"/>
+    <target xmi:type="components:ReportBasedFunctionalDomainBreakdownComponentCall_CreateTrialVersion" href="components/ReportBasedFunctionalDomainBreakdownComponent.components#//@calls/@component_calls.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_YS1PIIiXEeqdO4lFd52KZw">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_YTTJMIiXEeqdO4lFd52KZw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_YTTJMYiXEeqdO4lFd52KZw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_YT4_EIiXEeqdO4lFd52KZw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_YT4_EYiXEeqdO4lFd52KZw" type="Sirius" element="_YS1PIIiXEeqdO4lFd52KZw" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_YT4_EoiXEeqdO4lFd52KZw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/com.birdsoftwaresolutions.oa4rtt.ui.sirius/description/oa4rtt.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='ComponentCall']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_YTDRkIiXEeqdO4lFd52KZw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/com.birdsoftwaresolutions.oa4rtt.ui.sirius/description/oa4rtt.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='ComponentCall']/@defaultLayer"/>
+    <target xmi:type="components:ReportBasedFunctionalDomainBreakdownComponentCall_CreateTrialVersion" href="components/ReportBasedFunctionalBreakDown.components#//@calls/@component_calls.0"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_ADvwwIieEeqLzO5nNcDuLg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_AEIyUIieEeqLzO5nNcDuLg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_AEIyUYieEeqLzO5nNcDuLg"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_AEwdYIieEeqLzO5nNcDuLg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_AEwdYYieEeqLzO5nNcDuLg" type="Sirius" element="_ADvwwIieEeqLzO5nNcDuLg" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_AEwdYoieEeqLzO5nNcDuLg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/com.birdsoftwaresolutions.oa4rtt.ui.sirius/description/oa4rtt.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='ComponentCall']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_AD6I0IieEeqLzO5nNcDuLg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/com.birdsoftwaresolutions.oa4rtt.ui.sirius/description/oa4rtt.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='ComponentCall']/@defaultLayer"/>
+    <target xmi:type="components:ReportBasedFunctionalDomainBreakdownComponentCall_CreateTrialVersion" href="components/ReportBasedFunctionalBreakDown.components#//@calls/@component_calls.0"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

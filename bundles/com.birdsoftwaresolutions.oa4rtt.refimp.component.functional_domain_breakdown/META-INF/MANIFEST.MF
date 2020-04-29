@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Functional_domain_breakdown
+Bundle-SymbolicName: com.birdsoftwaresolutions.oa4rtt.refimp.component.functional_domain_breakdown;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: BIRDSOFTWARESOLUTIONS
+Automatic-Module-Name: com.birdsoftwaresolutions.oa4rtt.refimp.component.functional_domain_breakdown
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.efbt.oa4rtt.component.functional_domain_breakdown.java_interface;bundle-version="1.0.0",
+ org.eclipse.efbt.oa4rtt.model.functionality_breakdown;bundle-version="1.0.0"
+Export-Package: com.birdsoftwaresolutions.oa4rtt.refimp.component.functional_domain_breakdown

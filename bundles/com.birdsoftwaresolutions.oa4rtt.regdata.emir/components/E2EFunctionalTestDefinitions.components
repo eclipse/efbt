@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components:E2EFunctionalTestDefinitionsComponent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:components="http://www.eclipse.org/components" xmlns:requirements_based_test_definition="http://www.eclipse.org/requirements_based_test_definition">
+  <calls>
+    <calls xsi:type="components:E2EFunctionalTestDefinitionsComponentCall_CreateTrialVersion" oldVersion="e2e_functional_test_definitions_v2" version="v3">
+      <dependantVersion href="ReportBasedFunctionalBreakDown.components#v1_rbfm"/>
+    </calls>
+  </calls>
+  <modules>
+    <modules name="e2e_functional_test_definitions_v2" version="v2">
+      <testDefinitions xsi:type="requirements_based_test_definition:FunctionalRequirementsBasedE2ETestDefinition" name="testdefinition1">
+        <outputCreationFunctionalityModule href="ReportBasedFunctionalBreakDown.components#v1_m4"/>
+        <readDataSourceFunctionalityModule href="ReportBasedFunctionalBreakDown.components#v1_m2"/>
+        <scenarios href="ReportBasedFunctionalBreakDown.components#sceanrio1"/>
+      </testDefinitions>
+    </modules>
+    <modules name="e2e_functional_test_definitions_v1" version="v2"/>
+  </modules>
+</components:E2EFunctionalTestDefinitionsComponent>

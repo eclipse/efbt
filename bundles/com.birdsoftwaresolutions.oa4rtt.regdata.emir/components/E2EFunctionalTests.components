@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<components:E2EFunctionalTestsComponent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:components="http://www.eclipse.org/components" xmlns:test="http://www.eclipse.org/test" xmlns:test_input_data="http://www.eclipse.org/test_input_data">
+  <calls>
+    <calls xsi:type="components:E2EFunctionalTestsComponentCall_CreateTrialVersion" version="v3" oldVersion="e2e_test_v2">
+      <dependantTestDefintionVersion href="E2EFunctionalTestDefinitions.components#e2e_functional_test_definitions_v2"/>
+      <dependantExecutionEnvironmnt href="ExecutionEnvironments.components#modv1"/>
+    </calls>
+  </calls>
+  <modules>
+    <modules name="e2e_test_v2" version="v2">
+      <tests name="test1">
+        <inputData xsi:type="test_input_data:TestStrucuredFileData"/>
+        <expectedResults xsi:type="test:ReportCellResults">
+          <reportCellValues value="10">
+            <cell href="ReportStructuresComponent.components#v1_Price"/>
+          </reportCellValues>
+        </expectedResults>
+      </tests>
+    </modules>
+    <modules name="e2e_test_v1" version="v1"/>
+  </modules>
+</components:E2EFunctionalTestsComponent>
