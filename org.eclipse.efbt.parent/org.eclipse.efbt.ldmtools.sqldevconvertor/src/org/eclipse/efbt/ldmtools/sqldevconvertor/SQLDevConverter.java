@@ -31,7 +31,11 @@ import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
 public class SQLDevConverter {
-	
+    
+    /**
+     * Convert csv files exporter from a logical data model in SQLDeveloper
+     * into a corresponsing Ecore file.
+     */
 	public static void convert(String fileDirectory) {
 		
 		
