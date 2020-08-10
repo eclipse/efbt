@@ -5,7 +5,7 @@
     <semanticResources>test.ecore</semanticResources>
     <semanticResources>execution_environments.ecore</semanticResources>
     <semanticResources>input_data_structures.ecore</semanticResources>
-    <semanticResources>module_management.ecore</semanticResources>
+    <semanticResources>../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore</semanticResources>
     <semanticResources>output_data_structures.ecore</semanticResources>
     <semanticResources>report_structures.ecore</semanticResources>
     <semanticResources>column_structured_data.ecore</semanticResources>

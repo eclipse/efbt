@@ -13,7 +13,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="thenParams" upperBound="-1"
         eType="#//Param" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TestTemplateModule" eSuperTypes="module_management.ecore#//Module">
+  <eClassifiers xsi:type="ecore:EClass" name="TestTemplateModule" eSuperTypes="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module">
     <eStructuralFeatures xsi:type="ecore:EReference" name="templates" upperBound="-1"
         eType="#//TestTemplate" containment="true"/>
   </eClassifiers>
@@ -33,7 +33,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="thenParams" upperBound="-1"
         eType="#//Param" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TestConstraintsModule" eSuperTypes="module_management.ecore#//Module">
+  <eClassifiers xsi:type="ecore:EClass" name="TestConstraintsModule" eSuperTypes="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module">
     <eStructuralFeatures xsi:type="ecore:EReference" name="coverageTestSets" upperBound="-1"
         eType="#//TestContraints" containment="true"/>
   </eClassifiers>
@@ -77,7 +77,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="objects" upperBound="-1"
         eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TestDefinitionModule" eSuperTypes="module_management.ecore#//Module">
+  <eClassifiers xsi:type="ecore:EClass" name="TestDefinitionModule" eSuperTypes="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module">
     <eStructuralFeatures xsi:type="ecore:EReference" name="testDefinitions" upperBound="-1"
         eType="#//TestDefinition" containment="true"/>
   </eClassifiers>

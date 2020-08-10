@@ -3,7 +3,7 @@
   <viewpoint:DAnalysis uid="_mRs7IKi_EeqEju4ebfh3_A" selectedViews="_mTaLUKi_EeqEju4ebfh3_A _mT23QKi_EeqEju4ebfh3_A _mT6hoKi_EeqEju4ebfh3_A _mUBPUKi_EeqEju4ebfh3_A" version="14.3.0.201909031200">
     <semanticResources>scenarios.ecore</semanticResources>
     <semanticResources>requirements_text.ecore</semanticResources>
-    <semanticResources>module_management.ecore</semanticResources>
+    <semanticResources>../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_mTaLUKi_EeqEju4ebfh3_A">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_nBKpNqi_EeqEju4ebfh3_A" name="scenarios class diagram" repPath="#_nBG-0Ki_EeqEju4ebfh3_A" changeId="e2f52c4f-ee3d-48b5-8723-e5e3891d7f39">

@@ -47,7 +47,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ColumnStructuredDataModule" eSuperTypes="module_management.ecore#//Module">
+  <eClassifiers xsi:type="ecore:EClass" name="ColumnStructuredDataModule" eSuperTypes="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ColumnStructuredDataModule"/>
       <details key="kind" value="elementOnly"/>

@@ -4,7 +4,7 @@
     <semanticResources>aorta_program.ecore</semanticResources>
     <semanticResources>column_structures.ecore</semanticResources>
     <semanticResources>input_data_structures.ecore</semanticResources>
-    <semanticResources>module_management.ecore</semanticResources>
+    <semanticResources>../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore</semanticResources>
     <semanticResources>requirements_text.ecore</semanticResources>
     <semanticResources>report_structures.ecore</semanticResources>
     <semanticResources>output_data_structures.ecore</semanticResources>
@@ -1079,8 +1079,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DUn1kKixEeqEju4ebfh3_A" name="Module (2)" tooltipText="">
-        <target xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
-        <semanticElements xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DUn1kaixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1111,8 +1111,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DUocoaixEeqEju4ebfh3_A" name="Module (2)" tooltipText="">
-        <target xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
-        <semanticElements xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DUocoqixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1143,8 +1143,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DUqR0KixEeqEju4ebfh3_A" name="Module (2)" tooltipText="">
-        <target xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
-        <semanticElements xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DUqR0aixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1183,8 +1183,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DUtVIKixEeqEju4ebfh3_A" name="Module (2)" tooltipText="">
-        <target xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
-        <semanticElements xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DUtVIaixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1223,8 +1223,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DUujQKixEeqEju4ebfh3_A" name="Module (2)" tooltipText="">
-        <target xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
-        <semanticElements xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DUujQaixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1263,8 +1263,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DUvxYqixEeqEju4ebfh3_A" name="Module (2)" tooltipText="">
-        <target xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
-        <semanticElements xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DUvxY6ixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1280,8 +1280,8 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_DUJ7gaixEeqEju4ebfh3_A" name="http://www.eclipse.org/module_management" incomingEdges="_DVMdUKixEeqEju4ebfh3_A _DVMdWqixEeqEju4ebfh3_A _DVNrcKixEeqEju4ebfh3_A _DVOShKixEeqEju4ebfh3_A _DVO5l6ixEeqEju4ebfh3_A _DVPgp6ixEeqEju4ebfh3_A _DVQHsqixEeqEju4ebfh3_A _DVQHvKixEeqEju4ebfh3_A _DVQuxKixEeqEju4ebfh3_A _DVQuyaixEeqEju4ebfh3_A _DVTLAKixEeqEju4ebfh3_A _DVTLBaixEeqEju4ebfh3_A _DVTyEqixEeqEju4ebfh3_A">
-      <target xmi:type="ecore:EPackage" href="module_management.ecore#/"/>
-      <semanticElements xmi:type="ecore:EPackage" href="module_management.ecore#/"/>
+      <target xmi:type="ecore:EPackage" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#/"/>
+      <semanticElements xmi:type="ecore:EPackage" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#/"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_DUKikKixEeqEju4ebfh3_A" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="125,125,125" backgroundStyle="Liquid" foregroundColor="217,210,220">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@style"/>
       </ownedStyle>
@@ -1295,8 +1295,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DUw_gKixEeqEju4ebfh3_A" name="Module (2)" tooltipText="">
-        <target xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
-        <semanticElements xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DUw_gaixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1327,8 +1327,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DUyNoKixEeqEju4ebfh3_A" name="Module (2)" tooltipText="">
-        <target xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
-        <semanticElements xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DUyNoaixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1351,8 +1351,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DUy0sKixEeqEju4ebfh3_A" name="Module (2)" tooltipText="">
-        <target xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
-        <semanticElements xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DUy0saixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1375,8 +1375,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DUzbwqixEeqEju4ebfh3_A" name="Module (2)" tooltipText="">
-        <target xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
-        <semanticElements xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DU0C0KixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1471,8 +1471,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DU47UKixEeqEju4ebfh3_A" name="Module (2)" tooltipText="">
-        <target xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
-        <semanticElements xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DU47UaixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1503,8 +1503,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DU6JcKixEeqEju4ebfh3_A" name="Module (2)" tooltipText="">
-        <target xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
-        <semanticElements xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DU6JcaixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1551,8 +1551,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DU7-pKixEeqEju4ebfh3_A" name="Module (2)" tooltipText="">
-        <target xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
-        <semanticElements xmi:type="ecore:EClass" href="module_management.ecore#//Module"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DU8lsKixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>

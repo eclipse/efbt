@@ -5,7 +5,7 @@
     <semanticResources>column_structured_data.ecore</semanticResources>
     <semanticResources>column_structures.ecore</semanticResources>
     <semanticResources>input_data_structures.ecore</semanticResources>
-    <semanticResources>module_management.ecore</semanticResources>
+    <semanticResources>../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore</semanticResources>
     <semanticResources>aortafunctions.ecore</semanticResources>
     <semanticResources>requirements_text.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_wXJssKi1EeqEju4ebfh3_A">
