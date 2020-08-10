@@ -61,6 +61,7 @@
 		<module>org.eclipse.efbt.trl.ui.sirius</module>
 		<module>org.eclipse.efbt.almengine.component.modelquery</module>
 		<module>org.eclipse.efbt.almengine.ui.sirius</module>
+		<module>org.eclipse.efbt.common.model.module_management</module>
 
 	</modules>
 	<dependencyManagement>

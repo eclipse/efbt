@@ -27,7 +27,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ReportCellViewModule" eSuperTypes="../../org.eclipse.efbt.aorta/model/module_management.ecore#//Module">
+  <eClassifiers xsi:type="ecore:EClass" name="ReportCellViewModule" eSuperTypes="../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore#//Module">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A Module containing a set of ReportCellViews "/>
     </eAnnotations>

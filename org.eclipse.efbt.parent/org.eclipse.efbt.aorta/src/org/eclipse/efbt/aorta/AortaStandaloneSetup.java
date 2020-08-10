@@ -18,7 +18,7 @@ import org.eclipse.efbt.aorta.deep_structures.Deep_structuresPackage;
 import org.eclipse.efbt.aorta.functionality_module.Functionality_modulePackage;
 import org.eclipse.efbt.aorta.execution_environments.Execution_environmentsPackage;
 import org.eclipse.efbt.aorta.input_data_structures.Input_data_structuresPackage;
-import org.eclipse.efbt.aorta.module_management.Module_managementPackage;
+import org.eclipse.efbt.common.model.module_management.Module_managementPackage;
 import org.eclipse.efbt.aorta.output_data_sets.Output_data_setsPackage;
 import org.eclipse.efbt.aorta.output_data_structures.Output_data_structuresPackage;
 import org.eclipse.efbt.aorta.report_based_report_based_functional_domain_breakdown.Report_based_report_based_functional_domain_breakdownPackage;
