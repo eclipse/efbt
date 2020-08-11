@@ -1,4 +1,4 @@
-package test.java.org.eclipse.efbt.trl.component.translator.test;
+package org.eclipse.efbt.trl.component.translator.test;
 
 import org.junit.jupiter.api.Test;
 

@@ -10,7 +10,7 @@
     <semanticResources>column_structured_data.ecore</semanticResources>
     <semanticResources>column_structures.ecore</semanticResources>
     <semanticResources>test_definition.ecore</semanticResources>
-    <semanticResources>requirements_text.ecore</semanticResources>
+    <semanticResources>../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore</semanticResources>
     <semanticResources>test_input_data.ecore</semanticResources>
     <semanticResources>base_column_structured_data.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_sXaNwKjCEeqEju4ebfh3_A">

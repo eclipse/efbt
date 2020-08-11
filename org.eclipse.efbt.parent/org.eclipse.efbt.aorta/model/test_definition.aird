@@ -3,7 +3,7 @@
   <viewpoint:DAnalysis uid="_SfxMQKjAEeqEju4ebfh3_A" selectedViews="_SicFwKjAEeqEju4ebfh3_A _SjYg8KjAEeqEju4ebfh3_A _SjeAgKjAEeqEju4ebfh3_A _SjnKcKjAEeqEju4ebfh3_A" version="14.3.0.201909031200">
     <semanticResources>test_definition.ecore</semanticResources>
     <semanticResources>../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore</semanticResources>
-    <semanticResources>requirements_text.ecore</semanticResources>
+    <semanticResources>../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_SicFwKjAEeqEju4ebfh3_A">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_ThcEoKjAEeqEju4ebfh3_A" name="test_definition class diagram" repPath="#_ThXMIKjAEeqEju4ebfh3_A" changeId="a1eaf5bd-e9c3-4be7-8fd1-397890014a70">

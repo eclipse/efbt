@@ -5,7 +5,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="Program">
     <eStructuralFeatures xsi:type="ecore:EReference" name="domainModule" eType="ecore:EClass column_structures.ecore#//ColumnDomainModule"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="requirements" eType="ecore:EClass requirements_text.ecore#//RequirementsModule"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requirements" eType="ecore:EClass ../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore#//RequirementsModule"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="input_structures" eType="ecore:EClass column_structures.ecore#//ColumnStructureModule"
         containment="true"/>

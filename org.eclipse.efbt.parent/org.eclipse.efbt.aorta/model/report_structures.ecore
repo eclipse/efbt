@@ -38,7 +38,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         iD="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ReportLinkedRequirement" eSuperTypes="requirements_text.ecore#//RequirementsSection">
+  <eClassifiers xsi:type="ecore:EClass" name="ReportLinkedRequirement" eSuperTypes="../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore#//RequirementsSection">
     <eStructuralFeatures xsi:type="ecore:EReference" name="row" eType="#//RegReportRow"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="column" eType="#//RegReportColumn"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="cell" eType="#//RegReportCell"/>

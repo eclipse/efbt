@@ -8,7 +8,7 @@
     <semanticResources>input_data_structures.ecore</semanticResources>
     <semanticResources>../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore</semanticResources>
     <semanticResources>aortafunctions.ecore</semanticResources>
-    <semanticResources>requirements_text.ecore</semanticResources>
+    <semanticResources>../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore</semanticResources>
     <semanticResources>base_column_structured_data.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_CUOrYKi4EeqEju4ebfh3_A">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>

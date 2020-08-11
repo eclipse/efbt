@@ -62,6 +62,8 @@
 		<module>org.eclipse.efbt.almengine.component.modelquery</module>
 		<module>org.eclipse.efbt.almengine.ui.sirius</module>
 		<module>org.eclipse.efbt.common.model.module_management</module>
+		<module>org.eclipse.efbt.requirements.core.model.requirements_text</module>
+		
 
 	</modules>
 	<dependencyManagement>

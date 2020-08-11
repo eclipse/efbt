@@ -3,7 +3,7 @@
   <viewpoint:DAnalysis uid="_Q9nPQKi7EeqEju4ebfh3_A" selectedViews="_Q_uvIKi7EeqEju4ebfh3_A _RAUlAKi7EeqEju4ebfh3_A _RAY2cKi7EeqEju4ebfh3_A _RAgLMKi7EeqEju4ebfh3_A" version="14.3.0.201909031200">
     <semanticResources>functionality_module.ecore</semanticResources>
     <semanticResources>scenarios.ecore</semanticResources>
-    <semanticResources>requirements_text.ecore</semanticResources>
+    <semanticResources>../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore</semanticResources>
     <semanticResources>../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_Q_uvIKi7EeqEju4ebfh3_A">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
@@ -758,8 +758,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_Z5e-EKi7EeqEju4ebfh3_A" name="Tag" tooltipText="" incomingEdges="_Z5tAhqi7EeqEju4ebfh3_A" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="requirements_text.ecore#//Tag"/>
-      <semanticElements xmi:type="ecore:EClass" href="requirements_text.ecore#//Tag"/>
+      <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore#//Tag"/>
+      <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore#//Tag"/>
       <decorations xmi:type="viewpoint:Decoration" uid="_Z5gMMKi7EeqEju4ebfh3_A">
         <description xmi:type="description:SemanticBasedDecoration" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='External']"/>
       </decorations>
@@ -771,24 +771,24 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_Z5m54Ki7EeqEju4ebfh3_A" name="tagID : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="requirements_text.ecore#//Tag/tagID"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="requirements_text.ecore#//Tag/tagID"/>
+        <target xmi:type="ecore:EAttribute" href="../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore#//Tag/tagID"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore#//Tag/tagID"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_Z5m54ai7EeqEju4ebfh3_A" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_Z5ng8Ki7EeqEju4ebfh3_A" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="requirements_text.ecore#//Tag/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="requirements_text.ecore#//Tag/name"/>
+        <target xmi:type="ecore:EAttribute" href="../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore#//Tag/name"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore#//Tag/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_Z5ng8ai7EeqEju4ebfh3_A" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_Z5ng8qi7EeqEju4ebfh3_A" name=" requirements : TitledRequirementsSection" tooltipText="">
-        <target xmi:type="ecore:EReference" href="requirements_text.ecore#//Tag/requirements"/>
-        <semanticElements xmi:type="ecore:EReference" href="requirements_text.ecore#//Tag/requirements"/>
+        <target xmi:type="ecore:EReference" href="../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore#//Tag/requirements"/>
+        <semanticElements xmi:type="ecore:EReference" href="../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore#//Tag/requirements"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_Z5oIAKi7EeqEju4ebfh3_A" labelAlignment="LEFT" color="114,159,207">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EReferenceNode']/@style"/>
         </ownedStyle>

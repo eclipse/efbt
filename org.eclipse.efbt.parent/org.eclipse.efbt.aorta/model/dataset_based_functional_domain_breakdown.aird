@@ -4,7 +4,7 @@
     <semanticResources>dataset_based_functional_domain_breakdown.ecore</semanticResources>
     <semanticResources>functionality_module.ecore</semanticResources>
     <semanticResources>scenarios.ecore</semanticResources>
-    <semanticResources>requirements_text.ecore</semanticResources>
+    <semanticResources>../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore</semanticResources>
     <semanticResources>../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore</semanticResources>
     <semanticResources>report_structures.ecore</semanticResources>
     <semanticResources>output_data_structures.ecore</semanticResources>

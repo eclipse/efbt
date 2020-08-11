@@ -4,7 +4,7 @@
     <semanticResources>technical_specification_breakdown.ecore</semanticResources>
     <semanticResources>functionality_module.ecore</semanticResources>
     <semanticResources>scenarios.ecore</semanticResources>
-    <semanticResources>requirements_text.ecore</semanticResources>
+    <semanticResources>../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore</semanticResources>
     <semanticResources>../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="__eQDIKi_EeqEju4ebfh3_A">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
