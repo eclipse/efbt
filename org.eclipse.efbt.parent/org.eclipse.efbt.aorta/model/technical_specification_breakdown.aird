@@ -2,8 +2,8 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="__ckBEKi_EeqEju4ebfh3_A" selectedViews="__eQDIKi_EeqEju4ebfh3_A __ebCQKi_EeqEju4ebfh3_A __edegKi_EeqEju4ebfh3_A __ekMMKi_EeqEju4ebfh3_A" version="14.3.0.201909031200">
     <semanticResources>technical_specification_breakdown.ecore</semanticResources>
-    <semanticResources>functionality_module.ecore</semanticResources>
-    <semanticResources>scenarios.ecore</semanticResources>
+    <semanticResources>../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore</semanticResources>
+    <semanticResources>../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/scenarios.ecore</semanticResources>
     <semanticResources>../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore</semanticResources>
     <semanticResources>../../org.eclipse.efbt.common.model.module_management/model/module_management.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="__eQDIKi_EeqEju4ebfh3_A">
@@ -131,8 +131,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_BzomIKjAEeqEju4ebfh3_A" name="FunctionalityModuleModule" tooltipText="" outgoingEdges="_E5e8yKjAEeqEju4ebfh3_A" incomingEdges="_BzqbVqjAEeqEju4ebfh3_A" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="functionality_module.ecore#//FunctionalityModuleModule"/>
-      <semanticElements xmi:type="ecore:EClass" href="functionality_module.ecore#//FunctionalityModuleModule"/>
+      <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModuleModule"/>
+      <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModuleModule"/>
       <decorations xmi:type="viewpoint:Decoration" uid="_BzpNMajAEeqEju4ebfh3_A">
         <description xmi:type="description:SemanticBasedDecoration" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='External']"/>
       </decorations>
@@ -144,8 +144,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_BzqbVKjAEeqEju4ebfh3_A" name=" FunctionalityModules : FunctionalityModule" tooltipText="">
-        <target xmi:type="ecore:EReference" href="functionality_module.ecore#//FunctionalityModuleModule/FunctionalityModules"/>
-        <semanticElements xmi:type="ecore:EReference" href="functionality_module.ecore#//FunctionalityModuleModule/FunctionalityModules"/>
+        <target xmi:type="ecore:EReference" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModuleModule/FunctionalityModules"/>
+        <semanticElements xmi:type="ecore:EReference" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModuleModule/FunctionalityModules"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_BzqbVajAEeqEju4ebfh3_A" labelAlignment="LEFT" color="114,159,207">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EReferenceNode']/@style"/>
         </ownedStyle>
@@ -228,8 +228,8 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_E5e8yKjAEeqEju4ebfh3_A" sourceNode="_BzomIKjAEeqEju4ebfh3_A" targetNode="_E5arUKjAEeqEju4ebfh3_A">
-      <target xmi:type="ecore:EClass" href="functionality_module.ecore#//FunctionalityModuleModule"/>
-      <semanticElements xmi:type="ecore:EClass" href="functionality_module.ecore#//FunctionalityModuleModule"/>
+      <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModuleModule"/>
+      <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModuleModule"/>
       <decorations xmi:type="viewpoint:Decoration" uid="_E5e8z6jAEeqEju4ebfh3_A">
         <description xmi:type="description:SemanticBasedDecoration" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='External']"/>
       </decorations>

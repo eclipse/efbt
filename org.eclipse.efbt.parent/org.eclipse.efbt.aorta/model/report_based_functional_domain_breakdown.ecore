@@ -3,7 +3,7 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="report_based_report_based_functional_domain_breakdown" nsURI="http://www.eclipse.org/report_based_report_based_functional_domain_breakdown"
     nsPrefix="report_based_report_based_functional_domain_breakdown">
   <eClassifiers xsi:type="ecore:EClass" name="ReportCellCreationFunctionalityModule"
-      eSuperTypes="functionality_module.ecore#//OutputCreationFunctionalityModule">
+      eSuperTypes="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//OutputCreationFunctionalityModule">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ReportCellCreationFunctionalityModule"/>
       <details key="kind" value="elementOnly"/>
@@ -15,11 +15,11 @@
         eType="ecore:EClass report_structures.ecore#//RegReportCell"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ReportBasedFunctionalityModuleModule"
-      eSuperTypes="functionality_module.ecore#//FunctionalityModuleModule"/>
+      eSuperTypes="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModuleModule"/>
   <eClassifiers xsi:type="ecore:EClass" name="ReportBasedParallelFunctionalityModule"
-      eSuperTypes="functionality_module.ecore#//ParallelFunctionalityModule"/>
+      eSuperTypes="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//ParallelFunctionalityModule"/>
   <eClassifiers xsi:type="ecore:EClass" name="ReportBasedScenarioSetFunctionalityModule"
-      eSuperTypes="functionality_module.ecore#//ScenarioSetFunctionalityModule"/>
+      eSuperTypes="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//ScenarioSetFunctionalityModule"/>
   <eClassifiers xsi:type="ecore:EClass" name="ReportBasedSerialFunctionalityModule"
-      eSuperTypes="functionality_module.ecore#//SerialFunctionalityModule"/>
+      eSuperTypes="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//SerialFunctionalityModule"/>
 </ecore:EPackage>

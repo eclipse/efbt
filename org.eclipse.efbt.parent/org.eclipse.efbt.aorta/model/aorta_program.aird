@@ -15,8 +15,8 @@
     <semanticResources>test_input_data.ecore</semanticResources>
     <semanticResources>base_column_structured_data.ecore</semanticResources>
     <semanticResources>requirments_artefacts.ecore</semanticResources>
-    <semanticResources>functionality_module.ecore</semanticResources>
-    <semanticResources>scenarios.ecore</semanticResources>
+    <semanticResources>../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore</semanticResources>
+    <semanticResources>../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/scenarios.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_w20dgKiwEeqEju4ebfh3_A">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_tApnwKixEeqEju4ebfh3_A" name="aorta_program class diagram" repPath="#_tAP_IKixEeqEju4ebfh3_A" changeId="17a5609c-6d50-433c-8110-e44f604fdb7d">
@@ -1200,23 +1200,23 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_DUItZqixEeqEju4ebfh3_A" name="http://www.eclipse.org/functionality_module" outgoingEdges="_DVO5kqixEeqEju4ebfh3_A _DVO5l6ixEeqEju4ebfh3_A _DVPgoqixEeqEju4ebfh3_A" incomingEdges="_DVKoJaixEeqEju4ebfh3_A">
-      <target xmi:type="ecore:EPackage" href="functionality_module.ecore#/"/>
-      <semanticElements xmi:type="ecore:EPackage" href="functionality_module.ecore#/"/>
+      <target xmi:type="ecore:EPackage" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#/"/>
+      <semanticElements xmi:type="ecore:EPackage" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#/"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_DUJUcKixEeqEju4ebfh3_A" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="125,125,125" backgroundStyle="Liquid" foregroundColor="217,210,220">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DUtVJKixEeqEju4ebfh3_A" name="FunctionalityModule (3)" tooltipText="Dependency to http://www.eclipse.org/scenarios: &#xA; - EReference scenario refers to type Scenario in package scenarios&#xA; - EReference scenarioSet refers to type ScenarioSet in package scenarios">
-        <target xmi:type="ecore:EClass" href="functionality_module.ecore#//FunctionalityModule"/>
-        <semanticElements xmi:type="ecore:EClass" href="functionality_module.ecore#//FunctionalityModule"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModule"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModule"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DUt8MKixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DUt8MaixEeqEju4ebfh3_A" name="ScenarioSetFunctionalityModule (3)" tooltipText="Dependency to http://www.eclipse.org/scenarios: &#xA; - EReference scenario refers to type Scenario in package scenarios&#xA; - EReference scenarioSet refers to type ScenarioSet in package scenarios&#xA; - EReference scenarioSetChoice refers to type ScenarioSet in package scenarios">
-        <target xmi:type="ecore:EClass" href="functionality_module.ecore#//ScenarioSetFunctionalityModule"/>
-        <semanticElements xmi:type="ecore:EClass" href="functionality_module.ecore#//ScenarioSetFunctionalityModule"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//ScenarioSetFunctionalityModule"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//ScenarioSetFunctionalityModule"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DUt8MqixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1231,8 +1231,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DUujQqixEeqEju4ebfh3_A" name="FunctionalityModuleModule (3)" tooltipText="Dependency to http://www.eclipse.org/module_management: &#xA; - EReference dependencies refers to type ModuleDependencies in package module_management&#xA; - EReference longName refers to type ModuleLongName in package module_management&#xA; - EClassFunctionalityModuleModule extends type Module in package module_management">
-        <target xmi:type="ecore:EClass" href="functionality_module.ecore#//FunctionalityModuleModule"/>
-        <semanticElements xmi:type="ecore:EClass" href="functionality_module.ecore#//FunctionalityModuleModule"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModuleModule"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModuleModule"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DUujQ6ixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1247,8 +1247,8 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DUvxYKixEeqEju4ebfh3_A" name="FunctionalityModuleTag (3)" tooltipText="Dependency to http://www.eclipse.org/requirements_text: &#xA; - EReference requirements refers to type TitledRequirementsSection in package requirements_text&#xA; - EClassFunctionalityModuleTag extends type Tag in package requirements_text">
-        <target xmi:type="ecore:EClass" href="functionality_module.ecore#//FunctionalityModuleTag"/>
-        <semanticElements xmi:type="ecore:EClass" href="functionality_module.ecore#//FunctionalityModuleTag"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModuleTag"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModuleTag"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DUvxYaixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1400,8 +1400,8 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_DUM-0KixEeqEju4ebfh3_A" name="http://www.eclipse.org/scenarios" outgoingEdges="_DVRV0qixEeqEju4ebfh3_A" incomingEdges="_DVO5kqixEeqEju4ebfh3_A">
-      <target xmi:type="ecore:EPackage" href="scenarios.ecore#/"/>
-      <semanticElements xmi:type="ecore:EPackage" href="scenarios.ecore#/"/>
+      <target xmi:type="ecore:EPackage" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/scenarios.ecore#/"/>
+      <semanticElements xmi:type="ecore:EPackage" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/scenarios.ecore#/"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_DUNl4KixEeqEju4ebfh3_A" labelAlignment="LEFT" borderSize="1" borderSizeComputationExpression="1" borderColor="125,125,125" backgroundStyle="Liquid" foregroundColor="217,210,220">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@style"/>
       </ownedStyle>
@@ -1415,16 +1415,16 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DU1Q8aixEeqEju4ebfh3_A" name="ScenarioTag (3)" tooltipText="Dependency to http://www.eclipse.org/requirements_text: &#xA; - EReference requirements refers to type TitledRequirementsSection in package requirements_text&#xA; - EClassScenarioTag extends type Tag in package requirements_text">
-        <target xmi:type="ecore:EClass" href="scenarios.ecore#//ScenarioTag"/>
-        <semanticElements xmi:type="ecore:EClass" href="scenarios.ecore#//ScenarioTag"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/scenarios.ecore#//ScenarioTag"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/scenarios.ecore#//ScenarioTag"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DU1Q8qixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_DU2fEKixEeqEju4ebfh3_A" name="ScenarioSetTag (3)" tooltipText="Dependency to http://www.eclipse.org/requirements_text: &#xA; - EReference requirements refers to type TitledRequirementsSection in package requirements_text&#xA; - EClassScenarioSetTag extends type Tag in package requirements_text">
-        <target xmi:type="ecore:EClass" href="scenarios.ecore#//ScenarioSetTag"/>
-        <semanticElements xmi:type="ecore:EClass" href="scenarios.ecore#//ScenarioSetTag"/>
+        <target xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/scenarios.ecore#//ScenarioSetTag"/>
+        <semanticElements xmi:type="ecore:EClass" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/scenarios.ecore#//ScenarioSetTag"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_DU3GIKixEeqEju4ebfh3_A" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@containerMappings[name='Analyzed%20Package']/@subNodeMappings[name='EClassfierIntroducingDependency']/@style"/>
         </ownedStyle>
@@ -1720,7 +1720,7 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@edgeMappings[name='Package%20Dependency']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_DVO5kqixEeqEju4ebfh3_A" sourceNode="_DUItZqixEeqEju4ebfh3_A" targetNode="_DUM-0KixEeqEju4ebfh3_A">
-      <target xmi:type="ecore:EPackage" href="functionality_module.ecore#/"/>
+      <target xmi:type="ecore:EPackage" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#/"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_DVO5k6ixEeqEju4ebfh3_A" lineStyle="dash" size="2" strokeColor="239,41,41">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@edgeMappings[name='Package%20Dependency']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_DVO5lKixEeqEju4ebfh3_A"/>
@@ -1728,7 +1728,7 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@edgeMappings[name='Package%20Dependency']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_DVO5l6ixEeqEju4ebfh3_A" sourceNode="_DUItZqixEeqEju4ebfh3_A" targetNode="_DUJ7gaixEeqEju4ebfh3_A">
-      <target xmi:type="ecore:EPackage" href="functionality_module.ecore#/"/>
+      <target xmi:type="ecore:EPackage" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#/"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_DVO5mKixEeqEju4ebfh3_A" lineStyle="dash" size="2" strokeColor="239,41,41">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@edgeMappings[name='Package%20Dependency']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_DVO5maixEeqEju4ebfh3_A"/>
@@ -1736,7 +1736,7 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@edgeMappings[name='Package%20Dependency']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_DVPgoqixEeqEju4ebfh3_A" sourceNode="_DUItZqixEeqEju4ebfh3_A" targetNode="_DUMXw6ixEeqEju4ebfh3_A">
-      <target xmi:type="ecore:EPackage" href="functionality_module.ecore#/"/>
+      <target xmi:type="ecore:EPackage" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#/"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_DVPgo6ixEeqEju4ebfh3_A" lineStyle="dash" size="2" strokeColor="239,41,41">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@edgeMappings[name='Package%20Dependency']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_DVPgpKixEeqEju4ebfh3_A"/>
@@ -1792,7 +1792,7 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@edgeMappings[name='Package%20Dependency']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_DVRV0qixEeqEju4ebfh3_A" sourceNode="_DUM-0KixEeqEju4ebfh3_A" targetNode="_DUMXw6ixEeqEju4ebfh3_A">
-      <target xmi:type="ecore:EPackage" href="scenarios.ecore#/"/>
+      <target xmi:type="ecore:EPackage" href="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/scenarios.ecore#/"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_DVRV06ixEeqEju4ebfh3_A" lineStyle="dash" size="2" strokeColor="239,41,41">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']/@ownedRepresentations[name='Dependencies']/@defaultLayer/@edgeMappings[name='Package%20Dependency']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_DVRV1KixEeqEju4ebfh3_A"/>

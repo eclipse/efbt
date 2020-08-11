@@ -144,21 +144,6 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated aorta -->
       <package
-            uri="http://www.eclipse.org/functionality_module"
-            class="org.eclipse.efbt.aorta.functionality_module.Functionality_modulePackage"
-            genModel="model/aorta.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.extension_parser">
-      <!-- @generated aorta -->
-      <parser
-            type="functionality_module"
-            class="org.eclipse.efbt.aorta.functionality_module.util.Functionality_moduleResourceFactoryImpl"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated aorta -->
-      <package
             uri="http://www.eclipse.org/input_data_structures"
             class="org.eclipse.efbt.aorta.input_data_structures.Input_data_structuresPackage"
             genModel="model/aorta.genmodel"/>
@@ -234,21 +219,6 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated aorta -->
       <package
-            uri="http://www.eclipse.org/requirements_text"
-            class="org.eclipse.efbt.aorta.requirements_text.Requirements_textPackage"
-            genModel="model/aorta.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.extension_parser">
-      <!-- @generated aorta -->
-      <parser
-            type="requirements_text"
-            class="org.eclipse.efbt.aorta.requirements_text.util.Requirements_textResourceFactoryImpl"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated aorta -->
-      <package
             uri="http://www.eclipse.org/requirements_artefacts"
             class="org.eclipse.efbt.aorta.requirements_artefacts.Requirements_artefactsPackage"
             genModel="model/aorta.genmodel"/>
@@ -259,21 +229,6 @@
       <parser
             type="requirements_artefacts"
             class="org.eclipse.efbt.aorta.requirements_artefacts.util.Requirements_artefactsResourceFactoryImpl"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated aorta -->
-      <package
-            uri="http://www.eclipse.org/scenarios"
-            class="org.eclipse.efbt.aorta.scenarios.ScenariosPackage"
-            genModel="model/aorta.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.extension_parser">
-      <!-- @generated aorta -->
-      <parser
-            type="scenarios"
-            class="org.eclipse.efbt.aorta.scenarios.util.ScenariosResourceFactoryImpl"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">

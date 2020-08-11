@@ -3,5 +3,5 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="technical_specification_breakdown" nsURI="http://www.eclipse.org/technical_specification_breakdown"
     nsPrefix="technical_specification_breakdown">
   <eClassifiers xsi:type="ecore:EClass" name="TechnicalSpecificationFunctionalityModuleModule"
-      eSuperTypes="functionality_module.ecore#//FunctionalityModuleModule"/>
+      eSuperTypes="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModuleModule"/>
 </ecore:EPackage>

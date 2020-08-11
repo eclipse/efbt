@@ -5,7 +5,7 @@
     modelName="Aorta" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
     editPluginID="org.eclipse.efbt.aorta.edit" editorPluginID="org.eclipse.efbt.aorta.editor"
-    usedGenPackages="../../org.eclipse.efbt.common.model.module_management/model/module_management.genmodel#//module_management ../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.genmodel#//requirements_text"
+    usedGenPackages="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.genmodel#//functionality_module ../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.genmodel#//scenarios ../../org.eclipse.efbt.common.model.module_management/model/module_management.genmodel#//module_management ../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.genmodel#//requirements_text"
     operationReflection="true" importOrganizing="true">
   <foreignModel>aortafunctions.ecore</foreignModel>
   <foreignModel>base_column_structured_data.ecore</foreignModel>
@@ -16,7 +16,7 @@
   <foreignModel>dataset_based_functional_domain_breakdown.ecore</foreignModel>
   <foreignModel>deep_structures.ecore</foreignModel>
   <foreignModel>execution_environments.ecore</foreignModel>
-  <foreignModel>functionality_module.ecore</foreignModel>
+  <foreignModel>../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore</foreignModel>
   <foreignModel>input_data_structures.ecore</foreignModel>
   <foreignModel>output_data_sets.ecore</foreignModel>
   <foreignModel>output_data_structures.ecore</foreignModel>
@@ -24,7 +24,7 @@
   <foreignModel>report_structures.ecore</foreignModel>
   <foreignModel>../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore</foreignModel>
   <foreignModel>requirments_artefacts.ecore</foreignModel>
-  <foreignModel>scenarios.ecore</foreignModel>
+  <foreignModel>../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/scenarios.ecore</foreignModel>
   <foreignModel>technical_specification_breakdown.ecore</foreignModel>
   <foreignModel>test_definition.ecore</foreignModel>
   <foreignModel>test_input_data.ecore</foreignModel>
@@ -198,34 +198,6 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference execution_environments.ecore#//TestExecutionEnvironmentModule/testexecutionEnvironments"/>
     </genClasses>
   </genPackages>
-  <genPackages prefix="Functionality_module" basePackage="org.eclipse.efbt.aorta"
-      resource="XML" disposableProviderFactory="true" ecorePackage="functionality_module.ecore#/">
-    <genClasses ecoreClass="functionality_module.ecore#//DataProcessingFunctionalityModule"/>
-    <genClasses ecoreClass="functionality_module.ecore#//LeafFunctionalityModule"/>
-    <genClasses ecoreClass="functionality_module.ecore#//ParallelFunctionalityModule"/>
-    <genClasses ecoreClass="functionality_module.ecore#//ScenarioSetFunctionalityModule">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference functionality_module.ecore#//ScenarioSetFunctionalityModule/scenarioSetChoice"/>
-    </genClasses>
-    <genClasses ecoreClass="functionality_module.ecore#//SerialFunctionalityModule"/>
-    <genClasses ecoreClass="functionality_module.ecore#//FunctionalityModuleSet">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference functionality_module.ecore#//FunctionalityModuleSet/subTransformationsAndSchemes"/>
-    </genClasses>
-    <genClasses ecoreClass="functionality_module.ecore#//ReadDataSourceFunctionalityModule"/>
-    <genClasses ecoreClass="functionality_module.ecore#//OutputCreationFunctionalityModule"/>
-    <genClasses ecoreClass="functionality_module.ecore#//FunctionalityModule">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute functionality_module.ecore#//FunctionalityModule/name"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference functionality_module.ecore#//FunctionalityModule/usedTransformationOrScheme"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference functionality_module.ecore#//FunctionalityModule/scenario"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference functionality_module.ecore#//FunctionalityModule/scenarioSet"/>
-    </genClasses>
-    <genClasses ecoreClass="functionality_module.ecore#//FunctionalityModuleModule">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference functionality_module.ecore#//FunctionalityModuleModule/FunctionalityModules"/>
-    </genClasses>
-    <genClasses ecoreClass="functionality_module.ecore#//FunctionalityModuleTag">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference functionality_module.ecore#//FunctionalityModuleTag/FunctionalityModule"/>
-    </genClasses>
-    <genClasses ecoreClass="functionality_module.ecore#//ValidationFunctionalityModule"/>
-  </genPackages>
   <genPackages prefix="Input_data_structures" basePackage="org.eclipse.efbt.aorta"
       resource="XML" disposableProviderFactory="true" ecorePackage="input_data_structures.ecore#/">
     <genClasses ecoreClass="input_data_structures.ecore#//InputDatastructureModule"/>
@@ -293,22 +265,6 @@
     </genClasses>
     <genClasses ecoreClass="requirments_artefacts.ecore#//InputType">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute requirments_artefacts.ecore#//InputType/name"/>
-    </genClasses>
-  </genPackages>
-  <genPackages prefix="Scenarios" basePackage="org.eclipse.efbt.aorta" resource="XML"
-      disposableProviderFactory="true" ecorePackage="scenarios.ecore#/">
-    <genClasses ecoreClass="scenarios.ecore#//Scenario">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute scenarios.ecore#//Scenario/name"/>
-    </genClasses>
-    <genClasses ecoreClass="scenarios.ecore#//ScenarioSet">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference scenarios.ecore#//ScenarioSet/scenarios"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute scenarios.ecore#//ScenarioSet/name"/>
-    </genClasses>
-    <genClasses ecoreClass="scenarios.ecore#//ScenarioTag">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference scenarios.ecore#//ScenarioTag/scenario"/>
-    </genClasses>
-    <genClasses ecoreClass="scenarios.ecore#//ScenarioSetTag">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference scenarios.ecore#//ScenarioSetTag/scenarioSet"/>
     </genClasses>
   </genPackages>
   <genPackages prefix="Technical_specification_breakdown" basePackage="org.eclipse.efbt.aorta"

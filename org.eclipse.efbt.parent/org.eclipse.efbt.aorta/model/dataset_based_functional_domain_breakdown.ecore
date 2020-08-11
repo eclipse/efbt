@@ -3,7 +3,7 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="dataset_based_functional_domain_breakdown" nsURI="http://www.eclipse.org/dataset_based_functional_domain_breakdown"
     nsPrefix="dataset_based_functional_domain_breakdown">
   <eClassifiers xsi:type="ecore:EClass" name="DataSetCreationFunctionalityModule"
-      eSuperTypes="functionality_module.ecore#//OutputCreationFunctionalityModule">
+      eSuperTypes="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//OutputCreationFunctionalityModule">
     <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
       <details key="name" value="ReportCellCreationFunctionalityModule"/>
       <details key="kind" value="elementOnly"/>
@@ -15,7 +15,7 @@
         eType="ecore:EClass report_structures.ecore#//RegReportCell"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DatasetBasedFunctionalityModuleModule"
-      eSuperTypes="functionality_module.ecore#//FunctionalityModuleModule">
+      eSuperTypes="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.ecore#//FunctionalityModuleModule">
     <eAnnotations source="http://www.obeo.fr/dsl/dnc/archetype">
       <details key="archetype" value="Description"/>
     </eAnnotations>
