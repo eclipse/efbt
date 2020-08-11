@@ -29,7 +29,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.mwe2.runtime,
  org.eclipse.emf.mwe2.launch,
  org.eclipse.efbt.aorta;visibility:=reexport,
- org.eclipse.efbt.bird.model;visibility:=reexport,
+ org.eclipse.efbt.data_structures.smcubes.model.core;visibility:=reexport,
  org.eclipse.efbt.almengine.model.cubes,
  org.eclipse.efbt.almengine.model.functions,
  org.eclipse.efbt.common.model.module_management;bundle-version="1.0.0"

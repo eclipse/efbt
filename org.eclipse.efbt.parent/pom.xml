@@ -34,11 +34,12 @@
 		 <module>org.eclipse.efbt.aorta.component.exporter</module>
 		<!--<module>org.eclipse.efbt.aorta.example.testing</module>-->
 		<module>org.eclipse.efbt.aorta.ui.sirius.testmanager</module>
-		<module>org.eclipse.efbt.bird.component.modelquery</module>
-		<module>org.eclipse.efbt.bird.component.rules_and_data_structures_manager</module>
+		<module>org.eclipse.efbt.data_structures.smcubes.modelquery.core</module>
+		<module>org.eclipse.efbt.data_structures.smcubes.component.importexport.impl</module>
+		<module>org.eclipse.efbt.data_structures.smcubes.ui.sirius</module>
 		<!--<module>org.eclipse.efbt.bird.example</module>-->
-		<module>org.eclipse.efbt.bird.model</module>
-		<module>org.eclipse.efbt.bird.ui.sirius</module>
+		<module>org.eclipse.efbt.data_structures.smcubes.model.core</module>
+		<!--<module>org.eclipse.efbt.bird.ui.sirius</module>-->
 		<module>org.eclipse.efbt.util.access.interface</module>
 		<module>org.eclipse.efbt.util.access.provider</module>
 		<module>org.eclipse.efbt.util.access.impl.jackcess</module>
@@ -47,7 +48,7 @@
 		<module>org.eclipse.efbt.util.csv.impl.apachecsv</module>
 		<module>org.eclipse.efbt.ldmtools.sqldevconvertor</module>
 		<module>org.eclipse.efbt.ldmtools.sqldevconvertor.test</module>
-		<module>org.eclipse.efbt.almengine.model.cubes</module>
+		<!--<module>org.eclipse.efbt.almengine.model.cubes</module>
 		<module>org.eclipse.efbt.almengine.model.attribute_lineage</module>
 		<module>org.eclipse.efbt.almengine.model.functions</module>
 		<module>org.eclipse.efbt.trl.model.trl</module>
@@ -60,7 +61,7 @@
 		<module>org.eclipse.efbt.trl.component.modelquery</module>
 		<module>org.eclipse.efbt.trl.ui.sirius</module>
 		<module>org.eclipse.efbt.almengine.component.modelquery</module>
-		<module>org.eclipse.efbt.almengine.ui.sirius</module>
+		<module>org.eclipse.efbt.almengine.ui.sirius</module>-->
 		<module>org.eclipse.efbt.common.model.module_management</module>
 		<module>org.eclipse.efbt.requirements.core.model.requirements_text</module>
 		<module>org.eclipse.efbt.functional_design.core.model.functionality_module</module>

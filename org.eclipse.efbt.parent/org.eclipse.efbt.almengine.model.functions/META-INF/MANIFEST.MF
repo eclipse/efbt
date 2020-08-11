@@ -17,7 +17,7 @@ Export-Package: org.eclipse.efbt.almengine.model.functions.column_transformation
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
- org.eclipse.efbt.bird.model;visibility:=reexport,
+ org.eclipse.efbt.data_structures.smcubes.model.core;visibility:=reexport,
  org.eclipse.efbt.almengine.model.cubes;visibility:=reexport,
  org.eclipse.efbt.aorta,
  org.eclipse.emf.mwe.core,
