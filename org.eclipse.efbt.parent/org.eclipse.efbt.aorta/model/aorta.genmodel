@@ -7,12 +7,7 @@
     editPluginID="org.eclipse.efbt.aorta.edit" editorPluginID="org.eclipse.efbt.aorta.editor"
     usedGenPackages="../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.genmodel#//functionality_module ../../org.eclipse.efbt.functional_design.core.model.functionality_module/model/functionality_module.genmodel#//scenarios ../../org.eclipse.efbt.common.model.module_management/model/module_management.genmodel#//module_management ../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.genmodel#//requirements_text"
     operationReflection="true" importOrganizing="true">
-  <foreignModel>aortafunctions.ecore</foreignModel>
-  <foreignModel>base_column_structured_data.ecore</foreignModel>
-  <foreignModel>cell_transformation_logic.ecore</foreignModel>
-  <foreignModel>column_structured_data.ecore</foreignModel>
   <foreignModel>column_structures.ecore</foreignModel>
-  <foreignModel>data_lineage.ecore</foreignModel>
   <foreignModel>dataset_based_functional_domain_breakdown.ecore</foreignModel>
   <foreignModel>deep_structures.ecore</foreignModel>
   <foreignModel>execution_environments.ecore</foreignModel>
@@ -28,109 +23,8 @@
   <foreignModel>technical_specification_breakdown.ecore</foreignModel>
   <foreignModel>test_definition.ecore</foreignModel>
   <foreignModel>test_input_data.ecore</foreignModel>
-  <foreignModel>test_worked_example.ecore</foreignModel>
   <foreignModel>test.ecore</foreignModel>
   <foreignModel>aorta_program.ecore</foreignModel>
-  <genPackages prefix="Aortafunctions" basePackage="org.eclipse.efbt.aorta" resource="XML"
-      disposableProviderFactory="true" ecorePackage="aortafunctions.ecore#/">
-    <genClasses ecoreClass="aortafunctions.ecore#//AggregateFunction">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference aortafunctions.ecore#//AggregateFunction/functionSpec"/>
-    </genClasses>
-    <genClasses ecoreClass="aortafunctions.ecore#//AggregateFunctionSpec"/>
-    <genClasses ecoreClass="aortafunctions.ecore#//BasicFunction">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference aortafunctions.ecore#//BasicFunction/functionSpec"/>
-    </genClasses>
-    <genClasses ecoreClass="aortafunctions.ecore#//BasicFunctionSpec">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute aortafunctions.ecore#//BasicFunctionSpec/isInfix"/>
-    </genClasses>
-    <genClasses ecoreClass="aortafunctions.ecore#//BooleanFunction"/>
-    <genClasses ecoreClass="aortafunctions.ecore#//CellsParameter">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference aortafunctions.ecore#//CellsParameter/cells"/>
-    </genClasses>
-    <genClasses ecoreClass="aortafunctions.ecore#//Function">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference aortafunctions.ecore#//Function/parameters"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute aortafunctions.ecore#//Function/name"/>
-    </genClasses>
-    <genClasses ecoreClass="aortafunctions.ecore#//FunctionSpec">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference aortafunctions.ecore#//FunctionSpec/parameterSpecs"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute aortafunctions.ecore#//FunctionSpec/functionalName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute aortafunctions.ecore#//FunctionSpec/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute aortafunctions.ecore#//FunctionSpec/sqlName"/>
-    </genClasses>
-    <genClasses ecoreClass="aortafunctions.ecore#//FunctionSpecModule">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference aortafunctions.ecore#//FunctionSpecModule/functionSpecs"/>
-    </genClasses>
-    <genClasses ecoreClass="aortafunctions.ecore#//ParamaterSpec">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute aortafunctions.ecore#//ParamaterSpec/name"/>
-    </genClasses>
-    <genClasses ecoreClass="aortafunctions.ecore#//Parameter"/>
-  </genPackages>
-  <genPackages prefix="Base_column_structured_data" basePackage="org.eclipse.efbt.aorta"
-      resource="XML" disposableProviderFactory="true" ecorePackage="base_column_structured_data.ecore#/">
-    <genClasses image="false" ecoreClass="base_column_structured_data.ecore#//BaseCell"/>
-    <genClasses ecoreClass="base_column_structured_data.ecore#//BaseCellWithEnumeratedValue">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference base_column_structured_data.ecore#//BaseCellWithEnumeratedValue/value"/>
-    </genClasses>
-    <genClasses ecoreClass="base_column_structured_data.ecore#//BaseCellWithValue">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute base_column_structured_data.ecore#//BaseCellWithValue/value"/>
-    </genClasses>
-    <genClasses ecoreClass="base_column_structured_data.ecore#//BaseColumnStructuredData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference base_column_structured_data.ecore#//BaseColumnStructuredData/rows"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference base_column_structured_data.ecore#//BaseColumnStructuredData/cube"/>
-    </genClasses>
-    <genClasses ecoreClass="base_column_structured_data.ecore#//BaseRowData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference base_column_structured_data.ecore#//BaseRowData/cells"/>
-    </genClasses>
-    <genClasses ecoreClass="base_column_structured_data.ecore#//InputData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference base_column_structured_data.ecore#//InputData/sourceTableData"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute base_column_structured_data.ecore#//InputData/name"/>
-    </genClasses>
-    <genClasses ecoreClass="base_column_structured_data.ecore#//InputDataModule">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference base_column_structured_data.ecore#//InputDataModule/inputData"/>
-    </genClasses>
-  </genPackages>
-  <genPackages prefix="Cell_transformation_logic" basePackage="org.eclipse.efbt.aorta"
-      resource="XML" disposableProviderFactory="true" ecorePackage="cell_transformation_logic.ecore#/">
-    <genClasses ecoreClass="cell_transformation_logic.ecore#//FormulaCell">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cell_transformation_logic.ecore#//FormulaCell/function"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cell_transformation_logic.ecore#//FormulaCell/value"/>
-    </genClasses>
-    <genClasses ecoreClass="cell_transformation_logic.ecore#//DerivedColumnStructuredData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cell_transformation_logic.ecore#//DerivedColumnStructuredData/rows"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cell_transformation_logic.ecore#//DerivedColumnStructuredData/cube"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cell_transformation_logic.ecore#//DerivedColumnStructuredData/sourceColumnStructuredData"/>
-    </genClasses>
-    <genClasses ecoreClass="cell_transformation_logic.ecore#//DerivedRowData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cell_transformation_logic.ecore#//DerivedRowData/formulaCells"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cell_transformation_logic.ecore#//DerivedRowData/specialDerivedCells"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cell_transformation_logic.ecore#//DerivedRowData/sourceRows"/>
-    </genClasses>
-    <genClasses ecoreClass="cell_transformation_logic.ecore#//FunctionTag">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cell_transformation_logic.ecore#//FunctionTag/function"/>
-    </genClasses>
-    <genClasses ecoreClass="cell_transformation_logic.ecore#//FormulaCellTag">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cell_transformation_logic.ecore#//FormulaCellTag/formulaCell"/>
-    </genClasses>
-    <genClasses ecoreClass="cell_transformation_logic.ecore#//ColumnStructuredDataTag">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cell_transformation_logic.ecore#//ColumnStructuredDataTag/columnStructuredData"/>
-    </genClasses>
-  </genPackages>
-  <genPackages prefix="Column_structured_data" basePackage="org.eclipse.efbt.aorta"
-      resource="XML" disposableProviderFactory="true" ecorePackage="column_structured_data.ecore#/">
-    <genClasses ecoreClass="column_structured_data.ecore#//Cell">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute column_structured_data.ecore#//Cell/cellID"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference column_structured_data.ecore#//Cell/column"/>
-    </genClasses>
-    <genClasses ecoreClass="column_structured_data.ecore#//ColumnStructuredData">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute column_structured_data.ecore#//ColumnStructuredData/name"/>
-    </genClasses>
-    <genClasses ecoreClass="column_structured_data.ecore#//ColumnStructuredDataModule">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference column_structured_data.ecore#//ColumnStructuredDataModule/cubeData"/>
-    </genClasses>
-    <genClasses ecoreClass="column_structured_data.ecore#//RowData">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute column_structured_data.ecore#//RowData/rowID"/>
-    </genClasses>
-  </genPackages>
   <genPackages prefix="Column_structures" basePackage="org.eclipse.efbt.aorta" resource="XML"
       disposableProviderFactory="true" ecorePackage="column_structures.ecore#/">
     <genClasses ecoreClass="column_structures.ecore#//Column">
@@ -161,14 +55,6 @@
     </genClasses>
     <genClasses ecoreClass="column_structures.ecore#//ColumnDataType">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute column_structures.ecore#//ColumnDataType/name"/>
-    </genClasses>
-  </genPackages>
-  <genPackages prefix="Data_lineage" basePackage="org.eclipse.efbt.aorta" resource="XML"
-      disposableProviderFactory="true" ecorePackage="data_lineage.ecore#/">
-    <genClasses ecoreClass="data_lineage.ecore#//SpreadsheetLineageModel">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference data_lineage.ecore#//SpreadsheetLineageModel/dataTraceableByCell"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference data_lineage.ecore#//SpreadsheetLineageModel/sourceData"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute data_lineage.ecore#//SpreadsheetLineageModel/name"/>
     </genClasses>
   </genPackages>
   <genPackages prefix="Dataset_based_functional_domain_breakdown" basePackage="org.eclipse.efbt.aorta"
@@ -346,9 +232,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute test_input_data.ecore#//TestInputData/name"/>
     </genClasses>
     <genClasses ecoreClass="test_input_data.ecore#//ExternalTestData"/>
-    <genClasses ecoreClass="test_input_data.ecore#//TestColumnStructuredData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference test_input_data.ecore#//TestColumnStructuredData/sourceTableData"/>
-    </genClasses>
     <genClasses ecoreClass="test_input_data.ecore#//TestStrucuredFileData">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference test_input_data.ecore#//TestStrucuredFileData/testFileData"/>
     </genClasses>
@@ -356,20 +239,11 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference test_input_data.ecore#//UsefulInputDataSnippetsModule/snippets"/>
     </genClasses>
   </genPackages>
-  <genPackages prefix="Test_worked_example" basePackage="org.eclipse.efbt.aorta" resource="XML"
-      disposableProviderFactory="true" ecorePackage="test_worked_example.ecore#/">
-    <genClasses ecoreClass="test_worked_example.ecore#//TestWithWorkedExample">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference test_worked_example.ecore#//TestWithWorkedExample/workedExample"/>
-    </genClasses>
-  </genPackages>
   <genPackages prefix="Test" basePackage="org.eclipse.efbt.aorta" resource="XML" disposableProviderFactory="true"
       ecorePackage="test.ecore#/">
     <genClasses ecoreClass="test.ecore#//Result"/>
     <genClasses ecoreClass="test.ecore#//ReportCellResults">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference test.ecore#//ReportCellResults/reportCellValues"/>
-    </genClasses>
-    <genClasses ecoreClass="test.ecore#//DataSetResults">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference test.ecore#//DataSetResults/expectedResults"/>
     </genClasses>
     <genClasses ecoreClass="test.ecore#//E2ETest">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference test.ecore#//E2ETest/testDefinition"/>

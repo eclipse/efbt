@@ -65,6 +65,10 @@
 		<module>org.eclipse.efbt.common.model.module_management</module>
 		<module>org.eclipse.efbt.requirements.core.model.requirements_text</module>
 		<module>org.eclipse.efbt.functional_design.core.model.functionality_module</module>
+		<module>org.eclipse.efbt.input_data.smcubes.model.core</module>
+		<module>org.eclipse.efbt.common.model.functions</module>
+		<module>org.eclipse.efbt.testing.common.model.core</module>
+		
 		
 
 	</modules>

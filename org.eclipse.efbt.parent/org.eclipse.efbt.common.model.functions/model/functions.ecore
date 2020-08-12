@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="aortafunctions" nsURI="http://www.eclipse.org/aortafunctions"
-    nsPrefix="aortafunctions">
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="functions" nsURI="http://www.eclipse.org/functions" nsPrefix="functions">
   <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
     <details key="documentation" value="TheFunctions pckage cotain information about functions and their specifications. &#xA;Functions ae used in DataSetTransformations such as the ones for TRL and VTL. &#xA;Functions are also used in AttributeLineageModels an in SpreadsheetLineageModels.&#xA;"/>
   </eAnnotations>
@@ -79,24 +78,6 @@
       <details key="name" value="BooleanFunction"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CellsParameter" eSuperTypes="#//Parameter">
-    <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-      <details key="documentation" value="For SpreadsheetLineageModels, we use Functions which will have Cell parameters as opposed to Cube column Parameters.&#xA;            This is because we want to show the traceability of cells. "/>
-    </eAnnotations>
-    <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-      <details key="name" value="CellsParameter"/>
-      <details key="kind" value="empty"/>
-    </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cells" eType="ecore:EClass column_structured_data.ecore#//Cell">
-      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
-        <details key="documentation" value="The cell"/>
-      </eAnnotations>
-      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
-        <details key="kind" value="attribute"/>
-        <details key="name" value="cells"/>
-      </eAnnotations>
-    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Function" eSuperTypes="#//Parameter">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">

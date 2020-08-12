@@ -1,129 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature id="org.eclipse.efbt.aorta.feature"
 	label="Aorta Feature "
-	version="1.0.0.qualifier">
+	version="1.0.0.202008111458">
 	<plugin
 			id="org.eclipse.efbt.aorta"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="1124"
+			install-size="5376"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.aorta.ide"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="302"
+			install-size="1743"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.aorta.ui"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="20"
+			install-size="88"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.aorta.component.exporter"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="14"
+			install-size="28"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.aorta.ui.sirius.testmanager"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="7"
+			install-size="29"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.data_structures.smcubes.model.core"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="456"
+			install-size="1222"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.data_structures.smcubes.modelquery"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="7"
+			install-size="10"
+			version="1.0.0.202008111452"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.data_structures.smcubes.ui.sirius"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="8"
+			install-size="11"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.data_structures.smcubes.component.importexport.impl"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="15"
+			install-size="35"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.util.access.interface"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="3"
+			install-size="1"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.util.access.impl.jackcess"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="4"
+			install-size="4"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.util.access.provider"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="2"
+			install-size="1"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.util.csv.interface"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="2"
+			install-size="1"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.util.csv.impl.apachecsv"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="5"
+			install-size="5"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.util.csv.provider"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="2"
+			install-size="1"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.ldmtools.sqldevconvertor"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="8"
+			install-size="14"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 
 	<plugin
 			id="org.eclipse.efbt.common.model.module_management"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="31"
+			install-size="69"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.requirements.core.model.requirements_text"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="51"
+			install-size="123"
+			version="1.0.0.202008111458"
 			unpack="false"/>
 	<plugin
 			id="org.eclipse.efbt.functional_design.core.model.functionality_module"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
+			download-size="69"
+			install-size="163"
+			version="1.0.0.202008111458"
 			unpack="false"/>
-	<plugin
-			id="org.eclipse.efbt.input_data.smcubes.model.core"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
-			unpack="false"/>
-						
 			
 	
 </feature>

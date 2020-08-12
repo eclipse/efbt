@@ -16,6 +16,8 @@ import org.eclipse.efbt.aorta.data_lineage.Data_lineagePackage;
 import org.eclipse.efbt.aorta.dataset_based_functional_domain_breakdown.Dataset_based_functional_domain_breakdownPackage;
 import org.eclipse.efbt.aorta.deep_structures.Deep_structuresPackage;
 import org.eclipse.efbt.functional_design.core.model.functionality_module.Functionality_modulePackage;
+import org.eclipse.efbt.functional_design.core.model.scenarios.ScenariosPackage;
+import org.eclipse.efbt.requirements.core.model.requirements_text.Requirements_textPackage;
 import org.eclipse.efbt.aorta.execution_environments.Execution_environmentsPackage;
 import org.eclipse.efbt.aorta.input_data_structures.Input_data_structuresPackage;
 import org.eclipse.efbt.common.model.module_management.Module_managementPackage;
@@ -23,9 +25,9 @@ import org.eclipse.efbt.aorta.output_data_sets.Output_data_setsPackage;
 import org.eclipse.efbt.aorta.output_data_structures.Output_data_structuresPackage;
 import org.eclipse.efbt.aorta.report_based_report_based_functional_domain_breakdown.Report_based_report_based_functional_domain_breakdownPackage;
 import org.eclipse.efbt.aorta.report_structures.Report_structuresPackage;
-import org.eclipse.efbt.requirements.core.model.requirements_text.Requirements_textPackage;
+//import org.eclipse.efbt.requirements.core.model.requirements_text.Requirements_textPackage;
 import org.eclipse.efbt.aorta.requirements_artefacts.Requirements_artefactsPackage;
-import org.eclipse.efbt.functional_design.core.model.scenario.ScenariosPackage;
+//import org.eclipse.efbt.functional_design.core.model.scenario.ScenariosPackage;
 import org.eclipse.efbt.aorta.technical_specification_breakdown.Technical_specification_breakdownPackage;
 import org.eclipse.efbt.aorta.test_definition.Test_definitionPackage;
 import org.eclipse.efbt.aorta.test_input_data.Test_input_dataPackage;
@@ -55,29 +57,29 @@ public class AortaStandaloneSetup extends AortaStandaloneSetupGenerated {
 			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/aorta_program", Aorta_programPackage.eINSTANCE);
 		}
 
-		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/aortafunctions")) {
-			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/aortafunctions", AortafunctionsPackage.eINSTANCE);
-		}
-		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/base_column_structured_data")) {
-			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/base_column_structured_data",
-					Base_column_structured_dataPackage.eINSTANCE);
-		}
+		//if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/functions")) {
+		//	EPackage.Registry.INSTANCE.put("http://www.eclipse.org/functions", AortafunctionsPackage.eINSTANCE);
+		//}
+		//if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/base_column_structured_data")) {
+		//	EPackage.Registry.INSTANCE.put("http://www.eclipse.org/base_column_structured_data",
+		//			Base_column_structured_dataPackage.eINSTANCE);
+		//}
 
-		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/cell_transformation_logic")) {
-			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/cell_transformation_logic",
-					Cell_transformation_logicPackage.eINSTANCE);
-		}
-		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/column_structured_data")) {
-			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/column_structured_data",
-					Column_structured_dataPackage.eINSTANCE);
-		}
+		//if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/cell_transformation_logic")) {
+		//	EPackage.Registry.INSTANCE.put("http://www.eclipse.org/cell_transformation_logic",
+		//			Cell_transformation_logicPackage.eINSTANCE);
+		//}
+		//if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/column_structured_data")) {
+		//	EPackage.Registry.INSTANCE.put("http://www.eclipse.org/column_structured_data",
+		//			Column_structured_dataPackage.eINSTANCE);
+		//}
 		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/column_structures")) {
 			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/column_structures",
 					Column_structuresPackage.eINSTANCE);
 		}
-		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/data_lineage")) {
-			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/data_lineage", Data_lineagePackage.eINSTANCE);
-		}
+	//	if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/data_lineage")) {
+	//		EPackage.Registry.INSTANCE.put("http://www.eclipse.org/data_lineage", Data_lineagePackage.eINSTANCE);
+	//	}
 		if (!EPackage.Registry.INSTANCE
 				.containsKey("http://www.eclipse.org/dataset_based_functional_domain_breakdown")) {
 			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/dataset_based_functional_domain_breakdown",
