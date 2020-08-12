@@ -2,13 +2,14 @@ package org.eclipse.efbt.aorta.ui.sirius.testmanager;
 
 import java.util.Iterator;
 
+import org.eclipse.efbt.functional_design.core.model.functionality_module.FunctionalityModule;
+import org.eclipse.efbt.functional_design.core.model.functionality_module.ScenarioSetFunctionalityModule;
+import org.eclipse.efbt.functional_design.core.model.functionality_module.SerialFunctionalityModule;
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
-import org.eclipse.efbt.aorta.functionality_module.FunctionalityModule;
-import org.eclipse.efbt.aorta.functionality_module.ScenarioSetFunctionalityModule;
-import org.eclipse.efbt.aorta.functionality_module.SerialFunctionalityModule;
+
 
 /**
  * The services class used by VSM.

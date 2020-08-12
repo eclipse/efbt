@@ -1,50 +1,21 @@
 
 package org.eclipse.efbt.aorta.component.exporter;
 
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
-import java.util.function.Function;
 
-import org.eclipse.efbt.aorta.AortaRuntimeModule;
 import org.eclipse.efbt.aorta.AortaStandaloneSetup;
-import org.eclipse.emf.common.util.EList;
+import org.eclipse.efbt.aorta.aorta_program.Aorta_programPackage;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
-import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.eclipse.emf.mwe.utils.StandaloneSetup;
-import org.eclipse.xtext.naming.IQualifiedNameConverter;
-import org.eclipse.xtext.resource.IContainer;
-import org.eclipse.xtext.resource.IEObjectDescription;
-import org.eclipse.xtext.resource.IResourceDescription;
-import org.eclipse.xtext.resource.IResourceDescription.Manager;
-import org.eclipse.xtext.resource.IResourceDescriptions;
-import org.eclipse.xtext.resource.IResourceServiceProvider;
-import org.eclipse.xtext.resource.IResourceServiceProvider.Registry;
 import org.eclipse.xtext.resource.XtextResourceSet;
-import org.eclipse.xtext.resource.containers.DelegatingIAllContainerAdapter;
-import org.eclipse.xtext.resource.containers.ResourceSetBasedAllContainersState;
-import org.eclipse.xtext.resource.containers.ResourceSetBasedAllContainersStateProvider;
-import org.eclipse.xtext.resource.impl.ResourceDescriptionsData;
-import org.eclipse.xtext.resource.impl.ResourceDescriptionsProvider;
-import org.eclipse.xtext.scoping.IScopeProvider;
-import org.eclipse.xtext.serializer.impl.Serializer;
 
-import com.google.common.collect.HashMultimap;
-import com.google.common.collect.Iterables;
-import com.google.common.collect.Lists;
-import com.google.inject.Guice;
-import com.google.inject.Inject;
 import com.google.inject.Injector;
-
-import org.eclipse.efbt.aorta.aorta_program.Aorta_programPackage;
 
 /**
  * XMLToXTextConverter is responsible for taking an ecore model instance

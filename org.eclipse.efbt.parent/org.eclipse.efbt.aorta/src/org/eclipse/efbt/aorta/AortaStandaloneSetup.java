@@ -5,6 +5,7 @@ package org.eclipse.efbt.aorta;
 
 import com.google.inject.Injector;
 
+import org.eclipse.efbt.aorta.aorta_program.Aorta_programPackage;
 import org.eclipse.efbt.common.model.module_management.Module_managementPackage;
 import org.eclipse.efbt.functional_design.core.model.functionality_module.Functionality_modulePackage;
 import org.eclipse.efbt.functional_design.core.model.scenarios.ScenariosPackage;

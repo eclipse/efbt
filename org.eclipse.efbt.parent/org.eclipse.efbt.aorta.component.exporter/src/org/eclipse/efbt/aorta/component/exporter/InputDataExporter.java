@@ -11,21 +11,21 @@ import java.util.List;
 import java.util.Map.Entry;
 import java.util.Set;
 
+import org.eclipse.efbt.aorta.aorta_program.Program;
+import org.eclipse.efbt.aorta.aorta_program.SMCubesTestInputData;
+import org.eclipse.efbt.data_structures.smcubes.model.data_definition.CUBE;
+import org.eclipse.efbt.data_structures.smcubes.model.data_definition.CUBE_STRUCTURE_ITEM;
+import org.eclipse.efbt.input_data.smcubes.model.base_column_structured_data.BaseCell;
+import org.eclipse.efbt.input_data.smcubes.model.base_column_structured_data.BaseCellWithEnumeratedValue;
+import org.eclipse.efbt.input_data.smcubes.model.base_column_structured_data.BaseCellWithValue;
+import org.eclipse.efbt.input_data.smcubes.model.base_column_structured_data.BaseColumnStructuredData;
+import org.eclipse.efbt.input_data.smcubes.model.base_column_structured_data.BaseRowData;
+import org.eclipse.efbt.testing.common.model.test.E2ETest;
+import org.eclipse.efbt.testing.common.model.test.TestModule;
+import org.eclipse.efbt.testing.common.model.test_input_data.TestInputData;
 import org.eclipse.emf.common.util.EList;
 
-import org.eclipse.efbt.aorta.aorta_program.Program;
-import org.eclipse.efbt.aorta.base_column_structured_data.BaseCell;
-import org.eclipse.efbt.aorta.base_column_structured_data.BaseCellWithEnumeratedValue;
-import org.eclipse.efbt.aorta.base_column_structured_data.BaseCellWithValue;
-import org.eclipse.efbt.aorta.base_column_structured_data.BaseColumnStructuredData;
-import org.eclipse.efbt.aorta.base_column_structured_data.BaseRowData;
-import org.eclipse.efbt.aorta.column_structures.Column;
-import org.eclipse.efbt.aorta.column_structures.ColumnStructuredEntity;
-import org.eclipse.efbt.aorta.test.E2ETest;
 
-import org.eclipse.efbt.aorta.test.TestModule;
-import org.eclipse.efbt.aorta.test_input_data.TestColumnStructuredData;
-import org.eclipse.efbt.aorta.test_input_data.TestInputData;
 
 /**
  * InputDataExporter is responsible for exporting the input data of Aorta tests
@@ -37,7 +37,7 @@ import org.eclipse.efbt.aorta.test_input_data.TestInputData;
  */
 public class InputDataExporter {
 
-	public HashMap<ColumnStructuredEntity, FileWriter> fileHashMap = new HashMap<ColumnStructuredEntity, FileWriter>();
+	public HashMap<CUBE, FileWriter> fileHashMap = new HashMap<CUBE, FileWriter>();
 
 	/**
 	 * Given an Aorta Program model instance, this method exports the input test
@@ -57,8 +57,8 @@ public class InputDataExporter {
 		for (Iterator iterator = tests.iterator(); iterator.hasNext();) {
 			E2ETest e2eTest = (E2ETest) iterator.next();
 
-			TestColumnStructuredData inputData = (TestColumnStructuredData) e2eTest.getInputData();
-			EList<BaseColumnStructuredData> tables = inputData.getSourceTableData();
+			SMCubesTestInputData inputData = (SMCubesTestInputData) e2eTest.getInputData();
+			EList<BaseColumnStructuredData> tables = inputData.getSmcubes_inputdata();
 
 			// for each table find the header structure for the csv file, add this to the
 			// file
@@ -66,9 +66,9 @@ public class InputDataExporter {
 			for (Iterator iterator2 = tables.iterator(); iterator2.hasNext();) {
 				BaseColumnStructuredData baseColumnStructuredData = (BaseColumnStructuredData) iterator2.next();
 
-				ColumnStructuredEntity columnStructuredEntity = baseColumnStructuredData.getCube();
+				CUBE columnStructuredEntity = baseColumnStructuredData.getCube();
 
-				EList<Column> columns = columnStructuredEntity.getColumn();
+				EList<CUBE_STRUCTURE_ITEM> columns = getCubseStructureItems( columnStructuredEntity);
 				List<String> orderedColumns = getAlphabeticallyOrderedColumns(columns);
 
 				FileWriter theFile = fileHashMap.get(columnStructuredEntity);
@@ -98,6 +98,11 @@ public class InputDataExporter {
 
 		}
 
+	}
+
+	private EList<CUBE_STRUCTURE_ITEM> getCubseStructureItems(CUBE columnStructuredEntity) {
+		// TODO complete this
+		return null;
 	}
 
 	/**
@@ -194,13 +199,13 @@ public class InputDataExporter {
 	 * @param columns
 	 * @return
 	 */
-	private List<String> getAlphabeticallyOrderedColumns(EList<Column> columns) {
+	private List<String> getAlphabeticallyOrderedColumns(EList<CUBE_STRUCTURE_ITEM> columns) {
 
 		List<String> columnNames = new ArrayList<String>();
 
 		for (Iterator iterator = columns.iterator(); iterator.hasNext();) {
-			Column column = (Column) iterator.next();
-			columnNames.add(column.getName());
+			CUBE_STRUCTURE_ITEM column = (CUBE_STRUCTURE_ITEM) iterator.next();
+			columnNames.add(column.getCube_variable_code());
 
 		}
 		java.util.Collections.sort(columnNames, Collator.getInstance());

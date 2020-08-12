@@ -3,6 +3,14 @@
  */
 package org.eclipse.efbt.aorta.scoping;
 
+import org.eclipse.efbt.testing.common.model.test_definition.Clause;
+import org.eclipse.efbt.testing.common.model.test_definition.Given;
+import org.eclipse.efbt.testing.common.model.test_definition.Param;
+import org.eclipse.efbt.testing.common.model.test_definition.TestContraints;
+import org.eclipse.efbt.testing.common.model.test_definition.TestDefinition;
+import org.eclipse.efbt.testing.common.model.test_definition.TestTemplate;
+import org.eclipse.efbt.testing.common.model.test_definition.Then;
+import org.eclipse.efbt.testing.common.model.test_definition.When;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.scoping.IScope;
 import org.eclipse.emf.ecore.EReference;
@@ -15,14 +23,7 @@ import java.util.List;
 
 import org.apache.log4j.LogManager;
 
-import org.eclipse.efbt.aorta.test_definition.Param;
-import org.eclipse.efbt.aorta.test_definition.TestContraints;
-import org.eclipse.efbt.aorta.test_definition.Clause;
-import org.eclipse.efbt.aorta.test_definition.TestDefinition;
-import org.eclipse.efbt.aorta.test_definition.TestTemplate;
-import org.eclipse.efbt.aorta.test_definition.Given;
-import org.eclipse.efbt.aorta.test_definition.When;
-import org.eclipse.efbt.aorta.test_definition.Then;
+
 
 /**
  * This class contains custom scoping description.
