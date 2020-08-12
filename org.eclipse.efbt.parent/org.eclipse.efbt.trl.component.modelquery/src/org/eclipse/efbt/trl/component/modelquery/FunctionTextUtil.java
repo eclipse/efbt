@@ -18,10 +18,10 @@ import org.eclipse.efbt.almengine.model.functions.functions.MemberParameter;
 import org.eclipse.efbt.almengine.model.functions.functions.ResolvedCubeColumnParameter;
 import org.eclipse.efbt.almengine.model.functions.functions.SpeculativeCubeColumnParameter;
 import org.eclipse.efbt.almengine.model.functions.functions.ValueParameter;
-import org.eclipse.efbt.aorta.aortafunctions.AggregateFunction;
-import org.eclipse.efbt.aorta.aortafunctions.BasicFunction;
-import org.eclipse.efbt.aorta.aortafunctions.CellsParameter;
-import org.eclipse.efbt.aorta.aortafunctions.Parameter;
+import org.eclipse.efbt.chirp.chirpfunctions.AggregateFunction;
+import org.eclipse.efbt.chirp.chirpfunctions.BasicFunction;
+import org.eclipse.efbt.chirp.chirpfunctions.CellsParameter;
+import org.eclipse.efbt.chirp.chirpfunctions.Parameter;
 import org.eclipse.emf.common.util.EList;
 
 

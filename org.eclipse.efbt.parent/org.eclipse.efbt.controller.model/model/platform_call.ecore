@@ -110,7 +110,7 @@
         <details key="name" value="outputdir"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="programInputs" eType="ecore:EClass ../../org.eclipse.efbt.aorta/model/base_column_structured_data.ecore#//InputData">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="programInputs" eType="ecore:EClass ../../org.eclipse.efbt.chirp/model/base_column_structured_data.ecore#//InputData">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The program Inputs"/>
       </eAnnotations>

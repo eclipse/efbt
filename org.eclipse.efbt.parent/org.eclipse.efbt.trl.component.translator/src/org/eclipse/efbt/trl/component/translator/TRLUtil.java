@@ -67,12 +67,12 @@ import org.eclipse.efbt.almengine.model.functions.functions.CubeColumn;
 import org.eclipse.efbt.almengine.model.functions.functions.FunctionsFactory;
 import org.eclipse.efbt.almengine.model.functions.functions.MemberParameter;
 import org.eclipse.efbt.almengine.model.functions.functions.SpeculativeCubeColumnParameter;
-import org.eclipse.efbt.aorta.aortafunctions.AggregateFunction;
-import org.eclipse.efbt.aorta.aortafunctions.AortafunctionsFactory;
-import org.eclipse.efbt.aorta.aortafunctions.BasicFunction;
-import org.eclipse.efbt.aorta.aortafunctions.BooleanFunction;
-import org.eclipse.efbt.aorta.functionality_module.FunctionalityModuleTag;
-import org.eclipse.efbt.aorta.functionality_module.LeafFunctionalityModule;
+import org.eclipse.efbt.chirp.chirpfunctions.AggregateFunction;
+import org.eclipse.efbt.chirp.chirpfunctions.ChirpfunctionsFactory;
+import org.eclipse.efbt.chirp.chirpfunctions.BasicFunction;
+import org.eclipse.efbt.chirp.chirpfunctions.BooleanFunction;
+import org.eclipse.efbt.chirp.functionality_module.FunctionalityModuleTag;
+import org.eclipse.efbt.chirp.functionality_module.LeafFunctionalityModule;
 import org.eclipse.efbt.bird.bird_model.BIRDModel;
 import org.eclipse.efbt.bird.core.DOMAIN;
 import org.eclipse.efbt.bird.core.MEMBER;
@@ -171,7 +171,7 @@ public class TRLUtil {
 
           calculatedColumn.setVariable(column.getVariable());
           calculatedColumn.setCube(view.getCube());
-          BasicFunction function = AortafunctionsFactory.eINSTANCE.createBasicFunction();
+          BasicFunction function = ChirpfunctionsFactory.eINSTANCE.createBasicFunction();
           function.setFunctionSpec(specialFunctions.copyColumnSpec);
           SpeculativeCubeColumnParameter columnParameter = FunctionsFactory.eINSTANCE
               .createSpeculativeCubeColumnParameter();
@@ -197,7 +197,7 @@ public class TRLUtil {
               ":" + column.getVariable_id());
           calculatedColumn.setVariable(column);
           calculatedColumn.setCube(view.getCube());
-          BasicFunction function = AortafunctionsFactory.eINSTANCE.createBasicFunction();
+          BasicFunction function = ChirpfunctionsFactory.eINSTANCE.createBasicFunction();
           function.setFunctionSpec(specialFunctions.copyColumnSpec);
           SpeculativeCubeColumnParameter columnParameter = FunctionsFactory.eINSTANCE
               .createSpeculativeCubeColumnParameter();
@@ -237,7 +237,7 @@ public class TRLUtil {
               ":" + column.getVariable_id());
           calculatedColumn.setVariable(column);
           calculatedColumn.setCube(view.getCube());
-          AggregateFunction function = AortafunctionsFactory.eINSTANCE.createAggregateFunction();
+          AggregateFunction function = ChirpfunctionsFactory.eINSTANCE.createAggregateFunction();
           function.setFunctionSpec(specialFunctions.firstColumnSpec);
 
           SpeculativeCubeColumnParameter columnParameter = FunctionsFactory.eINSTANCE
@@ -273,7 +273,7 @@ public class TRLUtil {
                 ":" + column.getVariable_id());
             calculatedColumn.setVariable(column);
             calculatedColumn.setCube(view.getCube());
-            AggregateFunction function = AortafunctionsFactory.eINSTANCE.createAggregateFunction();
+            AggregateFunction function = ChirpfunctionsFactory.eINSTANCE.createAggregateFunction();
             function.setFunctionSpec(specialFunctions.firstColumnSpec);
 
             SpeculativeCubeColumnParameter columnParameter = FunctionsFactory.eINSTANCE
@@ -315,7 +315,7 @@ public class TRLUtil {
 
             calculatedColumn.setVariable(replacedColumn);
             calculatedColumn.setCube(view.getCube());
-            BasicFunction function = AortafunctionsFactory.eINSTANCE.createBasicFunction();
+            BasicFunction function = ChirpfunctionsFactory.eINSTANCE.createBasicFunction();
             function.setFunctionSpec(specialFunctions.copyColumnSpec);
             SpeculativeCubeColumnParameter columnParameter = FunctionsFactory.eINSTANCE
                 .createSpeculativeCubeColumnParameter();
@@ -347,7 +347,7 @@ public class TRLUtil {
                 ":" + replacedColumn.getVariable_id());
             calculatedColumn.setVariable(replacedColumn);
             calculatedColumn.setCube(view.getCube());
-            BasicFunction function = AortafunctionsFactory.eINSTANCE.createBasicFunction();
+            BasicFunction function = ChirpfunctionsFactory.eINSTANCE.createBasicFunction();
             function.setFunctionSpec(specialFunctions.copyColumnSpec);
             SpeculativeCubeColumnParameter columnParameter = FunctionsFactory.eINSTANCE
                 .createSpeculativeCubeColumnParameter();
@@ -396,7 +396,7 @@ public class TRLUtil {
 
             calculatedColumn.setVariable(column.getVariable());
             calculatedColumn.setCube(view.getCube());
-            BasicFunction function = AortafunctionsFactory.eINSTANCE.createBasicFunction();
+            BasicFunction function = ChirpfunctionsFactory.eINSTANCE.createBasicFunction();
             function.setFunctionSpec(specialFunctions.copyColumnSpec);
             calculatedColumn.setBasicFunction(function);
             cubeTransformationLogic .getColumnFunctionGroup().getColumnFunctions().add(calculatedColumn);
@@ -438,7 +438,7 @@ public class TRLUtil {
 
             calculatedColumn.setVariable(column);
             calculatedColumn.setCube(view.getCube());
-            BasicFunction function = AortafunctionsFactory.eINSTANCE.createBasicFunction();
+            BasicFunction function = ChirpfunctionsFactory.eINSTANCE.createBasicFunction();
             function.setFunctionSpec(specialFunctions.copyColumnSpec);
             calculatedColumn.setBasicFunction(function);
             cubeTransformationLogic .getColumnFunctionGroup().getColumnFunctions().add(calculatedColumn);
@@ -483,7 +483,7 @@ public class TRLUtil {
             ":" + measure.getVariable_id());
         calculatedColumn.setVariable(measure);
         calculatedColumn.setCube(view.getCube());
-        AggregateFunction function = AortafunctionsFactory.eINSTANCE.createAggregateFunction();
+        AggregateFunction function = ChirpfunctionsFactory.eINSTANCE.createAggregateFunction();
         function.setFunctionSpec(specialFunctions.sumColumnSpec);
 
         SpeculativeCubeColumnParameter columnParameter = FunctionsFactory.eINSTANCE
@@ -507,7 +507,7 @@ public class TRLUtil {
           calculatedColumnForDimension.setVariable(dimension);
           calculatedColumnForDimension.setCube(view.getCube());
           AggregateFunction functionForDimension =
-              AortafunctionsFactory.eINSTANCE.createAggregateFunction();
+              ChirpfunctionsFactory.eINSTANCE.createAggregateFunction();
           functionForDimension.setFunctionSpec(specialFunctions.firstColumnSpec);
           calculatedColumnForDimension.setAggregateFunction(functionForDimension);
 
@@ -592,7 +592,7 @@ public class TRLUtil {
 					 
 					 calculatedColumn.setVariable(column);
 					 calculatedColumn.setCube(view.getCube());
-					 BasicFunction function= AortafunctionsFactory.eINSTANCE.createBasicFunction();
+					 BasicFunction function= ChirpfunctionsFactory.eINSTANCE.createBasicFunction();
 					 function.setFunctionSpec(specialFunctions.copyColumnSpec);
 					 calculatedColumn.setBasicFunction(function);
 					 cubeTransformationLogic.getColumnFunctionGroup().getColumnFunctions().add(calculatedColumn);
@@ -684,7 +684,7 @@ public class TRLUtil {
 					 
 					 calculatedColumn.setVariable(column);
 					 calculatedColumn.setCube(view.getCube());
-					 BasicFunction function= AortafunctionsFactory.eINSTANCE.createBasicFunction();
+					 BasicFunction function= ChirpfunctionsFactory.eINSTANCE.createBasicFunction();
 					 function.setFunctionSpec(specialFunctions.copyColumnSpec);
 					 calculatedColumn.setBasicFunction(function);
 					 cubeTransformationLogic.getColumnFunctionGroup().getColumnFunctions().add(calculatedColumn);
@@ -775,7 +775,7 @@ public class TRLUtil {
       FilterAndGroupToOneRowCreationApproach rowFilterAndGroupFunction = Row_transformation_logicFactoryImpl.eINSTANCE
           .createFilterAndGroupToOneRowCreationApproach();
      
-      BooleanFunction bf = AortafunctionsFactory.eINSTANCE.createBooleanFunction();
+      BooleanFunction bf = ChirpfunctionsFactory.eINSTANCE.createBooleanFunction();
       // this is a hack to make it work for 1 dimension, we need
       // to change to make it work for multiple dimensions
     
@@ -785,7 +785,7 @@ public class TRLUtil {
         COMBINATION_ITEM dimValue = dimensionValues.next();
        
         rowFilterAndGroupFunction.getGroupByVariables().add(dimValue.getVariable_id());
-        BooleanFunction bf2 = AortafunctionsFactory.eINSTANCE.createBooleanFunction();
+        BooleanFunction bf2 = ChirpfunctionsFactory.eINSTANCE.createBooleanFunction();
         bf2.setFunctionSpec(specialFunctions.equalsSpec);
 
         SpeculativeCubeColumnParameter param = FunctionsFactory.eINSTANCE.createSpeculativeCubeColumnParameter();

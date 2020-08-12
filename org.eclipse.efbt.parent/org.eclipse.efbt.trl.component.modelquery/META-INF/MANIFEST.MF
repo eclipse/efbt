@@ -10,7 +10,7 @@ Require-Bundle: org.eclipse.emf.common,
  org.eclipse.efbt.almengine.model.cubes,
  org.eclipse.efbt.trl.model.trl,
  org.eclipse.efbt.navigation_context.model,
- org.eclipse.efbt.aorta,
+ org.eclipse.efbt.chirp,
  org.eclipse.efbt.almengine.model.functions
 Export-Package: org.eclipse.efbt.trl.component.modelquery
 Import-Package: org.eclipse.efbt.trl.component.translator

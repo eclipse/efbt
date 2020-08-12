@@ -19,7 +19,7 @@ import org.eclipse.efbt.controller.model.platform_call.GetAttributeLineageModel;
 import org.eclipse.efbt.controller.model.platform_call.Platform_callPackage;
 import org.eclipse.efbt.almengine.model.attribute_lineage.attribute_lineage.AttributeLineageModel;
 import org.eclipse.efbt.almengine.model.attribute_lineage.attribute_lineage.Attribute_lineageFactory;
-import org.eclipse.efbt.aorta.aortafunctions.AortafunctionsFactory;
+import org.eclipse.efbt.chirp.chirpfunctions.ChirpfunctionsFactory;
 import org.eclipse.efbt.trl.model.trl.transformation.VersionedFunctionalModuleLogic;
 import org.eclipse.efbt.trl.model.trl.trl_report_cell_views.ReportCellView;
 import org.eclipse.efbt.trl.model.trl.trl_report_cell_views.ReportCellViewModule;

@@ -12,8 +12,8 @@
  *******************************************************************************/
 package org.eclipse.efbt.trl.component.translator;
 
-import org.eclipse.efbt.aorta.aortafunctions.AggregateFunctionSpec;
-import org.eclipse.efbt.aorta.aortafunctions.BasicFunctionSpec;
+import org.eclipse.efbt.chirp.chirpfunctions.AggregateFunctionSpec;
+import org.eclipse.efbt.chirp.chirpfunctions.BasicFunctionSpec;
 
 /**
  * @author Neil Mackenzie

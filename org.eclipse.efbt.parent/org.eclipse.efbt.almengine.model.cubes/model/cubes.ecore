@@ -35,7 +35,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FreeBirdToolsCube" eSuperTypes="../../org.eclipse.efbt.aorta/model/column_structures.ecore#//ColumnStructuredEntity">
+  <eClassifiers xsi:type="ecore:EClass" name="FreeBirdToolsCube" eSuperTypes="../../org.eclipse.efbt.chirp/model/column_structures.ecore#//ColumnStructuredEntity">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value=" A cube of the FreeBIRDTools platform&#xA;The FreeBirdToolsCube class is a lightweight class which effectively just has a name, which allows us to define a very high level outline of the relationships between cubes."/>
     </eAnnotations>

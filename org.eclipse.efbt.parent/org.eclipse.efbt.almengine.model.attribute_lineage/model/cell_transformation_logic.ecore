@@ -16,7 +16,7 @@
       <details key="name" value="FormulaCell"/>
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="function" eType="ecore:EClass aortafunctions.ecore#//Function"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="function" eType="ecore:EClass chirpfunctions.ecore#//Function"
         containment="true">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The  Function which derived the cell value."/>
@@ -114,7 +114,7 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FunctionTag" eSuperTypes="../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore#//Tag">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="function" eType="ecore:EClass aortafunctions.ecore#//Function"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="function" eType="ecore:EClass chirpfunctions.ecore#//Function"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FormulaCellTag" eSuperTypes="../../org.eclipse.efbt.requirements.core.model.requirements_text/model/requirements_text.ecore#//Tag">
     <eStructuralFeatures xsi:type="ecore:EReference" name="formulaCell" eType="#//FormulaCell"/>

@@ -65,7 +65,7 @@ import com.ibm.icu.text.UTF16;
 /**
  * This class is respnsable for structure data taking data from the BIRD
  * Access Database and also data in CSV defining Test data, and creates 
- * instances of the Aorta Program model.
+ * instances of the Chirp Program model.
  *  
  * @author Neil Mackenzie
  *

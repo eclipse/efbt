@@ -1,7 +1,7 @@
 package org.eclipse.efbt.trl.component.modelquery;
 
-import org.eclipse.efbt.aorta.functionality_module.FunctionalityModuleTag;
-import org.eclipse.efbt.aorta.functionality_module.LeafFunctionalityModule;
+import org.eclipse.efbt.chirp.functionality_module.FunctionalityModuleTag;
+import org.eclipse.efbt.chirp.functionality_module.LeafFunctionalityModule;
 import org.eclipse.efbt.navigation_context.model.navigation_context.NavigationContext;
 import org.eclipse.efbt.trl.component.translator.TRLUtil;
 import org.eclipse.efbt.trl.model.trl.domain_model_mapping.DomainMappingModule;

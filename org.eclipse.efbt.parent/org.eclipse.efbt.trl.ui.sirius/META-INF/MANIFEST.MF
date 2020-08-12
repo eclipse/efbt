@@ -12,7 +12,7 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.sirius.common.acceleo.aql,
  org.eclipse.efbt.trl.model.trl,
  org.eclipse.efbt.almengine.model.cubes,
- org.eclipse.efbt.aorta,
+ org.eclipse.efbt.chirp,
  org.eclipse.efbt.trl.component.modelquery,
  org.eclipse.emf.common
 Bundle-ActivationPolicy: lazy

@@ -3,33 +3,33 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="domain_model_mapping" nsURI="http://www.eclipse.org/domain_model_mapping"
     nsPrefix="domain_model_mapping">
   <eClassifiers xsi:type="ecore:EClass" name="LeafModuleToVersionedSQLViewsModule">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="scheme" eType="ecore:EClass ../../org.eclipse.efbt.aorta/model/functionality_module.ecore#//LeafFunctionalityModule"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scheme" eType="ecore:EClass ../../org.eclipse.efbt.chirp/model/functionality_module.ecore#//LeafFunctionalityModule"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="module" eType="ecore:EClass trl_sql_views.ecore#//VersionedSQLViewsModule"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LeafModuleToVersionedCubeSchemaModule">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="scheme" eType="ecore:EClass ../../org.eclipse.efbt.aorta/model/functionality_module.ecore#//LeafFunctionalityModule"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scheme" eType="ecore:EClass ../../org.eclipse.efbt.chirp/model/functionality_module.ecore#//LeafFunctionalityModule"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="module" eType="ecore:EClass transformation.ecore#//VersionedCubeSchemaModule"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LeafModuleToReportCellViewModule">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="scheme" eType="ecore:EClass ../../org.eclipse.efbt.aorta/model/functionality_module.ecore#//LeafFunctionalityModule"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scheme" eType="ecore:EClass ../../org.eclipse.efbt.chirp/model/functionality_module.ecore#//LeafFunctionalityModule"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="module" eType="ecore:EClass trl_report_cell_views.ecore#//ReportCellViewModule"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ScenarioToCodeConditions">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="scenario" eType="ecore:EClass ../../org.eclipse.efbt.aorta/model/scenarios.ecore#//Scenario"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scenario" eType="ecore:EClass ../../org.eclipse.efbt.chirp/model/scenarios.ecore#//Scenario"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="codeConditions" upperBound="-1"
         eType="#//CodeCondition" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CodeCondition"/>
   <eClassifiers xsi:type="ecore:EClass" name="ColumnSettingCondition" eSuperTypes="#//CodeCondition">
     <eStructuralFeatures xsi:type="ecore:EReference" name="cube" eType="ecore:EClass ../../org.eclipse.efbt.almengine.model.cubes/model/cubes.ecore#//FreeBirdToolsCube"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="variable" eType="ecore:EClass ../../org.eclipse.efbt.aorta/model/column_structures.ecore#//Column"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="filterConditions" eType="ecore:EClass ../../org.eclipse.efbt.aorta/model/column_structures.ecore#//ColumnStructuredEntity"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="variable" eType="ecore:EClass ../../org.eclipse.efbt.chirp/model/column_structures.ecore#//Column"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="filterConditions" eType="ecore:EClass ../../org.eclipse.efbt.chirp/model/column_structures.ecore#//ColumnStructuredEntity"
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DataSetFilterCondition" eSuperTypes="#//CodeCondition">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="filterConditions" eType="ecore:EClass ../../org.eclipse.efbt.aorta/model/aortafunctions.ecore#//BooleanFunction"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="filterConditions" eType="ecore:EClass ../../org.eclipse.efbt.chirp/model/chirpfunctions.ecore#//BooleanFunction"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cube" eType="ecore:EClass ../../org.eclipse.efbt.aorta/model/column_structures.ecore#//ColumnStructuredEntity"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cube" eType="ecore:EClass ../../org.eclipse.efbt.chirp/model/column_structures.ecore#//ColumnStructuredEntity"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="UnionChoiceCondition" eSuperTypes="#//CodeCondition">
     <eStructuralFeatures xsi:type="ecore:EReference" name="cube" eType="ecore:EClass ../../org.eclipse.efbt.almengine.model.cubes/model/cubes.ecore#//FreeBirdToolsCube"/>

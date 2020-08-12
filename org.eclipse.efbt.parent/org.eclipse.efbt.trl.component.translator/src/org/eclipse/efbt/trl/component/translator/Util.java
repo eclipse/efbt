@@ -38,11 +38,11 @@ import org.eclipse.efbt.almengine.model.functions.functions.CubeColumn;
 import org.eclipse.efbt.almengine.model.functions.functions.FunctionsFactory;
 import org.eclipse.efbt.almengine.model.functions.functions.ResolvedCubeColumnParameter;
 import org.eclipse.efbt.almengine.model.functions.functions.SpeculativeCubeColumnParameter;
-import org.eclipse.efbt.aorta.aortafunctions.AggregateFunctionSpec;
-import org.eclipse.efbt.aorta.aortafunctions.AortafunctionsFactory;
-import org.eclipse.efbt.aorta.aortafunctions.BasicFunctionSpec;
-import org.eclipse.efbt.aorta.aortafunctions.Function;
-import org.eclipse.efbt.aorta.report_based_report_based_functional_domain_breakdown.ReportCellCreationFunctionalityModule;
+import org.eclipse.efbt.chirp.chirpfunctions.AggregateFunctionSpec;
+import org.eclipse.efbt.chirp.chirpfunctions.ChirpfunctionsFactory;
+import org.eclipse.efbt.chirp.chirpfunctions.BasicFunctionSpec;
+import org.eclipse.efbt.chirp.chirpfunctions.Function;
+import org.eclipse.efbt.chirp.report_based_report_based_functional_domain_breakdown.ReportCellCreationFunctionalityModule;
 import org.eclipse.efbt.bird.core.VARIABLE;
 import org.eclipse.efbt.bird.data_definition.CUBE;
 import org.eclipse.efbt.bird.data_definition.CUBE_STRUCTURE;
@@ -81,7 +81,7 @@ public class Util {
    */
   public static SpecialFunctionSpecs setSpecialFucntions(AttributeLineageModel attributeLineageModel) {
     SpecialFunctionSpecs specialFunctions = new SpecialFunctionSpecs();
-    BasicFunctionSpec copyColumnSpec = AortafunctionsFactory.eINSTANCE.createBasicFunctionSpec();
+    BasicFunctionSpec copyColumnSpec = ChirpfunctionsFactory.eINSTANCE.createBasicFunctionSpec();
     copyColumnSpec.setIsInfix(false);
     copyColumnSpec.setName("CopyColumn");
     copyColumnSpec.setFunctionalName("funcs.CopyColumn");
@@ -90,7 +90,7 @@ public class Util {
     attributeLineageModel.getSpecialFunctionSpecs().add(copyColumnSpec);
     specialFunctions.copyColumnSpec = copyColumnSpec;
 
-    AggregateFunctionSpec firstColumnSpec = AortafunctionsFactory.eINSTANCE.createAggregateFunctionSpec();
+    AggregateFunctionSpec firstColumnSpec = ChirpfunctionsFactory.eINSTANCE.createAggregateFunctionSpec();
 
     firstColumnSpec.setName("First");
     firstColumnSpec.setFunctionalName("funcs.First");
@@ -99,7 +99,7 @@ public class Util {
     attributeLineageModel.getSpecialFunctionSpecs().add(firstColumnSpec);
     specialFunctions.firstColumnSpec = firstColumnSpec;
 
-    AggregateFunctionSpec sumColumnSpec = AortafunctionsFactory.eINSTANCE.createAggregateFunctionSpec();
+    AggregateFunctionSpec sumColumnSpec = ChirpfunctionsFactory.eINSTANCE.createAggregateFunctionSpec();
 
     sumColumnSpec.setName("SUM");
     sumColumnSpec.setFunctionalName("funcs.SUM");
@@ -108,7 +108,7 @@ public class Util {
     attributeLineageModel.getSpecialFunctionSpecs().add(sumColumnSpec);
     specialFunctions.sumColumnSpec = sumColumnSpec;
 
-    BasicFunctionSpec equalsSpec = AortafunctionsFactory.eINSTANCE.createBasicFunctionSpec();
+    BasicFunctionSpec equalsSpec = ChirpfunctionsFactory.eINSTANCE.createBasicFunctionSpec();
     equalsSpec.setName("isEqualTo");
     equalsSpec.setFunctionalName("=");
     equalsSpec.setIsInfix(true);

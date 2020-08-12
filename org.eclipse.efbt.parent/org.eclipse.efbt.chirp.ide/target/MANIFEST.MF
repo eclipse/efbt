@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.eclipse.efbt.chirp.ide
+Bundle-SymbolicName: org.eclipse.efbt.chirp.ide; singleton:=true
+Export-Package: org.eclipse.efbt.chirp.ide.contentassist.antlr.interna
+ l,org.eclipse.efbt.chirp.ide.contentassist.antlr
+Bundle-Name: org.eclipse.efbt.chirp.ide
+Bundle-Version: 1.0.0.202008121805
+Require-Bundle: org.eclipse.efbt.chirp,org.eclipse.xtext,org.eclipse.x
+ text.ide,org.eclipse.xtext.xbase.ide,org.antlr.runtime;bundle-version
+ ="[3.2.0,3.2.1)"
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: My Company
+
