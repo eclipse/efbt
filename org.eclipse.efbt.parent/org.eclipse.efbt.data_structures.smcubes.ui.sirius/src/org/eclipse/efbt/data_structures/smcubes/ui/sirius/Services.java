@@ -4,7 +4,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.efbt.data_structures.smcubes.model.core.DOMAIN;
 import org.eclipse.efbt.data_structures.smcubes.model.core.MEMBER;
-import org.eclipse.efbt.data_structures.smcubes.modelquery.CustomQuery;
+import org.eclipse.efbt.data_structures.smcubes.modelquery.core.CustomQuery;
 
 /**
  * The services class used by VSM.

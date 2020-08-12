@@ -70,9 +70,6 @@
   </genPackages>
   <genPackages prefix="Test_input_data" basePackage="org.eclipse.efbt.testing.common.model"
       resource="XML" disposableProviderFactory="true" ecorePackage="test_input_data.ecore#/">
-    <genClasses ecoreClass="test_input_data.ecore#//StructuredFile">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute test_input_data.ecore#//StructuredFile/fileLocation"/>
-    </genClasses>
     <genClasses ecoreClass="test_input_data.ecore#//InputDataModule">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference test_input_data.ecore#//InputDataModule/inputData"/>
     </genClasses>
@@ -83,9 +80,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute test_input_data.ecore#//TestInputData/name"/>
     </genClasses>
     <genClasses ecoreClass="test_input_data.ecore#//ExternalTestData"/>
-    <genClasses ecoreClass="test_input_data.ecore#//TestStrucuredFileData">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference test_input_data.ecore#//TestStrucuredFileData/testFileData"/>
-    </genClasses>
     <genClasses ecoreClass="test_input_data.ecore#//UsefulInputDataSnippetsModule">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference test_input_data.ecore#//UsefulInputDataSnippetsModule/snippets"/>
     </genClasses>

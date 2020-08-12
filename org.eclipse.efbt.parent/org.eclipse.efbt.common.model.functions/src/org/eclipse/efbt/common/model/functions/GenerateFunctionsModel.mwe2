@@ -11,7 +11,7 @@ Workflow {
 		platformUri = "${rootPath}"
 		scanClassPath = true
 	
-		registerGenModelFile = "platform:/resource/org.eclipse.efbt.common.model.functions/model/smcubes.genmodel"
+		registerGenModelFile = "platform:/resource/org.eclipse.efbt.common.model.functions/model/functions.genmodel"
 	}
 
 	component = org.eclipse.emf.mwe2.ecore.EcoreGenerator {

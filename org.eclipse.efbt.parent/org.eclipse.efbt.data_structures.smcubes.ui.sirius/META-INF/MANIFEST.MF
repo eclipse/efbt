@@ -11,7 +11,7 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.sirius,
  org.eclipse.sirius.common.acceleo.aql,
  org.eclipse.efbt.data_structures.smcubes.model.core;bundle-version="1.0.0",
- org.eclipse.efbt.data_structures.smcubes.modelquery;bundle-version="1.0.0"
+ org.eclipse.efbt.data_structures.smcubes.modelquery.core;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-Vendor: %providerName
