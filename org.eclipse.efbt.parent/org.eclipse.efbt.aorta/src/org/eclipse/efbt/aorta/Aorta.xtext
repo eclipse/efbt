@@ -53,6 +53,7 @@ rogram returns aorta_program::Program:
 
 
 
+
 TestDefinition returns test_definition::TestDefinition:
 	TestDefinition_Impl | E2ETestDefinition | UnitTestDefinition;
 
@@ -104,13 +105,13 @@ SmcubesModel returns smcubes_model::SmcubesModel:
 	'SmcubesModel'
 	name=EString
 	'{'
-		('domains' '(' domains+=[efbt_data_definition::DomainModule|EString] ( "," domains+=[efbt_data_definition::DomainModule|EString])* ')' )?
-		('members' '(' members+=[efbt_data_definition::MemberModule|EString] ( "," members+=[efbt_data_definition::MemberModule|EString])* ')' )?
-		('variables' '(' variables+=[efbt_data_definition::VariableModule|EString] ( "," variables+=[efbt_data_definition::VariableModule|EString])* ')' )?
-		('cubes' '(' cubes+=[efbt_data_definition::CubeModule|EString] ( "," cubes+=[efbt_data_definition::CubeModule|EString])* ')' )?
-		('combinations' '(' combinations+=[efbt_data_definition::CombinationModule|EString] ( "," combinations+=[efbt_data_definition::CombinationModule|EString])* ')' )?
-		('functionalModules' '(' functionalModules+=[efbt_vtl_transformation::TransformationSchemeModule|EString] ( "," functionalModules+=[efbt_vtl_transformation::TransformationSchemeModule|EString])* ')' )?
-		('mappings' '(' mappings+=[efbt_mapping::MappingDefinitionModule|EString] ( "," mappings+=[efbt_mapping::MappingDefinitionModule|EString])* ')' )?
+		('domains' '{' domains+=DomainModule ( "," domains+=DomainModule)* '}' )?
+		('members' '{' members+=MemberModule ( "," members+=MemberModule)* '}' )?
+		('variables' '{' variables+=VariableModule ( "," variables+=VariableModule)* '}' )?
+		('cubes' '{' cubes+=CubeModule ( "," cubes+=CubeModule)* '}' )?
+		('combinations' '{' combinations+=CombinationModule ( "," combinations+=CombinationModule)* '}' )?
+		('functionalModules' '{' functionalModules+=TransformationSchemeModule ( "," functionalModules+=TransformationSchemeModule)* '}' )?
+		('mappings' '{' mappings+=MappingDefinitionModule ( "," mappings+=MappingDefinitionModule)* '}' )?
 	'}';
 
 RequirementsModule returns requirements_text::RequirementsModule:
@@ -171,7 +172,7 @@ TestContraints returns test_definition::TestContraints:
 	'TestContraints'
 	name=EString
 	'{'
-		('template' template=[test_definition::TestTemplate|EString])?
+		('template' template=[test_definition::TestTemplate|QualifiedName])?
 		('givenParams' '{' givenParams+=Param ( "," givenParams+=Param)* '}' )?
 		('whenParams' '{' whenParams+=Param ( "," whenParams+=Param)* '}' )?
 		('thenParams' '{' thenParams+=Param ( "," thenParams+=Param)* '}' )?
@@ -311,8 +312,8 @@ DOMAIN returns core::DOMAIN:
 		('data_type' data_type=FACET_VALUE_TYPE)?
 		('description' description=EString)?
 		('domain_id' domain_id=EString)?
-		('facet_id' facet_id=[core::FACET_COLLECTION|EString])?
-		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|EString])?
+		('facet_id' facet_id=[core::FACET_COLLECTION|QualifiedName])?
+		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|QualifiedName])?
 	'}';
 
 ModuleDependency returns module_management::ModuleDependency:
@@ -321,8 +322,8 @@ ModuleDependency returns module_management::ModuleDependency:
 	'{'
 		('moduleName' moduleName=EString)?
 		('moduleVersion' moduleVersion=EString)?
-		('theModule' theModule=[module_management::Module|EString])?
-		('longName' longName=[module_management::ModuleLongName|EString])?
+		('theModule' theModule=[module_management::Module|QualifiedName])?
+		('longName' longName=[module_management::ModuleLongName|QualifiedName])?
 	'}';
 
 enum FACET_VALUE_TYPE returns core::FACET_VALUE_TYPE:
@@ -336,7 +337,7 @@ FACET_COLLECTION returns core::FACET_COLLECTION:
 		('code' code=EString)?
 		('facet_value_type' facet_value_type=FACET_VALUE_TYPE)?
 		('name' name=EString)?
-		('maintenance_agency_id' maintenance_agency_id=[core::FACET_COLLECTION|EString])?
+		('maintenance_agency_id' maintenance_agency_id=[core::FACET_COLLECTION|QualifiedName])?
 	'}';
 
 EBoolean returns ecore::EBoolean:
@@ -359,8 +360,8 @@ MEMBER returns core::MEMBER:
 		('code' code=EString)?
 		('description' description=EString)?
 		('member_id' member_id=EString)?
-		('domain_id' domain_id=[core::DOMAIN|EString])?
-		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|EString])?
+		('domain_id' domain_id=[core::DOMAIN|QualifiedName])?
+		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|QualifiedName])?
 	'}';
 
 VARIABLE returns core::VARIABLE:
@@ -372,8 +373,8 @@ VARIABLE returns core::VARIABLE:
 		('description' description=EString)?
 		('primary_concept' primary_concept=EString)?
 		('variable_id' variable_id=EString)?
-		('domain_id' domain_id=[core::DOMAIN|EString])?
-		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|EString])?
+		('domain_id' domain_id=[core::DOMAIN|QualifiedName])?
+		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|QualifiedName])?
 	'}';
 
 CUBE returns data_definition::CUBE:
@@ -390,9 +391,9 @@ CUBE returns data_definition::CUBE:
 		('valid_from' valid_from=EDate)?
 		('valid_to' valid_to=EDate)?
 		('version' version=EString)?
-		('cube_structure_id' cube_structure_id=[data_definition::CUBE_STRUCTURE|EString])?
-		('framework_id' framework_id=[data_definition::FRAMEWORK|EString])?
-		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|EString])?
+		('cube_structure_id' cube_structure_id=[data_definition::CUBE_STRUCTURE|QualifiedName])?
+		('framework_id' framework_id=[data_definition::FRAMEWORK|QualifiedName])?
+		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|QualifiedName])?
 	'}';
 
 CUBE_STRUCTURE returns data_definition::CUBE_STRUCTURE:
@@ -406,7 +407,7 @@ CUBE_STRUCTURE returns data_definition::CUBE_STRUCTURE:
 		('valid_from' valid_from=EDate)?
 		('valid_to' valid_to=EDate)?
 		('version' version=EString)?
-		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|EString])?
+		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|QualifiedName])?
 	'}';
 
 CUBE_STRUCTURE_ITEM returns data_definition::CUBE_STRUCTURE_ITEM:
@@ -421,12 +422,12 @@ CUBE_STRUCTURE_ITEM returns data_definition::CUBE_STRUCTURE_ITEM:
 		('order' order=EInt)?
 		('role' role=TYP_RL)?
 		('cube_variable_code' cube_variable_code=EString)?
-		('attribute_associated_variable' attribute_associated_variable=[core::VARIABLE|EString])?
-		('cube_structure_id' cube_structure_id=[data_definition::CUBE_STRUCTURE|EString])?
-		('member_id' member_id=[core::MEMBER|EString])?
-		('subdomain_id' subdomain_id=[core::SUBDOMAIN|EString])?
-		('variable_id' variable_id=[core::VARIABLE|EString])?
-		('variable_set_id' variable_set_id=[core::VARIABLE_SET|EString])?
+		('attribute_associated_variable' attribute_associated_variable=[core::VARIABLE|QualifiedName])?
+		('cube_structure_id' cube_structure_id=[data_definition::CUBE_STRUCTURE|QualifiedName])?
+		('member_id' member_id=[core::MEMBER|QualifiedName])?
+		('subdomain_id' subdomain_id=[core::SUBDOMAIN|QualifiedName])?
+		('variable_id' variable_id=[core::VARIABLE|QualifiedName])?
+		('variable_set_id' variable_set_id=[core::VARIABLE_SET|QualifiedName])?
 	'}';
 
 FRAMEWORK returns data_definition::FRAMEWORK:
@@ -437,7 +438,7 @@ FRAMEWORK returns data_definition::FRAMEWORK:
 		('code' code=EString)?
 		('description' description=EString)?
 		('name' name=EString)?
-		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|EString])?
+		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|QualifiedName])?
 	'}';
 
 EDate returns ecore::EDate:
@@ -462,9 +463,9 @@ SUBDOMAIN returns core::SUBDOMAIN:
 		('code' code=EString)?
 		('description' description=EString)?
 		('name' name=EString)?
-		('domain_id' domain_id=[core::DOMAIN|EString])?
-		('facet_id' facet_id=[core::FACET_COLLECTION|EString])?
-		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|EString])?
+		('domain_id' domain_id=[core::DOMAIN|QualifiedName])?
+		('facet_id' facet_id=[core::FACET_COLLECTION|QualifiedName])?
+		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|QualifiedName])?
 	'}';
 
 VARIABLE_SET returns core::VARIABLE_SET:
@@ -475,7 +476,7 @@ VARIABLE_SET returns core::VARIABLE_SET:
 		('code' code=EString)?
 		('description' description=EString)?
 		('name' name=EString)?
-		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|EString])?
+		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|QualifiedName])?
 	'}';
 
 COMBINATION returns data_definition::COMBINATION:
@@ -488,7 +489,7 @@ COMBINATION returns data_definition::COMBINATION:
 		('valid_from' valid_from=EDate)?
 		('valid_to' valid_to=EDate)?
 		('version' version=EString)?
-		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|EString])?
+		('maintenance_agency_id' maintenance_agency_id=[core::MAINTENANCE_AGENCY|QualifiedName])?
 		('combination_items' '{' combination_items+=COMBINATION_ITEM ( "," combination_items+=COMBINATION_ITEM)* '}' )?
 	'}';
 
@@ -496,18 +497,18 @@ COMBINATION_ITEM returns data_definition::COMBINATION_ITEM:
 	{data_definition::COMBINATION_ITEM}
 	'COMBINATION_ITEM'
 	'{'
-		('member_id' member_id=[core::MEMBER|EString])?
-		('subdomain_id' subdomain_id=[core::SUBDOMAIN|EString])?
-		('variable_id' variable_id=[core::VARIABLE|EString])?
-		('variable_set_id' variable_set_id=[core::VARIABLE_SET|EString])?
+		('member_id' member_id=[core::MEMBER|QualifiedName])?
+		('subdomain_id' subdomain_id=[core::SUBDOMAIN|QualifiedName])?
+		('variable_id' variable_id=[core::VARIABLE|QualifiedName])?
+		('variable_set_id' variable_set_id=[core::VARIABLE_SET|QualifiedName])?
 	'}';
 
 CUBE_TO_COMBINATION returns data_definition::CUBE_TO_COMBINATION:
 	{data_definition::CUBE_TO_COMBINATION}
 	'CUBE_TO_COMBINATION'
 	'{'
-		('combination_id' combination_id=[data_definition::COMBINATION|EString])?
-		('cube_id' cube_id=[data_definition::CUBE|EString])?
+		('combination_id' combination_id=[data_definition::COMBINATION|QualifiedName])?
+		('cube_id' cube_id=[data_definition::CUBE|QualifiedName])?
 	'}';
 
 TRANSFORMATION_SCHEME returns vtl_transformation::TRANSFORMATION_SCHEME:
@@ -533,8 +534,8 @@ MAPPING_DEFINITION returns mapping::MAPPING_DEFINITION:
 		('code' code=EString)?
 		('maintenance_agency_id' maintenance_agency_id=EString)?
 		('mapping_type' mapping_type=EString)?
-		('memberMapping' memberMapping=[mapping::MEMBER_MAPPING|EString])?
-		('variableMapping' variableMapping=[mapping::VARIABLE_MAPPING|EString])?
+		('memberMapping' memberMapping=[mapping::MEMBER_MAPPING|QualifiedName])?
+		('variableMapping' variableMapping=[mapping::VARIABLE_MAPPING|QualifiedName])?
 	'}';
 
 MEMBER_MAPPING returns mapping::MEMBER_MAPPING:
@@ -564,8 +565,8 @@ MEMBER_MAPPING_ITEM returns mapping::MEMBER_MAPPING_ITEM:
 	'MEMBER_MAPPING_ITEM'
 	'{'
 		('isSource' isSource=EString)?
-		('member' member=[core::MEMBER|EString])?
-		('variable' variable=[core::VARIABLE|EString])?
+		('member' member=[core::MEMBER|QualifiedName])?
+		('variable' variable=[core::VARIABLE|QualifiedName])?
 	'}';
 
 VARIABLE_MAPPING_ITEM returns mapping::VARIABLE_MAPPING_ITEM:
@@ -573,7 +574,7 @@ VARIABLE_MAPPING_ITEM returns mapping::VARIABLE_MAPPING_ITEM:
 	'VARIABLE_MAPPING_ITEM'
 	'{'
 		('isSource' isSource=EString)?
-		('variable' variable=[core::VARIABLE|EString])?
+		('variable' variable=[core::VARIABLE|QualifiedName])?
 	'}';
 
 TitledRequirementsSection returns requirements_text::TitledRequirementsSection:
@@ -581,8 +582,8 @@ TitledRequirementsSection returns requirements_text::TitledRequirementsSection:
 	name=EString
 	'{'
 		('title' title=EString)?
-		('referencingSections' referencingSections=[requirements_text::RequirementsSectionLinkWithText|EString])?
-		'requirementsType' requirementsType=[requirements_text::RequirementType|EString]
+		('referencingSections' referencingSections=[requirements_text::RequirementsSectionLinkWithText|QualifiedName])?
+		'requirementsType' requirementsType=[requirements_text::RequirementType|QualifiedName]
 		('sections' '{' sections+=RequirementsSection ( "," sections+=RequirementsSection)* '}' )?
 	'}';
 
@@ -600,7 +601,7 @@ RequirementsSectionLinkWithText returns requirements_text::RequirementsSectionLi
 	'{'
 		('linkText' linkText=EString)?
 		('subsection' subsection=EString)?
-		('linkedRuleSection' linkedRuleSection=[requirements_text::TitledRequirementsSection|EString])?
+		('linkedRuleSection' linkedRuleSection=[requirements_text::TitledRequirementsSection|QualifiedName])?
 	'}';
 
 RequirementType returns requirements_text::RequirementType:
@@ -630,7 +631,7 @@ TestDefinition_Impl returns test_definition::TestDefinition:
 	'TestDefinition'
 	name=EString
 	'{'
-		('testContraints' testContraints=[test_definition::TestContraints|EString])?
+		('testContraints' testContraints=[test_definition::TestContraints|QualifiedName])?
 		('given' given=Given)?
 		('when' when=When)?
 		('then' then=Then)?
@@ -640,8 +641,8 @@ Given returns test_definition::Given:
 	{test_definition::Given}
 	'Given'
 	'{'
-		('text' text=[test_definition::ClauseText|EString])?
-		('regulatoryTextLinks' '(' regulatoryTextLinks+=[requirements_text::TitledRequirementsSection|EString] ( "," regulatoryTextLinks+=[requirements_text::TitledRequirementsSection|EString])* ')' )?
+		('text' text=[test_definition::ClauseText|QualifiedName])?
+		('regulatoryTextLinks' '(' regulatoryTextLinks+=[requirements_text::TitledRequirementsSection|QualifiedName] ( "," regulatoryTextLinks+=[requirements_text::TitledRequirementsSection|QualifiedName])* ')' )?
 		('params' '{' params+=Param ( "," params+=Param)* '}' )?
 	'}';
 
@@ -649,8 +650,8 @@ When returns test_definition::When:
 	{test_definition::When}
 	'When'
 	'{'
-		('text' text=[test_definition::ClauseText|EString])?
-		('regulatoryTextLinks' '(' regulatoryTextLinks+=[requirements_text::TitledRequirementsSection|EString] ( "," regulatoryTextLinks+=[requirements_text::TitledRequirementsSection|EString])* ')' )?
+		('text' text=[test_definition::ClauseText|QualifiedName])?
+		('regulatoryTextLinks' '(' regulatoryTextLinks+=[requirements_text::TitledRequirementsSection|QualifiedName] ( "," regulatoryTextLinks+=[requirements_text::TitledRequirementsSection|QualifiedName])* ')' )?
 		('params' '{' params+=Param ( "," params+=Param)* '}' )?
 	'}';
 
@@ -658,8 +659,8 @@ Then returns test_definition::Then:
 	{test_definition::Then}
 	'Then'
 	'{'
-		('text' text=[test_definition::ClauseText|EString])?
-		('regulatoryTextLinks' '(' regulatoryTextLinks+=[requirements_text::TitledRequirementsSection|EString] ( "," regulatoryTextLinks+=[requirements_text::TitledRequirementsSection|EString])* ')' )?
+		('text' text=[test_definition::ClauseText|QualifiedName])?
+		('regulatoryTextLinks' '(' regulatoryTextLinks+=[requirements_text::TitledRequirementsSection|QualifiedName] ( "," regulatoryTextLinks+=[requirements_text::TitledRequirementsSection|QualifiedName])* ')' )?
 		('params' '{' params+=Param ( "," params+=Param)* '}' )?
 	'}';
 
@@ -668,7 +669,7 @@ E2ETestDefinition returns test_definition::E2ETestDefinition:
 	'E2ETestDefinition'
 	name=EString
 	'{'
-		('testContraints' testContraints=[test_definition::TestContraints|EString])?
+		('testContraints' testContraints=[test_definition::TestContraints|QualifiedName])?
 		('given' given=Given)?
 		('when' when=When)?
 		('then' then=Then)?
@@ -679,7 +680,7 @@ UnitTestDefinition returns test_definition::UnitTestDefinition:
 	'UnitTestDefinition'
 	name=EString
 	'{'
-		('testContraints' testContraints=[test_definition::TestContraints|EString])?
+		('testContraints' testContraints=[test_definition::TestContraints|QualifiedName])?
 		('given' given=Given)?
 		('when' when=When)?
 		('then' then=Then)?
@@ -694,7 +695,7 @@ Param returns test_definition::Param:
 	{test_definition::Param}
 	'Param'
 	'{'
-		('param' param=[ecore::EObject|EString])?
+		('param' param=[ecore::EObject|QualifiedName])?
 	'}';
 
 EObject returns ecore::EObject:
@@ -707,7 +708,7 @@ E2ETest returns test::E2ETest:
 	'E2ETest'
 	name=EString
 	'{'
-		('testDefinition' testDefinition=[test_definition::E2ETestDefinition|EString])?
+		('testDefinition' testDefinition=[test_definition::E2ETestDefinition|QualifiedName])?
 		('inputData' inputData=TestInputData)?
 		('expectedResults' expectedResults=Result)?
 	'}';
@@ -753,8 +754,8 @@ DataProcessingFunctionalityModule returns functionality_module::DataProcessingFu
 	'DataProcessingFunctionalityModule'
 	name=EString
 	'{'
-		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|EString])?
-		('scenario' scenario=[scenarios::Scenario|EString])?
+		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|QualifiedName])?
+		('scenario' scenario=[scenarios::Scenario|QualifiedName])?
 		('scenarioSet' scenarioSet=ScenarioSet)?
 	'}';
 
@@ -763,8 +764,8 @@ LeafFunctionalityModule_Impl returns functionality_module::LeafFunctionalityModu
 	'LeafFunctionalityModule'
 	name=EString
 	'{'
-		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|EString])?
-		('scenario' scenario=[scenarios::Scenario|EString])?
+		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|QualifiedName])?
+		('scenario' scenario=[scenarios::Scenario|QualifiedName])?
 		('scenarioSet' scenarioSet=ScenarioSet)?
 	'}';
 
@@ -773,8 +774,8 @@ ParallelFunctionalityModule returns functionality_module::ParallelFunctionalityM
 	'ParallelFunctionalityModule'
 	name=EString
 	'{'
-		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|EString])?
-		('scenario' scenario=[scenarios::Scenario|EString])?
+		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|QualifiedName])?
+		('scenario' scenario=[scenarios::Scenario|QualifiedName])?
 		('scenarioSet' scenarioSet=ScenarioSet)?
 		('subTransformationsAndSchemes' '{' subTransformationsAndSchemes+=FunctionalityModule ( "," subTransformationsAndSchemes+=FunctionalityModule)* '}' )?
 	'}';
@@ -784,8 +785,8 @@ ScenarioSetFunctionalityModule returns functionality_module::ScenarioSetFunction
 	'ScenarioSetFunctionalityModule'
 	name=EString
 	'{'
-		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|EString])?
-		('scenario' scenario=[scenarios::Scenario|EString])?
+		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|QualifiedName])?
+		('scenario' scenario=[scenarios::Scenario|QualifiedName])?
 		('scenarioSet' scenarioSet=ScenarioSet)?
 		('subTransformationsAndSchemes' '{' subTransformationsAndSchemes+=FunctionalityModule ( "," subTransformationsAndSchemes+=FunctionalityModule)* '}' )?
 		('scenarioSetChoice' scenarioSetChoice=ScenarioSet)?
@@ -796,8 +797,8 @@ SerialFunctionalityModule returns functionality_module::SerialFunctionalityModul
 	'SerialFunctionalityModule'
 	name=EString
 	'{'
-		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|EString])?
-		('scenario' scenario=[scenarios::Scenario|EString])?
+		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|QualifiedName])?
+		('scenario' scenario=[scenarios::Scenario|QualifiedName])?
 		('scenarioSet' scenarioSet=ScenarioSet)?
 		('subTransformationsAndSchemes' '{' subTransformationsAndSchemes+=FunctionalityModule ( "," subTransformationsAndSchemes+=FunctionalityModule)* '}' )?
 	'}';
@@ -807,8 +808,8 @@ FunctionalityModuleSet_Impl returns functionality_module::FunctionalityModuleSet
 	'FunctionalityModuleSet'
 	name=EString
 	'{'
-		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|EString])?
-		('scenario' scenario=[scenarios::Scenario|EString])?
+		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|QualifiedName])?
+		('scenario' scenario=[scenarios::Scenario|QualifiedName])?
 		('scenarioSet' scenarioSet=ScenarioSet)?
 		('subTransformationsAndSchemes' '{' subTransformationsAndSchemes+=FunctionalityModule ( "," subTransformationsAndSchemes+=FunctionalityModule)* '}' )?
 	'}';
@@ -818,8 +819,8 @@ ReadDataSourceFunctionalityModule returns functionality_module::ReadDataSourceFu
 	'ReadDataSourceFunctionalityModule'
 	name=EString
 	'{'
-		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|EString])?
-		('scenario' scenario=[scenarios::Scenario|EString])?
+		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|QualifiedName])?
+		('scenario' scenario=[scenarios::Scenario|QualifiedName])?
 		('scenarioSet' scenarioSet=ScenarioSet)?
 	'}';
 
@@ -828,7 +829,13 @@ ValidationFunctionalityModule returns functionality_module::ValidationFunctional
 	'ValidationFunctionalityModule'
 	name=EString
 	'{'
-		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|EString])?
-		('scenario' scenario=[scenarios::Scenario|EString])?
+		('usedTransformationOrScheme' usedTransformationOrScheme=[functionality_module::FunctionalityModule|QualifiedName])?
+		('scenario' scenario=[scenarios::Scenario|QualifiedName])?
 		('scenarioSet' scenarioSet=ScenarioSet)?
 	'}';
+	
+	
+
+	QualifiedName:
+    ID ('.' ID)*;
+
