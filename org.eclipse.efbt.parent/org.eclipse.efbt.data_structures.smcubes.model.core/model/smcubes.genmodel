@@ -315,32 +315,6 @@
     <genClasses ecoreClass="efbt_data_definition.ecore#//VariableModule">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference efbt_data_definition.ecore#//VariableModule/variables"/>
     </genClasses>
-    <nestedGenPackages prefix="Efbt_data_definition" resource="XML" disposableProviderFactory="true"
-        ecorePackage="efbt_data_definition.ecore#/">
-      <genClasses ecoreClass="efbt_data_definition.ecore#//CombinationModule">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference efbt_data_definition.ecore#//CombinationModule/combinations"/>
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference efbt_data_definition.ecore#//CombinationModule/combination_items"/>
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference efbt_data_definition.ecore#//CombinationModule/cubeToCombinationLinks"/>
-      </genClasses>
-      <genClasses ecoreClass="efbt_data_definition.ecore#//CubeModule">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference efbt_data_definition.ecore#//CubeModule/cubes"/>
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference efbt_data_definition.ecore#//CubeModule/cubeStructures"/>
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference efbt_data_definition.ecore#//CubeModule/cubeStructureItems"/>
-      </genClasses>
-      <genClasses ecoreClass="efbt_data_definition.ecore#//DomainModule">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference efbt_data_definition.ecore#//DomainModule/domains"/>
-      </genClasses>
-      <genClasses ecoreClass="efbt_data_definition.ecore#//MemberHierarchyModule">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference efbt_data_definition.ecore#//MemberHierarchyModule/memberHierarchies"/>
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference efbt_data_definition.ecore#//MemberHierarchyModule/memberHierarchiesNodes"/>
-      </genClasses>
-      <genClasses ecoreClass="efbt_data_definition.ecore#//MemberModule">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference efbt_data_definition.ecore#//MemberModule/members"/>
-      </genClasses>
-      <genClasses ecoreClass="efbt_data_definition.ecore#//VariableModule">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference efbt_data_definition.ecore#//VariableModule/variables"/>
-      </genClasses>
-    </nestedGenPackages>
   </genPackages>
   <genPackages prefix="Efbt_mapping" basePackage="org.eclipse.efbt.data_structures.smcubes.model"
       resource="XML" disposableProviderFactory="true" ecorePackage="efbt_mapping.ecore#/">

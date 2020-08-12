@@ -7,6 +7,16 @@ import com.google.inject.Injector;
 
 import org.eclipse.efbt.aorta.aorta_program.Aorta_programPackage;
 import org.eclipse.efbt.common.model.module_management.Module_managementPackage;
+import org.eclipse.efbt.data_structures.smcubes.model.core.CorePackage;
+import org.eclipse.efbt.data_structures.smcubes.model.data_definition.Data_definitionPackage;
+import org.eclipse.efbt.data_structures.smcubes.model.efbt_data_definition.Efbt_data_definitionPackage;
+import org.eclipse.efbt.data_structures.smcubes.model.efbt_mapping.Efbt_mappingPackage;
+import org.eclipse.efbt.data_structures.smcubes.model.efbt_vtl_transformation.Efbt_vtl_transformationPackage;
+import org.eclipse.efbt.data_structures.smcubes.model.mapping.MappingPackage;
+import org.eclipse.efbt.data_structures.smcubes.model.rendering.RenderingPackage;
+import org.eclipse.efbt.data_structures.smcubes.model.reports.ReportsPackage;
+import org.eclipse.efbt.data_structures.smcubes.model.smcubes_model.Smcubes_modelPackage;
+import org.eclipse.efbt.data_structures.smcubes.model.vtl_transformation.Vtl_transformationPackage;
 import org.eclipse.efbt.functional_design.core.model.functionality_module.Functionality_modulePackage;
 import org.eclipse.efbt.functional_design.core.model.scenarios.ScenariosPackage;
 import org.eclipse.efbt.requirements.core.model.requirements_text.Requirements_textPackage;
@@ -44,6 +54,11 @@ public class AortaStandaloneSetup extends AortaStandaloneSetupGenerated {
 			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/base_column_structured_data",
 					Base_column_structured_dataPackage.eINSTANCE);
 		}
+		
+		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/smcubes_model")) {
+			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/smcubes_model",
+					Smcubes_modelPackage.eINSTANCE);
+		}
 
 	
 	//	if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/column_structured_data")) {
@@ -55,10 +70,28 @@ public class AortaStandaloneSetup extends AortaStandaloneSetupGenerated {
 	//				Column_structuresPackage.eINSTANCE);
 	//	}
 
+		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/efbt_vtl_transformation")) {
+			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/efbt_vtl_transformation",
+					Efbt_vtl_transformationPackage.eINSTANCE);
+		}
+		
 		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/functionality_module")) {
 			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/functionality_module",
 					Functionality_modulePackage.eINSTANCE);
 		}
+		
+		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/efbt_mapping")) {
+			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/efbt_mapping",
+					Efbt_mappingPackage.eINSTANCE);
+		}
+		
+		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/data_definition")) {
+			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/data_definition",
+					Data_definitionPackage.eINSTANCE);
+		}
+		
+		
+		
 	//	if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/input_data_structures")) {
 	//		EPackage.Registry.INSTANCE.put("http://www.eclipse.org/input_data_structures",
 	//				Input_data_structuresPackage.eINSTANCE);
@@ -67,6 +100,17 @@ public class AortaStandaloneSetup extends AortaStandaloneSetupGenerated {
 			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/module_management",
 					Module_managementPackage.eINSTANCE);
 		}
+		
+		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/reports")) {
+			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/reports",
+					ReportsPackage.eINSTANCE);
+		}
+		
+		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/efbt_data_definition")) {
+			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/efbt_data_definition",
+					Efbt_data_definitionPackage.eINSTANCE);
+		}
+		
 		
 		
 
@@ -91,7 +135,26 @@ public class AortaStandaloneSetup extends AortaStandaloneSetupGenerated {
 		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/test")) {
 			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/test", TestPackage.eINSTANCE);
 		}
-
+		
+		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/mapping")) {
+			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/mapping", MappingPackage.eINSTANCE);
+		}
+		
+		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/core")) {
+			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/core", CorePackage.eINSTANCE);
+		}
+		
+		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/vtl_transformation")) {
+			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/vtl_transformation", Vtl_transformationPackage.eINSTANCE);
+		}
+		
+		if (!EPackage.Registry.INSTANCE.containsKey("http://www.eclipse.org/rendering")) {
+			EPackage.Registry.INSTANCE.put("http://www.eclipse.org/rendering", RenderingPackage.eINSTANCE);
+		}
+		
+		
+		
+		
 		super.register(injector);
 	}
 

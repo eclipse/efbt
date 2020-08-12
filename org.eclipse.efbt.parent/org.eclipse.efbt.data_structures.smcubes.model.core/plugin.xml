@@ -200,20 +200,9 @@
             class="org.eclipse.efbt.data_structures.smcubes.model.efbt_data_definition.util.Efbt_data_definitionResourceFactoryImpl"/>
    </extension>
 
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated smcubes -->
-      <package
-            uri="http://www.eclipse.org/efbt_data_definition"
-            class="org.eclipse.efbt.data_structures.smcubes.model.efbt_data_definition.efbt_data_definition.Efbt_data_definitionPackage"
-            genModel="model/smcubes.genmodel"/>
-   </extension>
+   
 
-   <extension point="org.eclipse.emf.ecore.extension_parser">
-      <!-- @generated smcubes -->
-      <parser
-            type="efbt_data_definition"
-            class="org.eclipse.efbt.data_structures.smcubes.model.efbt_data_definition.efbt_data_definition.util.Efbt_data_definitionResourceFactoryImpl"/>
-   </extension>
+  
 
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated smcubes -->
