@@ -14,8 +14,8 @@ package org.eclipse.efbt.trl.component.translator;
 
 import java.util.Iterator;
 
-import org.eclipse.efbt.almengine.model.cubes.cubes.FreeBirdToolsCube;
 import org.eclipse.efbt.bird.core.VARIABLE;
+import org.eclipse.efbt.lineage.attributelineage.model.cubes.cubes.FreeBirdToolsCube;
 import org.eclipse.efbt.trl.model.trl.trl_sql_views.IgnoreColumn;
 import org.eclipse.efbt.trl.model.trl.trl_sql_views.JoinView;
 import org.eclipse.efbt.trl.model.trl.trl_sql_views.RenameAs;

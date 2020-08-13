@@ -17,8 +17,18 @@ import java.util.Iterator;
 
 import org.eclipse.efbt.controller.model.platform_call.GetAttributeLineageModel;
 import org.eclipse.efbt.controller.model.platform_call.Platform_callPackage;
-import org.eclipse.efbt.almengine.model.attribute_lineage.attribute_lineage.AttributeLineageModel;
-import org.eclipse.efbt.almengine.model.attribute_lineage.attribute_lineage.Attribute_lineageFactory;
+import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.attribute_lineage.AttributeLineageModel;
+import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.attribute_lineage.Attribute_lineageFactory;
+import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.cube_transformation_logic.CubeTransformationLogic;
+import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.row_transformation_logic.BaseRowStructure;
+import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.row_transformation_logic.RowCreationApproach;
+import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.row_transformation_logic.RowCreationApproachForCube;
+import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.row_transformation_logic.UnionRowCreationApproach;
+import org.eclipse.efbt.lineage.attributelineage.model.cubes.cube_schema.CubeSchema;
+import org.eclipse.efbt.lineage.attributelineage.model.cubes.cubes.DerivedCube;
+import org.eclipse.efbt.lineage.attributelineage.model.cubes.cubes.FreeBirdToolsCube;
+import org.eclipse.efbt.lineage.common.model.lineagefunctions.column_transformation_logic.ColumnFunction;
+import org.eclipse.efbt.lineage.common.model.lineagefunctions.functions.CubeColumn;
 import org.eclipse.efbt.chirp.chirpfunctions.ChirpfunctionsFactory;
 import org.eclipse.efbt.trl.model.trl.transformation.VersionedFunctionalModuleLogic;
 import org.eclipse.efbt.trl.model.trl.trl_report_cell_views.ReportCellView;
@@ -26,16 +36,6 @@ import org.eclipse.efbt.trl.model.trl.trl_report_cell_views.ReportCellViewModule
 import org.eclipse.efbt.trl.model.trl.transformation.VersionedCubeSchemaModule;
 import org.eclipse.efbt.trl.model.trl.trl_sql_views.VersionedSQLViewsModule;
 import org.eclipse.efbt.trl.model.trl.trl_sql_views.SQLView;
-import org.eclipse.efbt.almengine.model.attribute_lineage.cube_transformation_logic.CubeTransformationLogic;
-import org.eclipse.efbt.almengine.model.attribute_lineage.row_transformation_logic.BaseRowStructure;
-import org.eclipse.efbt.almengine.model.attribute_lineage.row_transformation_logic.RowCreationApproach;
-import org.eclipse.efbt.almengine.model.attribute_lineage.row_transformation_logic.RowCreationApproachForCube;
-import org.eclipse.efbt.almengine.model.attribute_lineage.row_transformation_logic.UnionRowCreationApproach;
-import org.eclipse.efbt.almengine.model.cubes.cube_schema.CubeSchema;
-import org.eclipse.efbt.almengine.model.cubes.cubes.FreeBirdToolsCube;
-import org.eclipse.efbt.almengine.model.cubes.cubes.DerivedCube;
-import org.eclipse.efbt.almengine.model.functions.column_transformation_logic.ColumnFunction;
-import org.eclipse.efbt.almengine.model.functions.functions.CubeColumn;
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.util.EcoreUtil;
@@ -93,79 +93,7 @@ public class AttributeLineageUtil {
     return returnRowStructure;
   }
   
-  /**
-   * Returns the BaseRowStrucures which the cubeTransformationLogic  depends upon.
-   * @param cubeTransformationLogic 
-   * @return
-   */
-  public static EList<BaseRowStructure> getTheDependantBaseRowStructures(CubeTransformationLogic cubeTransformationLogic ) {
-
-    BasicEList<BaseRowStructure> dependantBaseRowStructures = new BasicEList<BaseRowStructure>();
-    AttributeLineageModel attributeModel = (AttributeLineageModel) cubeTransformationLogic .eContainer();
-   
-    FreeBirdToolsCube cube = cubeTransformationLogic.getRowCreationApproachForCube().getCube();
-    EList<FreeBirdToolsCube> dependentDerivedCubes = ((DerivedCube) cube).getSourceCubes();
-    Iterator<FreeBirdToolsCube> dependantDerivedCubesIter = dependentDerivedCubes.iterator();
-    while (dependantDerivedCubesIter.hasNext()) {
-      FreeBirdToolsCube derivedCube = dependantDerivedCubesIter.next();
-      Iterator<BaseRowStructure> baseRowsStructureIter = attributeModel.getBaseSchemas().iterator();
-      FreeBirdToolsCube baseCube = null;
-      while (baseRowsStructureIter.hasNext()) {
-        BaseRowStructure baseRowStructure = baseRowsStructureIter.next();
-
-        baseCube = baseRowStructure.getCube();
-
-        if (baseCube.equals(derivedCube))
-          dependantBaseRowStructures.add(baseRowStructure);
-
-      }
-    }
-    return dependantBaseRowStructures;
-
-  }
   
-  /**
-   *  Returns the FunctionalRowLogics which the cubeTransformationLogic  depends upon.
-   * @param cubeTransformationLogic 
-   * @return
-   */
-  public static EList<CubeTransformationLogic> getTheDependantFunctionalRowLogics(CubeTransformationLogic cubeTransformationLogic ) {
-    BasicEList<CubeTransformationLogic> dependantFunctionalRowLogic = new BasicEList<CubeTransformationLogic>();
-    AttributeLineageModel attributeLineageModel = (AttributeLineageModel) cubeTransformationLogic .eContainer();
-    boolean isUnionFunction = (cubeTransformationLogic .getRowCreationApproachForCube().getRowCreationApproach() instanceof UnionRowCreationApproach);
-    boolean oneAdded = false;
-
-    FreeBirdToolsCube derivedCube1 = cubeTransformationLogic .getRowCreationApproachForCube().getCube();
-    EList<FreeBirdToolsCube> dependantCubes = ((DerivedCube) derivedCube1).getSourceCubes();
-    Iterator<FreeBirdToolsCube> dependantCubesIter = dependantCubes.iterator();
-    
-    while (dependantCubesIter.hasNext()) {
-      FreeBirdToolsCube cube2 = dependantCubesIter.next();
-      Iterator<CubeTransformationLogic> iter = attributeLineageModel.getRowTransformations().iterator();
-      FreeBirdToolsCube cube3 = null;
-      while (iter.hasNext()) {
-        CubeTransformationLogic rowlogic = iter.next();
-
-        cube3 = rowlogic.getRowCreationApproachForCube().getCube();
-
-        if (cube3.equals(cube2)) {
-          if (isUnionFunction) {
-            if (!oneAdded) {
-              dependantFunctionalRowLogic.add(rowlogic);
-              oneAdded = true;
-            }
-          } else {
-            dependantFunctionalRowLogic.add(rowlogic);
-          }
-
-        }
-
-      }
-    }
-
-    return dependantFunctionalRowLogic;
-
-  }
   
   /**
    * Returns the list FunctionalRowLogics of an attributeLineageModel, in order

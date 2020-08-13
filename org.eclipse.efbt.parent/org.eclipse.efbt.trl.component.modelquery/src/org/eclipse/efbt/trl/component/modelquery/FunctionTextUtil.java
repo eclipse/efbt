@@ -14,14 +14,14 @@ package org.eclipse.efbt.trl.component.modelquery;
 
 import java.util.Iterator;
 
-import org.eclipse.efbt.almengine.model.functions.functions.MemberParameter;
-import org.eclipse.efbt.almengine.model.functions.functions.ResolvedCubeColumnParameter;
-import org.eclipse.efbt.almengine.model.functions.functions.SpeculativeCubeColumnParameter;
-import org.eclipse.efbt.almengine.model.functions.functions.ValueParameter;
 import org.eclipse.efbt.chirp.chirpfunctions.AggregateFunction;
 import org.eclipse.efbt.chirp.chirpfunctions.BasicFunction;
 import org.eclipse.efbt.chirp.chirpfunctions.CellsParameter;
 import org.eclipse.efbt.chirp.chirpfunctions.Parameter;
+import org.eclipse.efbt.lineage.common.model.lineagefunctions.functions.MemberParameter;
+import org.eclipse.efbt.lineage.common.model.lineagefunctions.functions.ResolvedCubeColumnParameter;
+import org.eclipse.efbt.lineage.common.model.lineagefunctions.functions.SpeculativeCubeColumnParameter;
+import org.eclipse.efbt.lineage.common.model.lineagefunctions.functions.ValueParameter;
 import org.eclipse.emf.common.util.EList;
 
 

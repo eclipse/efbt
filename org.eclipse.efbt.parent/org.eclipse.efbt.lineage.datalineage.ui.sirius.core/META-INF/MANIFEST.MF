@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Core
+Bundle-SymbolicName: org.eclipse.efbt.lineage.datalineage.ui.sirius.core
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: org.eclipse.lineage.datalineage.ui.sirius.core
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

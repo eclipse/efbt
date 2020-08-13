@@ -22,8 +22,8 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.efbt.chirp,
  org.eclipse.efbt.data_structures.smcubes.model.core,
  org.eclipse.efbt.trl.model.trl,
- org.eclipse.efbt.almengine.model.attribute_lineage,
- org.eclipse.efbt.almengine.model.cubes,
- org.eclipse.efbt.almengine.model.functions,
+ org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage,
+ org.eclipse.efbt.lineage.attributelineage.model.cubes,
+ org.eclipse.efbt.lineage.common.model.lineagefunctions,
  org.eclipse.efbt.common.model.module_management;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy

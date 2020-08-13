@@ -16,13 +16,13 @@ package org.eclipse.efbt.trl.component.modelquery;
 
 import java.util.Iterator;
 
-import org.eclipse.efbt.almengine.model.cubes.cube_schema.CubeSchema;
-import org.eclipse.efbt.almengine.model.cubes.cubes.BaseCube;
-import org.eclipse.efbt.almengine.model.cubes.cubes.BaseDeltaCube;
-import org.eclipse.efbt.almengine.model.cubes.cubes.BaseViewCube;
-import org.eclipse.efbt.almengine.model.cubes.cubes.DerivedCube;
-import org.eclipse.efbt.almengine.model.cubes.cubes.FreeBirdToolsCube;
-import org.eclipse.efbt.almengine.model.cubes.cubes.TargetCube;
+import org.eclipse.efbt.lineage.attributelineage.model.cubes.cube_schema.CubeSchema;
+import org.eclipse.efbt.lineage.attributelineage.model.cubes.cubes.BaseCube;
+import org.eclipse.efbt.lineage.attributelineage.model.cubes.cubes.BaseDeltaCube;
+import org.eclipse.efbt.lineage.attributelineage.model.cubes.cubes.BaseViewCube;
+import org.eclipse.efbt.lineage.attributelineage.model.cubes.cubes.DerivedCube;
+import org.eclipse.efbt.lineage.attributelineage.model.cubes.cubes.FreeBirdToolsCube;
+import org.eclipse.efbt.lineage.attributelineage.model.cubes.cubes.TargetCube;
 import org.eclipse.efbt.trl.model.trl.transformation.VersionedComponentsSet;
 import org.eclipse.efbt.trl.model.trl.transformation.VersionedCubeSchemaModule;
 import org.eclipse.efbt.trl.model.trl.transformation.VersionedFunctionalModuleLogic;

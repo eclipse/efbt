@@ -11,7 +11,7 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.sirius,
  org.eclipse.sirius.common.acceleo.aql,
  org.eclipse.efbt.trl.model.trl,
- org.eclipse.efbt.almengine.model.cubes,
+ org.eclipse.efbt.lineage.attributelineage.model.cubes,
  org.eclipse.efbt.chirp,
  org.eclipse.efbt.trl.component.modelquery,
  org.eclipse.emf.common
