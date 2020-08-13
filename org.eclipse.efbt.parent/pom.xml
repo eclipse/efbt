@@ -55,7 +55,7 @@
 		<module>org.eclipse.efbt.lineage.common.modelquery.lineagefunctions</module>
 		<module>org.eclipse.efbt.lineage.attributelineage.ui.sirius.core</module>
 		<module>org.eclipse.efbt.lineage.attributelineage.modelquery.core</module>
-		
+		<module>org.eclipse.efbt.lineage.attributelineage.ui.sirius.core</module>
 		<!--
 		
 		<module>org.eclipse.efbt.trl.model.trl</module>

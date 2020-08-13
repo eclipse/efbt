@@ -135,5 +135,54 @@
 			install-size="0"
 			version="0.0.0"
 			unpack="false"/>
-
+		<plugin
+			id="org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+		<plugin
+			id="org.eclipse.efbt.lineage.common.model.lineagecubes"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+		<plugin
+			id="org.eclipse.efbt.lineage.common.model.lineagefunctions"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+		<plugin
+			id="org.eclipse.efbt.lineage.datalineage.model.datalineage"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+		<plugin
+			id="org.eclipse.efbt.lineage.common.modelquery.lineagefunctions"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+		<plugin
+			id="org.eclipse.efbt.lineage.attributelineage.ui.sirius.core"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+		<plugin
+			id="org.eclipse.efbt.lineage.attributelineage.modelquery.core"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+		<plugin
+			id="org.eclipse.efbt.lineage.attributelineage.ui.sirius.core"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+			
+		
 </feature>
