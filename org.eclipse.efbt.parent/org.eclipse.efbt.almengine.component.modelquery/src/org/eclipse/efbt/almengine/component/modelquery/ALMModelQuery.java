@@ -2,8 +2,8 @@ package org.eclipse.efbt.almengine.component.modelquery;
 
 
 import org.eclipse.efbt.almengine.model.cubes.cubes.BaseDeltaCube;
-import org.eclipse.efbt.aorta.base_column_structured_data.BaseColumnStructuredData;
-import org.eclipse.efbt.aorta.base_column_structured_data.BaseRowData;
+import org.eclipse.efbt.chirp.base_column_structured_data.BaseColumnStructuredData;
+import org.eclipse.efbt.chirp.base_column_structured_data.BaseRowData;
 
 public class ALMModelQuery {
 
