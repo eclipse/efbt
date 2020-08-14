@@ -93,7 +93,7 @@
 			version="0.0.0"
 			unpack="false"/>
 	<plugin
-			id="org.eclipse.efbt.ldmtools.sqldevconvertor"
+			id="org.eclipse.efbt.datastructures.ldm.component.sqldevconvertor"
 			download-size="0"
 			install-size="0"
 			version="0.0.0"
@@ -152,13 +152,7 @@
 			download-size="0"
 			install-size="0"
 			version="0.0.0"
-			unpack="false"/>
-		<plugin
-			id="org.eclipse.efbt.lineage.datalineage.model.datalineage"
-			download-size="0"
-			install-size="0"
-			version="0.0.0"
-			unpack="false"/>
+			unpack="false"/>		
 		<plugin
 			id="org.eclipse.efbt.lineage.common.modelquery.lineagefunctions"
 			download-size="0"
@@ -178,11 +172,60 @@
 			version="0.0.0"
 			unpack="false"/>
 		<plugin
-			id="org.eclipse.efbt.lineage.datalineage.ui.sirius.core"
+			id="org.eclipse.efbt.language.trl.ui.sirius.core"
 			download-size="0"
 			install-size="0"
 			version="0.0.0"
 			unpack="false"/>
+		<plugin
+			id="org.eclipse.efbt.language.trl.component.translator"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+		<plugin
+			id="org.eclipse.efbt.language.trl.model.core"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+		<plugin
+			id="org.eclipse.efbt.language.trl.modelquery.core"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+		<plugin
+			id="org.eclipse.efbt.controller.core.model.core"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+		<plugin
+			id="org.eclipse.efbt.controller.core.component.core"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+		<plugin
+			id="org.eclipse.efbt.controller.core.ui.sirius.core"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+		
+		
+		
+		<module></module>
+		<module></module>
+		<module></module>
+		<module></module>
+		<module></module>
+		<module></module>
+		
+			
+			
+			
 			
 		
 </feature>

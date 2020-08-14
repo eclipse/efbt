@@ -23,5 +23,5 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.efbt.data_structures.smcubes.model.core;visibility:=reexport,
  org.eclipse.efbt.lineage.attributelineage.model.cubes,
  org.eclipse.efbt.lineage.common.model.lineagefunctions,
- org.eclipse.efbt.trl.model.trl
+ org.eclipse.efbt.language.trl.model.core
 Bundle-ActivationPolicy: lazy
