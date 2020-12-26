@@ -14,9 +14,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.eclipse.efbt.cocamo.smcubes</groupId>
+	<groupId>org.eclipse.efbt.controller.smcubes.component</groupId>
 	<version>1.0.0-SNAPSHOT</version>
-	<artifactId>org.eclipse.efbt.cocamo.smcubes</artifactId>
+	<artifactId>org.eclipse.efbt.controller.smcubes.component</artifactId>
 	<packaging>pom</packaging>
 	<prerequisites>
 		<maven>3.0</maven>
@@ -38,25 +38,21 @@
 		<additionalTestArguments></additionalTestArguments>
 	</properties>
 	<modules>
-		<module>releng/org.eclipse.efbt.cocamo.smcubes.target</module>
+		<module>releng/org.eclipse.efbt.controller.smcubes.component.target</module>
 		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.access.api</module>
 		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.access.jackcess.impl</module>
 		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.access.provider</module>
 		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.exporter</module>
 		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.importexport.api</module>
 		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.importexport.impl</module>
-		<module>plugins/org.eclipse.efbt.cocamo.smcubes.model.core</module>
-		<module>plugins/org.eclipse.efbt.cocamo.smcubes.model.example</module>
-		<module>plugins/org.eclipse.efbt.cocamo.smcubes.model.input_data</module>
-		<module>plugins/org.eclipse.efbt.cocamo.smcubes.model.program</module>
-		<module>plugins/org.eclipse.efbt.cocamo.smcubes.query.core</module>
-		<module>plugins/org.eclipse.efbt.cocamo.smcubes.ui.sirius</module>
+		<module>plugins/org.eclipse.efbt.cocason.component.export_smcubes</module>
+		<module>plugins/org.eclipse.efbt.controller.core.component.core</module>
 		<module>features/org.eclipse.efbt.cocamo.smcubes.component.feature</module>
-		<module>features/org.eclipse.efbt.cocamo.smcubes.model.feature</module>
-		<module>features/org.eclipse.efbt.cocamo.smcubes.query.feature</module>
-		<module>features/org.eclipse.efbt.cocamo.smcubes.ui.sirius.feature</module>
-		<module>releng/org.eclipse.efbt.cocamo.smcubes.repository</module>
+		<module>features/org.eclipse.efbt.cocason.feature</module>
+		<module>features/org.eclipse.efbt.controller.component.feature</module>
+		<module>releng/org.eclipse.efbt.controller.smcubes.component.repository</module>
 		<module>tests/org.eclipse.efbt.cocamo.smcubes.component.importexport.test</module>
+		<module>tests/org.eclipse.efbt.cocason.component.export_smcubes.test</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>
@@ -147,8 +143,8 @@
 					<pomDependencies>consider</pomDependencies>
 					<target>
 						<artifact>
-							<groupId>org.eclipse.efbt.cocamo.smcubes</groupId>
-							<artifactId>org.eclipse.efbt.cocamo.target</artifactId>
+							<groupId>org.eclipse.efbt.controller.smcubes.component</groupId>
+							<artifactId>org.eclipse.efbt.controller.smcubes.component.target</artifactId>
 							<version>${project.version}</version>
 						</artifact>
 					</target>
