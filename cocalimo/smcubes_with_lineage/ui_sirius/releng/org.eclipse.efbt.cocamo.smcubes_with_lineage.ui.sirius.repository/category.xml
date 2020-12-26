@@ -13,10 +13,10 @@
  -->
 <site>
    <feature id="org.eclipse.efbt.cocamo.attributelineage.ui.sirius.feature">
-      <category name="cocamo.smcubes_with_lineage.ui_sirius"/>
+      <category name="cocamo.smcubes_with_lineage.ui.sirius"/>
    </feature>
-    <feature id="org.eclipse.efbt.cocamo.datalineage.ui.sirius.feature">
-      <category name="cocamo.smcubes_with_lineage.ui_sirius"/>
+   <feature id="org.eclipse.efbt.cocamo.datalineage.ui.sirius.feature">
+      <category name="cocamo.smcubes_with_lineage.ui.sirius"/>
    </feature>
-   <category-def name="cocamo.smcubes_with_lineage.ui_sirius" label="CoCaMo SMCubes Lineage UI Sirius"/>
+   <category-def name="cocamo.smcubes_with_lineage.ui.sirius" label="CoCaMo SMCubes Lineage UI Sirius"/>
 </site>
