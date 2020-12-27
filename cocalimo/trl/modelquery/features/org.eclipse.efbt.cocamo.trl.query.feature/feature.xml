@@ -13,7 +13,7 @@
  -->
 <feature
       id="org.eclipse.efbt.cocamo.trl.query.feature"
-      label="CoCaMo  Attribute  Lineage Model"
+      label="CoCaLiMo TRL ModelQuery"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 

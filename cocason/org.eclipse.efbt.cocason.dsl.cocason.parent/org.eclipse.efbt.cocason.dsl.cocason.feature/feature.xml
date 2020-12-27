@@ -11,7 +11,6 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
-
 <feature
       id="org.eclipse.efbt.cocason.dsl.cocason.feature"
       label="CoCaSon Feature "
@@ -24,9 +23,7 @@
       <import plugin="org.eclipse.equinox.common" version="3.5.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.xtext.xbase.lib" version="2.14.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.xtext.util"/>
-      <import plugin="org.antlr.runtime" version="3.2.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.xtend.lib" version="2.14.0" match="greaterOrEqual"/>
-      <import plugin="org.apache.log4j"/>
       <import plugin="org.eclipse.xtext.ide"/>
       <import plugin="org.eclipse.xtext.xbase.ide"/>
       <import plugin="org.eclipse.xtext.ui"/>
@@ -37,6 +34,13 @@
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.compare"/>
       <import plugin="org.eclipse.xtext.builder"/>
+      <import plugin="org.eclipse.efbt.controller.core.model.core"/>
+      <import plugin="org.antlr.runtime" version="3.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage"/>
+      <import plugin="org.eclipse.efbt.lineage.datalineage.model.datalineage"/>
+      <import plugin="org.eclipse.efbt.lineage.common.model.lineagefunctions"/>
+      <import plugin="org.eclipse.efbt.cocamo.functions.model.core"/>
+      <import plugin="org.eclipse.efbt.language.trl.model.core"/>
    </requires>
 
    <plugin
