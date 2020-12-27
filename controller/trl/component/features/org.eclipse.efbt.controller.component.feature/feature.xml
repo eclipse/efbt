@@ -11,7 +11,6 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
-
 <feature
       id="org.eclipse.efbt.controller.component.feature"
       label="EFBT Controller Component"
@@ -120,12 +119,6 @@ Exhibit A – Form of Secondary Licenses Notice
 
     You may add additional accurate notices of copyright ownership.
    </license>
-
-   <requires>
-      <import plugin="org.eclipse.efbt.controller.core.model.core" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.efbt.cocason.component.export_smcubes"/>
-      <import plugin="org.eclipse.efbt.ldm.component.sqldevconvertor"/>
-   </requires>
 
    <plugin
          id="org.eclipse.efbt.controller.core.component.core"

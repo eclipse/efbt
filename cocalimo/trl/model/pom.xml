@@ -38,8 +38,10 @@
 	</properties>
 	<modules>
 		<module>releng/org.eclipse.efbt.cocamo.trl.model.target</module>
-		<module>plugins/org.eclipse.efbt.language.trl.model.core</module>		
+		<module>plugins/org.eclipse.efbt.language.trl.model.core</module>
+		<module>plugins/org.eclipse.efbt.controller.core.model.core</module>		
 		<module>features/org.eclipse.efbt.cocamo.trl.model.feature</module>
+		<module>features/org.eclipse.efbt.controller.model.feature</module>
 		<module>releng/org.eclipse.efbt.cocamo.trl.model.repository</module>
 
 	</modules>
