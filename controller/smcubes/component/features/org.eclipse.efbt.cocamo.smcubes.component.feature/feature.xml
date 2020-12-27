@@ -13,7 +13,7 @@
  -->
 <feature
       id="org.eclipse.efbt.cocamo.smcubes.component.feature"
-      label="Controller SMCubes Component"
+      label="Controller SMCubes Component 1"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 

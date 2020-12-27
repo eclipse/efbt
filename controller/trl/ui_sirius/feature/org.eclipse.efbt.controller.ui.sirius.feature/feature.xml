@@ -13,7 +13,7 @@
  -->
 <feature
       id="org.eclipse.efbt.controller.ui.sirius.feature"
-      label="EFBT Controller TRL UI Sirius"
+      label="Controller TRL UI Sirius"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 
