@@ -46,10 +46,8 @@
 		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.importexport.api</module>
 		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.importexport.impl</module>
 		<module>plugins/org.eclipse.efbt.cocason.component.export_smcubes</module>
-		<module>plugins/org.eclipse.efbt.controller.core.component.core</module>
 		<module>features/org.eclipse.efbt.cocamo.smcubes.component.feature</module>
 		<module>features/org.eclipse.efbt.cocason.feature</module>
-		<module>features/org.eclipse.efbt.controller.component.feature</module>
 		<module>releng/org.eclipse.efbt.controller.smcubes.component.repository</module>
 		<module>tests/org.eclipse.efbt.cocamo.smcubes.component.importexport.test</module>
 		<module>tests/org.eclipse.efbt.cocason.component.export_smcubes.test</module>

@@ -112,8 +112,8 @@
 				  <pomDependencies>consider</pomDependencies>
 					<target>
 						<artifact>
-							<groupId>org.eclipse.efbt.ldm</groupId>
-							<artifactId>org.eclipse.efbt.ldm.target</artifactId>
+							<groupId>org.eclipse.efbt.controller.ldm</groupId>
+							<artifactId>org.eclipse.efbt.controller.ldm.target</artifactId>
 							<version>${project.version}</version>
 						</artifact>
 					</target>

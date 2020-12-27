@@ -18,7 +18,7 @@
 		<artifactId>org.eclipse.efbt.cocamo.smcubes.modelquery</artifactId>
 		<version>1.0.0-SNAPSHOT</version>  <relativePath>../../pom.xml</relativePath>
 	</parent>
-	<artifactId>org.eclipse.efbt.cocamo.modelquery.target</artifactId>
+	<artifactId>org.eclipse.efbt.cocamo.smcubes.modelquery.target</artifactId>
 	<packaging>eclipse-target-definition</packaging>
 
 

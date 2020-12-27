@@ -15,5 +15,8 @@
    <feature id="org.eclipse.efbt.cocamo.trl.model.feature">
       <category name="cocamo.trl.model"/>
    </feature>
+    <feature id="org.eclipse.efbt.controller.model.feature">
+      <category name="cocamo.trl.model"/>
+   </feature>
    <category-def name="cocamo.trl.model" label="CoCaMo TRL Model"/>
 </site>
