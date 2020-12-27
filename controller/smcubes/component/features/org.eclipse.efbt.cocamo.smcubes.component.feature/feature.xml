@@ -121,13 +121,19 @@ Exhibit A – Form of Secondary Licenses Notice
    </license>
 
    <requires>
-      <import plugin="org.eclipse.efbt.dependencies.accessdb.org.eclipse.efbt.dependencies.access.jackcess"/>
-      <import plugin="org.eclipse.efbt.dependencies.accessdb.pomfirst-thirdparty"/>
       <import plugin="org.eclipse.efbt.cocamo.smcubes.model.program" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.xtext"/>
       <import plugin="org.eclipse.emf.ecore"/>
       <import plugin="org.eclipse.efbt.cocamo.smcubes.model.input_data"/>
       <import plugin="org.eclipse.efbt.cocamo.core.model.testing"/>
+      <import plugin="org.eclipse.efbt.cocamo.smcubes.component.access.api" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.apache.commons.logging"/>
+      <import plugin="org.eclipse.efbt.cocamo.smcubes.model.core" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.efbt.cocamo.smcubes.component.access.provider" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.efbt.cocamo.core.model.functionality_module"/>
+      <import plugin="org.eclipse.efbt.cocamo.core.model.requirements_text"/>
+      <import plugin="com.google.inject"/>
+      <import plugin="org.apache.commons.csv"/>
    </requires>
 
    <plugin

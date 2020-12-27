@@ -1,54 +1,54 @@
 cd cocalimo\core\model
-mvn install
+call mvn install
 cd ..\..\..
 cd cocalimo\core\ui_sirius
-mvn install
+call mvn install
 cd ..\..\..
 cd cocalimo\smcubes\model
-mvn install
+call mvn install
 cd ..\..\..
  cd cocalimo\smcubes\modelquery
-mvn install
+call mvn install
 cd ..\..\..
  cd cocalimo\smcubes\ui_sirius
-mvn install
+call mvn install
 cd ..\..\..
 cd cocalimo\smcubes_with_lineage\model
-mvn install
+call mvn install
 cd ..\..\..
 cd cocalimo\smcubes_with_lineage\modelquery
-mvn install
+call mvn install
 cd ..\..\..
 cd cocalimo\smcubes_with_lineage\ui_sirius
-mvn install
+call mvn install
 cd ..\..\..
 cd cocalimo\trl\model
-mvn install
+call mvn install
 cd ..\..\..
 cd cocalimo\trl\modelquery
-mvn install
+call mvn install
 cd ..\..\..
 cd cocalimo\trl\ui_sirius
-mvn install
+call mvn install
 cd ..\..\..
 cd cocason\org.eclipse.efbt.cocason.dsl.cocason.parent
-mvn install 
+call mvn install 
 cd ..\..                   
 cd controller\ldm
-mvn install
+call mvn install
 cd ..\..
 cd controller\smcubes\access_dependencies
-mvn install
+call mvn install
 cd ..\..\..
 cd controller\smcubes\component
-mvn install
+call mvn install
 cd ..\..\..
 cd controller\trl\component
-mvn install
+call mvn install
 cd ..\..\..
 cd controller\trl\ui_sirius
-mvn install
+call mvn install
 cd ..\..\..
 cd installations\complete_repo\
-mvn install
+call mvn install
 cd ..\..
