@@ -13,7 +13,7 @@
  -->
 <feature
       id="org.eclipse.efbt.controller.component.feature"
-      label="EFBT Controller Component"
+      label="Controller TRL Component 1"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 

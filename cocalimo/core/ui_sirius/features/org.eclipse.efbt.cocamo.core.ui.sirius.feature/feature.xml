@@ -14,7 +14,7 @@
 
 <feature
       id="org.eclipse.efbt.cocamo.core.ui.sirius.feature"
-      label="CoCaMo Core UI"
+      label="CoCaLiMo Core UI Sirius"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 
