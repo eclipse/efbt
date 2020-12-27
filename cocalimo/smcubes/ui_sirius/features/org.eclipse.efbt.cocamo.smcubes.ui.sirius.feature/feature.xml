@@ -11,10 +11,9 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
-
 <feature
       id="org.eclipse.efbt.cocamo.smcubes.ui.sirius.feature"
-      label="CoCaMo SMCubes UI"
+      label="CoCaLiMo SMCubes UI Sirius"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 
