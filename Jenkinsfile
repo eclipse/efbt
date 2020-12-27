@@ -43,13 +43,10 @@ pipeline {
                     cd ../../..                    
                     cd cocason/org.eclipse.efbt.cocason.dsl.cocason.parent
                     mvn install 
-                    cd ../../..
-                    cd controller/core
-                    mvn install
-                    cd ../../..
+                    cd ../..                   
                     cd controller/ldm
                     mvn install
-                    cd ../../..
+                    cd ../..
                     cd controller/smcubes/access_dependencies
                     mvn install
                     cd ../../..
@@ -62,22 +59,24 @@ pipeline {
                     cd controller/trl/ui_sirius
                     mvn install
                     cd ../../..
-                    
+                    cd installations/complete_repo/
+                    mvn install
+                    cd ../..
                     
                 '''
             }
         }
-        stage('Deploy') {
-	      steps {
-	        sshagent ( ['projects-storage.eclipse.org-bot-ssh']) {
-	          sh '''
-	            ssh genie.efbt@projects-storage.eclipse.org rm -rf /home/data/httpd/download.eclipse.org/efbt/snapshots
-	            ssh genie.efbt@projects-storage.eclipse.org mkdir -p /home/data/httpd/download.eclipse.org/efbt/snapshots	            	            	         
-	            scp -r org.eclipse.efbt.complete_repo/releng/org.eclipse.efbt.repository/target/repository/* genie.efbt@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/efbt/snapshots
-	           '''
-	        }
-	      }
-    }
+//        stage('Deploy') {
+//	      steps {
+//	        sshagent ( ['projects-storage.eclipse.org-bot-ssh']) {
+//	          sh '''
+//	            ssh genie.efbt@projects-storage.eclipse.org rm -rf /home/data/httpd/download.eclipse.org/efbt/snapshots
+//	            ssh genie.efbt@projects-storage.eclipse.org mkdir -p /home/data/httpd/download.eclipse.org/efbt/snapshots	            	            	         
+//	            scp -r installations/complete_repo/releng/org.eclipse.efbt.repository/target/repository/* genie.efbt@projects-storage.eclipse.org:/home/data/httpd/download.eclipse.org/efbt/snapshots
+//	           '''
+//	        }
+//	      }
+//    }
     }
     post {
         // send a mail on unsuccessful and fixed builds
