@@ -11,10 +11,9 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
-
 <feature
       id="org.eclipse.efbt.cocamo.smcubes.component.feature"
-      label="CoCaMo SMCubes Component"
+      label="Controller SMCubes Component"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 
@@ -122,7 +121,6 @@ Exhibit A – Form of Secondary Licenses Notice
    </license>
 
    <requires>
-      <import plugin="org.eclipse.efbt.cocamo.smcubes.component.access.api" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.efbt.dependencies.accessdb.org.eclipse.efbt.dependencies.access.jackcess"/>
       <import plugin="org.eclipse.efbt.dependencies.accessdb.pomfirst-thirdparty"/>
       <import plugin="org.eclipse.efbt.cocamo.smcubes.model.program" version="1.0.0" match="greaterOrEqual"/>
@@ -166,6 +164,7 @@ Exhibit A – Form of Secondary Licenses Notice
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
    <plugin
          id="org.eclipse.efbt.cocamo.smcubes.component.importexport.impl"
          download-size="0"
