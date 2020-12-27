@@ -43,7 +43,7 @@ pipeline {
                     cd ../../..                    
                     cd cocason/org.eclipse.efbt.cocason.dsl.cocason.parent
                     mvn install 
-                    cd ../../..                   
+                    cd ../..                   
                     cd controller/ldm
                     mvn install
                     cd ../..
