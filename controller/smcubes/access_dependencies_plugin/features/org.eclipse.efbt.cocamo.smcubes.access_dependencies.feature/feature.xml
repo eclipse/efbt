@@ -13,7 +13,7 @@
  -->
 <feature
       id="org.eclipse.efbt.cocamo.smcubes.access_dependencies.feature"
-      label="Controller SMCubes Component 1"
+      label="Controller SMCubes Component Dependencies"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 
@@ -126,7 +126,8 @@ Exhibit A – Form of Secondary Licenses Notice
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-    <plugin
+
+   <plugin
          id="org.eclipse.efbt.cocamo.smcubes.component.access.api"
          download-size="0"
          install-size="0"
