@@ -47,7 +47,10 @@ pipeline {
                     cd controller/ldm
                     mvn install
                     cd ../..
-                    cd controller/smcubes/access_dependencies
+                    cd controller/smcubes/access_dependencies_external
+                    mvn install
+                    cd ../../..
+                    cd controller/smcubes/access_dependencies_plugin
                     mvn install
                     cd ../../..
                     cd controller/smcubes/component
