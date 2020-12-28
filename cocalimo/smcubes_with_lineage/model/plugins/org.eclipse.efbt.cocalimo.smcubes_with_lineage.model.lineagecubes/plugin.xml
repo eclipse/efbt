@@ -23,7 +23,7 @@
       <!-- @generated lineagecubes -->
       <package
             uri="http://www.eclipse.org/efbt/cube_schema"
-            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cube_schema.Cube_schemaPackage"
+            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cube_schema.Cube_schemaPackage"
             genModel="model/lineagecubes.genmodel"/>
    </extension>
 
@@ -31,14 +31,14 @@
       <!-- @generated lineagecubes -->
       <parser
             type="cube_schema"
-            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cube_schema.util.Cube_schemaResourceFactoryImpl"/>
+            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cube_schema.util.Cube_schemaResourceFactoryImpl"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated lineagecubes -->
       <package
             uri="http://www.eclipse.org/efbt/cubes"
-            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.CubesPackage"
+            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cubes.CubesPackage"
             genModel="model/lineagecubes.genmodel"/>
    </extension>
 
@@ -46,14 +46,14 @@
       <!-- @generated lineagecubes -->
       <parser
             type="cubes"
-            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.util.CubesResourceFactoryImpl"/>
+            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cubes.util.CubesResourceFactoryImpl"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated lineagecubes -->
       <package
             uri="http://www.eclipse.org/efbt/efbt_advanced_data_definition"
-            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.efbt_advanced_data_definition.Efbt_advanced_data_definitionPackage"
+            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.efbt_advanced_data_definition.Efbt_advanced_data_definitionPackage"
             genModel="model/lineagecubes.genmodel"/>
    </extension>
 
@@ -61,14 +61,14 @@
       <!-- @generated lineagecubes -->
       <parser
             type="efbt_advanced_data_definition"
-            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.efbt_advanced_data_definition.util.Efbt_advanced_data_definitionResourceFactoryImpl"/>
+            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.efbt_advanced_data_definition.util.Efbt_advanced_data_definitionResourceFactoryImpl"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated lineagecubes -->
       <package
             uri="http://www.eclipse.org/efbt/incremental_cubes"
-            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.incremental_cubes.Incremental_cubesPackage"
+            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.incremental_cubes.Incremental_cubesPackage"
             genModel="model/lineagecubes.genmodel"/>
    </extension>
 
@@ -76,7 +76,22 @@
       <!-- @generated lineagecubes -->
       <parser
             type="incremental_cubes"
-            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.incremental_cubes.util.Incremental_cubesResourceFactoryImpl"/>
+            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.incremental_cubes.util.Incremental_cubesResourceFactoryImpl"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated lineagecubes -->
+      <package
+            uri="http://www.eclipse.org/efbt/data_definition"
+            class="data_definition.Data_definitionPackage"
+            genModel="model/lineagecubes.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated lineagecubes -->
+      <package
+            uri="http://www.eclipse.org/efbt/core"
+            class="core.CorePackage"
+            genModel="model/lineagecubes.genmodel"/>
+   </extension>
 </plugin>

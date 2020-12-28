@@ -23,7 +23,7 @@
       <!-- @generated functions -->
       <package
             uri="http://www.eclipse.org/efbt/functions"
-            class="org.eclipse.efbt.cocamo.functions.model.functions.FunctionsPackage"
+            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.functions.FunctionsPackage"
             genModel="model/functions.genmodel"/>
    </extension>
 
@@ -31,7 +31,6 @@
       <!-- @generated functions -->
       <parser
             type="functions"
-            class="org.eclipse.efbt.cocamo.functions.model.functions.util.FunctionsResourceFactoryImpl"/>
+            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.functions.util.FunctionsResourceFactoryImpl"/>
    </extension>
-
 </plugin>

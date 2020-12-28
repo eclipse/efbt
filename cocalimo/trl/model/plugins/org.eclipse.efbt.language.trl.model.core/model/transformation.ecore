@@ -16,7 +16,7 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A DataSetTransformations is used to derive DerivedCubes. &#xA;The DataSetTransformation links the DerivedCube to the logic which is used to derive the cubes structure from the structure of its source cubes, and to derive its data from populated source cubes.&#xA;Note that the DataSetTransformations has many subsclasses, currently they represent structures from the TraceableReportingLanguage (TRL), and soon these will be replaced by subclasses which represent structures from VTL."/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cube" eType="ecore:EClass ../../org.eclipse.efbt.lineage.common.model.lineagecubes/model/cubes.ecore#//DerivedCube">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cube" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes/model/cubes.ecore#//DerivedCube">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="cube"/>
@@ -107,7 +107,7 @@
       <details key="documentation" value="A module of VersionedCubeSchemas"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="schemas" upperBound="-1"
-        eType="ecore:EClass ../../org.eclipse.efbt.lineage.common.model.lineagecubes/model/cube_schema.ecore#//CubeSchema"
+        eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes/model/cube_schema.ecore#//CubeSchema"
         containment="true">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="element"/>
@@ -130,13 +130,13 @@
   <eClassifiers xsi:type="ecore:EClass" name="TRLExecutableLogic">
     <eStructuralFeatures xsi:type="ecore:EReference" name="componentSet" eType="#//VersionedComponentsSet"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cubesModule" eType="ecore:EClass ../../org.eclipse.efbt.lineage.common.model.lineagecubes/model/cubes.ecore#//FreeBirdToolsCubeModule"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cubesModule" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes/model/cubes.ecore#//FreeBirdToolsCubeModule"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="functionSpecModule" eType="ecore:EClass ../../org.eclipse.efbt.cocamo.functions.model.core/model/functions.ecore#//FunctionSpecModule"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="functionSpecModule" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.functions/model/functions.ecore#//FunctionSpecModule"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         iD="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cubesHierarchyModule" eType="ecore:EClass ../../org.eclipse.efbt.lineage.common.model.lineagecubes/model/cubes.ecore#//FreeBIRDToolsCubeHierarchyRelationshipModule"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cubesHierarchyModule" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes/model/cubes.ecore#//FreeBIRDToolsCubeHierarchyRelationshipModule"
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TRLProgram">
@@ -145,10 +145,10 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="smcubesStaticModel" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.program/model/cocamo.ecore#//SMCubesStaticModel"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="structVariablesModule"
-        eType="ecore:EClass ../../org.eclipse.efbt.lineage.common.model.lineagecubes/model/efbt_advanced_data_definition.ecore#//StructTypedVariablesModule"
+        eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes/model/efbt_advanced_data_definition.ecore#//StructTypedVariablesModule"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="arrayTypedVariablesModule"
-        eType="ecore:EClass ../../org.eclipse.efbt.lineage.common.model.lineagecubes/model/efbt_advanced_data_definition.ecore#//ArrayTypedVariableModule"
+        eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes/model/efbt_advanced_data_definition.ecore#//ArrayTypedVariableModule"
         containment="true"/>
   </eClassifiers>
 </ecore:EPackage>

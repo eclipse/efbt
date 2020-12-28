@@ -19,7 +19,7 @@ import org.eclipse.efbt.language.trl.model.trl_sql_views.IgnoreColumn;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.JoinView;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.RenameAs;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.SQLView;
-import org.eclipse.efbt.lineage.common.model.lineagecubes.cubes.FreeBirdToolsCube;
+import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.FreeBirdToolsCube;
 
 
 

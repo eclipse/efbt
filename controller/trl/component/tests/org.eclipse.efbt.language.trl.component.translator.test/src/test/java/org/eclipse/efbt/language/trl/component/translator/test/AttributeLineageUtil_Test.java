@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.eclipse.efbt.language.trl.component.translator.api.AttributeLineageUtil;
 import org.eclipse.efbt.language.trl.component.translator.impl.AttributeLineageUtilImpl;
 import org.eclipse.efbt.language.trl.model.transformation.VersionedComponentsSet;
-import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.AttributeLineageModel;
+import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage.AttributeLineageModel;
 
 public class AttributeLineageUtil_Test {
 

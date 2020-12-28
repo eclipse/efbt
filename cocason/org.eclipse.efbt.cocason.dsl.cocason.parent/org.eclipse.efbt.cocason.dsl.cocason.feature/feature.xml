@@ -36,10 +36,10 @@
       <import plugin="org.eclipse.xtext.builder"/>
       <import plugin="org.eclipse.efbt.controller.core.model.core"/>
       <import plugin="org.antlr.runtime" version="3.2.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage"/>
-      <import plugin="org.eclipse.efbt.lineage.datalineage.model.datalineage"/>
-      <import plugin="org.eclipse.efbt.lineage.common.model.lineagefunctions"/>
-      <import plugin="org.eclipse.efbt.cocamo.functions.model.core"/>
+      <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage"/>
+      <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.datalineage"/>
+      <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagefunctions"/>
+      <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.functions"/>
       <import plugin="org.eclipse.efbt.language.trl.model.core"/>
    </requires>
 

@@ -11,7 +11,7 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.sirius,
  org.eclipse.sirius.common.acceleo.aql,
  org.eclipse.efbt.language.trl.model.core,
- org.eclipse.efbt.lineage.common.model.lineagecubes,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes,
  org.eclipse.efbt.language.trl.modelquery.core,
  org.eclipse.emf.common,
  org.eclipse.efbt.lineage.common.modelquery.lineagefunctions

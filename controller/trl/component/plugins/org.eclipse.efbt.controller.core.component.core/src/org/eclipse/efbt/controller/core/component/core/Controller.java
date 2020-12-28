@@ -27,7 +27,7 @@ import org.eclipse.efbt.language.trl.component.translator.util.ComparisonUtil;
 import org.eclipse.efbt.language.trl.model.transformation.TRLExecutableLogic;
 import org.eclipse.efbt.controller.core.model.platform_call.TranslateBIRDWithNewTestFormatToCocason;
 import org.eclipse.efbt.ldm.component.sqldevconvertor.SQLDevConverter;
-import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.AttributeLineageModel;
+import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage.AttributeLineageModel;
 import org.eclipse.efbt.cocason.component.export_smcubes.ImportAndExportSMCubesToNewCocason;
 
 public class Controller {

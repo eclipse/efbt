@@ -23,7 +23,7 @@
       <!-- @generated datalineage -->
       <package
             uri="http://www.eclipse.org/efbt/cell_transformation_logic"
-            class="org.eclipse.efbt.lineage.datalineage.model.cell_transformation_logic.Cell_transformation_logicPackage"
+            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cell_transformation_logic.Cell_transformation_logicPackage"
             genModel="model/datalineage.genmodel"/>
    </extension>
 
@@ -31,14 +31,14 @@
       <!-- @generated datalineage -->
       <parser
             type="cell_transformation_logic"
-            class="org.eclipse.efbt.lineage.datalineage.model.cell_transformation_logic.util.Cell_transformation_logicResourceFactoryImpl"/>
+            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cell_transformation_logic.util.Cell_transformation_logicResourceFactoryImpl"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated datalineage -->
       <package
             uri="http://www.eclipse.org/efbt/data_lineage"
-            class="org.eclipse.efbt.lineage.datalineage.model.data_lineage.Data_lineagePackage"
+            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.data_lineage.Data_lineagePackage"
             genModel="model/datalineage.genmodel"/>
    </extension>
 
@@ -46,7 +46,30 @@
       <!-- @generated datalineage -->
       <parser
             type="data_lineage"
-            class="org.eclipse.efbt.lineage.datalineage.model.data_lineage.util.Data_lineageResourceFactoryImpl"/>
+            class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.data_lineage.util.Data_lineageResourceFactoryImpl"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated datalineage -->
+      <package
+            uri="http://www.eclipse.org/efbt/column_structured_data"
+            class="column_structured_data.Column_structured_dataPackage"
+            genModel="model/datalineage.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated datalineage -->
+      <package
+            uri="http://www.eclipse.org/efbt/base_column_structured_data"
+            class="base_column_structured_data.Base_column_structured_dataPackage"
+            genModel="model/datalineage.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated datalineage -->
+      <package
+            uri="http://www.eclipse.org/efbt/core"
+            class="core.CorePackage"
+            genModel="model/datalineage.genmodel"/>
+   </extension>
 </plugin>
