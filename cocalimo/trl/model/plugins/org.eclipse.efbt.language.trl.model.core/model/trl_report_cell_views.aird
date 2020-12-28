@@ -7,33 +7,33 @@
     <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.functions.model.core/model/functions.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagecubes/model/cubes.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore</semanticResources>
     <semanticResources>transformation.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagecubes/model/cube_schema.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/data_definition.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/data_definition.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.controller.core.model.core/model/platform_call.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage/model/attribute_lineage.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage/model/cube_transformation_logic.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage/model/row_transformation_logic.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.datalineage.model.datalineage/model/data_lineage.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.datalineage.model.datalineage/model/cell_transformation_logic.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/base_column_structured_data.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.program/model/cocamo.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/smcubes_model.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/efbt_data_definition.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/efbt_vtl_transformation.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/vtl_transformation.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/efbt_mapping.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/mapping.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/base_column_structured_data.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.program/model/cocamo.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/smcubes_model.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/efbt_data_definition.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/efbt_vtl_transformation.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/vtl_transformation.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/efbt_mapping.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/mapping.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.requirements_text/model/requirements_text.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.testing/model/test_definition.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.functionality_module/model/functionality_module.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.functionality_module/model/scenarios.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.testing/model/test_input_data.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.testing/model/test.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/reports.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/rendering.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/reports.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/rendering.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_z76AcDJrEeubatxFEKqAMw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_0eGHgDJrEeubatxFEKqAMw" name="trl_report_cell_views class diagram" repPath="#_0d-LsDJrEeubatxFEKqAMw" changeId="1c1006e0-8cce-44ad-9aae-3f8e5b11208d">

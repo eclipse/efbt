@@ -17,7 +17,7 @@
       version="1.0.0.qualifier">
 
    <requires>
-      <import plugin="org.eclipse.efbt.cocamo.smcubes.model.program"/>
+      <import plugin="org.eclipse.efbt.cocalimo.smcubes.model.program"/>
       <import plugin="org.eclipse.xtext"/>
       <import plugin="org.eclipse.xtext.xbase"/>
       <import plugin="org.eclipse.equinox.common" version="3.5.0" match="greaterOrEqual"/>

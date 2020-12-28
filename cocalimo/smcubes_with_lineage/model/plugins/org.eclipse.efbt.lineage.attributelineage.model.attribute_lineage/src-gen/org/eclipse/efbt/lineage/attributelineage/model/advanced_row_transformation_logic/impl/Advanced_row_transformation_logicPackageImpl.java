@@ -6,7 +6,7 @@ import org.eclipse.efbt.cocalimo.core.model.module_management.Module_managementP
 
 import org.eclipse.efbt.cocamo.functions.model.functions.FunctionsPackage;
 
-import org.eclipse.efbt.cocamo.smcubes.model.core.CorePackage;
+import org.eclipse.efbt.cocalimo.smcubes.model.core.CorePackage;
 
 import org.eclipse.efbt.lineage.attributelineage.model.advanced_row_transformation_logic.Advanced_row_transformation_logicFactory;
 import org.eclipse.efbt.lineage.attributelineage.model.advanced_row_transformation_logic.Advanced_row_transformation_logicPackage;
