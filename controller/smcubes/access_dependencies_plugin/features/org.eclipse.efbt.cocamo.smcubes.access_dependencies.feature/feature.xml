@@ -12,8 +12,8 @@
        Neil Mackenzie - initial API and implementation
  -->
 <feature
-      id="org.eclipse.efbt.cocamo.datalineage.query.feature"
-      label="CoCaLiMo SMCubes_With_Lineage ModelQuery Data Lineage ModelQuery"
+      id="org.eclipse.efbt.cocamo.smcubes.access_dependencies.feature"
+      label="Controller SMCubes Component 1"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 
@@ -121,7 +121,7 @@ Exhibit A – Form of Secondary Licenses Notice
    </license>
 
    <plugin
-         id="org.eclipse.efbt.lineage.datalineage.modelquery.core"
+         id="org.eclipse.efbt.cocamo.smcubes.component.access.jackcess.impl"
          download-size="0"
          install-size="0"
          version="0.0.0"

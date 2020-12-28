@@ -10,16 +10,17 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.eclipse.efbt.cocamo.smcubes_with_lineage.modelquery</groupId>
+	<groupId>org.eclipse.efbt.controller.smcubes.component.access_dependencies_plugin</groupId>
 	<version>1.0.0-SNAPSHOT</version>
-	<artifactId>org.eclipse.efbt.cocamo.smcubes_with_lineage.modelquery</artifactId>
+	<artifactId>org.eclipse.efbt.controller.smcubes.component.access_dependencies_plugin</artifactId>
 	<packaging>pom</packaging>
-<prerequisites>
-    <maven>3.0</maven>
-  </prerequisites>
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
 	<properties>
 		<xtextVersion>2.23.0</xtextVersion>
 		<mwe2Version>2.11.3</mwe2Version>
@@ -37,15 +38,33 @@
 		<additionalTestArguments></additionalTestArguments>
 	</properties>
 	<modules>
-		<module>releng/org.eclipse.efbt.cocamo.smcubes_with_lineage.modelquery.target</module>
-		<module>plugins/org.eclipse.efbt.lineage.attributelineage.modelquery.core</module>
-		<module>plugins/org.eclipse.efbt.lineage.common.modelquery.lineagefunctions</module>
-		<module>features/org.eclipse.efbt.cocamo.attributelineage.query.feature</module>
-		<module>features/org.eclipse.efbt.cocamo.lineage_core.query.feature</module>
-		<module>releng/org.eclipse.efbt.cocamo.smcubes_with_lineage.modelquery.repository</module>
-
+		<module>releng/org.eclipse.efbt.controller.smcubes.component.access_dependencies_plugin.target</module>
+		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.access.jackcess.impl</module>	
+		<module>features/org.eclipse.efbt.cocamo.smcubes.access_dependencies.feature</module>
+		<module>releng/org.eclipse.efbt.controller.smcubes.component.access_dependencies_plugin.repository</module>
 	</modules>
-	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.eclipse.xtext</groupId>
+				<artifactId>xtext-dev-bom</artifactId>
+				<version>${xtextVersion}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.efbt.dependencies.accessdb</groupId>
+				<artifactId>org.eclipse.efbt.dependencies.access.jackcess</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.efbt.dependencies.accessdb</groupId>
+				<artifactId>pomfirst-thirdparty</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
 	<build>
 		<plugins>
 			<plugin>
@@ -85,7 +104,7 @@
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-p2-plugin</artifactId>
 				<version>${tycho-version}</version>
-				
+
 				<executions>
 					<execution>
 						<id>attach-p2-metadata</id>
@@ -96,25 +115,25 @@
 					</execution>
 				</executions>
 			</plugin>
-			 <plugin>
-         <groupId>org.eclipse.tycho</groupId>
-         <artifactId>tycho-p2-repository-plugin</artifactId>
-         <version>${tycho-version}</version>
-         <configuration>
-            <includeAllDependencies>true</includeAllDependencies>
-         </configuration>
-      </plugin>
-			
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-repository-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<includeAllDependencies>true</includeAllDependencies>
+				</configuration>
+			</plugin>
+
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho-version}</version>
 				<configuration>
-				  <pomDependencies>consider</pomDependencies>
+					<pomDependencies>consider</pomDependencies>
 					<target>
 						<artifact>
-							<groupId>org.eclipse.efbt.cocamo.smcubes_with_lineage.modelquery</groupId>
-							<artifactId>org.eclipse.efbt.cocamo.smcubes_with_lineage.modelquery.target</artifactId>
+							<groupId>org.eclipse.efbt.controller.smcubes.component.access_dependencies_plugin</groupId>
+							<artifactId>org.eclipse.efbt.controller.smcubes.component.access_dependencies_plugin.target</artifactId>
 							<version>${project.version}</version>
 						</artifact>
 					</target>
@@ -142,8 +161,8 @@
 								<id>org.eclipse.xtext.logging</id>
 								<versionRange>1.2.15</versionRange>
 							</requirement>
-							<!-- to get the org.eclipse.osgi.compatibility.state plugin if the target 
-								platform is Luna or later. (backward compatible with kepler and previous 
+							<!-- to get the org.eclipse.osgi.compatibility.state plugin if the 
+								target platform is Luna or later. (backward compatible with kepler and previous 
 								versions) see https://bugs.eclipse.org/bugs/show_bug.cgi?id=492149 -->
 							<requirement>
 								<type>eclipse-feature</type>
@@ -267,10 +286,7 @@
 					</configuration>
 				</plugin>
 				<plugin>
-					<!-- 
-						Can be removed after first generator execution
-						https://bugs.eclipse.org/bugs/show_bug.cgi?id=480097
-					-->
+					<!-- Can be removed after first generator execution https://bugs.eclipse.org/bugs/show_bug.cgi?id=480097 -->
 					<groupId>org.eclipse.tycho</groupId>
 					<artifactId>tycho-compiler-plugin</artifactId>
 					<version>${tycho-version}</version>
@@ -279,39 +295,35 @@
 						<useProjectSettings>false</useProjectSettings>
 					</configuration>
 				</plugin>
-				<!-- to skip running (and compiling) tests use commandline flag: -Dmaven.test.skip
-					To skip tests, but still compile them, use: -DskipTests
-					To allow all tests in a pom to pass/fail, use commandline flag: -fae (fail
-					at end) -->
+				<!-- to skip running (and compiling) tests use commandline flag: -Dmaven.test.skip 
+					To skip tests, but still compile them, use: -DskipTests To allow all tests 
+					in a pom to pass/fail, use commandline flag: -fae (fail at end) -->
 				<plugin>
 					<groupId>org.eclipse.tycho</groupId>
 					<artifactId>tycho-surefire-plugin</artifactId>
 					<version>${tycho-version}</version>
-				 <dependencies>
-       	        <dependency>
+					<dependencies>
+						<dependency>
 
-            <groupId>org.junit.platform</groupId>
+							<groupId>org.junit.platform</groupId>
 
-            <artifactId>junit-platform-surefire-provider</artifactId>
+							<artifactId>junit-platform-surefire-provider</artifactId>
 
-            <version>1.1.0</version>
-            
-            
+							<version>1.1.0</version>
 
-        </dependency>
-                   <!--       <dependency>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                    <version>5.4.0</version>
-                </dependency> -->
-					</dependencies> 
+
+
+						</dependency>
+						<!-- <dependency> <groupId>org.junit.vintage</groupId> <artifactId>junit-vintage-engine</artifactId> 
+							<version>5.4.0</version> </dependency> -->
+					</dependencies>
 				</plugin>
-			 <!--	  <plugin>-->
-     <!--  <artifactId>maven-surefire-plugin</artifactId>  -->
-      <!-- latest version (2.20.1) does not work well with JUnit5 -->
-   <!--    <version>2.22.2</version> -->
-      
-    <!-- </plugin> -->
+				<!-- <plugin> -->
+				<!-- <artifactId>maven-surefire-plugin</artifactId> -->
+				<!-- latest version (2.20.1) does not work well with JUnit5 -->
+				<!-- <version>2.22.2</version> -->
+
+				<!-- </plugin> -->
 			</plugins>
 		</pluginManagement>
 	</build>
@@ -366,18 +378,27 @@
 	</profiles>
 
 	<dependencies>
-  
+		<dependency>
+			<groupId>org.eclipse.efbt.dependencies.accessdb</groupId>
+			<artifactId>org.eclipse.efbt.dependencies.access.jackcess</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.efbt.dependencies.accessdb</groupId>
+			<artifactId>pomfirst-thirdparty</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
 
-    <!-- ... -->
-   <dependency>
+		<!-- ... -->
+		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter</artifactId>
 			<version>${junit.jupiter.version}</version>
 			<scope>test</scope>
 		</dependency>
-    <!-- ... -->
+		<!-- ... -->
 
-   
-  
-  </dependencies>
+
+
+	</dependencies>
 </project>
