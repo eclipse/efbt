@@ -33,10 +33,10 @@
 		<additionalTestArguments></additionalTestArguments>
 	</properties>
 	<modules>
+		<module>org.eclipse.efbt.cocason.dsl.cocason.target</module>
 		<module>org.eclipse.efbt.cocason.dsl.cocason</module>
 		<module>org.eclipse.efbt.cocason.dsl.cocason.ide</module>
-		<module>org.eclipse.efbt.cocason.dsl.cocason.ui</module>
-		<module>org.eclipse.efbt.cocason.dsl.cocason.target</module>
+		<module>org.eclipse.efbt.cocason.dsl.cocason.ui</module>		
 		<module>org.eclipse.efbt.cocason.dsl.cocason.feature</module>
 		<module>org.eclipse.efbt.cocason.dsl.cocason.repository</module>
 		<module>org.eclipse.efbt.cocason.dsl.cocason.tests</module>
