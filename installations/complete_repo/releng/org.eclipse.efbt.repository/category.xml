@@ -24,10 +24,10 @@
    <feature id="org.eclipse.efbt.cocamo.smcubes.component.feature">
       <category name="efbt"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocamo.smcubes.model.feature">
+   <feature id="org.eclipse.efbt.cocalimo.smcubes.model.feature">
       <category name="efbt"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocamo.smcubes.query.feature">
+   <feature id="org.eclipse.efbt.cocalimo.smcubes.query.feature">
       <category name="efbt"/>
    </feature>
    <feature id="org.eclipse.efbt.cocamo.smcubes.ui.sirius.feature">

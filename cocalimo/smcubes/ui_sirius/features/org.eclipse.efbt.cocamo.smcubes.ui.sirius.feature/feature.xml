@@ -126,8 +126,8 @@ Exhibit A – Form of Secondary Licenses Notice
       <import plugin="org.eclipse.core.resources"/>
       <import plugin="org.eclipse.sirius"/>
       <import plugin="org.eclipse.sirius.common.acceleo.aql"/>
-      <import plugin="org.eclipse.efbt.cocamo.smcubes.model.core" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.efbt.cocamo.smcubes.query.core" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.efbt.cocalimo.smcubes.model.core" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.efbt.cocalimo.smcubes.query.core" version="1.0.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin

@@ -163,6 +163,6 @@
         <details key="name" value="unresolvedCubeColumnParams"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="reportCell" eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/reports.ecore#//ReportCell"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reportCell" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/reports.ecore#//ReportCell"/>
   </eClassifiers>
 </ecore:EPackage>

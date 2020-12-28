@@ -121,13 +121,13 @@ Exhibit A – Form of Secondary Licenses Notice
    </license>
 
    <requires>
-      <import plugin="org.eclipse.efbt.cocamo.smcubes.model.program" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.efbt.cocalimo.smcubes.model.program" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.xtext"/>
       <import plugin="org.eclipse.emf.ecore"/>
-      <import plugin="org.eclipse.efbt.cocamo.smcubes.model.input_data"/>
+      <import plugin="org.eclipse.efbt.cocalimo.smcubes.model.input_data"/>
       <import plugin="org.eclipse.efbt.cocalimo.core.model.testing"/>
       <import plugin="org.apache.commons.logging"/>
-      <import plugin="org.eclipse.efbt.cocamo.smcubes.model.core" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.efbt.cocalimo.smcubes.model.core" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.efbt.cocamo.smcubes.component.access.api" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.efbt.cocamo.smcubes.component.access.provider" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.efbt.cocalimo.core.model.functionality_module"/>

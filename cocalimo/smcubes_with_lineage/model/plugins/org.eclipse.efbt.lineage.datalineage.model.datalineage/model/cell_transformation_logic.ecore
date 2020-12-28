@@ -8,7 +8,7 @@
   <eAnnotations source="license">
     <details key="license" value="Copyright (c) 2020 Bird Software Solutions Ltd&#xA; All rights reserved. This file and the accompanying materials are made available under the terms of the Eclipse Public License v2.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v20.html&#xA;&#xA;SPDX-License-Identifier: EPL-2.0 &#xA;&#xA; Contributors:&#xA; Neil Mackenzie - initial API and implementation&#xD;"/>
   </eAnnotations>
-  <eClassifiers xsi:type="ecore:EClass" name="FormulaCell" eSuperTypes="../../org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell">
+  <eClassifiers xsi:type="ecore:EClass" name="FormulaCell" eSuperTypes="../../org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value=" A derived Cell, which contains a function of other cells (much like an Excel cell may have a formula of other cells)"/>
     </eAnnotations>
@@ -36,7 +36,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DerivedCubeData" eSuperTypes="../../org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//ColumnStructuredData">
+  <eClassifiers xsi:type="ecore:EClass" name="DerivedCubeData" eSuperTypes="../../org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//ColumnStructuredData">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value=" data for derived cubes "/>
     </eAnnotations>
@@ -74,7 +74,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sourceCubeData" upperBound="-1"
-        eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//ColumnStructuredData">
+        eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//ColumnStructuredData">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The source cube data"/>
       </eAnnotations>
@@ -84,7 +84,7 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DerivedRowData" eSuperTypes="../../org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//RowData">
+  <eClassifiers xsi:type="ecore:EClass" name="DerivedRowData" eSuperTypes="../../org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//RowData">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value=" A row of derived data "/>
     </eAnnotations>
@@ -113,7 +113,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sourceRows" upperBound="-1"
-        eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//RowData">
+        eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//RowData">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="sourceRows"/>

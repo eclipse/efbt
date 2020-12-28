@@ -2,7 +2,7 @@
  */
 package org.eclipse.efbt.lineage.attributelineage.model.row_transformation_logic;
 
-import org.eclipse.efbt.cocamo.smcubes.model.core.VARIABLE;
+import org.eclipse.efbt.cocalimo.smcubes.model.core.VARIABLE;
 
 import org.eclipse.emf.common.util.EList;
 
@@ -33,7 +33,7 @@ public interface CustomRowCreationApproach extends RowCreationApproach
 {
 	/**
 	 * Returns the value of the '<em><b>Dependant Variables</b></em>' reference list.
-	 * The list contents are of type {@link org.eclipse.efbt.cocamo.smcubes.model.core.VARIABLE}.
+	 * The list contents are of type {@link org.eclipse.efbt.cocalimo.smcubes.model.core.VARIABLE}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->

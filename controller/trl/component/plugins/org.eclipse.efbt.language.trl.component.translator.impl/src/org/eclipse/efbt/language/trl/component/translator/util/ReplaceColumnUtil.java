@@ -14,7 +14,7 @@ package org.eclipse.efbt.language.trl.component.translator.util;
 
 import java.util.Iterator;
 
-import org.eclipse.efbt.cocamo.smcubes.model.core.VARIABLE;
+import org.eclipse.efbt.cocalimo.smcubes.model.core.VARIABLE;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.IgnoreColumn;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.JoinView;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.RenameAs;
