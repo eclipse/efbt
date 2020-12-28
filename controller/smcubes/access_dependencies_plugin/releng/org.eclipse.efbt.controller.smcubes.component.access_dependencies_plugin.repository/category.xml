@@ -12,11 +12,8 @@
        Neil Mackenzie - initial API and implementation
  -->
 <site>
-   <feature id="org.eclipse.efbt.cocamo.attributelineage.model.feature">
-      <category name="cocamo.smcubes_with_lineage.modelquery"/>
+   <feature id="org.eclipse.efbt.cocamo.smcubes.access_dependencies.feature">
+      <category name="controller.smcubes.component.access_dependencies_plugin"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocamo.lineage_core.query.feature">
-      <category name="cocamo.smcubes_with_lineage.modelquery"/>
-   </feature>
-   <category-def name="cocamo.smcubes_with_lineage.modelquery" label="CoCaMo SMCubes Lineage ModelQuery"/>
+   <category-def name="controller.smcubes.component.access_dependencies_plugin" label="Controller SMCubes Component Access Dependencies Plugin"/>
 </site>

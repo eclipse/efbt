@@ -14,12 +14,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.eclipse.efbt.cocamo.smcubes_with_lineage.modelquery</groupId>
-		<artifactId>org.eclipse.efbt.cocamo.smcubes_with_lineage.modelquery</artifactId>
+		<groupId>org.eclipse.efbt.controller.smcubes.component.access_dependencies_plugin</groupId>
+		<artifactId>org.eclipse.efbt.controller.smcubes.component.access_dependencies_plugin</artifactId>
 		<version>1.0.0-SNAPSHOT</version>  <relativePath>../../pom.xml</relativePath>
 	</parent>
-	<artifactId>org.eclipse.efbt.cocamo.datalineage.query.feature</artifactId>
-	<packaging>eclipse-feature</packaging>
+	<artifactId>org.eclipse.efbt.controller.smcubes.component.access_dependencies_plugin.target</artifactId>
+	<packaging>eclipse-target-definition</packaging>
 
 
 	<dependencies>
