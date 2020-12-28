@@ -144,7 +144,7 @@
       <details key="kind" value="empty"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="groupByColumns" upperBound="-1"
-        eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//VARIABLE">
+        eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//VARIABLE">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="the columns to group by "/>
       </eAnnotations>
@@ -162,7 +162,7 @@
       <details key="name" value="IgnoreColumn"/>
       <details key="kind" value="empty"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="columnToIgnore" eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//VARIABLE">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="columnToIgnore" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//VARIABLE">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="the column to Ignore"/>
       </eAnnotations>
@@ -237,7 +237,7 @@
         <details key="name" value="fromCube"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="fromVariable" eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//VARIABLE">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fromVariable" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//VARIABLE">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="the Column from the source cube that we choose  to Rename in the resulting View"/>
       </eAnnotations>
@@ -246,7 +246,7 @@
         <details key="name" value="fromVariable"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="toVariable" eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//VARIABLE">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="toVariable" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//VARIABLE">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="What Column would we like to use instead."/>
       </eAnnotations>
@@ -284,7 +284,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="varaibles" upperBound="-1"
-        eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//VARIABLE">
+        eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//VARIABLE">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="Column"/>
       </eAnnotations>
@@ -363,7 +363,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ExplodeArrayOfStructsView" eSuperTypes="#//SQLView">
     <eStructuralFeatures xsi:type="ecore:EReference" name="arraySourceColumn" eType="ecore:EClass ../../org.eclipse.efbt.lineage.common.model.lineagecubes/model/efbt_advanced_data_definition.ecore#//ArrayTypedVariable"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="indexColumn" eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//VARIABLE"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="indexColumn" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//VARIABLE"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetStructColumn" eType="ecore:EClass ../../org.eclipse.efbt.lineage.common.model.lineagecubes/model/efbt_advanced_data_definition.ecore#//StructTypedVariable"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ExplodeStructView" eSuperTypes="#//SQLView">
@@ -375,7 +375,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="structColumn" eType="ecore:EClass ../../org.eclipse.efbt.lineage.common.model.lineagecubes/model/efbt_advanced_data_definition.ecore#//StructTypedVariable"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MakeArrayOfStructsView" eSuperTypes="#//SQLView">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="groupingVariable" eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//VARIABLE"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="groupingVariable" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//VARIABLE"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sourceStructVariable" eType="ecore:EClass ../../org.eclipse.efbt.lineage.common.model.lineagecubes/model/efbt_advanced_data_definition.ecore#//StructTypedVariable"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetArrayVariable" eType="ecore:EClass ../../org.eclipse.efbt.lineage.common.model.lineagecubes/model/efbt_advanced_data_definition.ecore#//ArrayTypedVariable"/>
   </eClassifiers>

@@ -4,7 +4,7 @@
     <semanticResources>smcubes_functions.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.functions.model.core/model/functions.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_L6bAcCcmEeuCcbqNuIYXKg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Na1qUScmEeuCcbqNuIYXKg" name="smcubes_functions class diagram" repPath="#_NaynACcmEeuCcbqNuIYXKg" changeId="317eadd4-1ed8-4fc2-9976-d3fb436bc22e">

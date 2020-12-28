@@ -14,7 +14,7 @@ package org.eclipse.efbt.language.trl.component.translator.util;
 
 import java.util.Iterator;
 
-import org.eclipse.efbt.cocamo.smcubes.model.core.VARIABLE;
+import org.eclipse.efbt.cocalimo.smcubes.model.core.VARIABLE;
 import org.eclipse.efbt.language.trl.component.translator.api.AttributeLineageUtil;
 import org.eclipse.efbt.language.trl.component.translator.impl.AttributeLineageUtilImpl;
 import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.AttributeLineageModel;
