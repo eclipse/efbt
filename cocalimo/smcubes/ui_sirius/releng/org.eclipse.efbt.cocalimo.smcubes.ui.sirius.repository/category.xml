@@ -12,7 +12,7 @@
        Neil Mackenzie - initial API and implementation
  -->
 <site>
-   <feature id="org.eclipse.efbt.cocamo.smcubes.ui.sirius.feature">
+   <feature id="org.eclipse.efbt.cocalimo.smcubes.ui.sirius.feature">
       <category name="cocamo.smcubes.ui_sirius"/>
    </feature>
    <category-def name="cocamo.smcubes.ui_sirius" label="CoCaMo SMCubes UI Sirius"/>
