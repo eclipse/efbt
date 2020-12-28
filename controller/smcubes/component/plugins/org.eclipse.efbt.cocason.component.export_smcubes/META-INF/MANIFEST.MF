@@ -8,7 +8,7 @@ Bundle-RequiredExecutionEnvironment: JavaSE-11
 Require-Bundle: org.eclipse.emf.ecore,
  org.eclipse.xtext.junit4,
  org.eclipse.efbt.cocamo.smcubes.model.core,
- org.eclipse.efbt.cocamo.core.model.module_management,
+ org.eclipse.efbt.cocalimo.core.model.module_management,
  org.eclipse.efbt.cocamo.smcubes.model.program,
  org.eclipse.efbt.cocamo.smcubes.component.importexport.impl,
  org.eclipse.xtext,

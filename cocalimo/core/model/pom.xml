@@ -13,9 +13,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.eclipse.efbt.cocamo.core.model</groupId>
+	<groupId>org.eclipse.efbt.cocalimo.core.model</groupId>
 	<version>1.0.0-SNAPSHOT</version>
-	<artifactId>org.eclipse.efbt.cocamo.core.model</artifactId>
+	<artifactId>org.eclipse.efbt.cocalimo.core.model</artifactId>
 	<packaging>pom</packaging>
 <prerequisites>
     <maven>3.0</maven>
@@ -37,13 +37,13 @@
 		<additionalTestArguments></additionalTestArguments>
 	</properties>
 	<modules>
-		<module>releng/org.eclipse.efbt.cocamo.core.model.target</module>
-		<module>plugins/org.eclipse.efbt.cocamo.core.model.functionality_module</module>		
-		<module>plugins/org.eclipse.efbt.cocamo.core.model.module_management</module>
-		<module>plugins/org.eclipse.efbt.cocamo.core.model.requirements_text</module>
-		<module>plugins/org.eclipse.efbt.cocamo.core.model.testing</module>
-		<module>features/org.eclipse.efbt.cocamo.core.model.feature</module>
-		<module>releng/org.eclipse.efbt.cocamo.core.model.repository</module>
+		<module>releng/org.eclipse.efbt.cocalimo.core.model.target</module>
+		<module>plugins/org.eclipse.efbt.cocalimo.core.model.functionality_module</module>		
+		<module>plugins/org.eclipse.efbt.cocalimo.core.model.module_management</module>
+		<module>plugins/org.eclipse.efbt.cocalimo.core.model.requirements_text</module>
+		<module>plugins/org.eclipse.efbt.cocalimo.core.model.testing</module>
+		<module>features/org.eclipse.efbt.cocalimo.core.model.feature</module>
+		<module>releng/org.eclipse.efbt.cocalimo.core.model.repository</module>
 
 	</modules>
 	
@@ -114,8 +114,8 @@
 				  <pomDependencies>consider</pomDependencies>
 					<target>
 						<artifact>
-							<groupId>org.eclipse.efbt.cocamo.core.model</groupId>
-							<artifactId>org.eclipse.efbt.cocamo.core.model.target</artifactId>
+							<groupId>org.eclipse.efbt.cocalimo.core.model</groupId>
+							<artifactId>org.eclipse.efbt.cocalimo.core.model.target</artifactId>
 							<version>${project.version}</version>
 						</artifact>
 					</target>

@@ -4,7 +4,7 @@ package org.eclipse.efbt.cocamo.smcubes.model.cocamo.impl;
 
 import java.util.Collection;
 
-import org.eclipse.efbt.cocamo.core.model.test_input_data.impl.TestInputDataImpl;
+import org.eclipse.efbt.cocalimo.core.model.test_input_data.impl.TestInputDataImpl;
 
 import org.eclipse.efbt.cocamo.smcubes.model.base_column_structured_data.BaseColumnStructuredData;
 

@@ -5,7 +5,7 @@ Bundle-SymbolicName: org.eclipse.efbt.language.trl.component.translator.api
 Bundle-Version: 1.0.0.qualifier
 Require-Bundle: org.eclipse.efbt.cocamo.smcubes.model.core,
  org.eclipse.efbt.language.trl.model.core,
- org.eclipse.efbt.cocamo.core.model.functionality_module,
+ org.eclipse.efbt.cocalimo.core.model.functionality_module,
  org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage,
  org.eclipse.efbt.language.trl.model.core,
  org.eclipse.efbt.lineage.common.model.lineagecubes,

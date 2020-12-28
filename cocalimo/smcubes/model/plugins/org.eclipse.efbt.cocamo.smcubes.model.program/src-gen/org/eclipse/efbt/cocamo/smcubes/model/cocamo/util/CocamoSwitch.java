@@ -2,12 +2,12 @@
  */
 package org.eclipse.efbt.cocamo.smcubes.model.cocamo.util;
 
-import org.eclipse.efbt.cocamo.core.model.test.E2ETest;
-import org.eclipse.efbt.cocamo.core.model.test.Result;
-import org.eclipse.efbt.cocamo.core.model.test.Test;
-import org.eclipse.efbt.cocamo.core.model.test.TestModule;
+import org.eclipse.efbt.cocalimo.core.model.test.E2ETest;
+import org.eclipse.efbt.cocalimo.core.model.test.Result;
+import org.eclipse.efbt.cocalimo.core.model.test.Test;
+import org.eclipse.efbt.cocalimo.core.model.test.TestModule;
 
-import org.eclipse.efbt.cocamo.core.model.test_input_data.TestInputData;
+import org.eclipse.efbt.cocalimo.core.model.test_input_data.TestInputData;
 
 import org.eclipse.efbt.cocamo.smcubes.model.cocamo.*;
 
@@ -303,7 +303,7 @@ public class CocamoSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseModule(org.eclipse.efbt.cocamo.core.model.module_management.Module object)
+	public T caseModule(org.eclipse.efbt.cocalimo.core.model.module_management.Module object)
 	{
 		return null;
 	}

@@ -15,13 +15,13 @@
  */
 package org.eclipse.efbt.cocason.dsl.cocason;
 
-import org.eclipse.efbt.cocamo.core.model.functionality_module.Functionality_modulePackage;
-import org.eclipse.efbt.cocamo.core.model.module_management.Module_managementPackage;
-import org.eclipse.efbt.cocamo.core.model.requirements_text.Requirements_textPackage;
-import org.eclipse.efbt.cocamo.core.model.scenarios.ScenariosPackage;
-import org.eclipse.efbt.cocamo.core.model.test.TestPackage;
-import org.eclipse.efbt.cocamo.core.model.test_definition.Test_definitionPackage;
-import org.eclipse.efbt.cocamo.core.model.test_input_data.Test_input_dataPackage;
+import org.eclipse.efbt.cocalimo.core.model.functionality_module.Functionality_modulePackage;
+import org.eclipse.efbt.cocalimo.core.model.module_management.Module_managementPackage;
+import org.eclipse.efbt.cocalimo.core.model.requirements_text.Requirements_textPackage;
+import org.eclipse.efbt.cocalimo.core.model.scenarios.ScenariosPackage;
+import org.eclipse.efbt.cocalimo.core.model.test.TestPackage;
+import org.eclipse.efbt.cocalimo.core.model.test_definition.Test_definitionPackage;
+import org.eclipse.efbt.cocalimo.core.model.test_input_data.Test_input_dataPackage;
 import org.eclipse.efbt.cocamo.functions.model.functions.FunctionsPackage;
 import org.eclipse.efbt.cocamo.smcubes.model.base_column_structured_data.Base_column_structured_dataPackage;
 import org.eclipse.efbt.cocamo.smcubes.model.cocamo.CocamoPackage;

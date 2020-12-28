@@ -26,7 +26,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='VariableModule' kind='elementOnly'"
  * @generated
  */
-public interface VariableModule extends org.eclipse.efbt.cocamo.core.model.module_management.Module
+public interface VariableModule extends org.eclipse.efbt.cocalimo.core.model.module_management.Module
 {
 	/**
 	 * Returns the value of the '<em><b>Variables</b></em>' containment reference list.

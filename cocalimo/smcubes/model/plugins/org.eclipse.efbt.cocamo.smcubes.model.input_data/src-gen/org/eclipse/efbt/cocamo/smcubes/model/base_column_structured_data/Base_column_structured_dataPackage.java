@@ -2,7 +2,7 @@
  */
 package org.eclipse.efbt.cocamo.smcubes.model.base_column_structured_data;
 
-import org.eclipse.efbt.cocamo.core.model.module_management.Module_managementPackage;
+import org.eclipse.efbt.cocalimo.core.model.module_management.Module_managementPackage;
 
 import org.eclipse.efbt.cocamo.smcubes.model.column_structured_data.Column_structured_dataPackage;
 

@@ -3,7 +3,7 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.eclipse.efbt.cocamo.functions.model.core/src-gen"
     modelPluginID="org.eclipse.efbt.cocamo.functions.model.core" modelName="Functions"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
-    complianceLevel="5.0" copyrightFields="false" usedGenPackages="../../org.eclipse.efbt.cocamo.core.model.module_management/model/module_management.genmodel#//module_management"
+    complianceLevel="5.0" copyrightFields="false" usedGenPackages="../../org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.genmodel#//module_management"
     operationReflection="true" importOrganizing="true">
   <foreignModel>functions.ecore</foreignModel>
   <genPackages prefix="Functions" basePackage="org.eclipse.efbt.cocamo.functions.model"
