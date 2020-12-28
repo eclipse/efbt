@@ -95,7 +95,7 @@ public class Column_structured_dataAdapterFactory extends AdapterFactoryImpl
 				return createRowDataAdapter();
 			}
 			@Override
-			public Adapter caseModule(org.eclipse.efbt.cocamo.core.model.module_management.Module object)
+			public Adapter caseModule(org.eclipse.efbt.cocalimo.core.model.module_management.Module object)
 			{
 				return createModuleAdapter();
 			}
@@ -182,13 +182,13 @@ public class Column_structured_dataAdapterFactory extends AdapterFactoryImpl
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.cocamo.core.model.module_management.Module <em>Module</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.cocalimo.core.model.module_management.Module <em>Module</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipse.efbt.cocamo.core.model.module_management.Module
+	 * @see org.eclipse.efbt.cocalimo.core.model.module_management.Module
 	 * @generated
 	 */
 	public Adapter createModuleAdapter()

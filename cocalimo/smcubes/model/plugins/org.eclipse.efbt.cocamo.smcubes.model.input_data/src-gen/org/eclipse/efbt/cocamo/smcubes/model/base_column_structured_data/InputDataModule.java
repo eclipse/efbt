@@ -24,7 +24,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='InputDataModule' kind='elementOnly'"
  * @generated
  */
-public interface InputDataModule extends org.eclipse.efbt.cocamo.core.model.module_management.Module
+public interface InputDataModule extends org.eclipse.efbt.cocalimo.core.model.module_management.Module
 {
 	/**
 	 * Returns the value of the '<em><b>Input Data</b></em>' containment reference list.

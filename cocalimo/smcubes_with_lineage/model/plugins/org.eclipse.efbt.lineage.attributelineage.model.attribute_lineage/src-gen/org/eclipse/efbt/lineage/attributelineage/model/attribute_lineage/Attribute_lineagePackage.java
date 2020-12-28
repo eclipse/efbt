@@ -2,7 +2,7 @@
  */
 package org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage;
 
-import org.eclipse.efbt.cocamo.core.model.module_management.Module_managementPackage;
+import org.eclipse.efbt.cocalimo.core.model.module_management.Module_managementPackage;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;

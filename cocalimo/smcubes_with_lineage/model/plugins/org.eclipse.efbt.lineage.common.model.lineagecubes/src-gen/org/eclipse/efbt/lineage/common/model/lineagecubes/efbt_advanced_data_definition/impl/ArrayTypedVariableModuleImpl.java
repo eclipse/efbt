@@ -4,7 +4,7 @@ package org.eclipse.efbt.lineage.common.model.lineagecubes.efbt_advanced_data_de
 
 import java.util.Collection;
 
-import org.eclipse.efbt.cocamo.core.model.module_management.impl.ModuleImpl;
+import org.eclipse.efbt.cocalimo.core.model.module_management.impl.ModuleImpl;
 
 import org.eclipse.efbt.lineage.common.model.lineagecubes.efbt_advanced_data_definition.ArrayTypedVariable;
 import org.eclipse.efbt.lineage.common.model.lineagecubes.efbt_advanced_data_definition.ArrayTypedVariableModule;

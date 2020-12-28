@@ -4,7 +4,7 @@ package org.eclipse.efbt.cocamo.functions.model.functions.impl;
 
 import java.util.Collection;
 
-import org.eclipse.efbt.cocamo.core.model.module_management.impl.ModuleImpl;
+import org.eclipse.efbt.cocalimo.core.model.module_management.impl.ModuleImpl;
 
 import org.eclipse.efbt.cocamo.functions.model.functions.FunctionSpec;
 import org.eclipse.efbt.cocamo.functions.model.functions.FunctionSpecModule;

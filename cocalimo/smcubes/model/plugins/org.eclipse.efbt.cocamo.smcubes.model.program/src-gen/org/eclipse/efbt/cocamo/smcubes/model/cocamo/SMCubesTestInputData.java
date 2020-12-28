@@ -2,7 +2,7 @@
  */
 package org.eclipse.efbt.cocamo.smcubes.model.cocamo;
 
-import org.eclipse.efbt.cocamo.core.model.test_input_data.TestInputData;
+import org.eclipse.efbt.cocalimo.core.model.test_input_data.TestInputData;
 
 import org.eclipse.efbt.cocamo.smcubes.model.base_column_structured_data.BaseColumnStructuredData;
 

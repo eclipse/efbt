@@ -15,9 +15,9 @@ package org.eclipse.efbt.language.trl.component.translator.util;
 
 import java.util.Iterator;
 
-import org.eclipse.efbt.cocamo.core.model.functionality_module.LeafFunctionalityModule;
-import org.eclipse.efbt.cocamo.core.model.module_management.Module;
-import org.eclipse.efbt.cocamo.core.model.module_management.ModuleDependency;
+import org.eclipse.efbt.cocalimo.core.model.functionality_module.LeafFunctionalityModule;
+import org.eclipse.efbt.cocalimo.core.model.module_management.Module;
+import org.eclipse.efbt.cocalimo.core.model.module_management.ModuleDependency;
 import org.eclipse.efbt.cocamo.functions.model.functions.AggregateFunction;
 import org.eclipse.efbt.cocamo.functions.model.functions.BasicFunction;
 import org.eclipse.efbt.cocamo.functions.model.functions.BasicFunctionSpec;
