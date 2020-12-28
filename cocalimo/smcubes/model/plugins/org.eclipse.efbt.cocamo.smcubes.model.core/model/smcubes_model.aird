@@ -3,7 +3,7 @@
   <viewpoint:DAnalysis uid="_dZRkcPwaEeqqk6VXGrFGnw" selectedViews="_dad3QPwaEeqqk6VXGrFGnw _danoQPwaEeqqk6VXGrFGnw _dapdcPwaEeqqk6VXGrFGnw _dasgwPwaEeqqk6VXGrFGnw" version="14.3.1.202003261200">
     <semanticResources>smcubes_model.ecore</semanticResources>
     <semanticResources>efbt_data_definition.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.core.model.module_management/model/module_management.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.ecore</semanticResources>
     <semanticResources>data_definition.ecore</semanticResources>
     <semanticResources>core.ecore</semanticResources>
     <semanticResources>efbt_vtl_transformation.ecore</semanticResources>

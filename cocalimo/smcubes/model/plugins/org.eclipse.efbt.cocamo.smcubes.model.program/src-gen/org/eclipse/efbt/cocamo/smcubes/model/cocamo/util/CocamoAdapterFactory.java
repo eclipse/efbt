@@ -2,12 +2,12 @@
  */
 package org.eclipse.efbt.cocamo.smcubes.model.cocamo.util;
 
-import org.eclipse.efbt.cocamo.core.model.test.E2ETest;
-import org.eclipse.efbt.cocamo.core.model.test.Result;
-import org.eclipse.efbt.cocamo.core.model.test.Test;
-import org.eclipse.efbt.cocamo.core.model.test.TestModule;
+import org.eclipse.efbt.cocalimo.core.model.test.E2ETest;
+import org.eclipse.efbt.cocalimo.core.model.test.Result;
+import org.eclipse.efbt.cocalimo.core.model.test.Test;
+import org.eclipse.efbt.cocalimo.core.model.test.TestModule;
 
-import org.eclipse.efbt.cocamo.core.model.test_input_data.TestInputData;
+import org.eclipse.efbt.cocalimo.core.model.test_input_data.TestInputData;
 
 import org.eclipse.efbt.cocamo.smcubes.model.cocamo.*;
 
@@ -132,7 +132,7 @@ public class CocamoAdapterFactory extends AdapterFactoryImpl
 				return createE2ETestAdapter();
 			}
 			@Override
-			public Adapter caseModule(org.eclipse.efbt.cocamo.core.model.module_management.Module object)
+			public Adapter caseModule(org.eclipse.efbt.cocalimo.core.model.module_management.Module object)
 			{
 				return createModuleAdapter();
 			}
@@ -254,13 +254,13 @@ public class CocamoAdapterFactory extends AdapterFactoryImpl
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.cocamo.core.model.test_input_data.TestInputData <em>Test Input Data</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.cocalimo.core.model.test_input_data.TestInputData <em>Test Input Data</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipse.efbt.cocamo.core.model.test_input_data.TestInputData
+	 * @see org.eclipse.efbt.cocalimo.core.model.test_input_data.TestInputData
 	 * @generated
 	 */
 	public Adapter createTestInputDataAdapter()
@@ -269,13 +269,13 @@ public class CocamoAdapterFactory extends AdapterFactoryImpl
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.cocamo.core.model.test.Result <em>Result</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.cocalimo.core.model.test.Result <em>Result</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipse.efbt.cocamo.core.model.test.Result
+	 * @see org.eclipse.efbt.cocalimo.core.model.test.Result
 	 * @generated
 	 */
 	public Adapter createResultAdapter()
@@ -284,13 +284,13 @@ public class CocamoAdapterFactory extends AdapterFactoryImpl
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.cocamo.core.model.test.Test <em>Test</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.cocalimo.core.model.test.Test <em>Test</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipse.efbt.cocamo.core.model.test.Test
+	 * @see org.eclipse.efbt.cocalimo.core.model.test.Test
 	 * @generated
 	 */
 	public Adapter createTestAdapter()
@@ -299,13 +299,13 @@ public class CocamoAdapterFactory extends AdapterFactoryImpl
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.cocamo.core.model.test.E2ETest <em>E2E Test</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.cocalimo.core.model.test.E2ETest <em>E2E Test</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipse.efbt.cocamo.core.model.test.E2ETest
+	 * @see org.eclipse.efbt.cocalimo.core.model.test.E2ETest
 	 * @generated
 	 */
 	public Adapter createE2ETestAdapter()
@@ -314,13 +314,13 @@ public class CocamoAdapterFactory extends AdapterFactoryImpl
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.cocamo.core.model.module_management.Module <em>Module</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.cocalimo.core.model.module_management.Module <em>Module</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipse.efbt.cocamo.core.model.module_management.Module
+	 * @see org.eclipse.efbt.cocalimo.core.model.module_management.Module
 	 * @generated
 	 */
 	public Adapter createModuleAdapter()
@@ -329,13 +329,13 @@ public class CocamoAdapterFactory extends AdapterFactoryImpl
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.cocamo.core.model.test.TestModule <em>Module</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipse.efbt.cocalimo.core.model.test.TestModule <em>Module</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipse.efbt.cocamo.core.model.test.TestModule
+	 * @see org.eclipse.efbt.cocalimo.core.model.test.TestModule
 	 * @generated
 	 */
 	public Adapter createTestModuleAdapter()

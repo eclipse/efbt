@@ -4,7 +4,7 @@ package org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.impl;
 
 import java.util.Collection;
 
-import org.eclipse.efbt.cocamo.core.model.module_management.impl.ModuleImpl;
+import org.eclipse.efbt.cocalimo.core.model.module_management.impl.ModuleImpl;
 
 import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.AttributeLineageModel;
 import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.AttributeLineageModelModule;

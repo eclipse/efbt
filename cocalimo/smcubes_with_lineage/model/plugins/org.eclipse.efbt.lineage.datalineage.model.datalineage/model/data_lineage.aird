@@ -4,7 +4,7 @@
   <semanticResources>cell_transformation_logic.ecore</semanticResources>
   <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore</semanticResources>
   <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore</semanticResources>
-  <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.core.model.module_management/model/module_management.ecore</semanticResources>
+  <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.ecore</semanticResources>
   <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.functions.model.core/model/functions.ecore</semanticResources>
   <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagecubes/model/cubes.ecore</semanticResources>
   <semanticResources>platform:/resource/org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage/model/row_transformation_logic.ecore</semanticResources>

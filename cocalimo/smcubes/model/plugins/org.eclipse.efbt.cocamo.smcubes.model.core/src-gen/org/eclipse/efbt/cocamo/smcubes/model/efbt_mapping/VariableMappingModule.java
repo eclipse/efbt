@@ -26,7 +26,7 @@ import org.eclipse.emf.common.util.EList;
  * @model
  * @generated
  */
-public interface VariableMappingModule extends org.eclipse.efbt.cocamo.core.model.module_management.Module
+public interface VariableMappingModule extends org.eclipse.efbt.cocalimo.core.model.module_management.Module
 {
 	/**
 	 * Returns the value of the '<em><b>Variable Mappings</b></em>' containment reference list.

@@ -2,9 +2,9 @@
  */
 package org.eclipse.efbt.cocamo.smcubes.model.cocamo;
 
-import org.eclipse.efbt.cocamo.core.model.test.TestPackage;
+import org.eclipse.efbt.cocalimo.core.model.test.TestPackage;
 
-import org.eclipse.efbt.cocamo.core.model.test_input_data.Test_input_dataPackage;
+import org.eclipse.efbt.cocalimo.core.model.test_input_data.Test_input_dataPackage;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;

@@ -4,7 +4,7 @@ package org.eclipse.efbt.cocamo.smcubes.model.cocamo.impl;
 
 import java.util.Collection;
 
-import org.eclipse.efbt.cocamo.core.model.test.impl.ResultImpl;
+import org.eclipse.efbt.cocalimo.core.model.test.impl.ResultImpl;
 
 import org.eclipse.efbt.cocamo.smcubes.model.cocamo.CocamoPackage;
 import org.eclipse.efbt.cocamo.smcubes.model.cocamo.SMCubesReportResults;

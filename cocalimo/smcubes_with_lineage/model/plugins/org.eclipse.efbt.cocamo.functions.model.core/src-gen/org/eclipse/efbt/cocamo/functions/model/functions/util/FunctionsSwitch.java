@@ -328,7 +328,7 @@ public class FunctionsSwitch<T> extends Switch<T>
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseModule(org.eclipse.efbt.cocamo.core.model.module_management.Module object)
+	public T caseModule(org.eclipse.efbt.cocalimo.core.model.module_management.Module object)
 	{
 		return null;
 	}

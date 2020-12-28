@@ -34,6 +34,6 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.efbt.cocamo.smcubes.model.core;visibility:=reexport,
  org.eclipse.efbt.lineage.common.model.lineagecubes,
  org.eclipse.efbt.cocamo.functions.model.core,
- org.eclipse.efbt.cocamo.core.model.module_management;bundle-version="1.0.0",
+ org.eclipse.efbt.cocalimo.core.model.module_management;bundle-version="1.0.0",
  org.eclipse.efbt.lineage.common.model.lineagefunctions
 Bundle-ActivationPolicy: lazy
