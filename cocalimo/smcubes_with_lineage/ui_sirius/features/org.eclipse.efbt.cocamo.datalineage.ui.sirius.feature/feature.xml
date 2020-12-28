@@ -11,7 +11,6 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
-
 <feature
       id="org.eclipse.efbt.cocamo.datalineage.ui.sirius.feature"
       label="CoCaMo Data Lineage UI"
@@ -127,7 +126,6 @@ Exhibit A – Form of Secondary Licenses Notice
       <import plugin="org.eclipse.core.resources"/>
       <import plugin="org.eclipse.sirius" version="6.3.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.sirius.common.acceleo.aql"/>
-      <import plugin="org.eclipse.efbt.lineage.datalineage.modelquery.core"/>
       <import plugin="org.eclipse.efbt.lineage.datalineage.model.datalineage"/>
       <import plugin="org.eclipse.efbt.cocamo.functions.model.core"/>
       <import plugin="org.eclipse.efbt.lineage.common.modelquery.lineagefunctions"/>
