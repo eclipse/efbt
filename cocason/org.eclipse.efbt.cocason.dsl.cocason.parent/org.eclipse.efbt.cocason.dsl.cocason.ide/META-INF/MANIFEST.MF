@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Automatic-Module-Name: org.eclipse.efbt.cocason.dsl.cocason.ide
 Bundle-ManifestVersion: 2
 Bundle-Name: org.eclipse.efbt.cocason.dsl.cocason.ide
-Bundle-Vendor: My Company
+Bundle-Vendor: Bird Software Solutions
 Bundle-Version: 1.0.0.qualifier
 Bundle-SymbolicName: org.eclipse.efbt.cocason.dsl.cocason.ide; singleton:=true
 Bundle-ActivationPolicy: lazy
