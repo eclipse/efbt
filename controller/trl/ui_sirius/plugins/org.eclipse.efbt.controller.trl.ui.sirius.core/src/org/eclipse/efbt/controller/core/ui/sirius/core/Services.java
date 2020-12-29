@@ -10,7 +10,7 @@
  * Contributors:
  *    Neil Mackenzie - initial API and implementation
  *******************************************************************************/
-package org.eclipse.efbt.controller.core.ui.sirius.core;
+package org.eclipse.efbt.controller.trl.ui.sirius.core;
 
 
 import org.eclipse.efbt.controller.trl.component.core.Controller;

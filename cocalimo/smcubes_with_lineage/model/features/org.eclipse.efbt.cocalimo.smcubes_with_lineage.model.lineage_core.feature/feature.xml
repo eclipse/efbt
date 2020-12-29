@@ -13,7 +13,7 @@
  -->
 <feature
       id="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineage_core.feature"
-      label="CoCaLiMo SMCubes_With_Lineage Model Lineage_Core Model"
+      label="CoCaLiMo SMCubes_With_Lineage Lineage_Core"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 

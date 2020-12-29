@@ -13,7 +13,7 @@
  -->
 <feature
       id="org.eclipse.efbt.cocamo.trl.component.feature"
-      label="Controller TRL Component 1"
+      label="Controller TRL Component Core"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 

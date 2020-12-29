@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
-Bundle-SymbolicName: org.eclipse.efbt.controller.core.ui.sirius.core;singleton:=true
+Bundle-SymbolicName: org.eclipse.efbt.controller.trl.ui.sirius.core;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: org.eclipse.efbt.controller.core.ui.sirius.core.Activator
+Bundle-Activator: org.eclipse.efbt.controller.trl.ui.sirius.core.Activator
 Bundle-Localization: plugin
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
@@ -15,4 +15,4 @@ Require-Bundle: org.eclipse.ui,
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-Vendor: %providerName
-Automatic-Module-Name: org.eclipse.efbt.controller.core.ui.sirius.core
+Automatic-Module-Name: org.eclipse.efbt.controller.trl.ui.sirius.core
