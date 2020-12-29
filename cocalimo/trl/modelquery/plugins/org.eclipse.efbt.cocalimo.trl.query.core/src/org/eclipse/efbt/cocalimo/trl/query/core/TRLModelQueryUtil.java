@@ -10,7 +10,7 @@
  * Contributors:
  *    Neil Mackenzie - initial API and implementation
  *******************************************************************************/
-package org.eclipse.efbt.language.trl.modelquery.core;
+package org.eclipse.efbt.cocalimo.trl.query.core;
 
 
 
