@@ -15,7 +15,7 @@
    <feature id="org.eclipse.efbt.controller.trl.component.translator.feature">
       <category name="controller.trl.component"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocamo.trl.component.feature">
+   <feature id="org.eclipse.efbt.controller.trl.component.core.feature">
       <category name="controller.trl.component"/>
    </feature>
    <category-def name="controller.trl.component" label="Controller TRL Component"/>
