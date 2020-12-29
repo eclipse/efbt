@@ -11,6 +11,6 @@ Require-Bundle: org.eclipse.efbt.cocalimo.smcubes.model.core,
  org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes,
  org.eclipse.emf.common,
  org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagefunctions,
- org.eclipse.efbt.lineage.attributelineage.modelquery.core,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.query.attribute_lineage,
  org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.functions
 Export-Package: org.eclipse.efbt.language.trl.component.translator.api
