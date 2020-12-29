@@ -12,8 +12,8 @@
        Neil Mackenzie - initial API and implementation
  -->
 <site>
-   <feature id="org.eclipse.efbt.controller.smcubes.component.feature">
-      <category name="controller.smcubes.component"/>
+   <feature id="org.eclipse.efbt.controller.smcubes.access_dependencies_plugin.feature">
+      <category name="controller.smcubes.component.access_dependencies_plugin"/>
    </feature>
-   <category-def name="controller.smcubes.component" label="Controller SMCubes Component"/>
+   <category-def name="controller.smcubes.component.access_dependencies_plugin" label="Controller SMCubes Component Access Dependencies Plugin"/>
 </site>
