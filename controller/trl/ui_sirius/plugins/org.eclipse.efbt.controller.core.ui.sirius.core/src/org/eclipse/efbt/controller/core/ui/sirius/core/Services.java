@@ -13,7 +13,7 @@
 package org.eclipse.efbt.controller.core.ui.sirius.core;
 
 
-import org.eclipse.efbt.controller.core.component.core.Controller;
+import org.eclipse.efbt.controller.trl.component.core.Controller;
 import org.eclipse.efbt.controller.core.model.platform_call.PlatformCall;
 
 
