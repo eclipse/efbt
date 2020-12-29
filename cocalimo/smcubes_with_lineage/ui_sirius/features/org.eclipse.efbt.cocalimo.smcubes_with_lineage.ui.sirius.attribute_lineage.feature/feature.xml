@@ -11,9 +11,10 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
+
 <feature
-      id="org.eclipse.efbt.cocamo.trl.component.feature"
-      label="Controller TRL Component 1"
+      id="org.eclipse.efbt.cocalimo.smcubes_with_lineage.ui.sirius.attribute_lineage.feature"
+      label="CoCaMo Attribute  Lineage UI"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 
@@ -121,26 +122,19 @@ Exhibit A – Form of Secondary Licenses Notice
    </license>
 
    <requires>
-      <import plugin="org.eclipse.efbt.cocalimo.smcubes.model.core"/>
-      <import plugin="org.eclipse.efbt.language.trl.model.core"/>
-      <import plugin="org.eclipse.efbt.cocalimo.core.model.functionality_module"/>
-      <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage"/>
-      <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes"/>
-      <import plugin="org.eclipse.emf.common"/>
-      <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagefunctions"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.sirius" version="6.3.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.sirius.common.acceleo.aql"/>
       <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.query.attribute_lineage"/>
+      <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage"/>
       <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.functions"/>
+      <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.query.lineagefunctions"/>
    </requires>
 
    <plugin
-         id="org.eclipse.efbt.language.trl.component.translator.api"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.efbt.language.trl.component.translator.impl"
+         id="org.eclipse.efbt.cocalimo.smcubes_with_lineage.ui.sirius.attribute_lineage"
          download-size="0"
          install-size="0"
          version="0.0.0"
