@@ -26,8 +26,8 @@ import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cube_sc
 import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.FreeBIRDToolsCubeHierarchyRelationshipModule;
 import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.FreeBirdToolsCube;
 import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.TargetCube;
+import org.eclipse.efbt.cocalimo.smcubes_with_lineage.query.attribute_lineage.attribute_lineage.AttributeLineageModelQuery;
 import org.eclipse.efbt.lineage.common.model.column_transformation_logic.CubeColumn;
-import  org.eclipse.efbt.lineage.attributelineage.modelquery.core.AttributeLineageModelQuery;
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.util.EcoreUtil;

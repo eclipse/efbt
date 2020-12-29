@@ -39,7 +39,6 @@ import org.eclipse.efbt.lineage.attributelineage.model.row_transformation_logic.
 import org.eclipse.efbt.lineage.attributelineage.model.row_transformation_logic.RowCreationApproachForCube;
 import org.eclipse.efbt.lineage.attributelineage.model.row_transformation_logic.RowJoinFunction;
 import org.eclipse.efbt.lineage.attributelineage.model.row_transformation_logic.Row_transformation_logicFactory;
-import org.eclipse.efbt.lineage.attributelineage.modelquery.core.AttributeLineageModelQuery;
 import org.eclipse.efbt.lineage.common.model.advanced_variable_lineagefunctions.Advanced_variable_lineagefunctionsFactory;
 import org.eclipse.efbt.lineage.common.model.advanced_variable_lineagefunctions.ResolvedStructColumnParameter;
 import org.eclipse.efbt.lineage.common.model.advanced_variable_lineagefunctions.SpeculativeStructColumnParameter;
@@ -48,6 +47,7 @@ import org.eclipse.efbt.lineage.common.model.column_transformation_logic.Column_
 import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cube_schema.CubeSchema;
 import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.BaseCube;
 import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.FreeBirdToolsCube;
+import org.eclipse.efbt.cocalimo.smcubes_with_lineage.query.attribute_lineage.attribute_lineage.AttributeLineageModelQuery;
 import org.eclipse.efbt.lineage.common.model.column_transformation_logic.CubeColumn;
 import org.eclipse.efbt.lineage.common.model.column_transformation_logic.ResolvedCubeColumnParameter;
 import org.eclipse.efbt.lineage.common.model.column_transformation_logic.SpeculativeCubeColumnParameter;
