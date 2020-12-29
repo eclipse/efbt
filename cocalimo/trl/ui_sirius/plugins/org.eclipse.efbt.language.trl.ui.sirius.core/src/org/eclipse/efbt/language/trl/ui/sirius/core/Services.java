@@ -24,8 +24,8 @@ import org.eclipse.efbt.language.trl.model.trl_sql_views.JoinView;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.SQLView;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.VersionedSQLViewsModule;
 import org.eclipse.efbt.language.trl.modelquery.core.CubesAndViewsUtil;
-import org.eclipse.efbt.lineage.common.model.lineagecubes.cube_schema.CubeSchema;
-import org.eclipse.efbt.lineage.common.model.lineagecubes.cubes.FreeBirdToolsCube;
+import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cube_schema.CubeSchema;
+import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.FreeBirdToolsCube;
 import org.eclipse.efbt.lineage.common.modelquery.lineagefunctions.LineageFunctionsModelQuery;
 import org.eclipse.emf.common.util.EList;
 

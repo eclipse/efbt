@@ -30,7 +30,7 @@
    <feature id="org.eclipse.efbt.cocalimo.smcubes.query.feature">
       <category name="efbt"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocamo.smcubes.ui.sirius.feature">
+   <feature id="org.eclipse.efbt.cocalimo.smcubes.ui.sirius.feature">
       <category name="efbt"/>
    </feature>
    <feature id="org.eclipse.efbt.cocason.feature">
@@ -48,13 +48,13 @@
    <feature id="org.eclipse.efbt.controller.ui.sirius.feature">
       <category name="efbt"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocamo.datalineage.model.feature">
+   <feature id="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.datalineage.feature">
       <category name="efbt"/>
    </feature>
    <feature id="org.eclipse.efbt.cocamo.datalineage.ui.sirius.feature">
       <category name="efbt"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocamo.attributelineage.model.feature">
+   <feature id="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage.feature">
       <category name="efbt"/>
    </feature>
    <feature id="org.eclipse.efbt.cocamo.attributelineage.query.feature">
@@ -63,10 +63,10 @@
    <feature id="org.eclipse.efbt.cocamo.attributelineage.ui.sirius.feature">
       <category name="efbt"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocamo.functions.model.core.feature">
+   <feature id="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.functions.feature">
       <category name="efbt"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocamo.lineage_core.model.feature">
+   <feature id="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineage_core.feature">
       <category name="efbt"/>
    </feature>
    <feature id="org.eclipse.efbt.cocamo.lineage_core.query.feature">

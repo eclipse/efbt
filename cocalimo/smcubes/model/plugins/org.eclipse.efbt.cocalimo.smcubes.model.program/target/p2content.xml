@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='2'>
-  <unit id='org.eclipse.efbt.cocalimo.smcubes.model.program' version='1.0.0.202012261408' generation='2'>
-    <update id='org.eclipse.efbt.cocalimo.smcubes.model.program' range='[0.0.0,1.0.0.202012261408)' severity='0'/>
+  <unit id='org.eclipse.efbt.cocalimo.smcubes.model.program' version='1.0.0.202012281637' generation='2'>
+    <update id='org.eclipse.efbt.cocalimo.smcubes.model.program' range='[0.0.0,1.0.0.202012281637)' severity='0'/>
     <properties size='8'>
       <property name='df_LT.pluginName' value='cocamo Model'/>
       <property name='df_LT.providerName' value='www.example.org'/>
@@ -13,12 +13,12 @@
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
     <provides size='8'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.efbt.cocalimo.smcubes.model.program' version='1.0.0.202012261408'/>
-      <provided namespace='osgi.bundle' name='org.eclipse.efbt.cocalimo.smcubes.model.program' version='1.0.0.202012261408'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.efbt.cocalimo.smcubes.model.program' version='1.0.0.202012281637'/>
+      <provided namespace='osgi.bundle' name='org.eclipse.efbt.cocalimo.smcubes.model.program' version='1.0.0.202012281637'/>
       <provided namespace='java.package' name='org.eclipse.efbt.cocalimo.smcubes.model.cocamo' version='0.0.0'/>
       <provided namespace='java.package' name='org.eclipse.efbt.cocalimo.smcubes.model.cocamo.impl' version='0.0.0'/>
       <provided namespace='java.package' name='org.eclipse.efbt.cocalimo.smcubes.model.cocamo.util' version='0.0.0'/>
-      <provided namespace='osgi.identity' name='org.eclipse.efbt.cocalimo.smcubes.model.program' version='1.0.0.202012261408'>
+      <provided namespace='osgi.identity' name='org.eclipse.efbt.cocalimo.smcubes.model.program' version='1.0.0.202012281637'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -38,19 +38,19 @@
       <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=11))'/>
     </requires>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='org.eclipse.efbt.cocalimo.smcubes.model.program' version='1.0.0.202012261408'/>
+      <artifact classifier='osgi.bundle' id='org.eclipse.efbt.cocalimo.smcubes.model.program' version='1.0.0.202012281637'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: org.eclipse.efbt.cocalimo.smcubes.model.program;singleton:=true&#xA;Bundle-Version: 1.0.0.202012261408&#xA;
+          Bundle-SymbolicName: org.eclipse.efbt.cocalimo.smcubes.model.program;singleton:=true&#xA;Bundle-Version: 1.0.0.202012281637&#xA;
         </instruction>
       </instructions>
     </touchpointData>
   </unit>
-  <unit id='org.eclipse.efbt.cocalimo.smcubes.model.program.source' version='1.0.0.202012261408' singleton='false'>
-    <update id='org.eclipse.efbt.cocalimo.smcubes.model.program.source' range='[0.0.0,1.0.0.202012261408)' severity='0'/>
+  <unit id='org.eclipse.efbt.cocalimo.smcubes.model.program.source' version='1.0.0.202012281637' singleton='false'>
+    <update id='org.eclipse.efbt.cocalimo.smcubes.model.program.source' range='[0.0.0,1.0.0.202012281637)' severity='0'/>
     <properties size='9'>
       <property name='df_LT.bundleVendor' value='www.example.org'/>
       <property name='df_LT.bundleName' value='cocamo Model Source'/>
@@ -63,9 +63,9 @@
       <property name='maven-classifier' value='sources'/>
     </properties>
     <provides size='5'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.efbt.cocalimo.smcubes.model.program.source' version='1.0.0.202012261408'/>
-      <provided namespace='osgi.bundle' name='org.eclipse.efbt.cocalimo.smcubes.model.program.source' version='1.0.0.202012261408'/>
-      <provided namespace='osgi.identity' name='org.eclipse.efbt.cocalimo.smcubes.model.program.source' version='1.0.0.202012261408'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.efbt.cocalimo.smcubes.model.program.source' version='1.0.0.202012281637'/>
+      <provided namespace='osgi.bundle' name='org.eclipse.efbt.cocalimo.smcubes.model.program.source' version='1.0.0.202012281637'/>
+      <provided namespace='osgi.identity' name='org.eclipse.efbt.cocalimo.smcubes.model.program.source' version='1.0.0.202012281637'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -74,13 +74,13 @@
       <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
     </provides>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='org.eclipse.efbt.cocalimo.smcubes.model.program.source' version='1.0.0.202012261408'/>
+      <artifact classifier='osgi.bundle' id='org.eclipse.efbt.cocalimo.smcubes.model.program.source' version='1.0.0.202012281637'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: org.eclipse.efbt.cocalimo.smcubes.model.program.source&#xA;Bundle-Version: 1.0.0.202012261408&#xA;
+          Bundle-SymbolicName: org.eclipse.efbt.cocalimo.smcubes.model.program.source&#xA;Bundle-Version: 1.0.0.202012281637&#xA;
         </instruction>
       </instructions>
     </touchpointData>
