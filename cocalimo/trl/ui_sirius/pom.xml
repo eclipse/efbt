@@ -37,10 +37,10 @@
 		<additionalTestArguments></additionalTestArguments>
 	</properties>
 	<modules>
-		<module>releng/org.eclipse.efbt.cocamo.trl.ui.sirius.target</module>
-		<module>plugins/org.eclipse.efbt.language.trl.ui.sirius.core</module>
-		<module>features/org.eclipse.efbt.cocamo.trl.ui.sirius.feature</module>	
-		<module>releng/org.eclipse.efbt.cocamo.trl.ui.sirius.repository</module>
+		<module>releng/org.eclipse.efbt.cocalimo.trl.ui.sirius.target</module>
+		<module>plugins/org.eclipse.efbt.cocalimo.trl.ui.sirius.core</module>
+		<module>features/org.eclipse.efbt.cocalimo.trl.ui.sirius.core.feature</module>	
+		<module>releng/org.eclipse.efbt.cocalimo.trl.ui.sirius.repository</module>
 
 	</modules>
 	
@@ -112,7 +112,7 @@
 					<target>
 						<artifact>
 							<groupId>org.eclipse.efbt.cocamo.trl.ui_sirius</groupId>
-							<artifactId>org.eclipse.efbt.cocamo.trl.ui.sirius.target</artifactId>
+							<artifactId>org.eclipse.efbt.cocalimo.trl.ui.sirius.target</artifactId>
 							<version>${project.version}</version>
 						</artifact>
 					</target>
