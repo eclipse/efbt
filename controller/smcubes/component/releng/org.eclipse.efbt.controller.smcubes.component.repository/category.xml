@@ -12,10 +12,7 @@
        Neil Mackenzie - initial API and implementation
  -->
 <site>
-   <feature id="org.eclipse.efbt.cocamo.smcubes.component.feature">
-      <category name="controller.smcubes.component"/>
-   </feature>
-   <feature id="org.eclipse.efbt.cocason.feature">
+   <feature id="org.eclipse.efbt.controller.smcubes.component.feature">
       <category name="controller.smcubes.component"/>
    </feature>
    <category-def name="controller.smcubes.component" label="Controller SMCubes Component"/>
