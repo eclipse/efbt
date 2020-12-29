@@ -39,16 +39,15 @@
 	</properties>
 	<modules>
 		<module>releng/org.eclipse.efbt.controller.smcubes.component.target</module>
-		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.access.provider</module>
-		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.exporter</module>
-		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.importexport.api</module>
-		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.importexport.impl</module>
-		<module>plugins/org.eclipse.efbt.cocason.component.export_smcubes</module>
-		<module>features/org.eclipse.efbt.cocamo.smcubes.component.feature</module>
-		<module>features/org.eclipse.efbt.cocason.feature</module>
+		<module>plugins/org.eclipse.efbt.controller.smcubes.component.access.provider</module>
+		<module>plugins/org.eclipse.efbt.controller.smcubes.component.exporter</module>
+		<module>plugins/org.eclipse.efbt.controller.smcubes.component.importexport.api</module>
+		<module>plugins/org.eclipse.efbt.controller.smcubes.component.importexport.impl</module>
+		<module>plugins/org.eclipse.efbt.controller.smcubes.component.export_smcubes</module>
+		<module>features/org.eclipse.efbt.controller.smcubes.component.feature</module>
 		<module>releng/org.eclipse.efbt.controller.smcubes.component.repository</module>
-		<module>tests/org.eclipse.efbt.cocamo.smcubes.component.importexport.test</module>
-		<module>tests/org.eclipse.efbt.cocason.component.export_smcubes.test</module>
+		<module>tests/org.eclipse.efbt.controller.smcubes.component.importexport.test</module>
+		<module>tests/org.eclipse.efbt.controller.smcubes.component.export_smcubes.test</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>
