@@ -20,12 +20,12 @@
       <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
     </provides>
     <requires size='7'>
-      <required namespace='osgi.bundle' name='org.eclipse.efbt.controller.core.model.core' range='1.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.efbt.cocalimo.trl.model.platform_call' range='1.0.0'/>
       <required namespace='osgi.bundle' name='org.eclipse.efbt.cocason.component.export_smcubes' range='0.0.0'/>
       <required namespace='osgi.bundle' name='org.eclipse.efbt.ldm.component.sqldevconvertor' range='0.0.0'/>
       <required namespace='osgi.bundle' name='org.eclipse.efbt.language.trl.component.translator.api' range='1.0.0'/>
       <required namespace='osgi.bundle' name='org.eclipse.efbt.language.trl.component.translator.impl' range='1.0.0'/>
-      <required namespace='osgi.bundle' name='org.eclipse.efbt.language.trl.model.core' range='1.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.efbt.cocalimo.trl.model.core' range='1.0.0'/>
       <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=11))'/>
     </requires>
     <artifacts size='1'>
