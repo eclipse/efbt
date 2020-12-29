@@ -8,12 +8,12 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-11
-Export-Package: org.eclipse.efbt.lineage.datalineage.model.cell_transformation_logic,
- org.eclipse.efbt.lineage.datalineage.model.cell_transformation_logic.impl,
- org.eclipse.efbt.lineage.datalineage.model.cell_transformation_logic.util,
- org.eclipse.efbt.lineage.datalineage.model.data_lineage,
- org.eclipse.efbt.lineage.datalineage.model.data_lineage.impl,
- org.eclipse.efbt.lineage.datalineage.model.data_lineage.util
+Export-Package: org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cell_transformation_logic,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cell_transformation_logic.impl,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cell_transformation_logic.util,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.data_lineage,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.data_lineage.impl,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.data_lineage.util
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
