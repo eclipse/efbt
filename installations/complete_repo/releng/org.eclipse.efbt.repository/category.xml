@@ -81,5 +81,8 @@
    <feature id="org.eclipse.efbt.cocalimo.smcubes_with_lineage.query.lineagefunctions.feature">
       <category name="efbt"/>
    </feature>
+   <feature id="org.eclipse.efbt.controller.trl.component.core.feature">
+      <category name="efbt"/>
+   </feature>
    <category-def name="efbt" label="Complete EFBT Repository"/>
 </site>
