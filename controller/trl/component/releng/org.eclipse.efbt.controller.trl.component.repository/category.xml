@@ -12,7 +12,7 @@
        Neil Mackenzie - initial API and implementation
  -->
 <site>
-   <feature id="org.eclipse.efbt.controller.component.feature">
+   <feature id="org.eclipse.efbt.controller.trl.component.translator.feature">
       <category name="controller.trl.component"/>
    </feature>
    <feature id="org.eclipse.efbt.cocamo.trl.component.feature">
