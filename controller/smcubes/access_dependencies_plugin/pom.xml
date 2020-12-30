@@ -39,8 +39,7 @@
 	</properties>
 	<modules>
 		<module>releng/org.eclipse.efbt.controller.smcubes.component.access_dependencies_plugin.target</module>
-		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.access.jackcess.impl</module>
-		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.access.api</module>		
+		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.access.jackcess.impl</module>	
 		<module>features/org.eclipse.efbt.cocamo.smcubes.access_dependencies.feature</module>
 		<module>releng/org.eclipse.efbt.controller.smcubes.component.access_dependencies_plugin.repository</module>
 	</modules>
