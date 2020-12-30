@@ -37,12 +37,12 @@
 		<additionalTestArguments></additionalTestArguments>
 	</properties>
 	<modules>
-		<module>releng/org.eclipse.efbt.cocalimo.smcubes_with_lineage.modelquery.target</module>
-		<module>plugins/org.eclipse.efbt.cocalimo.smcubes_with_lineage.query.attribute_lineage</module>
-		<module>plugins/org.eclipse.efbt.cocalimo.smcubes_with_lineage.query.lineagefunctions</module>
-		<module>features/org.eclipse.efbt.cocalimo.smcubes_with_lineage.query.attribute_lineage.feature</module>
-		<module>features/org.eclipse.efbt.cocalimo.smcubes_with_lineage.query.lineagefunctions.feature</module>
-		<module>releng/org.eclipse.efbt.cocalimo.smcubes_with_lineage.modelquery.repository</module>
+		<module>releng/org.eclipse.efbt.cocamo.smcubes_with_lineage.modelquery.target</module>
+		<module>plugins/org.eclipse.efbt.lineage.attributelineage.modelquery.core</module>
+		<module>plugins/org.eclipse.efbt.lineage.common.modelquery.lineagefunctions</module>
+		<module>features/org.eclipse.efbt.cocamo.attributelineage.query.feature</module>
+		<module>features/org.eclipse.efbt.cocamo.lineage_core.query.feature</module>
+		<module>releng/org.eclipse.efbt.cocamo.smcubes_with_lineage.modelquery.repository</module>
 
 	</modules>
 	
@@ -114,7 +114,7 @@
 					<target>
 						<artifact>
 							<groupId>org.eclipse.efbt.cocamo.smcubes_with_lineage.modelquery</groupId>
-							<artifactId>org.eclipse.efbt.cocalimo.smcubes_with_lineage.modelquery.target</artifactId>
+							<artifactId>org.eclipse.efbt.cocamo.smcubes_with_lineage.modelquery.target</artifactId>
 							<version>${project.version}</version>
 						</artifact>
 					</target>
