@@ -128,7 +128,7 @@ Exhibit A – Form of Secondary Licenses Notice
       <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes"/>
       <import plugin="org.eclipse.emf.common"/>
       <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagefunctions"/>
-      <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.query.attribute_lineage"/>
+      <import plugin="org.eclipse.efbt.lineage.attributelineage.modelquery.core"/>
       <import plugin="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.functions"/>
    </requires>
 

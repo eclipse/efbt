@@ -9,7 +9,7 @@ Require-Bundle: org.eclipse.efbt.cocalimo.smcubes.model.core,
  org.eclipse.efbt.language.trl.model.core,
  org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes,
  org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagefunctions,
- org.eclipse.efbt.cocalimo.smcubes_with_lineage.query.attribute_lineage,
+ org.eclipse.efbt.lineage.attributelineage.modelquery.core,
  org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.functions,
  org.eclipse.efbt.cocalimo.core.model.functionality_module,
  org.eclipse.efbt.language.trl.component.translator.api
