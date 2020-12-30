@@ -13,7 +13,7 @@
  -->
 <feature
       id="org.eclipse.efbt.cocamo.trl.component.feature"
-      label="Controller TRL Component 1"
+      label="Controller TRL Component"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 
@@ -119,18 +119,6 @@ Exhibit A – Form of Secondary Licenses Notice
 
     You may add additional accurate notices of copyright ownership.
    </license>
-
-   <requires>
-      <import plugin="org.eclipse.efbt.cocamo.smcubes.model.core"/>
-      <import plugin="org.eclipse.efbt.language.trl.model.core"/>
-      <import plugin="org.eclipse.efbt.cocamo.core.model.functionality_module"/>
-      <import plugin="org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage"/>
-      <import plugin="org.eclipse.efbt.lineage.common.model.lineagecubes"/>
-      <import plugin="org.eclipse.emf.common"/>
-      <import plugin="org.eclipse.efbt.lineage.common.model.lineagefunctions"/>
-      <import plugin="org.eclipse.efbt.lineage.attributelineage.modelquery.core"/>
-      <import plugin="org.eclipse.efbt.cocamo.functions.model.core"/>
-   </requires>
 
    <plugin
          id="org.eclipse.efbt.language.trl.component.translator.api"
