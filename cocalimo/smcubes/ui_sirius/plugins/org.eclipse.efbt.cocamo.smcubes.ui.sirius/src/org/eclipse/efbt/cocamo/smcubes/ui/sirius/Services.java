@@ -10,7 +10,7 @@
  * Contributors:
  *    Neil Mackenzie - initial API and implementation
  *******************************************************************************/
-package org.eclipse.efbt.cocalimo.smcubes.ui.sirius;
+package org.eclipse.efbt.cocamo.smcubes.ui.sirius;
 
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;

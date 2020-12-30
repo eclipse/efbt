@@ -10,7 +10,7 @@
  * Contributors:
  *    Neil Mackenzie - initial API and implementation
  *******************************************************************************/
-package org.eclipse.efbt.cocalimo.smcubes.ui.sirius;
+package org.eclipse.efbt.cocamo.smcubes.ui.sirius;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -25,7 +25,7 @@ import org.osgi.framework.BundleContext;
  */
 public class Activator extends AbstractUIPlugin {
     // The plug-in ID
-    public static final String PLUGIN_ID = "org.eclipse.efbt.cocalimo.smcubes.ui.sirius";
+    public static final String PLUGIN_ID = "org.eclipse.efbt.cocamo.smcubes.ui.sirius";
 
     // The shared instance
     private static Activator plugin;

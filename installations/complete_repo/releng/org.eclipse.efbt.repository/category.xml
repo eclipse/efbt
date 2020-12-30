@@ -30,7 +30,7 @@
    <feature id="org.eclipse.efbt.cocalimo.smcubes.query.feature">
       <category name="efbt"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocalimo.smcubes.ui.sirius.feature">
+   <feature id="org.eclipse.efbt.cocamo.smcubes.ui.sirius.feature">
       <category name="efbt"/>
    </feature>
    <feature id="org.eclipse.efbt.cocason.feature">
