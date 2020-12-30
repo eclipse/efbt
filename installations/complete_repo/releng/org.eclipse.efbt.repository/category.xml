@@ -66,6 +66,12 @@
    <feature id="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineage_core.feature">
       <category name="efbt"/>
    </feature>
+   <feature id="org.eclipse.efbt.cocamo.lineage_core.query.feature">
+      <category name="efbt"/>
+   </feature>
+   <feature id="org.eclipse.efbt.cocamo.trl.component.feature">
+      <category name="efbt"/>
+   </feature>
    <feature id="org.eclipse.efbt.cocalimo.trl.model.core.feature">
       <category name="efbt"/>
    </feature>
@@ -78,8 +84,6 @@
    <feature id="org.eclipse.efbt.controller.smcubes.access_dependencies_plugin.feature">
       <category name="efbt"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocalimo.smcubes_with_lineage.query.lineagefunctions.feature">
-      <category name="efbt"/>
-   </feature>
    <category-def name="efbt" label="Complete EFBT Repository"/>
 </site>
+
