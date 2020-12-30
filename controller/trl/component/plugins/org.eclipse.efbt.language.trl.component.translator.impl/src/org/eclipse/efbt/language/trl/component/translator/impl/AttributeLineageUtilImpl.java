@@ -15,17 +15,17 @@ package org.eclipse.efbt.language.trl.component.translator.impl;
 
 import java.util.Iterator;
 
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage.AttributeLineageModel;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage.Attribute_lineageFactory;
+import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.AttributeLineageModel;
+import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.Attribute_lineageFactory;
 import org.eclipse.efbt.lineage.attributelineage.model.cube_transformation_logic.CubeTransformationLogic;
 import org.eclipse.efbt.lineage.attributelineage.model.row_transformation_logic.BaseRowStructure;
 import org.eclipse.efbt.lineage.attributelineage.model.row_transformation_logic.RowCreationApproach;
 import org.eclipse.efbt.lineage.attributelineage.model.row_transformation_logic.RowCreationApproachForCube; 
 import org.eclipse.efbt.lineage.common.model.column_transformation_logic.ColumnFunction;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cube_schema.CubeSchema;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.FreeBIRDToolsCubeHierarchyRelationshipModule;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.FreeBirdToolsCube;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.TargetCube;
+import org.eclipse.efbt.lineage.common.model.lineagecubes.cube_schema.CubeSchema;
+import org.eclipse.efbt.lineage.common.model.lineagecubes.cubes.FreeBIRDToolsCubeHierarchyRelationshipModule;
+import org.eclipse.efbt.lineage.common.model.lineagecubes.cubes.FreeBirdToolsCube;
+import org.eclipse.efbt.lineage.common.model.lineagecubes.cubes.TargetCube;
 import org.eclipse.efbt.lineage.common.model.column_transformation_logic.CubeColumn;
 import  org.eclipse.efbt.lineage.attributelineage.modelquery.core.AttributeLineageModelQuery;
 import org.eclipse.emf.common.util.BasicEList;

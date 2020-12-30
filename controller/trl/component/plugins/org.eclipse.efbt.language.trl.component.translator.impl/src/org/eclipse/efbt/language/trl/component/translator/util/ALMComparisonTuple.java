@@ -1,7 +1,7 @@
 package org.eclipse.efbt.language.trl.component.translator.util;
 
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage.AttributeLineageModel;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage.SubsetBoolean;
+import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.AttributeLineageModel;
+import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.SubsetBoolean;
 
 public class ALMComparisonTuple {
 

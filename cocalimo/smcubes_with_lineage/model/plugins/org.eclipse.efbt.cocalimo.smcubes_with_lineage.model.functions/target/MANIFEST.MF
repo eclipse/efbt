@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.functions;single
+ ton:=true
+Automatic-Module-Name: org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.functions
+Bundle-Version: 1.0.0.202012261450
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: org.eclipse.efbt.cocamo.functions.model.functions,org.ec
+ lipse.efbt.cocamo.functions.model.functions.impl,org.eclipse.efbt.cocam
+ o.functions.model.functions.util
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore;visibilit
+ y:=reexport,org.eclipse.emf.ecore.xmi;visibility:=reexport,org.eclipse.
+ efbt.cocamo.core.model.module_management;visibility:=reexport
+Bundle-ActivationPolicy: lazy
+

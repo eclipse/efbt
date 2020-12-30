@@ -16,8 +16,8 @@ package org.eclipse.efbt.language.trl.component.translator.api;
 
 import org.eclipse.efbt.cocalimo.smcubes.model.reports.ReportCell;
 import org.eclipse.efbt.language.trl.model.transformation.VersionedComponentsSet;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage.AttributeLineageModel;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.FreeBIRDToolsCubeHierarchyRelationshipModule;
+import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.AttributeLineageModel;
+import org.eclipse.efbt.lineage.common.model.lineagecubes.cubes.FreeBIRDToolsCubeHierarchyRelationshipModule;
 
 
 

@@ -29,7 +29,7 @@ import org.eclipse.efbt.language.trl.model.transformation.VersionedComponentsSet
 import org.eclipse.efbt.language.trl.model.transformation.VersionedCubeSchemaModule;
 import org.eclipse.efbt.language.trl.model.transformation.VersionedFunctionalModuleLogic;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.VersionedSQLViewsModule;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage.AttributeLineageModel;
+import org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage.AttributeLineageModel;
 import org.eclipse.efbt.lineage.attributelineage.model.cube_transformation_logic.CubeTransformationLogic;
 import org.eclipse.efbt.lineage.attributelineage.model.row_transformation_logic.BaseRowStructure;
 import org.eclipse.efbt.lineage.attributelineage.model.row_transformation_logic.FilterAndGroupToOneRowCreationApproach;
@@ -45,9 +45,9 @@ import org.eclipse.efbt.lineage.common.model.advanced_variable_lineagefunctions.
 import org.eclipse.efbt.lineage.common.model.advanced_variable_lineagefunctions.SpeculativeStructColumnParameter;
 import org.eclipse.efbt.lineage.common.model.column_transformation_logic.ColumnFunction;
 import org.eclipse.efbt.lineage.common.model.column_transformation_logic.Column_transformation_logicFactory;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cube_schema.CubeSchema;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.BaseCube;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.FreeBirdToolsCube;
+import org.eclipse.efbt.lineage.common.model.lineagecubes.cube_schema.CubeSchema;
+import org.eclipse.efbt.lineage.common.model.lineagecubes.cubes.BaseCube;
+import org.eclipse.efbt.lineage.common.model.lineagecubes.cubes.FreeBirdToolsCube;
 import org.eclipse.efbt.lineage.common.model.column_transformation_logic.CubeColumn;
 import org.eclipse.efbt.lineage.common.model.column_transformation_logic.ResolvedCubeColumnParameter;
 import org.eclipse.efbt.lineage.common.model.column_transformation_logic.SpeculativeCubeColumnParameter;

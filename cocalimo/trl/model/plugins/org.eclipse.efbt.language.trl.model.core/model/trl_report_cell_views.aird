@@ -3,20 +3,20 @@
   <viewpoint:DAnalysis uid="_z4xM4DJrEeubatxFEKqAMw" selectedViews="_z76AcDJrEeubatxFEKqAMw _z8WsYDJrEeubatxFEKqAMw _z8ku0DJrEeubatxFEKqAMw _z8yxQDJrEeubatxFEKqAMw" version="14.3.1.202003261200">
     <semanticResources>trl_report_cell_views.ecore</semanticResources>
     <semanticResources>trl_sql_views.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagefunctions/model/column_transformation_logic.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.functions/model/functions.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagefunctions/model/column_transformation_logic.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.functions.model.core/model/functions.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes/model/cubes.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagecubes/model/cubes.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore</semanticResources>
     <semanticResources>transformation.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes/model/cube_schema.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagecubes/model/cube_schema.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/data_definition.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.controller.core.model.core/model/platform_call.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage/model/attribute_lineage.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage/model/cube_transformation_logic.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.attribute_lineage/model/row_transformation_logic.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.datalineage/model/data_lineage.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.datalineage/model/cell_transformation_logic.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage/model/attribute_lineage.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage/model/cube_transformation_logic.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.lineage.attributelineage.model.attribute_lineage/model/row_transformation_logic.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.lineage.datalineage.model.datalineage/model/data_lineage.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.lineage.datalineage.model.datalineage/model/cell_transformation_logic.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/base_column_structured_data.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.program/model/cocamo.ecore</semanticResources>
