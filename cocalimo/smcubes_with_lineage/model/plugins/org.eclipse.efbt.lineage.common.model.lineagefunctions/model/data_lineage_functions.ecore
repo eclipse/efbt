@@ -12,7 +12,7 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A Parameter which is an existing Cell. The Cell might be a BaseCell or a DerivedCell."/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="cells" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cells" eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The cell"/>
       </eAnnotations>

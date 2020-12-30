@@ -6,7 +6,7 @@ import java.util.Collection;
 
 import org.eclipse.efbt.cocamo.functions.model.functions.BooleanFunction;
 
-import org.eclipse.efbt.cocalimo.smcubes.model.core.VARIABLE;
+import org.eclipse.efbt.cocamo.smcubes.model.core.VARIABLE;
 
 import org.eclipse.efbt.lineage.attributelineage.model.row_transformation_logic.FilterAndGroupToOneRowCreationApproach;
 import org.eclipse.efbt.lineage.attributelineage.model.row_transformation_logic.Row_transformation_logicPackage;

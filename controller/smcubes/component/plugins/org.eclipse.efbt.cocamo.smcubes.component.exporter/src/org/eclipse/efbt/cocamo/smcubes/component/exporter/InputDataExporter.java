@@ -22,17 +22,17 @@ import java.util.Iterator;
 import java.util.List;
 
 
-import org.eclipse.efbt.cocalimo.smcubes.model.base_column_structured_data.BaseCell;
-import org.eclipse.efbt.cocalimo.smcubes.model.base_column_structured_data.BaseCellWithEnumeratedValue;
-import org.eclipse.efbt.cocalimo.smcubes.model.base_column_structured_data.BaseCellWithValue;
-import org.eclipse.efbt.cocalimo.smcubes.model.base_column_structured_data.BaseColumnStructuredData;
-import org.eclipse.efbt.cocalimo.smcubes.model.base_column_structured_data.BaseRowData;
-import org.eclipse.efbt.cocalimo.smcubes.model.cocamo.SMCubesStaticModel;
-import org.eclipse.efbt.cocalimo.smcubes.model.cocamo.SMCubesTest;
-import org.eclipse.efbt.cocalimo.smcubes.model.cocamo.SMCubesTestInputData;
-import org.eclipse.efbt.cocalimo.smcubes.model.cocamo.SMCubesTestModule;
-import org.eclipse.efbt.cocalimo.smcubes.model.data_definition.CUBE;
-import org.eclipse.efbt.cocalimo.smcubes.model.data_definition.CUBE_STRUCTURE_ITEM;
+import org.eclipse.efbt.cocamo.smcubes.model.base_column_structured_data.BaseCell;
+import org.eclipse.efbt.cocamo.smcubes.model.base_column_structured_data.BaseCellWithEnumeratedValue;
+import org.eclipse.efbt.cocamo.smcubes.model.base_column_structured_data.BaseCellWithValue;
+import org.eclipse.efbt.cocamo.smcubes.model.base_column_structured_data.BaseColumnStructuredData;
+import org.eclipse.efbt.cocamo.smcubes.model.base_column_structured_data.BaseRowData;
+import org.eclipse.efbt.cocamo.smcubes.model.cocamo.SMCubesStaticModel;
+import org.eclipse.efbt.cocamo.smcubes.model.cocamo.SMCubesTest;
+import org.eclipse.efbt.cocamo.smcubes.model.cocamo.SMCubesTestInputData;
+import org.eclipse.efbt.cocamo.smcubes.model.cocamo.SMCubesTestModule;
+import org.eclipse.efbt.cocamo.smcubes.model.data_definition.CUBE;
+import org.eclipse.efbt.cocamo.smcubes.model.data_definition.CUBE_STRUCTURE_ITEM;
 
 
 import org.eclipse.emf.common.util.EList;

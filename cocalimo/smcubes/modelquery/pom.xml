@@ -14,9 +14,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.eclipse.efbt.cocalimo.smcubes.modelquery</groupId>
+	<groupId>org.eclipse.efbt.cocamo.smcubes.modelquery</groupId>
 	<version>1.0.0-SNAPSHOT</version>
-	<artifactId>org.eclipse.efbt.cocalimo.smcubes.modelquery</artifactId>
+	<artifactId>org.eclipse.efbt.cocamo.smcubes.modelquery</artifactId>
 	<packaging>pom</packaging>
 	<prerequisites>
 		<maven>3.0</maven>
@@ -38,10 +38,10 @@
 		<additionalTestArguments></additionalTestArguments>
 	</properties>
 	<modules>
-		<module>releng/org.eclipse.efbt.cocalimo.smcubes.modelquery.target</module>
-		<module>plugins/org.eclipse.efbt.cocalimo.smcubes.query.core</module>
-		<module>features/org.eclipse.efbt.cocalimo.smcubes.query.feature</module>
-		<module>releng/org.eclipse.efbt.cocalimo.smcubes.modelquery.repository</module>
+		<module>releng/org.eclipse.efbt.cocamo.smcubes.modelquery.target</module>
+		<module>plugins/org.eclipse.efbt.cocamo.smcubes.query.core</module>
+		<module>features/org.eclipse.efbt.cocamo.smcubes.query.feature</module>
+		<module>releng/org.eclipse.efbt.cocamo.smcubes.modelquery.repository</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>
@@ -123,8 +123,8 @@
 					<pomDependencies>consider</pomDependencies>
 					<target>
 						<artifact>
-							<groupId>org.eclipse.efbt.cocalimo.smcubes.modelquery</groupId>
-							<artifactId>org.eclipse.efbt.cocalimo.smcubes.modelquery.target</artifactId>
+							<groupId>org.eclipse.efbt.cocamo.smcubes.modelquery</groupId>
+							<artifactId>org.eclipse.efbt.cocamo.smcubes.modelquery.target</artifactId>
 							<version>${project.version}</version>
 						</artifact>
 					</target>

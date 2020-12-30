@@ -7,29 +7,29 @@
     <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.functions.model.core/model/functions.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagecubes/model/cubes.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore</semanticResources>
     <semanticResources>row_transformation_logic.ecore</semanticResources>
     <semanticResources>attribute_lineage.genmodel</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.functions.model.core/model/functions.genmodel</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.genmodel</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagecubes/model/lineagecubes.genmodel</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/smcubes.genmodel</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/data_definition.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/efbt_data_definition.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/efbt_mapping.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/mapping.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/efbt_vtl_transformation.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/vtl_transformation.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/rendering.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/reports.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/smcubes_model.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/smcubes.genmodel</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/data_definition.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/efbt_data_definition.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/efbt_mapping.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/mapping.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/efbt_vtl_transformation.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/vtl_transformation.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/rendering.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/reports.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/smcubes_model.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagecubes/model/cube_schema.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagecubes/model/efbt_advanced_data_definition.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagecubes/model/incremental_cubes.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagefunctions/model/lineagefunctions.genmodel</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/smcubes_input_data.genmodel</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/base_column_structured_data.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/smcubes_input_data.genmodel</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/base_column_structured_data.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagefunctions/model/advanced_variable_lineagefunctions.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagefunctions/model/data_lineage_functions.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagefunctions/model/smcubes_functions.ecore</semanticResources>

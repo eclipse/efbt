@@ -142,7 +142,7 @@
   <eClassifiers xsi:type="ecore:EClass" name="TRLProgram">
     <eStructuralFeatures xsi:type="ecore:EReference" name="executableLogic" eType="#//TRLExecutableLogic"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="smcubesStaticModel" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.program/model/cocamo.ecore#//SMCubesStaticModel"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="smcubesStaticModel" eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.program/model/cocamo.ecore#//SMCubesStaticModel"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="structVariablesModule"
         eType="ecore:EClass ../../org.eclipse.efbt.lineage.common.model.lineagecubes/model/efbt_advanced_data_definition.ecore#//StructTypedVariablesModule"

@@ -2,8 +2,8 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_DYbycCdAEeuCcbqNuIYXKg" selectedViews="_DZe7UCdAEeuCcbqNuIYXKg _DZvaACdAEeuCcbqNuIYXKg _DZxPMCdAEeuCcbqNuIYXKg _DZ1goCdAEeuCcbqNuIYXKg" version="14.3.1.202003261200">
     <semanticResources>cell_transformation_logic.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.functions.model.core/model/functions.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.lineage.common.model.lineagecubes/model/cubes.ecore</semanticResources>
@@ -364,8 +364,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_IT1VcCdAEeuCcbqNuIYXKg" name="ColumnStructuredData" tooltipText="" incomingEdges="_IT6N8CdAEeuCcbqNuIYXKg _IT61ACdAEeuCcbqNuIYXKg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//ColumnStructuredData"/>
-      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//ColumnStructuredData"/>
+      <target xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//ColumnStructuredData"/>
+      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//ColumnStructuredData"/>
       <decorations xmi:type="viewpoint:Decoration" uid="_IT18gSdAEeuCcbqNuIYXKg">
         <description xmi:type="description:SemanticBasedDecoration" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='External']"/>
       </decorations>
@@ -377,8 +377,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_IT4YwydAEeuCcbqNuIYXKg" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//ColumnStructuredData/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//ColumnStructuredData/name"/>
+        <target xmi:type="ecore:EAttribute" href="platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//ColumnStructuredData/name"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//ColumnStructuredData/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_IT4_0CdAEeuCcbqNuIYXKg" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
         </ownedStyle>
@@ -412,8 +412,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_R_jM0CdAEeuCcbqNuIYXKg" name="Cell" tooltipText="" incomingEdges="_R_oFXCdAEeuCcbqNuIYXKg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell"/>
-      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell"/>
+      <target xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell"/>
+      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell"/>
       <decorations xmi:type="viewpoint:Decoration" uid="_R_jz4SdAEeuCcbqNuIYXKg">
         <description xmi:type="description:SemanticBasedDecoration" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='External']"/>
       </decorations>
@@ -425,16 +425,16 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_R_m3MSdAEeuCcbqNuIYXKg" name="cellID : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell/cellID"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell/cellID"/>
+        <target xmi:type="ecore:EAttribute" href="platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell/cellID"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell/cellID"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_R_m3MidAEeuCcbqNuIYXKg" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_R_m3MydAEeuCcbqNuIYXKg" name=" column : VARIABLE" tooltipText="">
-        <target xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell/column"/>
-        <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell/column"/>
+        <target xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell/column"/>
+        <semanticElements xmi:type="ecore:EReference" href="platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//Cell/column"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_R_m3NCdAEeuCcbqNuIYXKg" labelAlignment="LEFT" color="114,159,207">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EReferenceNode']/@style"/>
         </ownedStyle>
@@ -454,8 +454,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC%20ESupertypes']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_UCiYQCdAEeuCcbqNuIYXKg" name="RowData" tooltipText="" incomingEdges="_UCmpvCdAEeuCcbqNuIYXKg _UCnQzydAEeuCcbqNuIYXKg" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//RowData"/>
-      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//RowData"/>
+      <target xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//RowData"/>
+      <semanticElements xmi:type="ecore:EClass" href="platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//RowData"/>
       <decorations xmi:type="viewpoint:Decoration" uid="_UCi_USdAEeuCcbqNuIYXKg">
         <description xmi:type="description:SemanticBasedDecoration" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@decorationDescriptionsSet/@decorationDescriptions[name='External']"/>
       </decorations>
@@ -467,8 +467,8 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_UClbkydAEeuCcbqNuIYXKg" name="rowID : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//RowData/rowID"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="platform:/resource/org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/column_structured_data.ecore#//RowData/rowID"/>
+        <target xmi:type="ecore:EAttribute" href="platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//RowData/rowID"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.input_data/model/column_structured_data.ecore#//RowData/rowID"/>
         <ownedStyle xmi:type="diagram:BundledImage" uid="_UClblCdAEeuCcbqNuIYXKg" labelAlignment="LEFT">
           <description xmi:type="style:BundledImageDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']/@style"/>
         </ownedStyle>

@@ -42,7 +42,7 @@ import org.eclipse.efbt.language.trl.model.trl_report_cell_views.ReportCellView;
 import org.eclipse.efbt.language.trl.model.trl_report_cell_views.ReportCellViewModule;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.SQLView;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.VersionedSQLViewsModule;
-import org.eclipse.efbt.cocalimo.smcubes.model.reports.ReportCell;
+import org.eclipse.efbt.cocamo.smcubes.model.reports.ReportCell;
 import org.eclipse.efbt.language.trl.component.translator.api.AttributeLineageUtil;
 
 

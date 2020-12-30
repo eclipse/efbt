@@ -3,7 +3,7 @@
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.eclipse.efbt.lineage.common.model.lineagecubes/src-gen"
     modelPluginID="org.eclipse.efbt.lineage.common.model.lineagecubes" modelName="Lineagecubes"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
-    complianceLevel="8.0" copyrightFields="false" usedGenPackages="../../org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.genmodel#//module_management ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/smcubes.genmodel#//core ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/smcubes.genmodel#//data_definition"
+    complianceLevel="8.0" copyrightFields="false" usedGenPackages="../../org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.genmodel#//module_management ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/smcubes.genmodel#//core ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/smcubes.genmodel#//data_definition"
     operationReflection="true" importOrganizing="true">
   <foreignModel>cube_schema.ecore</foreignModel>
   <foreignModel>cubes.ecore</foreignModel>

@@ -9,7 +9,7 @@ Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.efbt.controller.core.model.core,
  org.eclipse.efbt.cocason.dsl.cocason,
  org.eclipse.efbt.cocason.dsl.cocason.ide,
- org.eclipse.efbt.cocalimo.smcubes.model.program,
+ org.eclipse.efbt.cocamo.smcubes.model.program,
  org.eclipse.xtext.ui,
  org.eclipse.xtext.ui.shared,
  org.eclipse.xtext.ui.codetemplates.ui,

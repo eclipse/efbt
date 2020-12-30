@@ -55,7 +55,7 @@
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="dependantVariables" upperBound="-1"
-        eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//VARIABLE">
+        eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//VARIABLE">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The Columns from the source cubes which are used to determine how to create and link the created rows. &#xA;            &#x9; "/>
       </eAnnotations>
@@ -85,7 +85,7 @@
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="groupByVariables" upperBound="-1"
-        eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//VARIABLE">
+        eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//VARIABLE">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The columns to use to group the source cube by, e.g. grouping a cube by a a column called Currency will lead to one row per unique currency in the source cube rows."/>
       </eAnnotations>
@@ -212,7 +212,7 @@
       <details key="kind" value="elementOnly"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="groupByColumns" upperBound="-1"
-        eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//VARIABLE">
+        eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//VARIABLE">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The columns to use to group the source cube by, e.g. grouping a  cube by a a column called Currency will lead to one row per unique currency in the source cube rows."/>
       </eAnnotations>

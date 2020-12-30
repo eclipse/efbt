@@ -12,7 +12,7 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="This is a ColumnFunction which represents the retrieval of a the value of a single Variable that exists inside  a CubeColumn that contains a StructTypeVariable."/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="columnInStruct" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//VARIABLE">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="columnInStruct" eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//VARIABLE">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The Variable that exists inside  a CubeColumn that contains a StructTypeVariable."/>
       </eAnnotations>
@@ -27,7 +27,7 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A Resolved parameter, which relates to a variable within a resolved CubeColumn, where the CubeColumn holds a StructTypeVaraible "/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="columnInsideStruct" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//VARIABLE">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="columnInsideStruct" eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//VARIABLE">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The variable that we are interested in from  inside the StructTypedVariable"/>
       </eAnnotations>
@@ -42,7 +42,7 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A Speculative parameter, which relates to a variable within a CubeColumn, where we expect that the CubeColumn holds a StructTypedVariable "/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="columnInsideStruct" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//VARIABLE">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="columnInsideStruct" eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//VARIABLE">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The variable that we are interested in from  inside the StructTypedVariable"/>
       </eAnnotations>

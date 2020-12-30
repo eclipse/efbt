@@ -16,7 +16,7 @@
       <details key="name" value="MemberParameter"/>
       <details key="kind" value="empty"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="param" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//MEMBER">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="param" eType="ecore:EClass ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//MEMBER">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The member"/>
       </eAnnotations>
@@ -34,7 +34,7 @@
       <details key="name" value="ValueParameter"/>
       <details key="kind" value="empty"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataType" eType="ecore:EEnum ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/core.ecore#//FACET_VALUE_TYPE">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataType" eType="ecore:EEnum ../../org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore#//FACET_VALUE_TYPE">
       <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
         <details key="kind" value="attribute"/>
         <details key="name" value="dataType"/>
