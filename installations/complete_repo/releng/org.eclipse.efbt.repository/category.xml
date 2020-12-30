@@ -42,7 +42,7 @@
    <feature id="org.eclipse.efbt.controller.component.feature">
       <category name="efbt"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocalimo.trl.model.platform_call.feature">
+   <feature id="org.eclipse.efbt.controller.model.feature">
       <category name="efbt"/>
    </feature>
    <feature id="org.eclipse.efbt.controller.ui.sirius.feature">
@@ -75,13 +75,13 @@
    <feature id="org.eclipse.efbt.cocamo.trl.component.feature">
       <category name="efbt"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocalimo.trl.model.core.feature">
+   <feature id="org.eclipse.efbt.cocamo.trl.model.feature">
       <category name="efbt"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocalimo.trl.query.core.feature">
+   <feature id="org.eclipse.efbt.cocamo.trl.query.feature">
       <category name="efbt"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocalimo.trl.ui.sirius.core.feature">
+   <feature id="org.eclipse.efbt.cocamo.trl.ui.sirius.feature">
       <category name="efbt"/>
    </feature>
    <feature id="org.eclipse.efbt.cocamo.smcubes.access_dependencies.feature">

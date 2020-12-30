@@ -12,7 +12,7 @@
        Neil Mackenzie - initial API and implementation
  -->
 <site>
-   <feature id="org.eclipse.efbt.cocalimo.trl.ui.sirius.core.feature">
+   <feature id="org.eclipse.efbt.cocamo.trl.ui.sirius.feature">
       <category name="cocamo.trl.ui.sirius"/>
    </feature>
    <category-def name="cocamo.trl.ui.sirius" label="CoCaMo TRL UI Sirius"/>
