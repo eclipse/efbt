@@ -12,11 +12,8 @@
        Neil Mackenzie - initial API and implementation
  -->
 <site>
-   <feature id="org.eclipse.efbt.cocamo.smcubes.component.feature">
-      <category name="controller.smcubes.component"/>
+   <feature id="org.eclipse.efbt.cocamo.smcubes.access_dependencies.feature">
+      <category name="controller.smcubes.component.access_dependencies_plugin"/>
    </feature>
-   <feature id="org.eclipse.efbt.cocason.feature">
-      <category name="controller.smcubes.component"/>
-   </feature>
-   <category-def name="controller.smcubes.component" label="Controller SMCubes Component"/>
+   <category-def name="controller.smcubes.component.access_dependencies_plugin" label="Controller SMCubes Component Access Dependencies Plugin"/>
 </site>
