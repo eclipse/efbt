@@ -11,6 +11,7 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
+
 <feature
       id="org.eclipse.efbt.cocamo.trl.query.feature"
       label="CoCaMo  Attribute  Lineage Model"
@@ -126,6 +127,7 @@ Exhibit A – Form of Secondary Licenses Notice
       <import plugin="org.eclipse.efbt.lineage.common.model.lineagecubes"/>
       <import plugin="org.eclipse.efbt.language.trl.model.core"/>
       <import plugin="org.eclipse.efbt.lineage.common.model.lineagefunctions"/>
+      <import plugin="org.eclipse.efbt.language.trl.component.translator.api"/>
    </requires>
 
    <plugin

@@ -52,7 +52,16 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			
+			<dependency>
+				<groupId>org.eclipse.efbt.dependencies.accessdb</groupId>
+				<artifactId>org.eclipse.efbt.dependencies.access.jackcess</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.efbt.dependencies.accessdb</groupId>
+				<artifactId>pomfirst-thirdparty</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
 
 		</dependencies>
 	</dependencyManagement>
@@ -123,8 +132,8 @@
 					<pomDependencies>consider</pomDependencies>
 					<target>
 						<artifact>
-							<groupId>org.eclipse.efbt.cocamo.smcubes.modelquery</groupId>
-							<artifactId>org.eclipse.efbt.cocamo.smcubes.modelquery.target</artifactId>
+							<groupId>org.eclipse.efbt.cocamo.smcubes</groupId>
+							<artifactId>org.eclipse.efbt.cocamo.target</artifactId>
 							<version>${project.version}</version>
 						</artifact>
 					</target>
@@ -369,7 +378,16 @@
 	</profiles>
 
 	<dependencies>
-		
+		<dependency>
+			<groupId>org.eclipse.efbt.dependencies.accessdb</groupId>
+			<artifactId>org.eclipse.efbt.dependencies.access.jackcess</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.efbt.dependencies.accessdb</groupId>
+			<artifactId>pomfirst-thirdparty</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
 
 		<!-- ... -->
 		<dependency>

@@ -18,5 +18,8 @@
    <feature id="org.eclipse.efbt.cocason.feature">
       <category name="controller.smcubes.component"/>
    </feature>
+   <feature id="org.eclipse.efbt.controller.component.feature">
+      <category name="controller.smcubes.component"/>
+   </feature>
    <category-def name="controller.smcubes.component" label="Controller SMCubes Component"/>
 </site>

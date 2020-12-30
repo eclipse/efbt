@@ -113,7 +113,7 @@
 				  <pomDependencies>consider</pomDependencies>
 					<target>
 						<artifact>
-							<groupId>org.eclipse.efbt.cocamo.core.ui_sirius</groupId>
+							<groupId>org.eclipse.efbt.cocamo.core.ui.sirius</groupId>
 							<artifactId>org.eclipse.efbt.cocamo.core.ui.sirius.target</artifactId>
 							<version>${project.version}</version>
 						</artifact>

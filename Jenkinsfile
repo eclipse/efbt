@@ -8,62 +8,48 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''                                     
-                    cd cocalimo/core/model
+                    cd org.eclipse.efbt.cocamo.core
                     mvn install
-                    cd ../../..
-                    cd cocalimo/core/ui_sirius
+                    cd ..
+                    cd org.eclipse.efbt.dependencies.accessdb
                     mvn install
-                    cd ../../..
-                    cd cocalimo/smcubes/model
+                    cd ..
+                    cd org.eclipse.efbt.cocamo.smcubes
                     mvn install
-                    cd ../../..
-                     cd cocalimo/smcubes/modelquery
+                    cd ..
+                     cd org.eclipse.efbt.cocamo.functions
                     mvn install
-                    cd ../../..
-                     cd cocalimo/smcubes/ui_sirius
+                    cd ..
+                     cd org.eclipse.efbt.cocamo.lineage_core
                     mvn install
-                    cd ../../..
-                    cd cocalimo/smcubes_with_lineage/model
+                    cd ..
+                    cd org.eclipse.efbt.cocamo.attributelineage
                     mvn install
-                    cd ../../..
-                    cd cocalimo/smcubes_with_lineage/modelquery
+                    cd ..
+                    cd org.eclipse.efbt.cocamo.datalineage
                     mvn install
-                    cd ../../..                    
-                    cd cocalimo/smcubes_with_lineage/ui_sirius
+                    cd ..                    
+                    cd org.eclipse.efbt.ldm
                     mvn install
-                    cd ../../..
-                    cd cocalimo/trl/model
+                    cd ..
+                    cd org.eclipse.efbt.cocamo.trl
                     mvn install
-                    cd ../../..
-                    cd cocalimo/trl/modelquery
+                    cd ..
+                    cd org.eclipse.efbt.controller.model
                     mvn install
-                    cd ../../..
-                    cd cocalimo/trl/ui_sirius
+                    cd ..
+                    cd org.eclipse.efbt.cocason.dsl.cocason.parent -DskipTests
                     mvn install
-                    cd ../../..                    
-                    cd cocason/org.eclipse.efbt.cocason.dsl.cocason.parent
+                    cd ..                    
+                    cd org.eclipse.efbt.cocason
                     mvn install 
-                    cd ../../..
-                    cd controller/core
+                    cd ..
+                    cd org.eclipse.efbt.controller.component
                     mvn install
-                    cd ../../..
-                    cd controller/ldm
+                    cd ..
+                    cd org.eclipse.efbt.complete_repo
                     mvn install
-                    cd ../../..
-                    cd controller/smcubes/access_dependencies
-                    mvn install
-                    cd ../../..
-                    cd controller/smcubes/component
-                    mvn install
-                    cd ../../..
-                    cd controller/trl/component
-                    mvn install
-                    cd ../../..
-                    cd controller/trl/ui_sirius
-                    mvn install
-                    cd ../../..
-                    
-                    
+                    cd ..
                 '''
             }
         }
