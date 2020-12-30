@@ -14,7 +14,7 @@ package org.eclipse.efbt.language.trl.component.translator.util;
 
 import java.util.Iterator;
 
-import org.eclipse.efbt.cocalimo.core.model.functionality_module.ReportCellCreationFunctionalityModule;
+import org.eclipse.efbt.cocamo.core.model.functionality_module.ReportCellCreationFunctionalityModule;
 import org.eclipse.efbt.cocamo.functions.model.functions.AggregateFunctionSpec;
 import org.eclipse.efbt.cocamo.functions.model.functions.BasicFunctionSpec;
 import org.eclipse.efbt.cocamo.functions.model.functions.Function;

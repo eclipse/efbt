@@ -44,7 +44,7 @@
       <required namespace='osgi.bundle' name='org.eclipse.emf.mwe2.lib' range='0.0.0'/>
       <required namespace='osgi.bundle' name='org.eclipse.emf.mwe2.runtime' range='0.0.0'/>
       <required namespace='osgi.bundle' name='org.eclipse.emf.mwe2.launch' range='0.0.0'/>
-      <required namespace='osgi.bundle' name='org.eclipse.efbt.cocalimo.core.model.module_management' range='1.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.efbt.cocamo.core.model.module_management' range='1.0.0'/>
       <required namespace='osgi.bundle' name='org.eclipse.efbt.cocamo.smcubes.model.core' range='0.0.0'/>
       <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=11))'/>
     </requires>

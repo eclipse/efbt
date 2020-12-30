@@ -33,7 +33,7 @@
       <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
       <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
       <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
-      <required namespace='osgi.bundle' name='org.eclipse.efbt.cocalimo.core.model.module_management' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.efbt.cocamo.core.model.module_management' range='0.0.0'/>
       <required namespace='osgi.bundle' name='org.eclipse.efbt.cocamo.smcubes.model.core' range='0.0.0'/>
       <requiredProperties namespace='osgi.ee' match='(&amp;(osgi.ee=JavaSE)(version=11))'/>
     </requires>

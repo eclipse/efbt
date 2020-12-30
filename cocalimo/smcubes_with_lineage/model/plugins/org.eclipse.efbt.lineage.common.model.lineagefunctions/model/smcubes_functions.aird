@@ -3,7 +3,7 @@
   <viewpoint:DAnalysis uid="_L5WpcCcmEeuCcbqNuIYXKg" selectedViews="_L6bAcCcmEeuCcbqNuIYXKg _L6hHECcmEeuCcbqNuIYXKg _L6iVMCcmEeuCcbqNuIYXKg _L6n0wCcmEeuCcbqNuIYXKg" version="14.3.1.202003261200">
     <semanticResources>smcubes_functions.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.functions.model.core/model/functions.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.core.model.module_management/model/module_management.ecore</semanticResources>
     <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.smcubes.model.core/model/core.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_L6bAcCcmEeuCcbqNuIYXKg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>

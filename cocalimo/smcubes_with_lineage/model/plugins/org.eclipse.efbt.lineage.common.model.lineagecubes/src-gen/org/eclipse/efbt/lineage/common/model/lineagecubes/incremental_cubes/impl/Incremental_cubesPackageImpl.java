@@ -2,7 +2,7 @@
  */
 package org.eclipse.efbt.lineage.common.model.lineagecubes.incremental_cubes.impl;
 
-import org.eclipse.efbt.cocalimo.core.model.module_management.Module_managementPackage;
+import org.eclipse.efbt.cocamo.core.model.module_management.Module_managementPackage;
 
 import org.eclipse.efbt.cocamo.smcubes.model.core.CorePackage;
 

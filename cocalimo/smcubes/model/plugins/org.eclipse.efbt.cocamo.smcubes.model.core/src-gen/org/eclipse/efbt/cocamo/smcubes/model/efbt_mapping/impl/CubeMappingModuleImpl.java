@@ -4,7 +4,7 @@ package org.eclipse.efbt.cocamo.smcubes.model.efbt_mapping.impl;
 
 import java.util.Collection;
 
-import org.eclipse.efbt.cocalimo.core.model.module_management.impl.ModuleImpl;
+import org.eclipse.efbt.cocamo.core.model.module_management.impl.ModuleImpl;
 
 import org.eclipse.efbt.cocamo.smcubes.model.efbt_mapping.CubeMappingModule;
 import org.eclipse.efbt.cocamo.smcubes.model.efbt_mapping.Efbt_mappingPackage;

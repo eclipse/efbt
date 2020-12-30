@@ -24,7 +24,7 @@ import org.eclipse.emf.common.util.EList;
  * @model
  * @generated
  */
-public interface ArrayTypedVariableModule extends org.eclipse.efbt.cocalimo.core.model.module_management.Module
+public interface ArrayTypedVariableModule extends org.eclipse.efbt.cocamo.core.model.module_management.Module
 {
 	/**
 	 * Returns the value of the '<em><b>Array Typed Variables</b></em>' containment reference list.

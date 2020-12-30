@@ -2,7 +2,7 @@
  */
 package org.eclipse.efbt.cocamo.smcubes.model.cocamo;
 
-import org.eclipse.efbt.cocalimo.core.model.test.Result;
+import org.eclipse.efbt.cocamo.core.model.test.Result;
 
 import org.eclipse.efbt.cocamo.smcubes.model.reports.ReportCellValue;
 

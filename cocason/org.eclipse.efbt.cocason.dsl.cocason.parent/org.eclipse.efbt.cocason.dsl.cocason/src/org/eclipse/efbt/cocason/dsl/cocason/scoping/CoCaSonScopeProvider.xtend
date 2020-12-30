@@ -2,12 +2,12 @@ package org.eclipse.efbt.cocason.dsl.cocason.scoping
 
 import org.eclipse.xtext.scoping.Scopes
 import org.eclipse.xtext.EcoreUtil2
-import org.eclipse.efbt.cocalimo.core.model.test_definition.Given
-import org.eclipse.efbt.cocalimo.core.model.test_definition.When
-import org.eclipse.efbt.cocalimo.core.model.test_definition.Then
-import org.eclipse.efbt.cocalimo.core.model.test_definition.TestDefinition
-import org.eclipse.efbt.cocalimo.core.model.test_definition.Clause
-import org.eclipse.efbt.cocalimo.core.model.test_definition.Param
+import org.eclipse.efbt.cocamo.core.model.test_definition.Given
+import org.eclipse.efbt.cocamo.core.model.test_definition.When
+import org.eclipse.efbt.cocamo.core.model.test_definition.Then
+import org.eclipse.efbt.cocamo.core.model.test_definition.TestDefinition
+import org.eclipse.efbt.cocamo.core.model.test_definition.Clause
+import org.eclipse.efbt.cocamo.core.model.test_definition.Param
 import org.eclipse.xtext.scoping.IScope
 import org.eclipse.emf.ecore.EObject
 import org.eclipse.emf.ecore.EReference

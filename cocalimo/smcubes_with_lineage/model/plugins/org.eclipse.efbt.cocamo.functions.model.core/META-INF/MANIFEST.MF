@@ -14,5 +14,5 @@ Export-Package: org.eclipse.efbt.cocamo.functions.model.functions,
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
- org.eclipse.efbt.cocalimo.core.model.module_management;visibility:=reexport
+ org.eclipse.efbt.cocamo.core.model.module_management;visibility:=reexport
 Bundle-ActivationPolicy: lazy

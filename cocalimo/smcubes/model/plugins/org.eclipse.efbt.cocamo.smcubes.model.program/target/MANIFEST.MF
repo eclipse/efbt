@@ -13,12 +13,12 @@ Export-Package: org.eclipse.efbt.cocamo.smcubes.model.cocamo,org.eclipse
  .efbt.cocamo.smcubes.model.cocamo.impl,org.eclipse.efbt.cocamo.smcubes.
  model.cocamo.util
 Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore;visibilit
- y:=reexport,org.eclipse.efbt.cocalimo.core.model.functionality_module;vis
- ibility:=reexport,org.eclipse.efbt.cocalimo.core.model.module_management;
- visibility:=reexport,org.eclipse.efbt.cocalimo.core.model.requirements_te
+ y:=reexport,org.eclipse.efbt.cocamo.core.model.functionality_module;vis
+ ibility:=reexport,org.eclipse.efbt.cocamo.core.model.module_management;
+ visibility:=reexport,org.eclipse.efbt.cocamo.core.model.requirements_te
  xt;visibility:=reexport,org.eclipse.efbt.cocamo.smcubes.model.input_dat
  a;visibility:=reexport,org.eclipse.efbt.cocamo.smcubes.model.core;visib
- ility:=reexport,org.eclipse.efbt.cocalimo.core.model.testing;visibility:=
+ ility:=reexport,org.eclipse.efbt.cocamo.core.model.testing;visibility:=
  reexport
 Bundle-ActivationPolicy: lazy
 

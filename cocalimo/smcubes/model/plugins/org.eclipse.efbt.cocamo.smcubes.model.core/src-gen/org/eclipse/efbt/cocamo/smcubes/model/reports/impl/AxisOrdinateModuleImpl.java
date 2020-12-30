@@ -4,7 +4,7 @@ package org.eclipse.efbt.cocamo.smcubes.model.reports.impl;
 
 import java.util.Collection;
 
-import org.eclipse.efbt.cocalimo.core.model.module_management.impl.ModuleImpl;
+import org.eclipse.efbt.cocamo.core.model.module_management.impl.ModuleImpl;
 
 import org.eclipse.efbt.cocamo.smcubes.model.rendering.AXIS_ORDINATE;
 

@@ -3,7 +3,7 @@
   <viewpoint:DAnalysis uid="_ieHVACcUEeuCcbqNuIYXKg" selectedViews="_ivEiICcUEeuCcbqNuIYXKg _ivR9gCcUEeuCcbqNuIYXKg _ivSkkCcUEeuCcbqNuIYXKg _ivXdECcUEeuCcbqNuIYXKg" version="14.3.1.202003261200">
     <semanticResources>incremental_cubes.ecore</semanticResources>
     <semanticResources>cubes.ecore</semanticResources>
-    <semanticResources>platform:/resource/org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.ecore</semanticResources>
+    <semanticResources>platform:/resource/org.eclipse.efbt.cocamo.core.model.module_management/model/module_management.ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_ivEiICcUEeuCcbqNuIYXKg">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_jeGLUCcUEeuCcbqNuIYXKg" name="incremental_cubes class diagram" repPath="#_jdpfYCcUEeuCcbqNuIYXKg" changeId="13535d9e-08ef-4e4f-989c-00a473342a3e">

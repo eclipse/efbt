@@ -4,7 +4,7 @@
     editDirectory="/org.eclipse.efbt.cocamo.smcubes.model.core.edit/src" modelPluginID="org.eclipse.efbt.cocamo.smcubes.model.core"
     modelName="Smcubes" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
-    usedGenPackages="../../org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.genmodel#//module_management"
+    usedGenPackages="../../org.eclipse.efbt.cocamo.core.model.module_management/model/module_management.genmodel#//module_management"
     operationReflection="true" importOrganizing="true">
   <foreignModel>core.ecore</foreignModel>
   <foreignModel>data_definition.ecore</foreignModel>

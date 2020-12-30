@@ -2,13 +2,13 @@
  */
 package org.eclipse.efbt.cocamo.smcubes.model.cocamo;
 
-import org.eclipse.efbt.cocalimo.core.model.functionality_module.FunctionalityModuleModule;
+import org.eclipse.efbt.cocamo.core.model.functionality_module.FunctionalityModuleModule;
 
-import org.eclipse.efbt.cocalimo.core.model.requirements_text.RequirementsModule;
+import org.eclipse.efbt.cocamo.core.model.requirements_text.RequirementsModule;
 
-import org.eclipse.efbt.cocalimo.core.model.test_definition.TestContraints;
-import org.eclipse.efbt.cocalimo.core.model.test_definition.TestDefinitionModule;
-import org.eclipse.efbt.cocalimo.core.model.test_definition.TestTemplateModule;
+import org.eclipse.efbt.cocamo.core.model.test_definition.TestContraints;
+import org.eclipse.efbt.cocamo.core.model.test_definition.TestDefinitionModule;
+import org.eclipse.efbt.cocamo.core.model.test_definition.TestTemplateModule;
 
 import org.eclipse.efbt.cocamo.smcubes.model.smcubes_model.SmcubesModel;
 

@@ -2,7 +2,7 @@
  */
 package org.eclipse.efbt.cocamo.smcubes.model.cocamo;
 
-import org.eclipse.efbt.cocalimo.core.model.test.TestModule;
+import org.eclipse.efbt.cocamo.core.model.test.TestModule;
 
 import org.eclipse.emf.common.util.EList;
 

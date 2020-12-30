@@ -2,7 +2,7 @@
  */
 package org.eclipse.efbt.lineage.datalineage.model.data_lineage.impl;
 
-import org.eclipse.efbt.cocalimo.core.model.module_management.Module_managementPackage;
+import org.eclipse.efbt.cocamo.core.model.module_management.Module_managementPackage;
 
 import org.eclipse.efbt.cocamo.functions.model.functions.FunctionsPackage;
 

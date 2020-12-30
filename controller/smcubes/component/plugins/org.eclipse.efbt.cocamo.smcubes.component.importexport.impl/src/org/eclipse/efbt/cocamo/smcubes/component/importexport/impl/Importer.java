@@ -16,9 +16,9 @@ package org.eclipse.efbt.cocamo.smcubes.component.importexport.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.eclipse.efbt.cocalimo.core.model.functionality_module.FunctionalityModule;
-import org.eclipse.efbt.cocalimo.core.model.functionality_module.FunctionalityModuleModule;
-import org.eclipse.efbt.cocalimo.core.model.functionality_module.Functionality_moduleFactory;
+import org.eclipse.efbt.cocamo.core.model.functionality_module.FunctionalityModule;
+import org.eclipse.efbt.cocamo.core.model.functionality_module.FunctionalityModuleModule;
+import org.eclipse.efbt.cocamo.core.model.functionality_module.Functionality_moduleFactory;
 import org.eclipse.efbt.cocamo.smcubes.component.importexport.api.BirdImporter;
 import org.eclipse.efbt.cocamo.smcubes.model.cocamo.CocamoFactory;
 import org.eclipse.efbt.cocamo.smcubes.model.cocamo.SMCubesStaticModel;

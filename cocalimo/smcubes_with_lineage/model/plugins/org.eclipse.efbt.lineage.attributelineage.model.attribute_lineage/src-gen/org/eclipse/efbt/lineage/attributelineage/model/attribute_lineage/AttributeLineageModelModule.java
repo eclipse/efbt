@@ -24,7 +24,7 @@ import org.eclipse.emf.common.util.EList;
  * @model extendedMetaData="name='AttributeLineageModelModule' kind='elementOnly'"
  * @generated
  */
-public interface AttributeLineageModelModule extends org.eclipse.efbt.cocalimo.core.model.module_management.Module
+public interface AttributeLineageModelModule extends org.eclipse.efbt.cocamo.core.model.module_management.Module
 {
 	/**
 	 * Returns the value of the '<em><b>Attribute Lineage Models</b></em>' containment reference list.

@@ -4,7 +4,7 @@ package org.eclipse.efbt.lineage.common.model.lineagecubes.cubes.impl;
 
 import java.util.Collection;
 
-import org.eclipse.efbt.cocalimo.core.model.module_management.impl.ModuleImpl;
+import org.eclipse.efbt.cocamo.core.model.module_management.impl.ModuleImpl;
 
 import org.eclipse.efbt.lineage.common.model.lineagecubes.cubes.CubesPackage;
 import org.eclipse.efbt.lineage.common.model.lineagecubes.cubes.FreeBirdToolsCube;
