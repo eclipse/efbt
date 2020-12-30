@@ -2,6 +2,19 @@
 <?eclipse version="3.0"?>
 
 <!--
+    Copyright (c) 2020 Bird Software Solutions Ltd
+    This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License 2.0
+    which accompanies this distribution, and is available at
+    https://www.eclipse.org/legal/epl-2.0/
+   
+    SPDX-License-Identifier: EPL-2.0
+   
+    Contributors:
+       Neil Mackenzie - initial API and implementation
+ -->
+
+<!--
 -->
 
 <plugin>
@@ -66,4 +79,19 @@
             class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.smcubes_functions.util.Smcubes_functionsResourceFactoryImpl"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated lineagefunctions -->
+      <package
+            uri="http://www.eclipse.org/efbt/core"
+            class="core.CorePackage"
+            genModel="model/lineagefunctions.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated lineagefunctions -->
+      <package
+            uri="http://www.eclipse.org/efbt/column_structured_data"
+            class="column_structured_data.Column_structured_dataPackage"
+            genModel="model/lineagefunctions.genmodel"/>
+   </extension>
 </plugin>

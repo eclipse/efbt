@@ -2,6 +2,19 @@
 <?eclipse version="3.0"?>
 
 <!--
+    Copyright (c) 2020 Bird Software Solutions Ltd
+    This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License 2.0
+    which accompanies this distribution, and is available at
+    https://www.eclipse.org/legal/epl-2.0/
+   
+    SPDX-License-Identifier: EPL-2.0
+   
+    Contributors:
+       Neil Mackenzie - initial API and implementation
+ -->
+
+<!--
 -->
 
 <plugin>
@@ -72,6 +85,14 @@
       <parser
             type="advanced_row_transformation_logic"
             class="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.advanced_row_transformation_logic.util.Advanced_row_transformation_logicResourceFactoryImpl"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated attribute_lineage -->
+      <package
+            uri="http://www.eclipse.org/efbt/core"
+            class="core.CorePackage"
+            genModel="model/attribute_lineage.genmodel"/>
    </extension>
 
 </plugin>

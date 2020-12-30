@@ -4,7 +4,7 @@
     modelPluginID="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes"
     modelName="Lineagecubes" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
-    usedGenPackages="../../org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.genmodel#//module_management ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/smcubes.genmodel#//core ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/smcubes.genmodel#//data_definition"
+    usedGenPackages="../../org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.genmodel#//module_management"
     operationReflection="true" importOrganizing="true">
   <foreignModel>cube_schema.ecore</foreignModel>
   <foreignModel>cubes.ecore</foreignModel>

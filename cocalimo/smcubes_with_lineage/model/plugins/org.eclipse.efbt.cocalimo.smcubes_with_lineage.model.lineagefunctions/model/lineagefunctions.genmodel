@@ -4,7 +4,7 @@
     modelPluginID="org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagefunctions"
     modelName="Lineagefunctions" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
-    usedGenPackages="../../org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.functions/model/functions.genmodel#//functions ../../org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes/model/lineagecubes.genmodel#//cubes ../../org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes/model/lineagecubes.genmodel#//efbt_advanced_data_definition ../../org.eclipse.efbt.cocalimo.core.model.module_management/model/module_management.genmodel#//module_management ../../org.eclipse.efbt.cocalimo.smcubes.model.input_data/model/smcubes_input_data.genmodel#//column_structured_data ../../org.eclipse.efbt.cocalimo.smcubes.model.core/model/smcubes.genmodel#//core"
+    usedGenPackages="../../org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.functions/model/functions.genmodel#//functions ../../org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes/model/lineagecubes.genmodel#//cubes ../../org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes/model/lineagecubes.genmodel#//efbt_advanced_data_definition"
     operationReflection="true" importOrganizing="true">
   <foreignModel>advanced_variable_lineagefunctions.ecore</foreignModel>
   <foreignModel>column_transformation_logic.ecore</foreignModel>

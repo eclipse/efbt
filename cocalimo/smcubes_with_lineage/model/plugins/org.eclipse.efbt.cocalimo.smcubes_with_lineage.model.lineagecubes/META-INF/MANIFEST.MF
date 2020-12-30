@@ -8,18 +8,18 @@ Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Automatic-Module-Name: org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes
 Bundle-RequiredExecutionEnvironment: JavaSE-11
-Export-Package: org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cube_schema,
- org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cube_schema.impl,
- org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cube_schema.util,
- org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cubes,
- org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cubes.impl,
- org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cubes.util,
- org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.efbt_advanced_data_definition,
- org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.efbt_advanced_data_definition.impl,
- org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.efbt_advanced_data_definition.util,
- org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.incremental_cubes,
- org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.incremental_cubes.impl,
- org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.incremental_cubes.util
+Export-Package: org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cube_schema,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cube_schema.impl,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cube_schema.util,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.impl,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.util,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.efbt_advanced_data_definition,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.efbt_advanced_data_definition.impl,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.efbt_advanced_data_definition.util,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.incremental_cubes,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.incremental_cubes.impl,
+ org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.incremental_cubes.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
