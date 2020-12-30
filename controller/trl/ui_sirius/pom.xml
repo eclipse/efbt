@@ -38,8 +38,8 @@
 	</properties>
 	<modules>
 		<module>releng/org.eclipse.efbt.controller.trl.ui.sirius.target</module>	
-		<module>plugins/org.eclipse.efbt.controller.trl.ui.sirius.core</module>	
-		<module>feature/org.eclipse.efbt.controller.trl.ui.sirius.core.feature</module>
+		<module>plugins/org.eclipse.efbt.controller.core.ui.sirius.core</module>	
+		<module>feature/org.eclipse.efbt.controller.ui.sirius.feature</module>
 		<module>releng/org.eclipse.efbt.controller.trl.ui.sirius.repository</module>
 		
 		

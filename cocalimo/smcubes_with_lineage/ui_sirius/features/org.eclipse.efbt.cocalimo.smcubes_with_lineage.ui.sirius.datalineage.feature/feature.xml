@@ -13,7 +13,7 @@
  -->
 <feature
       id="org.eclipse.efbt.cocalimo.smcubes_with_lineage.ui.sirius.datalineage.feature"
-      label="CoCaLiMo SMCubes_With_Lineage UI Sirius DataLineage"
+      label="CoCaMo Data Lineage UI"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 

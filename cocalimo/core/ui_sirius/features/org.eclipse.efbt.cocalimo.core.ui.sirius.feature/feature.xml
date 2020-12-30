@@ -11,6 +11,7 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
+
 <feature
       id="org.eclipse.efbt.cocalimo.core.ui.sirius.feature"
       label="CoCaLiMo Core UI Sirius"

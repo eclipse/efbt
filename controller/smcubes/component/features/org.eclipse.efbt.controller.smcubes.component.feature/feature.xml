@@ -13,7 +13,7 @@
  -->
 <feature
       id="org.eclipse.efbt.controller.smcubes.component.feature"
-      label="Controller SMCubes Component"
+      label="Controller SMCubes Component 1"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 
@@ -121,8 +121,6 @@ Exhibit A – Form of Secondary Licenses Notice
    </license>
 
    <requires>
-      <import plugin="org.eclipse.efbt.controller.smcubes.access_dependencies_plugin.access.api" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.efbt.controller.smcubes.access_dependencies_plugin.jackcess.impl"/>
       <import plugin="org.eclipse.efbt.cocalimo.smcubes.model.program" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.xtext"/>
       <import plugin="org.eclipse.emf.ecore"/>
@@ -130,16 +128,13 @@ Exhibit A – Form of Secondary Licenses Notice
       <import plugin="org.eclipse.efbt.cocalimo.core.model.testing"/>
       <import plugin="org.apache.commons.logging"/>
       <import plugin="org.eclipse.efbt.cocalimo.smcubes.model.core" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.efbt.controller.smcubes.access_dependencies_plugin.access.api" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.efbt.controller.smcubes.component.access.provider" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.eclipse.efbt.cocalimo.core.model.functionality_module"/>
       <import plugin="org.eclipse.efbt.cocalimo.core.model.requirements_text"/>
       <import plugin="com.google.inject"/>
       <import plugin="org.apache.commons.csv"/>
-      <import plugin="org.eclipse.xtext.junit4"/>
-      <import plugin="org.eclipse.efbt.cocalimo.core.model.module_management"/>
-      <import plugin="org.eclipse.efbt.cocason.dsl.cocason"/>
-      <import plugin="org.eclipse.efbt.cocalimo.trl.model.platform_call"/>
-      <import plugin="org.eclipse.efbt.cocalimo.trl.model.core"/>
+      <import plugin="org.eclipse.efbt.controller.smcubes.access_dependencies_plugin.jackcess.impl"/>
    </requires>
 
    <plugin
@@ -169,8 +164,7 @@ Exhibit A – Form of Secondary Licenses Notice
          install-size="0"
          version="0.0.0"
          unpack="false"/>
-
-   <plugin
+    <plugin
          id="org.eclipse.efbt.controller.smcubes.component.export_smcubes"
          download-size="0"
          install-size="0"

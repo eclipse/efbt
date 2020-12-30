@@ -13,7 +13,7 @@
  -->
 <feature
       id="org.eclipse.efbt.controller.trl.component.translator.feature"
-      label="Controller TRL Component Translator"
+      label="Controller TRL Component 1"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 

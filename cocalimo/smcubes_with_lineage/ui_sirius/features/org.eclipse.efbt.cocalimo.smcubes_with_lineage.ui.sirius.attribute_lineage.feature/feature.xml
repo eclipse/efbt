@@ -11,9 +11,10 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
+
 <feature
       id="org.eclipse.efbt.cocalimo.smcubes_with_lineage.ui.sirius.attribute_lineage.feature"
-      label="CoCaLiMo SMCubes_With_Lineage UI Sirius  Attribute _Lineage"
+      label="CoCaMo Attribute  Lineage UI"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 

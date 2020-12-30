@@ -120,11 +120,6 @@ Exhibit A – Form of Secondary Licenses Notice
     You may add additional accurate notices of copyright ownership.
    </license>
 
-   <requires>
-      <import plugin="org.eclipse.efbt.controller.smcubes.access_dependencies_plugin.access.api" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.efbt.dependencies.accessdb.org.eclipse.efbt.dependencies.access.jackcess"/>
-   </requires>
-
    <plugin
          id="org.eclipse.efbt.controller.smcubes.access_dependencies_plugin.jackcess.impl"
          download-size="0"
