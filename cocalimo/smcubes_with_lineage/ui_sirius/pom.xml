@@ -113,8 +113,8 @@
 				  <pomDependencies>consider</pomDependencies>
 					<target>
 						<artifact>
-							<groupId>org.eclipse.efbt.cocamo.smcubes_with_lineage.ui_sirius</groupId>
-							<artifactId>org.eclipse.efbt.cocamo.smcubes_with_lineage.ui_sirius.target</artifactId>
+							<groupId>org.eclipse.efbt.cocamo.attributelineage</groupId>
+							<artifactId>org.eclipse.efbt.cocamo.attributelineage.target</artifactId>
 							<version>${project.version}</version>
 						</artifact>
 					</target>
