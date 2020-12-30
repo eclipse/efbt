@@ -37,10 +37,10 @@
 		<additionalTestArguments></additionalTestArguments>
 	</properties>
 	<modules>
-		<module>releng/org.eclipse.efbt.cocalimo.trl.modelquery.target</module>
-		<module>plugins/org.eclipse.efbt.cocalimo.trl.query.core</module>
-		<module>features/org.eclipse.efbt.cocalimo.trl.query.core.feature</module>
-		<module>releng/org.eclipse.efbt.cocalimo.trl.modelquery.repository</module>
+		<module>releng/org.eclipse.efbt.cocamo.trl.modelquery.target</module>
+		<module>plugins/org.eclipse.efbt.language.trl.modelquery.core</module>
+		<module>features/org.eclipse.efbt.cocamo.trl.query.feature</module>
+		<module>releng/org.eclipse.efbt.cocamo.trl.modelquery.repository</module>
 	</modules>
 	
 	<build>
@@ -111,7 +111,7 @@
 					<target>
 						<artifact>
 							<groupId>org.eclipse.efbt.cocamo.trl.modelquery</groupId>
-							<artifactId>org.eclipse.efbt.cocalimo.trl.modelquery.target</artifactId>
+							<artifactId>org.eclipse.efbt.cocamo.trl.modelquery.target</artifactId>
 							<version>${project.version}</version>
 						</artifact>
 					</target>

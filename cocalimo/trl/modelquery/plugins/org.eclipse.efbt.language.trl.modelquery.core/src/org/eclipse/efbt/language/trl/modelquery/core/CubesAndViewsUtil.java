@@ -10,7 +10,7 @@
  * Contributors:
  *    Neil Mackenzie - initial API and implementation
  *******************************************************************************/
-package org.eclipse.efbt.cocalimo.trl.query.core;
+package org.eclipse.efbt.language.trl.modelquery.core;
 
 
 
@@ -22,14 +22,13 @@ import org.eclipse.efbt.language.trl.model.transformation.VersionedFunctionalMod
 import org.eclipse.efbt.language.trl.model.trl_report_cell_views.ReportCellViewModule;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.SQLView;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.VersionedSQLViewsModule;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cubes.BaseCube;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cube_schema.CubeSchema;
-
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.incremental_cubes.BaseDeltaCube;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.incremental_cubes.BaseViewCube;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cubes.DerivedCube;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cubes.FreeBirdToolsCube;
-import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.cubes.TargetCube;
+import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cube_schema.CubeSchema;
+import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.BaseCube;
+import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.incremental_cubes.BaseDeltaCube;
+import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.incremental_cubes.BaseViewCube;
+import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.DerivedCube;
+import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.FreeBirdToolsCube;
+import org.eclipse.efbt.cocalimo.smcubes_with_lineage.model.lineagecubes.cubes.TargetCube;
 import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.TreeIterator;
