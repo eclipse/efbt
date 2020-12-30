@@ -14,7 +14,7 @@
 
 <feature
       id="org.eclipse.efbt.cocamo.core.model.feature"
-      label="CoCaLiMo Core Model"
+      label="CoCaMo Model Core"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 

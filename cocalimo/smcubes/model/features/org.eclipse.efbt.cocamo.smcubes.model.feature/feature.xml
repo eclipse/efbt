@@ -11,9 +11,10 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
+
 <feature
       id="org.eclipse.efbt.cocamo.smcubes.model.feature"
-      label="CoCaLiMo SMCubes Model"
+      label="CoCaMo SMCubes Model"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 

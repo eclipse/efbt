@@ -11,9 +11,10 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
+
 <feature
       id="org.eclipse.efbt.cocamo.attributelineage.model.feature"
-      label="CoCaLiMo SMCubes_With_Lineage Model Attribute Lineage Model"
+      label="CoCaMo  Attribute  Lineage Core"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 

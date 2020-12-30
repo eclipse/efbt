@@ -11,9 +11,10 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
+
 <feature
       id="org.eclipse.efbt.ldm.component.feature"
-      label="Controller LDM"
+      label="BIRD LDM Tools"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 

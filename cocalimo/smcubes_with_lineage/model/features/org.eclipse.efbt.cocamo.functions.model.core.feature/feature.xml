@@ -11,9 +11,10 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
+
 <feature
       id="org.eclipse.efbt.cocamo.functions.model.core.feature"
-      label="CoCaLiMo SMCubes_With_Lineage Model Functions Model"
+      label="CoCaMo Functions Model"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 

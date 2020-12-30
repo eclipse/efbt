@@ -13,7 +13,7 @@
  -->
 <feature
       id="org.eclipse.efbt.controller.model.feature"
-      label="CoCaLiMo TRL Model Controller"
+      label="EFBT Controller Model"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 

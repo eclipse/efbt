@@ -18,6 +18,9 @@
    <feature id="org.eclipse.efbt.cocamo.core.model.feature">
       <category name="efbt"/>
    </feature>
+   <feature id="org.eclipse.efbt.cocamo.core.query.feature">
+      <category name="efbt"/>
+   </feature>
    <feature id="org.eclipse.efbt.cocamo.core.ui.sirius.feature">
       <category name="efbt"/>
    </feature>

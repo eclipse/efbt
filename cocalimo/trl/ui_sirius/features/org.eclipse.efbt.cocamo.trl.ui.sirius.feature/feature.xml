@@ -11,9 +11,10 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
+
 <feature
       id="org.eclipse.efbt.cocamo.trl.ui.sirius.feature"
-      label="CoCaLiMo TRL UI Sirius"
+      label="CoCaMo Attribute  Lineage UI"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
 
