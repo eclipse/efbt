@@ -37,10 +37,7 @@ cd ../..
 cd controller/ldm
 mvn install
 cd ../..
-cd controller/smcubes/access_dependencies_external
-mvn install
-cd ../../..
-cd controller/smcubes/access_dependencies_plugin
+cd controller/smcubes/access_dependencies
 mvn install
 cd ../../..
 cd controller/smcubes/component
