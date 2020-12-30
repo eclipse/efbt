@@ -12,7 +12,7 @@
        Neil Mackenzie - initial API and implementation
  -->
 <feature
-      id="org.eclipse.efbt.controller.trl.component.core.feature"
+      id="org.eclipse.efbt.cocamo.trl.component.feature"
       label="Controller TRL Component Core"
       version="1.0.0.qualifier"
       provider-name="Bird Software Solutions">
