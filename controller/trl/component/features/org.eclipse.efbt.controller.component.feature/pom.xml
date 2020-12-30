@@ -22,4 +22,7 @@
 	<artifactId>org.eclipse.efbt.controller.component.feature</artifactId>
 	<packaging>eclipse-feature</packaging>
 
+
+	<dependencies>
+	</dependencies>
 </project>

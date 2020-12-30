@@ -20,4 +20,8 @@
 	</parent>
 	<artifactId>org.eclipse.efbt.cocamo.smcubes.component.feature</artifactId>
 	<packaging>eclipse-feature</packaging>
+
+
+	<dependencies>
+	</dependencies>
 </project>

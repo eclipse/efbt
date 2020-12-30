@@ -11,9 +11,10 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
+
 <feature
       id="org.eclipse.efbt.cocason.feature"
-      label="Controller SMCubes Component 2"
+      label="CoCaSon Core"
       version="1.0.0.qualifier">
 
    <description url="http://www.example.com/description">
