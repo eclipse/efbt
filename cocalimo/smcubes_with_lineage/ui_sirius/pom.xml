@@ -37,12 +37,12 @@
 		<additionalTestArguments></additionalTestArguments>
 	</properties>
 	<modules>
-		<module>releng/org.eclipse.efbt.cocamo.smcubes_with_lineage.ui.sirius.target</module>
+		<module>releng/org.eclipse.efbt.cocamo.smcubes_with_lineage.ui_sirius.target</module>
 		<module>plugins/org.eclipse.efbt.lineage.attributelineage.ui.sirius.core</module>
 		<module>plugins/org.eclipse.efbt.lineage.datalineage.ui.sirius.core</module>
 		<module>features/org.eclipse.efbt.cocamo.attributelineage.ui.sirius.feature</module>	
 		<module>features/org.eclipse.efbt.cocamo.datalineage.ui.sirius.feature</module>	
-		<module>releng/org.eclipse.efbt.cocamo.smcubes_with_lineage.ui.sirius.repository</module>
+		<module>releng/org.eclipse.efbt.cocamo.smcubes_with_lineage.ui_sirius.repository</module>
 
 	</modules>
 	
@@ -114,7 +114,7 @@
 					<target>
 						<artifact>
 							<groupId>org.eclipse.efbt.cocamo.smcubes_with_lineage.ui_sirius</groupId>
-							<artifactId>org.eclipse.efbt.cocamo.smcubes_with_lineage.ui.sirius.target</artifactId>
+							<artifactId>org.eclipse.efbt.cocamo.smcubes_with_lineage.ui_sirius.target</artifactId>
 							<version>${project.version}</version>
 						</artifact>
 					</target>
