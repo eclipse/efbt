@@ -37,12 +37,12 @@
 		<additionalTestArguments></additionalTestArguments>
 	</properties>
 	<modules>
-		<module>releng/org.eclipse.efbt.cocalimo.trl.model.target</module>
-		<module>plugins/org.eclipse.efbt.cocalimo.trl.model.core</module>
-		<module>plugins/org.eclipse.efbt.cocalimo.trl.model.platform_call</module>		
-		<module>features/org.eclipse.efbt.cocalimo.trl.model.core.feature</module>
-		<module>features/org.eclipse.efbt.cocalimo.trl.model.platform_call.feature</module>
-		<module>releng/org.eclipse.efbt.cocalimo.trl.model.repository</module>
+		<module>releng/org.eclipse.efbt.cocamo.trl.model.target</module>
+		<module>plugins/org.eclipse.efbt.language.trl.model.core</module>
+		<module>plugins/org.eclipse.efbt.controller.core.model.core</module>		
+		<module>features/org.eclipse.efbt.cocamo.trl.model.feature</module>
+		<module>features/org.eclipse.efbt.controller.model.feature</module>
+		<module>releng/org.eclipse.efbt.cocamo.trl.model.repository</module>
 
 	</modules>
 	
@@ -114,7 +114,7 @@
 					<target>
 						<artifact>
 							<groupId>org.eclipse.efbt.cocamo.trl.model</groupId>
-							<artifactId>org.eclipse.efbt.cocalimo.trl.model.target</artifactId>
+							<artifactId>org.eclipse.efbt.cocamo.trl.model.target</artifactId>
 							<version>${project.version}</version>
 						</artifact>
 					</target>
