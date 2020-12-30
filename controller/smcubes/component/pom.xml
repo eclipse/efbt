@@ -40,6 +40,7 @@
 	<modules>
 		<module>releng/org.eclipse.efbt.controller.smcubes.component.target</module>
 		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.access.api</module>
+		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.access.jackcess.impl</module>
 		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.access.provider</module>
 		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.exporter</module>
 		<module>plugins/org.eclipse.efbt.cocamo.smcubes.component.importexport.api</module>

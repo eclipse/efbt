@@ -11,10 +11,11 @@
     Contributors:
        Neil Mackenzie - initial API and implementation
  -->
+
 <feature
-      id="org.eclipse.efbt.cocamo.smcubes.component.feature"
-      label="Controller SMCubes Component 1"
-      version="1.0.0.qualifier"
+      id="org.eclipse.efbt.cocamo.datalineage.query.feature"
+      label="CoCaMo Data Lineage Model"
+      version="1.0.0.202012261505"
       provider-name="Bird Software Solutions">
 
    <description url="http://www.example.com/description">
@@ -120,62 +121,11 @@ Exhibit A – Form of Secondary Licenses Notice
     You may add additional accurate notices of copyright ownership.
    </license>
 
-   <requires>
-      <import plugin="org.eclipse.efbt.cocamo.smcubes.model.program" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.xtext"/>
-      <import plugin="org.eclipse.emf.ecore"/>
-      <import plugin="org.eclipse.efbt.cocamo.smcubes.model.input_data"/>
-      <import plugin="org.eclipse.efbt.cocamo.core.model.testing"/>
-      <import plugin="org.eclipse.efbt.cocamo.smcubes.component.access.api" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.apache.commons.logging"/>
-      <import plugin="org.eclipse.efbt.cocamo.smcubes.model.core" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.efbt.cocamo.smcubes.component.access.provider" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.efbt.cocamo.core.model.functionality_module"/>
-      <import plugin="org.eclipse.efbt.cocamo.core.model.requirements_text"/>
-      <import plugin="com.google.inject"/>
-      <import plugin="org.apache.commons.csv"/>
-   </requires>
-
    <plugin
-         id="org.eclipse.efbt.cocamo.smcubes.component.access.api"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.efbt.cocamo.smcubes.component.access.jackcess.impl"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.efbt.cocamo.smcubes.component.access.provider"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.efbt.cocamo.smcubes.component.exporter"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.efbt.cocamo.smcubes.component.importexport.api"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.efbt.cocamo.smcubes.component.importexport.impl"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
+         id="org.eclipse.efbt.lineage.datalineage.modelquery.core"
+         download-size="2"
+         install-size="1"
+         version="1.0.0.202012261505"
          unpack="false"/>
 
 </feature>
