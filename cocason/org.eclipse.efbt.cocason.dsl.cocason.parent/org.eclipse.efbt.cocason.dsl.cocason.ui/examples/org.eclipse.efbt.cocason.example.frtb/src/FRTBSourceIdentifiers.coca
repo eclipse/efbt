@@ -67,6 +67,13 @@ ProgramAndCalls : { program :  TRLProgram :  {
 				displayName : "deliveryLocation"
 				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.String"
 			},
+			VARIABLE riskFactorLongName : {
+				code : "riskFactorLongName"
+				description : "riskFactorLongName"
+				variable_id : "riskFactorLongName"
+				displayName : "riskFactorLongName"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.String"
+			},
 			VARIABLE organisation_id : {
 				code : "organisation_id"
 				description : "organisation_id"

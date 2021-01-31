@@ -1,0 +1,137 @@
+ProgramAndCalls : { program :  TRLProgram :  {
+	smcubesStaticModel : SMCubesStaticModel GIRRDeltaMeasuresStaticModel : {
+	smCubesModel : SmcubesModel  GIRRDeltaMeasuresModel  : {
+		variables :  [ VariableModule variablesModule :  
+				{
+			variables : [ 
+			VARIABLE GIRRDeltaSensitivity : {
+				code : "GIRRDeltaSensitivity"
+				description : "GIRRDeltaSensitivity"
+				variable_id : "GIRRDeltaSensitivity"
+				displayName :  "GIRRDeltaSensitivity"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE GIRRDeltaSensitivityk : {
+				code : "GIRRDeltaSensitivityk"
+				description : "GIRRDeltaSensitivityk"
+				variable_id : "GIRRDeltaSensitivityk"
+				displayName :  "GIRRDeltaSensitivityk"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE GIRRDeltaSensitivityl : {
+				code : "GIRRDeltaSensitivityl"
+				description : "GIRRDeltaSensitivityl"
+				variable_id : "GIRRDeltaSensitivityl"
+				displayName :  "GIRRDeltaSensitivityl"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE GIRRDeltaTenor : {
+				code : "GIRRDeltaTenor"
+				description : "GIRRDeltaTenor"
+				variable_id : "GIRRDeltaTenor"
+				displayName :  "GIRRDeltaTenor"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE GIRRDeltaTenork : {
+				code : "GIRRDeltaTenork"
+				description : "GIRRDeltaTenork"
+				variable_id : "GIRRDeltaTenork"
+				displayName :  "GIRRDeltaTenork"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE GIRRDeltaTenorl : {
+				code : "GIRRDeltaTenorl"
+				description : "GIRRDeltaTenorl"
+				variable_id : "GIRRDeltaTenorl"
+				displayName :  "GIRRDeltaTenorl"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE GIRRDeltaRiskWeight : {
+				code : "GIRRDeltaRiskWeight"
+				description : "GIRRDeltaRiskWeight"
+				variable_id : "GIRRDeltaRiskWeight"
+				displayName :  "GIRRDeltaRiskWeight"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE nettedGIRRDeltaSensitivity : {
+				code : "nettedGIRRDeltaSensitivity"
+				description : "nettedGIRRDeltaSensitivity"
+				variable_id : "nettedGIRRDeltaSensitivity"
+				displayName :  "nettedGIRRDeltaSensitivity"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE weightedGIRRDeltaSensitivity : {
+				code : "weightedGIRRDeltaSensitivity"
+				description : "weightedGIRRDeltaSensitivity"
+				variable_id : "weightedGIRRDeltaSensitivity"
+				displayName :  "weightedGIRRDeltaSensitivity"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE GIRRDeltaKBInput : {
+				code : "GIRRDeltaKBInput"
+				description : "GIRRDeltaKBInput"
+				variable_id : "GIRRDeltaKBInput"
+				displayName :  "GIRRDeltaKBInput"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE GIRRDeltaKB : {
+				code : "GIRRDeltaKB"
+				description : "GIRRDeltaKB"
+				variable_id : "GIRRDeltaKB"
+				displayName :  "GIRRDeltaKB"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE GIRRDeltaKBInput_per_bucket : {
+				code : "GIRRDeltaKBInput_per_bucket"
+				description : "GIRRDeltaKBInput_per_bucket"
+				variable_id : "GIRRDeltaKBInput_per_bucket"
+				displayName :  "GIRRDeltaKBInput_per_bucket"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE GIRRDeltaSensitivityPerBucketCorrelated : {
+				code : "GIRRDeltaSensitivityPerBucketCorrelated"
+				description : "GIRRDeltaSensitivityPerBucketCorrelated"
+				variable_id : "GIRRDeltaSensitivityPerBucketCorrelated"
+				displayName :  "GIRRDeltaSensitivityPerBucketCorrelated"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE totalGIRRDeltaSensitivityPerBucketCorrelated : {
+				code : "totalGIRRDeltaSensitivityPerBucketCorrelated"
+				description : "totalGIRRDeltaSensitivityPerBucketCorrelated"
+				variable_id : "totalGIRRDeltaSensitivityPerBucketCorrelated"
+				displayName :  "totalGIRRDeltaSensitivityPerBucketCorrelated"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE totalGIRRDeltaSensitivityPerBucket : {
+				code : "totalGIRRDeltaSensitivityPerBucket"
+				description : "totalGIRRDeltaSensitivityPerBucket"
+				variable_id : "totalGIRRDeltaSensitivityPerBucket"
+				displayName :  "totalGIRRDeltaSensitivityPerBucket"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE GIRRDeltaBucketCorrelationFactor : {
+				code : "GIRRDeltaBucketCorrelationFactor"
+				description : "GIRRDeltaBucketCorrelationFactor"
+				variable_id : "GIRRDeltaBucketCorrelationFactor"
+				displayName :  "GIRRDeltaBucketCorrelationFactor"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE totalGIRRDeltaSensitivityPerBucketk : {
+				code : "totalGIRRDeltaSensitivityPerBucketk"
+				description : "totalGIRRDeltaSensitivityPerBucketk"
+				variable_id : "totalGIRRDeltaSensitivityPerBucketk"
+				displayName :  "totalGIRRDeltaSensitivityPerBucketk"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			},
+			VARIABLE totalGIRRDeltaSensitivityPerBucketl : {
+				code : "totalGIRRDeltaSensitivityPerBucketl"
+				description : "totalGIRRDeltaSensitivityPerBucketl"
+				variable_id : "totalGIRRDeltaSensitivityPerBucketl"
+				displayName :  "totalGIRRDeltaSensitivityPerBucketl"
+				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
+			}
+			
+			
+			
+			 ] } ] } } } }
+				
