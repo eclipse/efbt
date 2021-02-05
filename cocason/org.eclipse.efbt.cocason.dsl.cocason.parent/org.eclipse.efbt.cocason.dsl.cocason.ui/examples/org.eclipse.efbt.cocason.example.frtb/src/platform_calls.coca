@@ -1,7 +1,7 @@
 ProgramAndCalls : {platformCalls : PlatformCallModule platfromCallsModule1 : { 
 	platformCalls : [ 
 		CreateAttributeLineageModel almFRTB : { 
-		executableLogic : FRTB_GIRRDeltaAndCurvatureRelease 
+		executableLogic : FRTB_GIRRDeltaAndCurvatureRelease
 		} 
 		,
 		CreateAttributeLineageForOneReportCell almFRTB_ForOneCell : {

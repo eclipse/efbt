@@ -4,11 +4,11 @@ ProgramAndCalls : { program :  TRLProgram :  {
 		variables :  [ VariableModule variablesModule :  
 				{
 			variables : [ 
-			VARIABLE GIRRDeltaSensitivity : {
-				code : "GIRRDeltaSensitivity"
-				description : "GIRRDeltaSensitivity"
-				variable_id : "GIRRDeltaSensitivity"
-				displayName :  "GIRRDeltaSensitivity"
+			VARIABLE deltaSensitivity : {
+				code : "deltaSensitivity"
+				description : "deltaSensitivity"
+				variable_id : "deltaSensitivity"
+				displayName :  "deltaSensitivity"
 				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
 			},
 			VARIABLE GIRRDeltaSensitivityk : {
@@ -25,25 +25,25 @@ ProgramAndCalls : { program :  TRLProgram :  {
 				displayName :  "GIRRDeltaSensitivityl"
 				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
 			},
-			VARIABLE GIRRDeltaTenor : {
-				code : "GIRRDeltaTenor"
-				description : "GIRRDeltaTenor"
-				variable_id : "GIRRDeltaTenor"
-				displayName :  "GIRRDeltaTenor"
+			VARIABLE tenor : {
+				code : "tenor"
+				description : "tenor"
+				variable_id : "tenor"
+				displayName :  "tenor"
 				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
 			},
-			VARIABLE GIRRDeltaTenork : {
-				code : "GIRRDeltaTenork"
-				description : "GIRRDeltaTenork"
-				variable_id : "GIRRDeltaTenork"
-				displayName :  "GIRRDeltaTenork"
+			VARIABLE tenork : {
+				code : "tenork"
+				description : "tenork"
+				variable_id : "tenork"
+				displayName :  "tenork"
 				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
 			},
-			VARIABLE GIRRDeltaTenorl : {
-				code : "GIRRDeltaTenorl"
-				description : "GIRRDeltaTenorl"
-				variable_id : "GIRRDeltaTenorl"
-				displayName :  "GIRRDeltaTenorl"
+			VARIABLE tenorl : {
+				code : "tenorl"
+				description : "tenorl"
+				variable_id : "tenorl"
+				displayName :  "tenorl"
 				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
 			},
 			VARIABLE GIRRDeltaRiskWeight : {
@@ -53,11 +53,11 @@ ProgramAndCalls : { program :  TRLProgram :  {
 				displayName :  "GIRRDeltaRiskWeight"
 				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
 			},
-			VARIABLE nettedGIRRDeltaSensitivity : {
-				code : "nettedGIRRDeltaSensitivity"
-				description : "nettedGIRRDeltaSensitivity"
-				variable_id : "nettedGIRRDeltaSensitivity"
-				displayName :  "nettedGIRRDeltaSensitivity"
+			VARIABLE nettedDeltaSensitivity : {
+				code : "nettedDeltaSensitivity"
+				description : "nettedDeltaSensitivity"
+				variable_id : "nettedDeltaSensitivity"
+				displayName :  "nettedDeltaSensitivity"
 				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
 			},
 			VARIABLE weightedGIRRDeltaSensitivity : {

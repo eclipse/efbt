@@ -64,7 +64,7 @@ ProgramAndCalls : { program :  TRLProgram : { smcubesStaticModel : SMCubesStatic
 	 				 order : 0 role ::D 
 	 				 isIdentifier : false 
 	 				 cube_structure_id : "FRTBCubeStructuresStaticModel.FRTBCubeStructuresModel.cubeStructures_model.curvature"
-	 				 variable_id : "GIRRCurvatureMeasuresStaticModel.GIRRCurvatureMeasures.variablesModule.GIRRCurvatureValuationDifference"} ,	
+	 				 variable_id : "GIRRCurvatureMeasuresStaticModel.GIRRCurvatureMeasures.variablesModule.curvatureValuationDifference"} ,	
 	 			CUBE_STRUCTURE_ITEM : {
 	 				 description : "position_id" 
 	 				 dimension_type ::B 
@@ -91,7 +91,7 @@ ProgramAndCalls : { program :  TRLProgram : { smcubesStaticModel : SMCubesStatic
 	 				 order : 0 role ::D 
 	 				 isIdentifier : false 
 	 				 cube_structure_id :"FRTBCubeStructuresStaticModel.FRTBCubeStructuresModel.cubeStructures_model.curvature"
-	 				 variable_id : "GIRRCurvatureMeasuresStaticModel.GIRRCurvatureMeasures.variablesModule.GIRRCurvatureRiskWeight"},
+	 				 variable_id : "GIRRCurvatureMeasuresStaticModel.GIRRCurvatureMeasures.variablesModule.curvatureRiskWeight"},
 	 			CUBE_STRUCTURE_ITEM : {
 	 				 description : "risk_factor_id" 
 	 				 dimension_type ::B 
@@ -127,7 +127,7 @@ ProgramAndCalls : { program :  TRLProgram : { smcubesStaticModel : SMCubesStatic
 	 				 order : 0 role ::D 
 	 				 isIdentifier : false 
 	 				 cube_structure_id :"FRTBCubeStructuresStaticModel.FRTBCubeStructuresModel.cubeStructures_model.delta_sensitivities"
-	 				 variable_id : "GIRRDeltaMeasuresStaticModel.GIRRDeltaMeasuresModel.variablesModule.GIRRDeltaTenor" } ,
+	 				 variable_id : "GIRRDeltaMeasuresStaticModel.GIRRDeltaMeasuresModel.variablesModule.tenor" } ,
 	 			CUBE_STRUCTURE_ITEM : {
 	 				 description : "deltaSensitivity" 
 	 				 dimension_type ::B 
@@ -136,7 +136,7 @@ ProgramAndCalls : { program :  TRLProgram : { smcubesStaticModel : SMCubesStatic
 	 				 order : 0 role ::D 
 	 				 isIdentifier : false 
 	 				 cube_structure_id :"FRTBCubeStructuresStaticModel.FRTBCubeStructuresModel.cubeStructures_model.delta_sensitivities"
-	 				 variable_id : "GIRRDeltaMeasuresStaticModel.GIRRDeltaMeasuresModel.variablesModule.GIRRDeltaSensitivity" } ,
+	 				 variable_id : "GIRRDeltaMeasuresStaticModel.GIRRDeltaMeasuresModel.variablesModule.deltaSensitivity" } ,
 	 			CUBE_STRUCTURE_ITEM : {
 	 				 description : "ccy_of_record" 
 	 				 dimension_type ::B 

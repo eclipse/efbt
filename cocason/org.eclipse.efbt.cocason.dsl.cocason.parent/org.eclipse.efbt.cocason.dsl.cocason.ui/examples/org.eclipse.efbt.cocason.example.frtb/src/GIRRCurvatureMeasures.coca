@@ -32,11 +32,11 @@ ProgramAndCalls : { program :  TRLProgram :  {
 				displayName :  "GIRRCurvatureSummedGIRRDelta"
 				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
 			},
-			VARIABLE GIRRCurvatureValuationDifference : {
-				code : "GIRRCurvatureValuationDifference"
-				description : "GIRRCurvatureValuationDifference"
-				variable_id : "GIRRCurvatureValuationDifference"
-				displayName :  "GIRRCurvatureValuationDifference"
+			VARIABLE curvatureValuationDifference : {
+				code : "curvatureValuationDifference"
+				description : "curvatureValuationDifference"
+				variable_id : "curvatureValuationDifference"
+				displayName :  "curvatureValuationDifference"
 				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
 			},
 			VARIABLE GIRRCurvatureDeltaStrippedShift : {
@@ -194,11 +194,11 @@ ProgramAndCalls : { program :  TRLProgram :  {
 				displayName :  "doubleOfMaxOfGIRRCurvatureCVRFinal"
 				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
 			},
-			VARIABLE GIRRCurvatureRiskWeight : {
-				code : "GIRRCurvatureRiskWeight"
-				description : "GIRRCurvatureRiskWeight"
-				variable_id : "GIRRCurvatureRiskWeight"
-				displayName :  "GIRRCurvatureRiskWeight"
+			VARIABLE curvatureRiskWeight : {
+				code : "curvatureRiskWeight"
+				description : "curvatureRiskWeight"
+				variable_id : "curvatureRiskWeight"
+				displayName :  "curvatureRiskWeight"
 				domain_id : "FRTBSourceDomainsStaticModel.FRTBSourceDomainsModel.domainsModule.Numbers"
 			}
 			

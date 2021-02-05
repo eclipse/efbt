@@ -8,7 +8,7 @@ ProgramAndCalls : { program : TRLProgram :  {
 					combination_items : { 
 						COMBINATION_ITEM : { 
 							member_id : "FRTBSourceDomainMembersStaticModel.FRTBSourceDomainMembersModel.membersModule.EUR"
-							 variable_id : "FRTBSourceDimensionsStaticModel.FRTBSourceDimensionsModel.variablesModule.Currency" } , 
+							 variable_id :"FRTBSourceDimensionsStaticModel.FRTBSourceDimensionsModel.variablesModule.MainCurrency" } , 
 							 COMBINATION_ITEM : { variable_id : "GIRRCurvatureMeasuresStaticModel.GIRRCurvatureMeasures.variablesModule.sqrtOfMaximumOfGIRRCurvatureCVRFinal" } } } , 
 							 
 				 COMBINATION irEURProductReportCell : { 
@@ -16,6 +16,6 @@ ProgramAndCalls : { program : TRLProgram :  {
 				 	combination_id : "irEURProductReportCell" 
 				 	combination_items : { COMBINATION_ITEM : 
 				 		{ member_id : "FRTBSourceDomainMembersStaticModel.FRTBSourceDomainMembersModel.membersModule.EUR"
-							 variable_id : "FRTBSourceDimensionsStaticModel.FRTBSourceDimensionsModel.variablesModule.Currency" } , 
+							 variable_id : "FRTBSourceDimensionsStaticModel.FRTBSourceDimensionsModel.variablesModule.MainCurrency" } , 
 				 			COMBINATION_ITEM : { variable_id : "GIRRCurvatureMeasuresStaticModel.GIRRCurvatureMeasures.variablesModule.GIRRCurvatureCVRCorrelatedProduct" } } } 
 				  ] } ] } } } }
