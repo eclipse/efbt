@@ -294,6 +294,7 @@ EnrichmentView returns trl_sql_views::EnrichmentView:
 		('cube' ':' cube=[cubes::DerivedCube|EString])?
 		('functions' ':' '[' functions+=BasicColumnFunction ( "," functions+=BasicColumnFunction)* ']' )?
 		('renames' ':' '[' renames+=RenameAs ( "," renames+=RenameAs)* ']' )?
+		('ignores' ':' '[' ignores+=IgnoreColumn ( "," ignores+=IgnoreColumn)* ']' )?
 	'}';
 
 FilterByConditionView returns trl_sql_views::FilterByConditionView:

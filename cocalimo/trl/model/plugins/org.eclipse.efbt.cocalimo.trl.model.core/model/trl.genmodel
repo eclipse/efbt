@@ -103,6 +103,7 @@
     <genClasses ecoreClass="trl_sql_views.ecore#//EnrichmentView">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference trl_sql_views.ecore#//EnrichmentView/functions"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference trl_sql_views.ecore#//EnrichmentView/renames"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference trl_sql_views.ecore#//EnrichmentView/ignores"/>
     </genClasses>
     <genClasses ecoreClass="trl_sql_views.ecore#//FilterByConditionView">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference trl_sql_views.ecore#//FilterByConditionView/whereClause"/>

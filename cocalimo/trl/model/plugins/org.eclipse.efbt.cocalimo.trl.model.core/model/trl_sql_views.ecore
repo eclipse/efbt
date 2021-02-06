@@ -76,6 +76,16 @@
         <details key="name" value="renames"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ignores" upperBound="-1"
+        eType="#//IgnoreColumn" containment="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="documentation" value="an IgnoreColumn for each column we want to ignore"/>
+      </eAnnotations>
+      <eAnnotations source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details key="kind" value="element"/>
+        <details key="name" value="ignores"/>
+      </eAnnotations>
+    </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="FilterByConditionView" eSuperTypes="#//SQLView">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">

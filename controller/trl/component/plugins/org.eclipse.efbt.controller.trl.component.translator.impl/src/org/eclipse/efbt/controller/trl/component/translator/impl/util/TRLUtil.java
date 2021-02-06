@@ -51,6 +51,7 @@ import org.eclipse.efbt.language.trl.model.trl_sql_views.ExplodeArrayOfStructsVi
 import org.eclipse.efbt.language.trl.model.trl_sql_views.ExplodeStructView;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.FilterByConditionView;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.FilterByStructClassColumnView;
+import org.eclipse.efbt.language.trl.model.trl_sql_views.IgnoreColumn;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.JoinView;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.MakeArrayOfStructsView;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.MakeStructView;
@@ -173,32 +174,41 @@ public class TRLUtil {
       Iterator<SQLView> dependantViewsIter = dependantViews.iterator();
       Iterator<CubeSchema> dependantSourceTablesIter = dependantSourceTables.iterator();
       while (dependantViewsIter.hasNext()) {
+    	
         SQLView dependantView = dependantViewsIter.next();
         EList<CubeColumn> columns = 
             getColumnsFromSQLView(dependantView, functionalModuleLogicList, 
                 cubeSchemaModuleList, specialFunctions);
         Iterator<CubeColumn> columnIter = columns.iterator();
         while (columnIter.hasNext()) {
+         boolean ignoreColumn = false;
           CubeColumn column = columnIter.next();
-          BasicColumnFunction calculatedColumn =
-              Column_transformation_logicFactory.eINSTANCE
-              .createBasicColumnFunction();
-          calculatedColumn.setName(view.getCube().getName() + 
-              "_" + column.getVariable().getVariable_id());
-
-          calculatedColumn.setVariable(column.getVariable());
-          calculatedColumn.setCube(view.getCube());
-          BasicFunction function = FunctionsFactory.eINSTANCE.createBasicFunction();
-          function.setFunctionSpec(specialFunctions.copyColumnSpec);
-          SpeculativeCubeColumnParameter columnParameter = Column_transformation_logicFactory.eINSTANCE
-              .createSpeculativeCubeColumnParameter();
-
-          columnParameter.setColumn(column.getVariable());
-          columnParameter.setCube(dependantView.getCube());
-          function.getParameters().add(columnParameter);
-          calculatedColumn.setBasicFunction(function);
-          cubeTransformationLogic .getColumnFunctionGroup().getColumnFunctions().add(calculatedColumn);
-        }
+          if((view instanceof EnrichmentView ) && columnIsIgnoredInEnrichmentView((EnrichmentView)view, column.getVariable()))
+          {
+        	  ignoreColumn = true;
+          }
+          if(!ignoreColumn)
+          {
+	          BasicColumnFunction calculatedColumn =
+	              Column_transformation_logicFactory.eINSTANCE
+	              .createBasicColumnFunction();
+	          calculatedColumn.setName(view.getCube().getName() + 
+	              "_" + column.getVariable().getVariable_id());
+	
+	          calculatedColumn.setVariable(column.getVariable());
+	          calculatedColumn.setCube(view.getCube());
+	          BasicFunction function = FunctionsFactory.eINSTANCE.createBasicFunction();
+	          function.setFunctionSpec(specialFunctions.copyColumnSpec);
+	          SpeculativeCubeColumnParameter columnParameter = Column_transformation_logicFactory.eINSTANCE
+	              .createSpeculativeCubeColumnParameter();
+	
+	          columnParameter.setColumn(column.getVariable());
+	          columnParameter.setCube(dependantView.getCube());
+	          function.getParameters().add(columnParameter);
+	          calculatedColumn.setBasicFunction(function);
+	          cubeTransformationLogic .getColumnFunctionGroup().getColumnFunctions().add(calculatedColumn);
+          }
+      }
       }
 
       while (dependantSourceTablesIter.hasNext()) {
@@ -1141,7 +1151,20 @@ public class TRLUtil {
     return cubeTransformationLogic ;
   }
 
-  /**
+  private static boolean columnIsIgnoredInEnrichmentView(EnrichmentView view, VARIABLE variable) {
+	// TODO Auto-generated method stub
+	EList<IgnoreColumn> ignores = view.getIgnores();
+	boolean returnVal = false;
+	for (IgnoreColumn ignoreColumn : ignores) {
+		if (ignoreColumn.getColumnToIgnore().equals(variable))
+		{
+			returnVal =true;
+		}
+	}
+	return returnVal;
+}
+
+/**
    * Set the RowCreationApproachForCube of a cubeTransformationLogic .
    * 
    * @param view
