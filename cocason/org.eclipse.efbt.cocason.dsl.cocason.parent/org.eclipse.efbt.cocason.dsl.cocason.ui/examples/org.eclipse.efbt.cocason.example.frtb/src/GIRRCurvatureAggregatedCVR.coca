@@ -6,8 +6,7 @@ ProgramAndCalls : { program : TRLProgram : { executableLogic : TRLExecutableLogi
 				DerivedCube GIRRCurvatureTotalGroupedSummedMinimums : { sourceCubes : [GIRRCurvatureFlooredMinimumShiftedTotalsSquared] } ,
 				DerivedCube copyOfGIRRCurvatureRiskChargeForRiskFactor : { sourceCubes : [ "GIRRCurvatureCVRkCalcCubeLineage.freeBirdToolsCubeModule.GIRRCurvatureRiskChargeForRiskFactor" ] } ,
 				DerivedCube GIRRCurvatureCVRkCombinations : { sourceCubes : [copyOfGIRRCurvatureRiskChargeForRiskFactor ,"GIRRCurvatureCVRkCalcCubeLineage.freeBirdToolsCubeModule.GIRRCurvatureRiskChargeForRiskFactor" ] } ,
-				DerivedCube GIRRCurvatureCVRkCombinationsWithCombinationsFilteredOut : { sourceCubes : [ GIRRCurvatureCVRkCombinations ] } ,
-				DerivedCube GIRRCurvatureCVRkCombinationsWithCorrelationFactor : {  sourceCubes : [ GIRRCurvatureCVRkCombinationsWithCombinationsFilteredOut ] } ,
+				DerivedCube GIRRCurvatureCVRkCombinationsWithCorrelationFactor : {  sourceCubes : [ GIRRCurvatureCVRkCombinations ] } ,
 				DerivedCube productOfGIRRCurvatureCVRkCorrelatedCombinations : { sourceCubes : [ GIRRCurvatureCVRkCombinationsWithCorrelationFactor ] } ,
 				DerivedCube sumOfProductOfGIRRCurvatureCVRkCorrelatedCombinationsByBucket : { sourceCubes : [ productOfGIRRCurvatureCVRkCorrelatedCombinations ] } ,
 				DerivedCube productOfCorrelatedGIRRCurvatureWithSquareOfMinimums : { sourceCubes : [ GIRRCurvatureTotalGroupedSummedMinimums , sumOfProductOfGIRRCurvatureCVRkCorrelatedCombinationsByBucket ] 
