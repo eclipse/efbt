@@ -176,5 +176,10 @@
     <genClasses ecoreClass="trl_sql_views.ecore#//MakeStructView">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference trl_sql_views.ecore#//MakeStructView/targetVariable"/>
     </genClasses>
+    <genClasses ecoreClass="trl_sql_views.ecore#//AggregateEnrichmentViewAndOrderBy">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference trl_sql_views.ecore#//AggregateEnrichmentViewAndOrderBy/functions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference trl_sql_views.ecore#//AggregateEnrichmentViewAndOrderBy/groupByClause"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference trl_sql_views.ecore#//AggregateEnrichmentViewAndOrderBy/orderByVariable"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

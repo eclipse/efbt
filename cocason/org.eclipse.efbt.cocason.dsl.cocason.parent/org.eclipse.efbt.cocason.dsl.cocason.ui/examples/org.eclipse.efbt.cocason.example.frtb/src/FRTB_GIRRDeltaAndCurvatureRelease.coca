@@ -897,7 +897,7 @@ ProgramAndCalls : { program : TRLProgram :  {
 			 		 						 { 
 			 		 						 	functionSpec : "commonFunctions.GIRRFunctionSpecModule.AND" 
 			 		 						 	parameters : [ 
-			 		 						 		
+			 		 						 		 
 			 		 							 BooleanFunction bf64 : {
 			 		 						 	functionSpec : "commonFunctions.GIRRFunctionSpecModule.equals"
 			 		 						 	parameters : [

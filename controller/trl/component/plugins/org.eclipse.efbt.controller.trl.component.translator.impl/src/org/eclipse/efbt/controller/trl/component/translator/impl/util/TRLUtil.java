@@ -42,6 +42,7 @@ import org.eclipse.efbt.language.trl.model.transformation.VersionedFunctionalMod
 import org.eclipse.efbt.language.trl.model.trl_report_cell_views.ReportCellView;
 import org.eclipse.efbt.language.trl.model.trl_report_cell_views.ReportCellViewModule;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.AggregateEnrichmentView;
+import org.eclipse.efbt.language.trl.model.trl_sql_views.AggregateEnrichmentViewAndOrderBy;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.BaseViewIncorporatingDeltas;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.CastColumnView;
 import org.eclipse.efbt.language.trl.model.trl_sql_views.CopyView;
@@ -160,6 +161,17 @@ public class TRLUtil {
 
       }
     }
+    if (view instanceof AggregateEnrichmentViewAndOrderBy) {
+        EList<AggregateColumnFunction> calculatedColumns =
+            ((AggregateEnrichmentView) view).getFunctions();
+        Iterator<AggregateColumnFunction> calculatedColumnsIter = calculatedColumns.iterator();
+        while (calculatedColumnsIter.hasNext()) {
+          AggregateColumnFunction calculatedColumn = calculatedColumnsIter.next();
+          cubeTransformationLogic .getColumnFunctionGroup().getColumnFunctions().
+          add(EcoreUtil.copy(calculatedColumn));
+
+        }
+      }
 
     if ((view instanceof EnrichmentView) ||
         (view instanceof CopyView) || 
@@ -1220,6 +1232,17 @@ public class TRLUtil {
       cubeTransformationLogic .setRowCreationApproachForCube(rowCreationApproachForCube);
 
     }
+    if (view instanceof AggregateEnrichmentViewAndOrderBy) {
+        RowCreationApproachForCube rowCreationApproachForCube = Row_transformation_logicFactoryImpl.eINSTANCE.createRowCreationApproachForCube();
+        GroupByRowCreationApproach groupByFunction = Row_transformation_logicFactoryImpl.eINSTANCE.createGroupByRowCreationApproach();
+        groupByFunction.getGroupByColumns()
+        .addAll((((AggregateEnrichmentViewAndOrderBy) view).getGroupByClause().getGroupByColumns()));
+        rowCreationApproachForCube.setRowCreationApproach(groupByFunction);
+        rowCreationApproachForCube.setCube(view.getCube());
+        rowCreationApproachForCube.setName(view.getName());
+        cubeTransformationLogic .setRowCreationApproachForCube(rowCreationApproachForCube);
+
+      }
 
     if (view instanceof ReportCellView) {
         // get the dependent view
