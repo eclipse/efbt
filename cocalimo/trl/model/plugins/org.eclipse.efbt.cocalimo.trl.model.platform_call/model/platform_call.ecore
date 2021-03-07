@@ -85,4 +85,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="program" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.trl.model.core/model/transformation.ecore#//TRLProgram"
         containment="true"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TranslateTRLToVTL" eSuperTypes="#//PlatformCall">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="outputDirectory" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="release" eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.trl.model.core/model/transformation.ecore#//Release"/>
+  </eClassifiers>
 </ecore:EPackage>
