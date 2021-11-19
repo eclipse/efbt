@@ -14,9 +14,11 @@ import org.eclipse.efbt.cocalimo.core.model.logical_transformations.Scenario;
 import org.eclipse.efbt.cocalimo.core.model.logical_transformations.ScenarioTag;
 import org.eclipse.efbt.cocalimo.core.model.logical_transformations.Test;
 import org.eclipse.efbt.cocalimo.core.model.logical_transformations.TestModule;
+
 import org.eclipse.efbt.cocalimo.core.model.module_management.Module_managementPackage;
 
 import org.eclipse.efbt.cocalimo.core.model.requirements_text.Requirements_textPackage;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -496,8 +498,26 @@ public class Logical_transformationsPackageImpl extends EPackageImpl implements 
 		createResource(eNS_URI);
 
 		// Create annotations
+		// license
+		createLicenseAnnotations();
 		// http:///org/eclipse/emf/ecore/util/ExtendedMetaData
 		createExtendedMetaDataAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>license</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createLicenseAnnotations() {
+		String source = "license";
+		addAnnotation
+		  (this,
+		   source,
+		   new String[] {
+			   "license", "Copyright (c) 2020 Bird Software Solutions Ltd\n All rights reserved. This file and the accompanying materials are made available under the terms of the Eclipse Public License v2.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v20.html\n\nSPDX-License-Identifier: EPL-2.0 \n\n Contributors:\n Neil Mackenzie - initial API and implementation\r"
+		   });
 	}
 
 	/**

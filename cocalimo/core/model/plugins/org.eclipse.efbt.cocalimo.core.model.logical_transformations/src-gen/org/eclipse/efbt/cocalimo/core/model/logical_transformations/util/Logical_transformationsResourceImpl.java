@@ -3,26 +3,26 @@
 package org.eclipse.efbt.cocalimo.core.model.logical_transformations.util;
 
 import org.eclipse.emf.common.util.URI;
-import  org.emfjson.jackson.resource.JsonResource;
-import com.fasterxml.jackson.databind.ObjectMapper;
+
+import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
 
 /**
  * <!-- begin-user-doc -->
  * The <b>Resource </b> associated with the package.
  * <!-- end-user-doc -->
- * @see org.eclipse.efbt.cocalimo.cores.model.logical_transformations.util.Logical_transformationsResourceFactoryImpl
- * @generated NOT
+ * @see org.eclipse.efbt.cocalimo.core.model.logical_transformations.util.Logical_transformationsResourceFactoryImpl
+ * @generated
  */
-public class Logical_transformationsResourceImpl extends JsonResource {
+public class Logical_transformationsResourceImpl extends XMLResourceImpl {
 	/**
 	 * Creates an instance of the resource.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param uri the URI of the new resource.
-	 * @generated NOT
+	 * @generated
 	 */
-	public Logical_transformationsResourceImpl(URI uri, ObjectMapper mapper ) {
-		super(uri,mapper);
+	public Logical_transformationsResourceImpl(URI uri) {
+		super(uri);
 	}
 
 } //Logical_transformationsResourceImpl

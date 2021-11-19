@@ -3,22 +3,24 @@
 package org.eclipse.efbt.cocalimo.core.model.bpmn_lite.util;
 
 import org.eclipse.emf.common.util.URI;
+
 import org.eclipse.emf.ecore.resource.Resource;
-import org.emfjson.jackson.resource.JsonResourceFactory;
+
+import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
 
 /**
  * <!-- begin-user-doc -->
  * The <b>Resource Factory</b> associated with the package.
  * <!-- end-user-doc -->
  * @see org.eclipse.efbt.cocalimo.core.model.bpmn_lite.util.Bpmn_liteResourceImpl
- * @generated NOT
+ * @generated
  */
-public class Bpmn_liteResourceFactoryImpl extends JsonResourceFactory {
+public class Bpmn_liteResourceFactoryImpl extends ResourceFactoryImpl {
 	/**
 	 * Creates an instance of the resource factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated NOT
+	 * @generated
 	 */
 	public Bpmn_liteResourceFactoryImpl() {
 		super();
@@ -28,11 +30,11 @@ public class Bpmn_liteResourceFactoryImpl extends JsonResourceFactory {
 	 * Creates an instance of the resource.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated NOT
+	 * @generated
 	 */
 	@Override
 	public Resource createResource(URI uri) {
-		Resource result = new Bpmn_liteResourceImpl(uri, getMapper());
+		Resource result = new Bpmn_liteResourceImpl(uri);
 		return result;
 	}
 

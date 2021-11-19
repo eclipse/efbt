@@ -4,6 +4,7 @@ package org.eclipse.efbt.cocalimo.core.model.bpmn_lite.impl;
 
 import org.eclipse.efbt.cocalimo.core.model.bpmn_lite.Bpmn_litePackage;
 import org.eclipse.efbt.cocalimo.core.model.bpmn_lite.Task;
+
 import org.eclipse.emf.ecore.EClass;
 
 /**

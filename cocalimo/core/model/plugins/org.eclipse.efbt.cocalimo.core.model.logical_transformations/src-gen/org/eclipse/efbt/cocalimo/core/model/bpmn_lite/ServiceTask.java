@@ -3,7 +3,9 @@
 package org.eclipse.efbt.cocalimo.core.model.bpmn_lite;
 
 import org.eclipse.efbt.cocalimo.core.model.logical_transformations.Scenario;
+
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EStructuralFeature;
 
 /**

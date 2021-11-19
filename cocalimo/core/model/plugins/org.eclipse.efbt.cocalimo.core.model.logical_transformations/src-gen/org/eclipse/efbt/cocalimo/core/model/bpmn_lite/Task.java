@@ -2,6 +2,7 @@
  */
 package org.eclipse.efbt.cocalimo.core.model.bpmn_lite;
 
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Task</b></em>'.
@@ -13,5 +14,4 @@ package org.eclipse.efbt.cocalimo.core.model.bpmn_lite;
  * @generated
  */
 public interface Task extends Activity {
-
 } // Task

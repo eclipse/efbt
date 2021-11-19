@@ -16,7 +16,7 @@
   <foreignModel>logical_transformations.ecore</foreignModel>
   <foreignModel>bpmn_lite.ecore</foreignModel>
   <genPackages prefix="Logical_transformations" basePackage="org.eclipse.efbt.cocalimo.core.model"
-      resource="XMI" disposableProviderFactory="true" ecorePackage="logical_transformations.ecore#/">
+      resource="XML" disposableProviderFactory="true" ecorePackage="logical_transformations.ecore#/">
     <genClasses ecoreClass="logical_transformations.ecore#//LogicalTransformationModule">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference logical_transformations.ecore#//LogicalTransformationModule/taskTags"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference logical_transformations.ecore#//LogicalTransformationModule/scenarioTags"/>
@@ -47,7 +47,7 @@
     </genClasses>
   </genPackages>
   <genPackages prefix="Bpmn_lite" basePackage="org.eclipse.efbt.cocalimo.core.model"
-      resource="XMI" disposableProviderFactory="true" ecorePackage="bpmn_lite.ecore#/">
+      resource="XML" disposableProviderFactory="true" ecorePackage="bpmn_lite.ecore#/">
     <genClasses ecoreClass="bpmn_lite.ecore#//BaseElement">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bpmn_lite.ecore#//BaseElement/id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute bpmn_lite.ecore#//BaseElement/description"/>

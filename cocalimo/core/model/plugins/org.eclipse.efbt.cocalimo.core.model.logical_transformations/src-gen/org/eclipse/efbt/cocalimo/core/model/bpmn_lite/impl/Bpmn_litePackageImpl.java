@@ -18,13 +18,16 @@ import org.eclipse.efbt.cocalimo.core.model.bpmn_lite.SequenceFlow;
 import org.eclipse.efbt.cocalimo.core.model.bpmn_lite.ServiceTask;
 import org.eclipse.efbt.cocalimo.core.model.bpmn_lite.SubProcess;
 import org.eclipse.efbt.cocalimo.core.model.bpmn_lite.Task;
-
 import org.eclipse.efbt.cocalimo.core.model.bpmn_lite.UserTask;
+
 import org.eclipse.efbt.cocalimo.core.model.logical_transformations.Logical_transformationsPackage;
+
 import org.eclipse.efbt.cocalimo.core.model.logical_transformations.impl.Logical_transformationsPackageImpl;
+
 import org.eclipse.efbt.cocalimo.core.model.module_management.Module_managementPackage;
 
 import org.eclipse.efbt.cocalimo.core.model.requirements_text.Requirements_textPackage;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -664,6 +667,26 @@ public class Bpmn_litePackageImpl extends EPackageImpl implements Bpmn_litePacka
 
 		// Create resource
 		createResource(eNS_URI);
+
+		// Create annotations
+		// license
+		createLicenseAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>license</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createLicenseAnnotations() {
+		String source = "license";
+		addAnnotation
+		  (this,
+		   source,
+		   new String[] {
+			   "license", "Copyright (c) 2020 Bird Software Solutions Ltd\n All rights reserved. This file and the accompanying materials are made available under the terms of the Eclipse Public License v2.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v20.html\n\nSPDX-License-Identifier: EPL-2.0 \n\n Contributors:\n Neil Mackenzie - initial API and implementation\r"
+		   });
 	}
 
 } //Bpmn_litePackageImpl
