@@ -15,10 +15,12 @@ package org.eclipse.efbt.controller.platformcall.component.core;
 import org.eclipse.efbt.cocalimo.core.model.platform_call.ConvertSQLDeveloperModelToEcore;
 import org.eclipse.efbt.cocalimo.core.model.platform_call.CreateLogicalTransformationViewForScope;
 import org.eclipse.efbt.cocalimo.core.model.platform_call.PlatformCall;
+import org.eclipse.efbt.cocalimo.core.model.platform_call.UploadWatcher;
 import org.eclipse.efbt.cocalimo.core.model.platform_call.ImportBIRDFromMSAccess;
 import org.eclipse.efbt.controller.ldm.component.logical_transformations.LogicalTransformationViews;
 import org.eclipse.efbt.controller.ldm.component.sqldevconvertor.SQLDevConverter;
 import org.eclipse.efbt.controller.smcubes.component.importexport.impl.ImportOfBIRDFromMSAccess;
+import org.eclipse.efbt.controller.smcubes.component.importexport.impl.WatcherUploader;
 
 public class Controller {
 	
@@ -35,6 +37,10 @@ public class Controller {
 		if (call instanceof CreateLogicalTransformationViewForScope)
 		{
 			createLogicalTransformationViewForScope((CreateLogicalTransformationViewForScope) call);
+		}
+		if (call instanceof UploadWatcher)
+		{
+			uploadWatcher((UploadWatcher) call);
 		}
 		
 	}
@@ -56,6 +62,13 @@ public class Controller {
 																			call.getScriptTasksInScope(),
 																			call.getScenariosOutOfScope(),
 																			call);
+	}
+	
+	private static void uploadWatcher(UploadWatcher call) {
+		// TODO Auto-generated method stub
+		WatcherUploader.uploadWatcher(call.getInputDirectory(),
+										call.getOutputDirectory(),
+										call.getLogicalTransformationModule());
 	}
 	
 

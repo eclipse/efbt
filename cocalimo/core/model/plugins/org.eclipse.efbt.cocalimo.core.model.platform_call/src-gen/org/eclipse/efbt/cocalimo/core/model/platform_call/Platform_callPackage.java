@@ -448,6 +448,88 @@ public interface Platform_callPackage extends EPackage {
 	int CREATE_LOGICAL_TRANSFORMATION_VIEW_FOR_SCOPE_OPERATION_COUNT = PLATFORM_CALL_OPERATION_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.eclipse.efbt.cocalimo.core.model.platform_call.impl.UploadWatcherImpl <em>Upload Watcher</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.efbt.cocalimo.core.model.platform_call.impl.UploadWatcherImpl
+	 * @see org.eclipse.efbt.cocalimo.core.model.platform_call.impl.Platform_callPackageImpl#getUploadWatcher()
+	 * @generated
+	 */
+	int UPLOAD_WATCHER = 5;
+
+	/**
+	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPLOAD_WATCHER__ERROR_MESSAGE = PLATFORM_CALL__ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPLOAD_WATCHER__NAME = PLATFORM_CALL__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Return Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPLOAD_WATCHER__RETURN_STATUS = PLATFORM_CALL__RETURN_STATUS;
+
+	/**
+	 * The feature id for the '<em><b>Input Directory</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPLOAD_WATCHER__INPUT_DIRECTORY = PLATFORM_CALL_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Output Directory</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPLOAD_WATCHER__OUTPUT_DIRECTORY = PLATFORM_CALL_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Logical Transformation Module</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPLOAD_WATCHER__LOGICAL_TRANSFORMATION_MODULE = PLATFORM_CALL_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Upload Watcher</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPLOAD_WATCHER_FEATURE_COUNT = PLATFORM_CALL_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of operations of the '<em>Upload Watcher</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPLOAD_WATCHER_OPERATION_COUNT = PLATFORM_CALL_OPERATION_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link org.eclipse.efbt.cocalimo.core.model.platform_call.PlatformCall <em>Platform Call</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -630,6 +712,49 @@ public interface Platform_callPackage extends EPackage {
 	EReference getCreateLogicalTransformationViewForScope_AttributeLineage();
 
 	/**
+	 * Returns the meta object for class '{@link org.eclipse.efbt.cocalimo.core.model.platform_call.UploadWatcher <em>Upload Watcher</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Upload Watcher</em>'.
+	 * @see org.eclipse.efbt.cocalimo.core.model.platform_call.UploadWatcher
+	 * @generated
+	 */
+	EClass getUploadWatcher();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.efbt.cocalimo.core.model.platform_call.UploadWatcher#getInputDirectory <em>Input Directory</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Input Directory</em>'.
+	 * @see org.eclipse.efbt.cocalimo.core.model.platform_call.UploadWatcher#getInputDirectory()
+	 * @see #getUploadWatcher()
+	 * @generated
+	 */
+	EAttribute getUploadWatcher_InputDirectory();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.eclipse.efbt.cocalimo.core.model.platform_call.UploadWatcher#getOutputDirectory <em>Output Directory</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Output Directory</em>'.
+	 * @see org.eclipse.efbt.cocalimo.core.model.platform_call.UploadWatcher#getOutputDirectory()
+	 * @see #getUploadWatcher()
+	 * @generated
+	 */
+	EAttribute getUploadWatcher_OutputDirectory();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.eclipse.efbt.cocalimo.core.model.platform_call.UploadWatcher#getLogicalTransformationModule <em>Logical Transformation Module</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Logical Transformation Module</em>'.
+	 * @see org.eclipse.efbt.cocalimo.core.model.platform_call.UploadWatcher#getLogicalTransformationModule()
+	 * @see #getUploadWatcher()
+	 * @generated
+	 */
+	EReference getUploadWatcher_LogicalTransformationModule();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -797,6 +922,40 @@ public interface Platform_callPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CREATE_LOGICAL_TRANSFORMATION_VIEW_FOR_SCOPE__ATTRIBUTE_LINEAGE = eINSTANCE.getCreateLogicalTransformationViewForScope_AttributeLineage();
+
+		/**
+		 * The meta object literal for the '{@link org.eclipse.efbt.cocalimo.core.model.platform_call.impl.UploadWatcherImpl <em>Upload Watcher</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.eclipse.efbt.cocalimo.core.model.platform_call.impl.UploadWatcherImpl
+		 * @see org.eclipse.efbt.cocalimo.core.model.platform_call.impl.Platform_callPackageImpl#getUploadWatcher()
+		 * @generated
+		 */
+		EClass UPLOAD_WATCHER = eINSTANCE.getUploadWatcher();
+
+		/**
+		 * The meta object literal for the '<em><b>Input Directory</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UPLOAD_WATCHER__INPUT_DIRECTORY = eINSTANCE.getUploadWatcher_InputDirectory();
+
+		/**
+		 * The meta object literal for the '<em><b>Output Directory</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UPLOAD_WATCHER__OUTPUT_DIRECTORY = eINSTANCE.getUploadWatcher_OutputDirectory();
+
+		/**
+		 * The meta object literal for the '<em><b>Logical Transformation Module</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UPLOAD_WATCHER__LOGICAL_TRANSFORMATION_MODULE = eINSTANCE.getUploadWatcher_LogicalTransformationModule();
 
 	}
 

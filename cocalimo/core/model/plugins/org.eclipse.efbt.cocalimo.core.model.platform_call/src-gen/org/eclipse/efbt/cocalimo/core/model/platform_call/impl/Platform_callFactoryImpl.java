@@ -61,6 +61,7 @@ public class Platform_callFactoryImpl extends EFactoryImpl implements Platform_c
 			case Platform_callPackage.CONVERT_SQL_DEVELOPER_MODEL_TO_ECORE: return createConvertSQLDeveloperModelToEcore();
 			case Platform_callPackage.IMPORT_BIRD_FROM_MS_ACCESS: return createImportBIRDFromMSAccess();
 			case Platform_callPackage.CREATE_LOGICAL_TRANSFORMATION_VIEW_FOR_SCOPE: return createCreateLogicalTransformationViewForScope();
+			case Platform_callPackage.UPLOAD_WATCHER: return createUploadWatcher();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -119,6 +120,17 @@ public class Platform_callFactoryImpl extends EFactoryImpl implements Platform_c
 	public CreateLogicalTransformationViewForScope createCreateLogicalTransformationViewForScope() {
 		CreateLogicalTransformationViewForScopeImpl createLogicalTransformationViewForScope = new CreateLogicalTransformationViewForScopeImpl();
 		return createLogicalTransformationViewForScope;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UploadWatcher createUploadWatcher() {
+		UploadWatcherImpl uploadWatcher = new UploadWatcherImpl();
+		return uploadWatcher;
 	}
 
 	/**

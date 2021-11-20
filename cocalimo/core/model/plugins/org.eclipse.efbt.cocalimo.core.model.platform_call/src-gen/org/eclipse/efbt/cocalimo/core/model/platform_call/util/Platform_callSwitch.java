@@ -100,6 +100,13 @@ public class Platform_callSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case Platform_callPackage.UPLOAD_WATCHER: {
+				UploadWatcher uploadWatcher = (UploadWatcher)theEObject;
+				T result = caseUploadWatcher(uploadWatcher);
+				if (result == null) result = casePlatformCall(uploadWatcher);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -176,6 +183,21 @@ public class Platform_callSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseCreateLogicalTransformationViewForScope(CreateLogicalTransformationViewForScope object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Upload Watcher</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Upload Watcher</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseUploadWatcher(UploadWatcher object) {
 		return null;
 	}
 

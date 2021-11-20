@@ -67,6 +67,15 @@ public interface Platform_callFactory extends EFactory {
 	CreateLogicalTransformationViewForScope createCreateLogicalTransformationViewForScope();
 
 	/**
+	 * Returns a new object of class '<em>Upload Watcher</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Upload Watcher</em>'.
+	 * @generated
+	 */
+	UploadWatcher createUploadWatcher();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

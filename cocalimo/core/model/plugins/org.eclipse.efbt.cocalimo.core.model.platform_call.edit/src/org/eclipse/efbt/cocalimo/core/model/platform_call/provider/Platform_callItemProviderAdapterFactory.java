@@ -187,6 +187,29 @@ public class Platform_callItemProviderAdapterFactory extends Platform_callAdapte
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link org.eclipse.efbt.cocalimo.core.model.platform_call.UploadWatcher} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected UploadWatcherItemProvider uploadWatcherItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link org.eclipse.efbt.cocalimo.core.model.platform_call.UploadWatcher}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createUploadWatcherAdapter() {
+		if (uploadWatcherItemProvider == null) {
+			uploadWatcherItemProvider = new UploadWatcherItemProvider(this);
+		}
+
+		return uploadWatcherItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -296,6 +319,7 @@ public class Platform_callItemProviderAdapterFactory extends Platform_callAdapte
 		if (convertSQLDeveloperModelToEcoreItemProvider != null) convertSQLDeveloperModelToEcoreItemProvider.dispose();
 		if (importBIRDFromMSAccessItemProvider != null) importBIRDFromMSAccessItemProvider.dispose();
 		if (createLogicalTransformationViewForScopeItemProvider != null) createLogicalTransformationViewForScopeItemProvider.dispose();
+		if (uploadWatcherItemProvider != null) uploadWatcherItemProvider.dispose();
 	}
 
 }

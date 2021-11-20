@@ -12,6 +12,7 @@ import org.eclipse.efbt.cocalimo.core.model.platform_call.PlatformCall;
 import org.eclipse.efbt.cocalimo.core.model.platform_call.PlatformCallModule;
 import org.eclipse.efbt.cocalimo.core.model.platform_call.Platform_callFactory;
 import org.eclipse.efbt.cocalimo.core.model.platform_call.Platform_callPackage;
+import org.eclipse.efbt.cocalimo.core.model.platform_call.UploadWatcher;
 import org.eclipse.efbt.cocalimo.core.model.requirements_text.Requirements_textPackage;
 import org.eclipse.efbt.cocalimo.core.model.platform_call.ImportBIRDFromMSAccess;
 import org.eclipse.emf.ecore.EAttribute;
@@ -63,6 +64,13 @@ public class Platform_callPackageImpl extends EPackageImpl implements Platform_c
 	 * @generated
 	 */
 	private EClass createLogicalTransformationViewForScopeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass uploadWatcherEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -308,6 +316,46 @@ public class Platform_callPackageImpl extends EPackageImpl implements Platform_c
 	 * @generated
 	 */
 	@Override
+	public EClass getUploadWatcher() {
+		return uploadWatcherEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUploadWatcher_InputDirectory() {
+		return (EAttribute)uploadWatcherEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUploadWatcher_OutputDirectory() {
+		return (EAttribute)uploadWatcherEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getUploadWatcher_LogicalTransformationModule() {
+		return (EReference)uploadWatcherEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Platform_callFactory getPlatform_callFactory() {
 		return (Platform_callFactory)getEFactoryInstance();
 	}
@@ -352,6 +400,11 @@ public class Platform_callPackageImpl extends EPackageImpl implements Platform_c
 		createEReference(createLogicalTransformationViewForScopeEClass, CREATE_LOGICAL_TRANSFORMATION_VIEW_FOR_SCOPE__SCENARIOS_OUT_OF_SCOPE);
 		createEReference(createLogicalTransformationViewForScopeEClass, CREATE_LOGICAL_TRANSFORMATION_VIEW_FOR_SCOPE__LOGICAL_TRANSFORMATION_MODULE);
 		createEReference(createLogicalTransformationViewForScopeEClass, CREATE_LOGICAL_TRANSFORMATION_VIEW_FOR_SCOPE__ATTRIBUTE_LINEAGE);
+
+		uploadWatcherEClass = createEClass(UPLOAD_WATCHER);
+		createEAttribute(uploadWatcherEClass, UPLOAD_WATCHER__INPUT_DIRECTORY);
+		createEAttribute(uploadWatcherEClass, UPLOAD_WATCHER__OUTPUT_DIRECTORY);
+		createEReference(uploadWatcherEClass, UPLOAD_WATCHER__LOGICAL_TRANSFORMATION_MODULE);
 	}
 
 	/**
@@ -392,6 +445,7 @@ public class Platform_callPackageImpl extends EPackageImpl implements Platform_c
 		convertSQLDeveloperModelToEcoreEClass.getESuperTypes().add(this.getPlatformCall());
 		importBIRDFromMSAccessEClass.getESuperTypes().add(this.getPlatformCall());
 		createLogicalTransformationViewForScopeEClass.getESuperTypes().add(this.getPlatformCall());
+		uploadWatcherEClass.getESuperTypes().add(this.getPlatformCall());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(platformCallEClass, PlatformCall.class, "PlatformCall", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -415,6 +469,11 @@ public class Platform_callPackageImpl extends EPackageImpl implements Platform_c
 		initEReference(getCreateLogicalTransformationViewForScope_ScenariosOutOfScope(), theLogical_transformationsPackage.getScenario(), null, "scenariosOutOfScope", null, 0, -1, CreateLogicalTransformationViewForScope.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCreateLogicalTransformationViewForScope_LogicalTransformationModule(), theLogical_transformationsPackage.getLogicalTransformationModule(), null, "logicalTransformationModule", null, 0, 1, CreateLogicalTransformationViewForScope.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCreateLogicalTransformationViewForScope_AttributeLineage(), theEcorePackage.getEStructuralFeature(), null, "attributeLineage", null, 0, -1, CreateLogicalTransformationViewForScope.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(uploadWatcherEClass, UploadWatcher.class, "UploadWatcher", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getUploadWatcher_InputDirectory(), ecorePackage.getEString(), "inputDirectory", null, 0, 1, UploadWatcher.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUploadWatcher_OutputDirectory(), ecorePackage.getEString(), "outputDirectory", null, 0, 1, UploadWatcher.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUploadWatcher_LogicalTransformationModule(), theLogical_transformationsPackage.getLogicalTransformationModule(), null, "logicalTransformationModule", null, 0, 1, UploadWatcher.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
