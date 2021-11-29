@@ -48,6 +48,7 @@ public class UploadWatcherItemProvider extends PlatformCallItemProvider {
 			addInputDirectoryPropertyDescriptor(object);
 			addOutputDirectoryPropertyDescriptor(object);
 			addLogicalTransformationModulePropertyDescriptor(object);
+			addData_modelPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -110,6 +111,28 @@ public class UploadWatcherItemProvider extends PlatformCallItemProvider {
 				 getString("_UI_UploadWatcher_logicalTransformationModule_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_UploadWatcher_logicalTransformationModule_feature", "_UI_UploadWatcher_type"),
 				 Platform_callPackage.Literals.UPLOAD_WATCHER__LOGICAL_TRANSFORMATION_MODULE,
+				 true,
+				 false,
+				 true,
+				 null,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Data model feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addData_modelPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_UploadWatcher_data_model_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_UploadWatcher_data_model_feature", "_UI_UploadWatcher_type"),
+				 Platform_callPackage.Literals.UPLOAD_WATCHER__DATA_MODEL,
 				 true,
 				 false,
 				 true,

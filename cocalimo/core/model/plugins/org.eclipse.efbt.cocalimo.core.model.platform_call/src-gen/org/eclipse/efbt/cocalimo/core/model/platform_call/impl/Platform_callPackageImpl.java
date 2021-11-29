@@ -356,6 +356,16 @@ public class Platform_callPackageImpl extends EPackageImpl implements Platform_c
 	 * @generated
 	 */
 	@Override
+	public EReference getUploadWatcher_Data_model() {
+		return (EReference)uploadWatcherEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Platform_callFactory getPlatform_callFactory() {
 		return (Platform_callFactory)getEFactoryInstance();
 	}
@@ -405,6 +415,7 @@ public class Platform_callPackageImpl extends EPackageImpl implements Platform_c
 		createEAttribute(uploadWatcherEClass, UPLOAD_WATCHER__INPUT_DIRECTORY);
 		createEAttribute(uploadWatcherEClass, UPLOAD_WATCHER__OUTPUT_DIRECTORY);
 		createEReference(uploadWatcherEClass, UPLOAD_WATCHER__LOGICAL_TRANSFORMATION_MODULE);
+		createEReference(uploadWatcherEClass, UPLOAD_WATCHER__DATA_MODEL);
 	}
 
 	/**
@@ -474,6 +485,7 @@ public class Platform_callPackageImpl extends EPackageImpl implements Platform_c
 		initEAttribute(getUploadWatcher_InputDirectory(), ecorePackage.getEString(), "inputDirectory", null, 0, 1, UploadWatcher.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getUploadWatcher_OutputDirectory(), ecorePackage.getEString(), "outputDirectory", null, 0, 1, UploadWatcher.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getUploadWatcher_LogicalTransformationModule(), theLogical_transformationsPackage.getLogicalTransformationModule(), null, "logicalTransformationModule", null, 0, 1, UploadWatcher.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUploadWatcher_Data_model(), theEcorePackage.getEPackage(), null, "data_model", null, 0, 1, UploadWatcher.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

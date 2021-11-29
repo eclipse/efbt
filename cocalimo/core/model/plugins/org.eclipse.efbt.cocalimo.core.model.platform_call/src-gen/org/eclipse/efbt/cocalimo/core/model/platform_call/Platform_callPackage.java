@@ -512,13 +512,22 @@ public interface Platform_callPackage extends EPackage {
 	int UPLOAD_WATCHER__LOGICAL_TRANSFORMATION_MODULE = PLATFORM_CALL_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Data model</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPLOAD_WATCHER__DATA_MODEL = PLATFORM_CALL_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Upload Watcher</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UPLOAD_WATCHER_FEATURE_COUNT = PLATFORM_CALL_FEATURE_COUNT + 3;
+	int UPLOAD_WATCHER_FEATURE_COUNT = PLATFORM_CALL_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of operations of the '<em>Upload Watcher</em>' class.
@@ -755,6 +764,17 @@ public interface Platform_callPackage extends EPackage {
 	EReference getUploadWatcher_LogicalTransformationModule();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.eclipse.efbt.cocalimo.core.model.platform_call.UploadWatcher#getData_model <em>Data model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Data model</em>'.
+	 * @see org.eclipse.efbt.cocalimo.core.model.platform_call.UploadWatcher#getData_model()
+	 * @see #getUploadWatcher()
+	 * @generated
+	 */
+	EReference getUploadWatcher_Data_model();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -956,6 +976,14 @@ public interface Platform_callPackage extends EPackage {
 		 * @generated
 		 */
 		EReference UPLOAD_WATCHER__LOGICAL_TRANSFORMATION_MODULE = eINSTANCE.getUploadWatcher_LogicalTransformationModule();
+
+		/**
+		 * The meta object literal for the '<em><b>Data model</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UPLOAD_WATCHER__DATA_MODEL = eINSTANCE.getUploadWatcher_Data_model();
 
 	}
 

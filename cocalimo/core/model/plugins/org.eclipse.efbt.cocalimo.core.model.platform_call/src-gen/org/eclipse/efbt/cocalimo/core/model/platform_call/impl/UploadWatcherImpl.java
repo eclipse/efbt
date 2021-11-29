@@ -10,6 +10,7 @@ import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
@@ -24,6 +25,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *   <li>{@link org.eclipse.efbt.cocalimo.core.model.platform_call.impl.UploadWatcherImpl#getInputDirectory <em>Input Directory</em>}</li>
  *   <li>{@link org.eclipse.efbt.cocalimo.core.model.platform_call.impl.UploadWatcherImpl#getOutputDirectory <em>Output Directory</em>}</li>
  *   <li>{@link org.eclipse.efbt.cocalimo.core.model.platform_call.impl.UploadWatcherImpl#getLogicalTransformationModule <em>Logical Transformation Module</em>}</li>
+ *   <li>{@link org.eclipse.efbt.cocalimo.core.model.platform_call.impl.UploadWatcherImpl#getData_model <em>Data model</em>}</li>
  * </ul>
  *
  * @generated
@@ -78,6 +80,16 @@ public class UploadWatcherImpl extends PlatformCallImpl implements UploadWatcher
 	 * @ordered
 	 */
 	protected LogicalTransformationModule logicalTransformationModule;
+
+	/**
+	 * The cached value of the '{@link #getData_model() <em>Data model</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getData_model()
+	 * @generated
+	 * @ordered
+	 */
+	protected EPackage data_model;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -190,6 +202,46 @@ public class UploadWatcherImpl extends PlatformCallImpl implements UploadWatcher
 	 * @generated
 	 */
 	@Override
+	public EPackage getData_model() {
+		if (data_model != null && data_model.eIsProxy()) {
+			InternalEObject oldData_model = (InternalEObject)data_model;
+			data_model = (EPackage)eResolveProxy(oldData_model);
+			if (data_model != oldData_model) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, Platform_callPackage.UPLOAD_WATCHER__DATA_MODEL, oldData_model, data_model));
+			}
+		}
+		return data_model;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EPackage basicGetData_model() {
+		return data_model;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setData_model(EPackage newData_model) {
+		EPackage oldData_model = data_model;
+		data_model = newData_model;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Platform_callPackage.UPLOAD_WATCHER__DATA_MODEL, oldData_model, data_model));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case Platform_callPackage.UPLOAD_WATCHER__INPUT_DIRECTORY:
@@ -199,6 +251,9 @@ public class UploadWatcherImpl extends PlatformCallImpl implements UploadWatcher
 			case Platform_callPackage.UPLOAD_WATCHER__LOGICAL_TRANSFORMATION_MODULE:
 				if (resolve) return getLogicalTransformationModule();
 				return basicGetLogicalTransformationModule();
+			case Platform_callPackage.UPLOAD_WATCHER__DATA_MODEL:
+				if (resolve) return getData_model();
+				return basicGetData_model();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -219,6 +274,9 @@ public class UploadWatcherImpl extends PlatformCallImpl implements UploadWatcher
 				return;
 			case Platform_callPackage.UPLOAD_WATCHER__LOGICAL_TRANSFORMATION_MODULE:
 				setLogicalTransformationModule((LogicalTransformationModule)newValue);
+				return;
+			case Platform_callPackage.UPLOAD_WATCHER__DATA_MODEL:
+				setData_model((EPackage)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -241,6 +299,9 @@ public class UploadWatcherImpl extends PlatformCallImpl implements UploadWatcher
 			case Platform_callPackage.UPLOAD_WATCHER__LOGICAL_TRANSFORMATION_MODULE:
 				setLogicalTransformationModule((LogicalTransformationModule)null);
 				return;
+			case Platform_callPackage.UPLOAD_WATCHER__DATA_MODEL:
+				setData_model((EPackage)null);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -259,6 +320,8 @@ public class UploadWatcherImpl extends PlatformCallImpl implements UploadWatcher
 				return OUTPUT_DIRECTORY_EDEFAULT == null ? outputDirectory != null : !OUTPUT_DIRECTORY_EDEFAULT.equals(outputDirectory);
 			case Platform_callPackage.UPLOAD_WATCHER__LOGICAL_TRANSFORMATION_MODULE:
 				return logicalTransformationModule != null;
+			case Platform_callPackage.UPLOAD_WATCHER__DATA_MODEL:
+				return data_model != null;
 		}
 		return super.eIsSet(featureID);
 	}

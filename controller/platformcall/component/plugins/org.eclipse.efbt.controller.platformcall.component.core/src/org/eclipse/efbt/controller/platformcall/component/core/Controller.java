@@ -68,7 +68,8 @@ public class Controller {
 		// TODO Auto-generated method stub
 		WatcherUploader.uploadWatcher(call.getInputDirectory(),
 										call.getOutputDirectory(),
-										call.getLogicalTransformationModule());
+										call.getLogicalTransformationModule(),
+										call.getData_model());
 	}
 	
 

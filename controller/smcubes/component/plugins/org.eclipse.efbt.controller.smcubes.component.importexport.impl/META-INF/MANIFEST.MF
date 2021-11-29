@@ -15,5 +15,7 @@ Require-Bundle: org.apache.commons.logging,
  org.eclipse.efbt.cocalimo.core.model.requirements_text,
  org.apache.commons.csv,
  org.emfjson.jackson,
- org.eclipse.emf.ecore
+ org.eclipse.emf.ecore,
+ org.eclipse.osgi
+
 

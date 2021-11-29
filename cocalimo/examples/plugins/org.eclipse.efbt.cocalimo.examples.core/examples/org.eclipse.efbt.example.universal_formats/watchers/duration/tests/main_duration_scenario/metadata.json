@@ -1,0 +1,75 @@
+{
+    "Enriched_target_attribute": "BondInstrument_enriched.duration",
+    "type": "double",
+    "IL_dependent_attributes": ["coupon_rate"],
+    "reg_references":[
+                      [
+                          {
+                            "type"  : "web_address",
+                            "value" : "https://www.eba.europa.eu/documents/10180/2751085/Annex+VI+%28Annex+25+%28LCR%29%29.pdf"
+                          },
+                          {
+                            "type"  : "regulation_name", 
+                            "value" : "Capital Requirements Regulation (CRR): REGULATION (EU) No 575/2013"
+                          },
+                          {
+                            "type"  : "Part",
+                            "value" : "PART THREE: CAPITAL REQUIREMENTS "
+                          },
+                          {
+                            "type"  : "Title",
+                            "value" : "TITLE IV: OWN FUNDS REQUIREMENTS FOR MARKET RISK "
+                          },
+                          {
+                            "type"  : "Chapter",
+                            "value" : "Chapter 1 General Provisions"
+                          },
+                          {
+                            "type"  : "Article", 
+                            "value" : "Article 325 approaches for calculating the own funds requirements for market risk"
+                          },
+                          {
+                              "type": "Numeric_Paragraph",
+                              "value": "1"
+                          },
+                          {
+                              "type" : "Letter_Paragraph", 
+                              "value" : "a"
+                          }
+                      ],
+                      [
+                          {
+                            "type"  : "web_address",
+                            "value" : "https://www.eba.europa.eu/documents/10180/2751085/Annex+VI+%28Annex+25+%28LCR%29%29.pdf"
+                          },
+                          {
+                            "type"  : "regulation_name", 
+                            "value" : "Capital Requirements Regulation (CRR): REGULATION (EU) No 575/2013"
+                          },
+                          {
+                            "type"  : "Part",
+                            "value" : "PART THREE: CAPITAL REQUIREMENTS "
+                          },
+                          {
+                            "type"  : "Title",
+                            "value" : "TITLE IV: OWN FUNDS REQUIREMENTS FOR MARKET RISK "
+                          },
+                          {
+                            "type"  : "Chapter",
+                            "value" : "Chapter 1 General Provisions"
+                          },
+                          {
+                            "type"  : "Article", 
+                            "value" : "Article 325 approaches for calculating the own funds requirements for market risk"
+                          },
+                          {
+                              "type": "Numeric_Paragraph",
+                              "value": "1"
+                          },
+                          {
+                              "type" : "Letter_Paragraph", 
+                              "value" : "a"
+                          }
+                      ]
+                    ]
+}

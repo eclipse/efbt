@@ -88,5 +88,6 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="outputDirectory" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="logicalTransformationModule"
         eType="ecore:EClass ../../org.eclipse.efbt.cocalimo.core.model.logical_transformations/model/logical_transformations.ecore#//LogicalTransformationModule"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="data_model" eType="ecore:EClass ../../org.eclipse.emf.ecore/model/Ecore.ecore#//EPackage"/>
   </eClassifiers>
 </ecore:EPackage>
