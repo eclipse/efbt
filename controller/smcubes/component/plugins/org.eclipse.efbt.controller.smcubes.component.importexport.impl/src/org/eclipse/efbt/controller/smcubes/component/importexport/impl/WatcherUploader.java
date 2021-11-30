@@ -41,6 +41,7 @@ import org.eclipse.emf.ecore.impl.EReferenceImpl;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.emf.ecore.xmi.XMIResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
 public class WatcherUploader {
@@ -51,9 +52,9 @@ public class WatcherUploader {
 		// get the documentation/readME file
 		String documentationReadMeFilePath = inputDirectory +"\\documentation\\README.md";
 		// find the Task Name
-		String taskName= getTaskNameFromDocumentationReadMeFile(documentationReadMeFilePath);
+		String derivedAttributeName= getDerivedAttributeNameFromDocumentationReadMeFile(documentationReadMeFilePath);
 		// get the task from the transformations
-		ServiceTask serviceTask = getTaskFromLogicalTransformation(taskName,logicalTransformationModule);
+		ServiceTask serviceTask = getTaskFromDerivedAttributeName(derivedAttributeName,logicalTransformationModule);
 		String attributeName = serviceTask.getEnrichedAttribute().getName();
 		// create testModule for the task
 		TestModule testModule = Logical_transformationsFactory.eINSTANCE.createTestModule();
@@ -96,6 +97,7 @@ public class WatcherUploader {
 			for (Test test : tests) {
 				// add a directory for each test for the test/task/scenario directory				
 				File testDirectory = new File(testsDirectory + "\\" + attributeName + "\\" + scenario.getName() + "\\"  + test.getName());
+				String testDirectoryName = testsDirectory + "/" + attributeName + "/" + scenario.getName() + "/"  + test.getName();
 				testDirectory.mkdirs();
 				// for each test add a test to the  testModule, and set the scenario for the test.
 				test.setScenarios(scenario);
@@ -155,7 +157,7 @@ public class WatcherUploader {
 				
 				
 				
-				persistTestObjects (objectList, testDirectory);
+				persistTestObjects (objectList, testDirectoryName);
 				
 				
 			}
@@ -164,7 +166,7 @@ public class WatcherUploader {
 
 	}
 
-	private static void persistTestObjects(EList<EObject> testObjects, File testDirectory) {
+	private static void persistTestObjects(EList<EObject> testObjects, String testDirectoryName) {
 		 Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
 	        Map<String, Object> m = reg.getExtensionToFactoryMap();
 	        m.put("xmi", new XMIResourceFactoryImpl());
@@ -174,32 +176,38 @@ public class WatcherUploader {
 
 	        Iterator<EObject> testObjectIterator = testObjects.iterator();
 	        int counter = 0;
+	        ArrayList<Resource> resources = new ArrayList<Resource>();
 	        while(testObjectIterator.hasNext())
 	        {
 	        	counter++;
 	        	EObject testObject = testObjectIterator.next();
 	        	
 		        // create a resource
-		        Resource resource = resSet.createResource(URI.createFileURI(testDirectory.getAbsolutePath()+ "tests/testObject" +counter +".xmi"));
+	        	
+		        Resource resource = resSet.createResource(URI.createPlatformResourceURI(testDirectoryName + "/testObject" +counter +".xmi"));
 		        // Get the first model element and cast it to the right type, in my
 		        // example everything is hierarchical included in this first node
 		        resource.getContents().add(testObject);
+		        resources.add(resource);
 	
-		        // now save the content.
-		        try {
-		            resource.save(Collections.EMPTY_MAP);
+		        
+	        }
+	        for (Resource resource : resources) {
+	        	try {
+		        	HashMap<String, Object> opts = new HashMap<String, Object>();
+		        	opts.put(XMIResource.OPTION_SCHEMA_LOCATION, true);
+		            resource.save(opts);
 		        } catch (IOException e) {
 		            // TODO Auto-generated catch block
 		            e.printStackTrace();
 		        }
-	        }
+			}
+	     // now save the content.
+	        
 		
 	}
 
-	private static void persistTestObject(EObject testObject, File testDirectory) {
-		// TODO Auto-generated method stub
-		
-	}
+
 
 	private static EList<EObject> creatEObjectFromCSVFile(File testObjectFile, 
 												EPackage dataModelPackage, 
@@ -367,7 +375,7 @@ public class WatcherUploader {
 
 	private static void createScenarioWithDescriptionForEachCase(String documentationReadMeFilePath,
 			ServiceTask serviceTask) {
-		// TODO Auto-generated method stub
+		// find the scenarios header
 		
 	}
 
@@ -414,17 +422,26 @@ public class WatcherUploader {
 		
 	}
 
-	private static ServiceTask getTaskFromLogicalTransformation(String taskName,
+	private static ServiceTask getTaskFromDerivedAttributeName(String derivedAttributeName,
 			LogicalTransformationModule logicalTransformationModule) {
-		// TODO Auto-generated method stub
+		// split the name in 2.
+		
 		ServiceTask returnTask = null;
 		TreeIterator<EObject> contents = logicalTransformationModule.eAllContents();
+		String entityName= derivedAttributeName.substring(0,derivedAttributeName.indexOf(':') );
+		String attributeName= derivedAttributeName.substring(derivedAttributeName.indexOf(':'),derivedAttributeName.length()  );
 		while (contents.hasNext())
 		{
 			EObject item = contents.next();
 			if(item instanceof ServiceTask)
 			{
-				if ( ((ServiceTask) item).getName().equals(taskName))
+				ServiceTask st_item = (ServiceTask) item;
+				EStructuralFeature eAttribute = st_item.getEnrichedAttribute();
+				
+				String eAttrName = eAttribute.getName();
+				String eClassName = eAttribute.eClass().getName();
+				
+				if ( eAttrName.equals(attributeName) && eClassName.equals(entityName))
 				{
 					returnTask = (ServiceTask) item;
 				}
@@ -433,7 +450,7 @@ public class WatcherUploader {
 		return returnTask;
 	}
 
-	private static String getTaskNameFromDocumentationReadMeFile(String documentationReadMeFilePath) {
+	private static String getDerivedAttributeNameFromDocumentationReadMeFile(String documentationReadMeFilePath) {
 		
 		String taskName ="";
 		boolean taskLineFound = false;
@@ -455,7 +472,7 @@ public class WatcherUploader {
 						taskName = fileLine.trim();
 					}
 				}
-				if(fileLine.equals("# Logical Transformation Task"))
+				if(fileLine.equals("# Derived Attribute"))
 				{
 					taskLineFound = true;
 				}

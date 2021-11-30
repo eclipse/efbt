@@ -1,14 +1,14 @@
-# Logical Transformation Task
+# Derived Attribute
 
-Calculate_Duration
+BondInstrument_derived:Duration
 
 # Description
 
 Here we have the business requirements for the task, duration is measure of sensitivity of a bond to interest rates etc, etc
 
-# Edge Cases
+# Scenarios
 
-## main_scenario
+## main_duration_scenario
 
 Here we have the business requirments for the sceanrio, duration is a measure if sensitivity ot the bond, etc, etc.
 
