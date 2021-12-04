@@ -58,7 +58,7 @@ public class WatcherUploader {
 		String attributeName = serviceTask.getEnrichedAttribute().getName();
 		// create testModule for the task
 		TestModule testModule = Logical_transformationsFactory.eINSTANCE.createTestModule();
-		testModule.setName(taskName+"_TestModule");
+		testModule.setName(derivedAttributeName+"_TestModule");
 		// add the test module to the logical transformation
 		logicalTransformationModule.getTestModules().add(testModule);
 		// add a directory under the tests directory for the tasks
