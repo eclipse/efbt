@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn_lite="http://www.eclipse.org/efbt/bpmn_lite" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis uid="_jxh3AJbyEey6TL-F8Rag8g" selectedViews="_o1sUcJbyEey6TL-F8Rag8g _o1-oUJbyEey6TL-F8Rag8g _sphLYJbyEey6TL-F8Rag8g" version="15.0.0.202201261500">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn_lite="http://www.eclipse.org/efbt/bpmn_lite" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:platform_call="http://www.eclipse.org/efbt/platform_call" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_jxh3AJbyEey6TL-F8Rag8g" selectedViews="_o1sUcJbyEey6TL-F8Rag8g _o1-oUJbyEey6TL-F8Rag8g _sphLYJbyEey6TL-F8Rag8g _HM0mUKiLEeyhpoVAQwyisA _E3_4cKiVEeyU_oo5JFEVYw _E4aIIKiVEeyU_oo5JFEVYw _E9UdUKiVEeyU_oo5JFEVYw" version="15.0.0.202201261500">
     <semanticResources>bin/CRR2.requirements_text</semanticResources>
     <semanticResources>bin/FRTBDerivedDimensions.cocalimo_smcubes_extension</semanticResources>
     <semanticResources>bin/FRTBDerivedDomain.cocalimo_smcubes_extension</semanticResources>
@@ -28,8 +28,19 @@
     <semanticResources>frtb_data_model/frtb_with_derived.data_meta_model</semanticResources>
     <semanticResources>sdd/FRTBDerivedIdentifiers.cocalimo_smcubes_extension</semanticResources>
     <semanticResources>frtb_data_model/frtb.data_meta_model</semanticResources>
+    <semanticResources>platform_calls/My.platform_call</semanticResources>
+    <semanticResources>platform_calls/My1.platform_call</semanticResources>
+    <semanticResources>generated_classes/dmm.ecore</semanticResources>
+    <semanticResources>bin/CommonMeasures.cocalimo_smcubes_extension</semanticResources>
+    <semanticResources>bin/GIRRCurvatureMeasures.cocalimo_smcubes_extension</semanticResources>
+    <semanticResources>bin/GIRRDeltaMeasures.cocalimo_smcubes_extension</semanticResources>
+    <semanticResources>bin/GIRRVegaMeasures.cocalimo_smcubes_extension</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_o1sUcJbyEey6TL-F8Rag8g">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.efbt.cocalimo.platform_call.ui.sirius.core/description/controller.odesign#//@ownedViewpoints[name='Modules']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_A3OWMKiLEeyhpoVAQwyisA" name="new PlatformCall" repPath="#_A2zfcKiLEeyhpoVAQwyisA" changeId="a61f5c27-25b7-4bc4-9481-1b8199c3ee99">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.efbt.cocalimo.platform_call.ui.sirius.core/description/controller.odesign#//@ownedViewpoints[name='Modules']/@ownedRepresentations[name='PlatformCall']"/>
+        <target xmi:type="platform_call:ConvertDataMetaModelToEcore" href="platform_calls/My1.platform_call#convert"/>
+      </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_o1-oUJbyEey6TL-F8Rag8g">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.efbt.cocalimo.smcubes.ui.sirius/description/bird.odesign#//@ownedViewpoints[name='BIRDViewpoint']"/>
@@ -40,6 +51,18 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.efbt.cocalimo.logical_transformations.ui.sirius.core/description/bpmn_lite.odesign#//@ownedViewpoints[name='Process']/@ownedRepresentations[name='SubProcessDiagram']"/>
         <target xmi:type="bpmn_lite:SubProcess" href="workflow/workflow.logical_transformations#//@subProcess"/>
       </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_HM0mUKiLEeyhpoVAQwyisA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_E3_4cKiVEeyU_oo5JFEVYw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']"/>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_E4aIIKiVEeyU_oo5JFEVYw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Archetype']"/>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_E9UdUKiVEeyU_oo5JFEVYw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Generation']"/>
     </ownedViews>
   </viewpoint:DAnalysis>
   <diagram:DSemanticDiagram uid="_tM1T0JbyEey6TL-F8Rag8g">
@@ -8541,5 +8564,38 @@
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_tNAS8JbyEey6TL-F8Rag8g"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.efbt.cocalimo.logical_transformations.ui.sirius.core/description/bpmn_lite.odesign#//@ownedViewpoints[name='Process']/@ownedRepresentations[name='SubProcessDiagram']/@defaultLayer"/>
     <target xmi:type="bpmn_lite:SubProcess" href="workflow/workflow.logical_transformations#//@subProcess"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_A2zfcKiLEeyhpoVAQwyisA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_A32BQKiLEeyhpoVAQwyisA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_A32BQaiLEeyhpoVAQwyisA" type="Sirius" element="_A2zfcKiLEeyhpoVAQwyisA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_A4dFQKiLEeyhpoVAQwyisA" type="2001" element="_A4BAYKiLEeyhpoVAQwyisA">
+          <children xmi:type="notation:Node" xmi:id="_A4lBEKiLEeyhpoVAQwyisA" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_A4lBEaiLEeyhpoVAQwyisA" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_A4zDgKiLEeyhpoVAQwyisA" type="3017" element="_A4EDsKiLEeyhpoVAQwyisA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_A4zDgaiLEeyhpoVAQwyisA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A4zDgqiLEeyhpoVAQwyisA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_A4dFQaiLEeyhpoVAQwyisA" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_A4dFQqiLEeyhpoVAQwyisA" width="150" height="150"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_A32BQqiLEeyhpoVAQwyisA"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_A4LYcKiLEeyhpoVAQwyisA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_A4LYcaiLEeyhpoVAQwyisA"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_A4BAYKiLEeyhpoVAQwyisA" name="PlatformCall" width="15" height="15" resizeKind="NSEW">
+      <target xmi:type="platform_call:ConvertDataMetaModelToEcore" href="platform_calls/My1.platform_call#convert"/>
+      <semanticElements xmi:type="platform_call:ConvertDataMetaModelToEcore" href="platform_calls/My1.platform_call#convert"/>
+      <ownedStyle xmi:type="diagram:Lozenge" uid="_A4EDsKiLEeyhpoVAQwyisA" labelSize="12" labelPosition="node" color="239,41,41">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/plugin/org.eclipse.efbt.cocalimo.platform_call.ui.sirius.core/description/controller.odesign#//@ownedViewpoints[name='Modules']/@ownedRepresentations[name='PlatformCall']/@defaultLayer/@nodeMappings[name='PlatformCall']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.efbt.cocalimo.platform_call.ui.sirius.core/description/controller.odesign#//@ownedViewpoints[name='Modules']/@ownedRepresentations[name='PlatformCall']/@defaultLayer/@nodeMappings[name='PlatformCall']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.efbt.cocalimo.platform_call.ui.sirius.core/description/controller.odesign#//@ownedViewpoints[name='Modules']/@ownedRepresentations[name='PlatformCall']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_A3CwAKiLEeyhpoVAQwyisA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.eclipse.efbt.cocalimo.platform_call.ui.sirius.core/description/controller.odesign#//@ownedViewpoints[name='Modules']/@ownedRepresentations[name='PlatformCall']/@defaultLayer"/>
+    <target xmi:type="platform_call:ConvertDataMetaModelToEcore" href="platform_calls/My1.platform_call#convert"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

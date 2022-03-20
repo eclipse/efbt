@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="LDM_EntityModule" nsURI="http://www.eclipse.org/efbt/frtb" nsPrefix="frtb">
+  <eClassifiers xsi:type="ecore:EClass" name="RiskFactor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="riskFactorID">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="commodityType">
+    <eLiterals name="ENERGY_ELECTRICITY_AND_CARBON_TRADING" value="1" literal="ENERGY_ELECTRICITY_AND_CARBON_TRADING"/>
+    <eLiterals name="ENERGY_LIQUID_COMBUSTABLES" value="2" literal="ENERGY_LIQUID_COMBUSTABLES"/>
+    <eLiterals name="ENERGY_SOLID_COMBUSTABLES" value="3" literal="ENERGY_SOLID_COMBUSTABLES"/>
+    <eLiterals name="FREIGHT" value="4" literal="FREIGHT"/>
+    <eLiterals name="METALS_NON_PRECIOUS" value="5" literal="METALS_NON_PRECIOUS"/>
+    <eLiterals name="GASEOUS_COMBUSTABLES" value="6" literal="GASEOUS_COMBUSTABLES"/>
+    <eLiterals name="PRECIOUS_METALS" value="7" literal="PRECIOUS_METALS"/>
+    <eLiterals name="GRAINS_AND_OILSEED" value="8" literal="GRAINS_AND_OILSEED"/>
+    <eLiterals name="LIVESTOCK_AND_DAIRY" value="9" literal="LIVESTOCK_AND_DAIRY"/>
+    <eLiterals name="SOFTS_AND_OTHER_AGRICULTURALS" value="10" literal="SOFTS_AND_OTHER_AGRICULTURALS"/>
+    <eLiterals name="OTHER_COMMODITY" value="11" literal="OTHER_COMMODITY"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CommodityRiskFactor" eSuperTypes="//RiskFactor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="commodityType" eType="//commodityType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deliveryLocation">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ratingsGrade">
+    <eLiterals name="SENIOR_IG" value="1" literal="SENIOR_IG"/>
+    <eLiterals name="NON_SENIOR_IG" value="2" literal="NON_SENIOR_IG"/>
+    <eLiterals name="HIGH_YIELD" value="3" literal="HIGH_YIELD"/>
+    <eLiterals name="NON_RATED" value="4" literal="NON_RATED"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecurityIssue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ratingGrade" eType="//ratingsGrade"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="issueID">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EquityIssue" eSuperTypes="//SecurityIssue"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="equityFactorType">
+    <eLiterals name="Repo" value="1" literal="Repo"/>
+    <eLiterals name="Spot" value="2" literal="Spot"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EquityRiskFactor" eSuperTypes="//RiskFactor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="equityFactorType" eType="//equityFactorType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="issueID" eType="//EquityIssue"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="currency"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FXRiskFactor" eSuperTypes="//RiskFactor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ccy1" eType="//currency"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ccy2" eType="//currency"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="girrRiskFactorType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GIRRRiskFactor" eSuperTypes="//RiskFactor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="girrRiskFactorType" eType="//girrRiskFactorType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="mainCurrency" eType="//currency"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="secondCurrency" eType="//currency"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CSRCurveType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CSRNonSecuritisationRiskFactor" eSuperTypes="//RiskFactor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="CSRCurveType" eType="//CSRCurveType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="CSRCreditQuality" eType="//ratingsGrade"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="organisation_id" lowerBound="1" eType="//Organisation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecuritisationNonCTPRiskFactor" eSuperTypes="//RiskFactor">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="trancheName">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitisation" lowerBound="1" eType="//Securitisation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="sector"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="marketCap"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="economy"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Organisation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="organisation_id">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ratingsGrade" eType="//ratingsGrade"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sector" eType="//sector"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="marketCap" eType="//marketCap"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="economy" eType="//economy"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="securitisationSector"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Securitisation" eSuperTypes="//SecurityIssue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="securitisationSector" eType="//securitisationSector"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecuritisationCTPRiskFactor" eSuperTypes="//RiskFactor">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="securitisation" lowerBound="1" eType="//Securitisation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DeltaSensitivity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="currencyOfRecord" eType="//currency"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tenor">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deltaSensitivity">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="delta_sensitivity_id">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="position" lowerBound="1" eType="//Position"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="riskFactorID" lowerBound="1" eType="//RiskFactor"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Position">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="positionID">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="VegaSensitivity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="currencyOfRecord" eType="//currency"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="vegaSensitivity">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="vegaOptionMaturity">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="vegaOptionUnderlyingResidualMaturity">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="vega_sensitivity_id">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="position" lowerBound="1" eType="//Position"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="riskFactorID" lowerBound="1" eType="//RiskFactor"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="shockDirection"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Curvature">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="currencyOfRecord" eType="//currency"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="curvatureValuationDifference">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="shockDirection" eType="//shockDirection"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="curvatureRiskWeight">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="curvature_id">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="position" lowerBound="1" eType="//Position"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="riskFactorID" lowerBound="1" eType="//RiskFactor"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SummedDeltaSensitivitiesPerPositionAndRiskFactor_derived">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="summedDeltaPerPosition">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="summedDeltaSensitivitiesPerPosition_id">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="positionID" eType="//Position"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="riskFactorID" eType="//GIRRRiskFactor"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sensitivities" upperBound="-1" eType="//DeltaSensitivity"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NettedDeltaSensitivitiesPerRiskFactorAndTenor_derived">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nettedDeltaSensitivities_id">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nettedDeltaSensitivity">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tenor">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="GIRRDeltaRiskWeight">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="weightedGIRRDeltaSensitivity">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bucket_id">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sensitivities" upperBound="-1" eType="//DeltaSensitivity"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="riskFactorID" eType="//GIRRRiskFactor"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TotalDeltaSensitivityPerBucket_derived">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalGIRRDeltaSensitivityPerBucket">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nettedDeltaSensitivities_id" eType="//NettedDeltaSensitivitiesPerRiskFactorAndTenor_derived"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DeltaSensitivityCombinations_derived">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="GIRRDeltaCorrelationFactor">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="GIRRDeltaKBInput">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="deltaSensitivityCombination_id">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nettedDeltaSensitivities_id1" eType="//NettedDeltaSensitivitiesPerRiskFactorAndTenor_derived"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="nettedDeltaSensitivities_id2" eType="//NettedDeltaSensitivitiesPerRiskFactorAndTenor_derived"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DeltaSensitivitiesCorrelatedAndAggregated_derived">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="GIRRDeltaKBInput_per_bucket">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="GIRRDeltaKB">
+      <eType xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="deltaSensitivityCombination_id" eType="//DeltaSensitivityCombinations_derived"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -14,6 +14,10 @@ import org.eclipse.efbt.cocalimo.smcubes.model.data_meta_model.DerivedEntity;
 import org.eclipse.efbt.cocalimo.smcubes.model.data_meta_model.Entity;
 import org.eclipse.efbt.cocalimo.smcubes.model.data_meta_model.EntityModule;
 import org.eclipse.efbt.cocalimo.smcubes.model.data_meta_model.GeneratedEntity;
+import org.eclipse.efbt.cocalimo.smcubes.model.data_meta_model.ManyToOneRelationshipAttribute;
+import org.eclipse.efbt.cocalimo.smcubes.model.data_meta_model.OneToManyRelationshipAttribute;
+import org.eclipse.efbt.cocalimo.smcubes.model.data_meta_model.OneToOneRelationshipAttribute;
+import org.eclipse.efbt.cocalimo.smcubes.model.data_meta_model.RelationshipAttribute;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EAttribute;
@@ -23,6 +27,7 @@ import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EcoreFactory;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 import org.eclipse.emf.ecore.impl.EcorePackageImpl;
@@ -54,22 +59,29 @@ public class DMMToEcoreConverter {
 				BasicEntity basicEntity = (BasicEntity) entity;
 				EList<Attribute> attributes = basicEntity.getAttributes();
 				for (Attribute attribute : attributes) {
-					 EAttribute eAttribute = EcoreFactory.eINSTANCE.createEAttribute();
-					 eAttribute.setName(attribute.getName());
-					 boolean isDomainEnumerated = attribute.getVariable().getDomain_id().isIs_enumerated();
-					 if(isDomainEnumerated)
+					 if(attribute instanceof RelationshipAttribute)
 					 {
-						 EEnum eenum = getEnumClassifier(epackage, (SUBDOMAIN) attribute.getClassifier());
-						 eAttribute.setEType(eenum);
+						 
 					 }
 					 else
 					 {
-						 FACET_VALUE_TYPE facetValueType = attribute.getVariable().getDomain_id().getData_type();
-						 EDataType dtype = getEcoreDataTypeFromFacetValueType(facetValueType,epackage);
-						 eAttribute.setEType(dtype);
+						 EAttribute eAttribute = EcoreFactory.eINSTANCE.createEAttribute();
+						 eAttribute.setName(attribute.getName());
+						 boolean isDomainEnumerated = attribute.getVariable().getDomain_id().isIs_enumerated();
+						 if(isDomainEnumerated)
+						 {
+							 EEnum eenum = getEnumClassifier(epackage, (SUBDOMAIN) attribute.getClassifier());
+							 eAttribute.setEType(eenum);
+						 }
+						 else
+						 {
+							 FACET_VALUE_TYPE facetValueType = attribute.getVariable().getDomain_id().getData_type();
+							 EDataType dtype = getEcoreDataTypeFromFacetValueType(facetValueType,epackage);
+							 eAttribute.setEType(dtype);
+						 }
+						
+						 eclass.getEAttributes().add(eAttribute);
 					 }
-					
-					 eclass.getEAttributes().add(eAttribute);
 				}	
 				
 				epackage.getEClassifiers().add(eclass);
@@ -79,22 +91,29 @@ public class DMMToEcoreConverter {
 				DerivedEntity derivedEntity = (DerivedEntity) entity;
 				EList<Attribute> attributes = derivedEntity.getAttributes();
 				for (Attribute attribute : attributes) {
-					 EAttribute eAttribute = EcoreFactory.eINSTANCE.createEAttribute();
-					 eAttribute.setName(attribute.getName());
-					 boolean isDomainEnumerated = attribute.getVariable().getDomain_id().isIs_enumerated();
-					 if(isDomainEnumerated)
+					 if(attribute instanceof RelationshipAttribute)
 					 {
-						 EEnum eenum = getEnumClassifier(epackage, (SUBDOMAIN) attribute.getClassifier());
-						 eAttribute.setEType(eenum);
+						 
 					 }
 					 else
 					 {
-						 FACET_VALUE_TYPE facetValueType = attribute.getVariable().getDomain_id().getData_type();
-						 EDataType dtype = getEcoreDataTypeFromFacetValueType(facetValueType,epackage);
-						 eAttribute.setEType(dtype);
+						 EAttribute eAttribute = EcoreFactory.eINSTANCE.createEAttribute();
+						 eAttribute.setName(attribute.getName());
+						 boolean isDomainEnumerated = attribute.getVariable().getDomain_id().isIs_enumerated();
+						 if(isDomainEnumerated)
+						 {
+							 EEnum eenum = getEnumClassifier(epackage, (SUBDOMAIN) attribute.getClassifier());
+							 eAttribute.setEType(eenum);
+						 }
+						 else
+						 {
+							 FACET_VALUE_TYPE facetValueType = attribute.getVariable().getDomain_id().getData_type();
+							 EDataType dtype = getEcoreDataTypeFromFacetValueType(facetValueType,epackage);
+							 eAttribute.setEType(dtype);
+						 }
+						
+						 eclass.getEAttributes().add(eAttribute);
 					 }
-					
-					 eclass.getEAttributes().add(eAttribute);
 				}	
 				
 				epackage.getEClassifiers().add(eclass);
@@ -104,22 +123,29 @@ public class DMMToEcoreConverter {
 				GeneratedEntity generatedEntity = (GeneratedEntity) entity;
 				EList<Attribute> attributes = generatedEntity.getAttributes();
 				for (Attribute attribute : attributes) {
-					 EAttribute eAttribute = EcoreFactory.eINSTANCE.createEAttribute();
-					 eAttribute.setName(attribute.getName());
-					 boolean isDomainEnumerated = attribute.getVariable().getDomain_id().isIs_enumerated();
-					 if(isDomainEnumerated)
+					 if(attribute instanceof RelationshipAttribute)
 					 {
-						 EEnum eenum = getEnumClassifier(epackage, (SUBDOMAIN) attribute.getClassifier());
-						 eAttribute.setEType(eenum);
+						 
 					 }
 					 else
 					 {
-						 FACET_VALUE_TYPE facetValueType = attribute.getVariable().getDomain_id().getData_type();
-						 EDataType dtype = getEcoreDataTypeFromFacetValueType(facetValueType,epackage);
-						 eAttribute.setEType(dtype);
+						 EAttribute eAttribute = EcoreFactory.eINSTANCE.createEAttribute();
+						 eAttribute.setName(attribute.getName());
+						 boolean isDomainEnumerated = attribute.getVariable().getDomain_id().isIs_enumerated();
+						 if(isDomainEnumerated)
+						 {
+							 EEnum eenum = getEnumClassifier(epackage, (SUBDOMAIN) attribute.getClassifier());
+							 eAttribute.setEType(eenum);
+						 }
+						 else
+						 {
+							 FACET_VALUE_TYPE facetValueType = attribute.getVariable().getDomain_id().getData_type();
+							 EDataType dtype = getEcoreDataTypeFromFacetValueType(facetValueType,epackage);
+							 eAttribute.setEType(dtype);
+						 }
+						
+						 eclass.getEAttributes().add(eAttribute);
 					 }
-					
-					 eclass.getEAttributes().add(eAttribute);
 				}	
 				
 				epackage.getEClassifiers().add(eclass);
@@ -141,7 +167,140 @@ public class DMMToEcoreConverter {
 			}
 		}
 		//add referenced enums
+		for (Entity entity : enitities) {
+			if(entity instanceof BasicEntity)
+			{
+				BasicEntity basicEntity = (BasicEntity) entity;
+				EList<Attribute> attributes = basicEntity.getAttributes();
+				for (Attribute attribute : attributes) {
+					 if(attribute instanceof RelationshipAttribute)
+					 {
+						 RelationshipAttribute relAttribute = (RelationshipAttribute) attribute;
+						 EReference reference = EcoreFactory.eINSTANCE.createEReference();
+						 Entity relatedEntity = relAttribute.getEntity();
+						 EClass relatedeclass = getEClassForEntity(epackage,relatedEntity);
+						 EClass entityeclass  = getEClassForEntity(epackage,entity);
+						 reference.setEType(relatedeclass);
+						 reference.setName(relAttribute.getName());
+						 reference.setContainment(relAttribute.isContainment());
+						 boolean mandatory = relAttribute.isMandatory();
+						 if (!mandatory)
+						 {
+							 reference.setLowerBound(0); 
+						 }
+						 else
+						 {
+							 reference.setLowerBound(1);
+						 }
+						 if(attribute instanceof OneToOneRelationshipAttribute)
+						 {
+							 reference.setUpperBound(1);
+						 }
+						 if(attribute instanceof ManyToOneRelationshipAttribute)
+						 {
+							 reference.setUpperBound(1);							 
+						 }
+						 if(attribute instanceof OneToManyRelationshipAttribute)
+						 {
+							 reference.setUpperBound(-1);
+							
+						 }
+						 entityeclass.getEReferences().add(reference);
+					 }
+				}
+			}
+			if(entity instanceof DerivedEntity)
+			{
+				DerivedEntity derivedEntity = (DerivedEntity) entity;
+				EList<Attribute> attributes = derivedEntity.getAttributes();
+				for (Attribute attribute : attributes) {
+					 if(attribute instanceof RelationshipAttribute)
+					 {
+						 RelationshipAttribute relAttribute = (RelationshipAttribute) attribute;
+						 EReference reference = EcoreFactory.eINSTANCE.createEReference();
+						 Entity relatedEntity = relAttribute.getEntity();
+						 EClass relatedeclass = getEClassForEntity(epackage,relatedEntity);
+						 EClass entityeclass  = getEClassForEntity(epackage,entity);
+						 reference.setEType(relatedeclass);
+						 reference.setName(relAttribute.getName());
+						 
+						 reference.setContainment(relAttribute.isContainment());
+						 boolean mandatory = relAttribute.isMandatory();
+						 if (!mandatory)
+						 {
+							 reference.setLowerBound(0); 
+						 }
+						 else
+						 {
+							 reference.setLowerBound(1);
+						 }
+						 if(attribute instanceof OneToOneRelationshipAttribute)
+						 {
+							 reference.setUpperBound(1);
+						 }
+						 if(attribute instanceof ManyToOneRelationshipAttribute)
+						 {
+							 reference.setUpperBound(1);
+							
+						 }
+						 if(attribute instanceof OneToManyRelationshipAttribute)
+						 {
+							 reference.setUpperBound(-1);
+							
+						 }
+						 entityeclass.getEReferences().add(reference);
+					 }
+				}
+			}
+			if(entity instanceof GeneratedEntity)
+			{
+				GeneratedEntity generatedEntity = (GeneratedEntity) entity;
+				EList<Attribute> attributes = generatedEntity.getAttributes();
+				for (Attribute attribute : attributes) {
+					 if(attribute instanceof RelationshipAttribute)
+					 {
+						 RelationshipAttribute relAttribute = (RelationshipAttribute) attribute;
+						 EReference reference = EcoreFactory.eINSTANCE.createEReference();
+						 Entity relatedEntity = relAttribute.getEntity();
+						 EClass relatedeclass = getEClassForEntity(epackage,relatedEntity);
+						 EClass entityeclass  = getEClassForEntity(epackage,entity);
+						 reference.setEType(relatedeclass);
+						 reference.setEType(relatedeclass);
+						 reference.setName(relAttribute.getName());
+						 reference.setContainment(relAttribute.isContainment());
+						 boolean mandatory = relAttribute.isMandatory();
+						 if (!mandatory)
+						 {
+							 reference.setLowerBound(0); 
+						 }
+						 else
+						 {
+							 reference.setLowerBound(1);
+						 }
+						 if(attribute instanceof OneToOneRelationshipAttribute)
+						 {
+							 reference.setUpperBound(1);
+						 }
+						 if(attribute instanceof ManyToOneRelationshipAttribute)
+						 {
+							 reference.setUpperBound(1);
+							
+						 }
+						 if(attribute instanceof OneToManyRelationshipAttribute)
+						 {
+							 reference.setUpperBound(-1);
+							
+						 }
+						 entityeclass.getEReferences().add(reference);
+					 }
+				}
+			}
+			
+		}
 		
+		 
+		 
+		 
 		ResourceFactoryImpl resourceFactory = new XMIResourceFactoryImpl();
 		URI modelURI = URI.createFileURI(fileDirectory + "\\dmm.ecore");
 

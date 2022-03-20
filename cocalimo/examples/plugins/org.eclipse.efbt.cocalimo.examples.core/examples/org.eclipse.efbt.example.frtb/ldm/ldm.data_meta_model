@@ -620,7 +620,7 @@
     } ]
   }, {
     "eClass" : "http://www.eclipse.org/efbt/data_meta_model#//DerivedEntity",
-    "name" : "SummedDeltaSensitivitiesPerPositionAndRiskFactor",
+    "name" : "SummedDeltaSensitivitiesPerPositionAndRiskFactor_derived",
     "attributes" : [ {
       "eClass" : "http://www.eclipse.org/efbt/data_meta_model#//OneToOneRelationshipAttribute",
       "name" : "positionID",
@@ -689,7 +689,7 @@
     } ]
   }, {
     "eClass" : "http://www.eclipse.org/efbt/data_meta_model#//DerivedEntity",
-    "name" : "NettedDeltaSensitivitiesPerRiskFactorAndTenor",
+    "name" : "NettedDeltaSensitivitiesPerRiskFactorAndTenor_derived",
     "attributes" : [ {
       "eClass" : "http://www.eclipse.org/efbt/data_meta_model#//OneToManyRelationshipAttribute",
       "name" : "sensitivities",
@@ -772,7 +772,7 @@
     } ]
   }, {
     "eClass" : "http://www.eclipse.org/efbt/data_meta_model#//DerivedEntity",
-    "name" : "TotalDeltaSensitivityPerBucket",
+    "name" : "TotalDeltaSensitivityPerBucket_derived",
     "attributes" : [ {
       "name" : "totalGIRRDeltaSensitivityPerBucket",
       "variable" : {
@@ -797,7 +797,7 @@
     } ]
   }, {
     "eClass" : "http://www.eclipse.org/efbt/data_meta_model#//DerivedEntity",
-    "name" : "DeltaSensitivityCombinations",
+    "name" : "DeltaSensitivityCombinations_derived",
     "attributes" : [ {
       "eClass" : "http://www.eclipse.org/efbt/data_meta_model#//OneToOneRelationshipAttribute",
       "name" : "nettedDeltaSensitivities_id1",
@@ -853,7 +853,7 @@
     } ]
   }, {
     "eClass" : "http://www.eclipse.org/efbt/data_meta_model#//DerivedEntity",
-    "name" : "DeltaSensitivitiesCorrelatedAndAggregated",
+    "name" : "DeltaSensitivitiesCorrelatedAndAggregated_derived",
     "attributes" : [ {
       "eClass" : "http://www.eclipse.org/efbt/data_meta_model#//OneToOneRelationshipAttribute",
       "name" : "deltaSensitivityCombination_id",
