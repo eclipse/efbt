@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E7C4E383-AABB-082F-EAE7-A59D01E27340" name="Risk factor">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D696800F-974A-9206-9F17-A4CCBE2FD543" name="Delta sensitivities correlated and aggregated_derived">
 <createdBy>Neil</createdBy>
-<createdTime>2022-03-27 11:00:24 UTC</createdTime>
+<createdTime>2022-04-17 04:47:19 UTC</createdTime>
 <ownerDesignName>frtb</ownerDesignName>
 <engineerTo>
 <item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
@@ -16,22 +16,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Risk factor Identifier" id="6F905B6C-EC99-1422-CBA1-C8E591102FAE">
+<Attribute name="GIRR delta correlated value per bucket" id="4942B4BD-37C4-C8CA-C5A9-2A7CA6879AD4">
 <createdBy>Neil</createdBy>
-<createdTime>2022-04-10 08:44:42 UTC</createdTime>
-<ownerDesignName>frtb</ownerDesignName>
-<engineerTo>
-<item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
-<item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
-</engineerTo>
-<use>0</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>6FBEB348-B901-2CC5-03F9-29A90524DCDA</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Risk factor type" id="234F8B58-00BE-7DB5-5F7B-81EFF40BE2AD">
-<createdBy>Neil</createdBy>
-<createdTime>2022-04-14 05:44:27 UTC</createdTime>
+<createdTime>2022-04-17 04:48:56 UTC</createdTime>
 <ownerDesignName>frtb</ownerDesignName>
 <engineerTo>
 <item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
@@ -39,35 +26,49 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>27DE6432-B160-AF80-EE48-D0605ACFFB3B</domain>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EF979509-4418-5FAC-812C-8FD0322FE1D6</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="summed delta per position identifier" id="C6F3521F-C00E-047B-C066-7B9480298CF0">
+<Attribute name="Sensitivities correlated and aggregated bucket identifier" id="7CC1B320-B400-D03B-CB65-1B36FCE26F84">
 <createdBy>Neil</createdBy>
-<createdTime>2022-04-17 04:15:24 UTC</createdTime>
-<generatorID>112EF312-57DB-8BFA-CE06-EAA5901D1BA9</generatorID>
+<createdTime>2022-04-17 04:50:35 UTC</createdTime>
 <ownerDesignName>frtb</ownerDesignName>
 <engineerTo>
 <item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
 <item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
 </engineerTo>
-<referedAttribute>6332E333-3E60-0AD5-306F-830B1DC4A24E</referedAttribute>
 <use>0</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
 <domain>6FBEB348-B901-2CC5-03F9-29A90524DCDA</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Netted delta sensitivities identifier" id="7BFF2F2C-0C42-7C6A-6E02-506A865A2879">
+<Attribute name="Delta sensitivity combination identifier" id="FBD6844A-F5A1-4905-7580-E718AF4947FE">
 <createdBy>Neil</createdBy>
-<createdTime>2022-04-17 04:21:19 UTC</createdTime>
-<generatorID>002FA71D-BBA7-E42F-5E61-D0C4C62C5D57</generatorID>
+<createdTime>2022-04-17 05:04:10 UTC</createdTime>
+<generatorID>30856B2F-8B5D-5797-3B69-F42CC7E6F592</generatorID>
 <ownerDesignName>frtb</ownerDesignName>
 <engineerTo>
 <item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
 <item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
 </engineerTo>
-<referedAttribute>EAD5128C-F2F0-334D-B38B-53E87875010B</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A63D2F7C-7B91-B350-5CD3-71B778FBD92A</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>6FBEB348-B901-2CC5-03F9-29A90524DCDA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Bucket identifier" id="5B781AF9-524C-0B94-3859-7C87E8041CE6">
+<createdBy>Neil</createdBy>
+<createdTime>2022-04-17 05:04:34 UTC</createdTime>
+<generatorID>4746F6FE-1414-1A74-41AE-AE1F69CC685A</generatorID>
+<ownerDesignName>frtb</ownerDesignName>
+<engineerTo>
+<item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
+<item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
+</engineerTo>
+<referedAttribute>90891703-CA7F-C586-8E3D-CD4B4557C609</referedAttribute>
 <use>0</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
 <domain>6FBEB348-B901-2CC5-03F9-29A90524DCDA</domain>
@@ -75,9 +76,9 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="9E7F110D-E570-2E2A-6E49-88AB2575D767" name="Risk factor PK">
+<identifier id="9F3CE587-F0C2-B0CA-E258-B7041FF35DD5" name="Delta sensitivities correlated and aggregated_derived PK">
 <createdBy>Neil</createdBy>
-<createdTime>2022-04-14 07:40:43 UTC</createdTime>
+<createdTime>2022-04-17 05:04:16 UTC</createdTime>
 <ownerDesignName>frtb</ownerDesignName>
 <engineerTo>
 <item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
@@ -85,7 +86,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>6F905B6C-EC99-1422-CBA1-C8E591102FAE</attributeRef>
+<attributeRef>7CC1B320-B400-D03B-CB65-1B36FCE26F84</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
