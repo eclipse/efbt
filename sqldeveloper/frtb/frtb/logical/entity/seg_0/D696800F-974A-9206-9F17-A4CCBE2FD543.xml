@@ -43,37 +43,6 @@
 <domain>6FBEB348-B901-2CC5-03F9-29A90524DCDA</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Delta sensitivity combination identifier" id="FBD6844A-F5A1-4905-7580-E718AF4947FE">
-<createdBy>Neil</createdBy>
-<createdTime>2022-04-17 05:04:10 UTC</createdTime>
-<generatorID>30856B2F-8B5D-5797-3B69-F42CC7E6F592</generatorID>
-<ownerDesignName>frtb</ownerDesignName>
-<engineerTo>
-<item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
-<item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>A63D2F7C-7B91-B350-5CD3-71B778FBD92A</referedAttribute>
-<use>0</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>6FBEB348-B901-2CC5-03F9-29A90524DCDA</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Bucket identifier" id="5B781AF9-524C-0B94-3859-7C87E8041CE6">
-<createdBy>Neil</createdBy>
-<createdTime>2022-04-17 05:04:34 UTC</createdTime>
-<generatorID>4746F6FE-1414-1A74-41AE-AE1F69CC685A</generatorID>
-<ownerDesignName>frtb</ownerDesignName>
-<engineerTo>
-<item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
-<item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
-</engineerTo>
-<referedAttribute>90891703-CA7F-C586-8E3D-CD4B4557C609</referedAttribute>
-<use>0</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>6FBEB348-B901-2CC5-03F9-29A90524DCDA</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="9F3CE587-F0C2-B0CA-E258-B7041FF35DD5" name="Delta sensitivities correlated and aggregated_derived PK">

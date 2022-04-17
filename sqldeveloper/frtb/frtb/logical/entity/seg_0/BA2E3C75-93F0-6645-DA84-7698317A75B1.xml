@@ -43,6 +43,22 @@
 <domain>6FBEB348-B901-2CC5-03F9-29A90524DCDA</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Sensitivities correlated and aggregated bucket identifier" id="9812936F-BBA0-BC02-CC7B-8F79FAC1F0FF">
+<createdBy>Neil</createdBy>
+<createdTime>2022-04-17 05:45:42 UTC</createdTime>
+<generatorID>4746F6FE-1414-1A74-41AE-AE1F69CC685A</generatorID>
+<ownerDesignName>frtb</ownerDesignName>
+<engineerTo>
+<item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
+<item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7CC1B320-B400-D03B-CB65-1B36FCE26F84</referedAttribute>
+<use>0</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<domain>6FBEB348-B901-2CC5-03F9-29A90524DCDA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="5EFEC754-484A-3689-160A-1819E0F454AE" name="KB per bucket_derived PK">

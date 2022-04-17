@@ -1,7 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_16" directorySegmentName="seg_0" id="7DA72B9E-2EF1-FAAD-317E-41FCD05ABF03">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Netted delta sensitivities" directorySegmentName="seg_0" id="7DA72B9E-2EF1-FAAD-317E-41FCD05ABF03">
 <createdBy>Neil</createdBy>
 <createdTime>2022-04-17 04:30:22 UTC</createdTime>
+<notes><![CDATA[Actually this is 1 to N]]></notes>
 <ownerDesignName>frtb</ownerDesignName>
 <engineerTo>
 <item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>

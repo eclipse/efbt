@@ -60,24 +60,9 @@
 <domain>EF979509-4418-5FAC-812C-8FD0322FE1D6</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="summed delta per position identifier" id="DA249872-EB0E-74C1-0363-0E81C746B84F">
+<Attribute name="Netted delta sensitivities identifier" id="B524F618-E93B-963A-7A31-5D5A31BA77B6">
 <createdBy>Neil</createdBy>
-<createdTime>2022-04-17 04:15:24 UTC</createdTime>
-<generatorID>A52B91EE-2789-9F23-74E3-A4A28734CF28</generatorID>
-<ownerDesignName>frtb</ownerDesignName>
-<engineerTo>
-<item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
-<item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
-</engineerTo>
-<referedAttribute>6332E333-3E60-0AD5-306F-830B1DC4A24E</referedAttribute>
-<use>0</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>6FBEB348-B901-2CC5-03F9-29A90524DCDA</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Netted delta sensitivities identifier" id="9055B85B-5362-027C-E95E-68F413F4EB4D">
-<createdBy>Neil</createdBy>
-<createdTime>2022-04-17 04:21:19 UTC</createdTime>
+<createdTime>2022-04-17 06:28:28 UTC</createdTime>
 <generatorID>D3347CF1-61F7-16B2-E4CA-9AE29D36646D</generatorID>
 <ownerDesignName>frtb</ownerDesignName>
 <engineerTo>

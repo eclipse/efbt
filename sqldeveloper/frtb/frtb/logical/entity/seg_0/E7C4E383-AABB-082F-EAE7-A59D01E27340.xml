@@ -43,36 +43,6 @@
 <domain>27DE6432-B160-AF80-EE48-D0605ACFFB3B</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="summed delta per position identifier" id="C6F3521F-C00E-047B-C066-7B9480298CF0">
-<createdBy>Neil</createdBy>
-<createdTime>2022-04-17 04:15:24 UTC</createdTime>
-<generatorID>112EF312-57DB-8BFA-CE06-EAA5901D1BA9</generatorID>
-<ownerDesignName>frtb</ownerDesignName>
-<engineerTo>
-<item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
-<item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
-</engineerTo>
-<referedAttribute>6332E333-3E60-0AD5-306F-830B1DC4A24E</referedAttribute>
-<use>0</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>6FBEB348-B901-2CC5-03F9-29A90524DCDA</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Netted delta sensitivities identifier" id="7BFF2F2C-0C42-7C6A-6E02-506A865A2879">
-<createdBy>Neil</createdBy>
-<createdTime>2022-04-17 04:21:19 UTC</createdTime>
-<generatorID>002FA71D-BBA7-E42F-5E61-D0C4C62C5D57</generatorID>
-<ownerDesignName>frtb</ownerDesignName>
-<engineerTo>
-<item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
-<item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
-</engineerTo>
-<referedAttribute>EAD5128C-F2F0-334D-B38B-53E87875010B</referedAttribute>
-<use>0</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>6FBEB348-B901-2CC5-03F9-29A90524DCDA</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="9E7F110D-E570-2E2A-6E49-88AB2575D767" name="Risk factor PK">
