@@ -1,11 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B38A778B-0463-9C7D-3502-F4091E4E0384" name="GIRR risk factor">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D696800F-974A-9206-9F17-A4CCBE2FD543" name="Delta sensitivities correlated and aggregated_derived">
 <createdBy>Neil</createdBy>
-<createdTime>2022-04-14 07:47:52 UTC</createdTime>
+<createdTime>2022-04-17 04:47:19 UTC</createdTime>
 <ownerDesignName>frtb</ownerDesignName>
 <engineerTo>
-<item key="481613B2-72DC-147B-D544-3088451C2A1D" value="true"/>
-<item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="false"/>
+<item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
 <item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
@@ -13,56 +12,51 @@
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
 <growthPercent>0</growthPercent>
 <growthType>Year</growthType>
-<hierarchicalParent>E7C4E383-AABB-082F-EAE7-A59D01E27340</hierarchicalParent>
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<preferredAbbreviation>GIRR_RSK_FCTR</preferredAbbreviation>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="GIRR risk factor type" id="0A77E337-549A-27A5-3B08-F70824F6D7EB">
+<Attribute name="GIRR delta correlated value per bucket" id="4942B4BD-37C4-C8CA-C5A9-2A7CA6879AD4">
 <createdBy>Neil</createdBy>
-<createdTime>2022-04-14 07:48:48 UTC</createdTime>
+<createdTime>2022-04-17 04:48:56 UTC</createdTime>
 <ownerDesignName>frtb</ownerDesignName>
 <engineerTo>
-<item key="481613B2-72DC-147B-D544-3088451C2A1D" value="true"/>
 <item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
 <item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <use>0</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>A38EA317-F0EC-770D-9FFB-56136AA62106</domain>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>EF979509-4418-5FAC-812C-8FD0322FE1D6</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Main currency" id="6CB45D8D-6EFF-1928-F265-999371B2D27A">
+<Attribute name="Sensitivities correlated and aggregated bucket identifier" id="7CC1B320-B400-D03B-CB65-1B36FCE26F84">
 <createdBy>Neil</createdBy>
-<createdTime>2022-04-14 07:49:09 UTC</createdTime>
+<createdTime>2022-04-17 04:50:35 UTC</createdTime>
 <ownerDesignName>frtb</ownerDesignName>
 <engineerTo>
-<item key="481613B2-72DC-147B-D544-3088451C2A1D" value="true"/>
 <item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
 <item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <use>0</use>
 <logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>61D993CB-3857-0254-82CE-4524A856851C</domain>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Second currency" id="A58B61ED-C746-B60E-94B4-422E863E40B5">
-<createdBy>Neil</createdBy>
-<createdTime>2022-04-14 07:49:42 UTC</createdTime>
-<ownerDesignName>frtb</ownerDesignName>
-<engineerTo>
-<item key="481613B2-72DC-147B-D544-3088451C2A1D" value="true"/>
-<item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
-<item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<use>0</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<domain>61D993CB-3857-0254-82CE-4524A856851C</domain>
+<domain>6FBEB348-B901-2CC5-03F9-29A90524DCDA</domain>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9F3CE587-F0C2-B0CA-E258-B7041FF35DD5" name="Delta sensitivities correlated and aggregated_derived PK">
+<createdBy>Neil</createdBy>
+<createdTime>2022-04-17 05:04:16 UTC</createdTime>
+<ownerDesignName>frtb</ownerDesignName>
+<engineerTo>
+<item key="70F13CD1-1626-C0DF-DD93-774769AED5DC" value="true"/>
+<item key="BEC051E3-3FE9-A559-4EC2-9F83E629BB21" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7CC1B320-B400-D03B-CB65-1B36FCE26F84</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>
