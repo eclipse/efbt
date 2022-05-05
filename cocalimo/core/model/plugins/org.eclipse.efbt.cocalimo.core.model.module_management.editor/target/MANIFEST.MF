@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.efbt.cocalimo.core.model.module_managem
+ ent.editor;singleton:=true
+Automatic-Module-Name: org.eclipse.efbt.cocalimo.core.model.module_manag
+ ement.editor
+Bundle-Version: 1.0.0.202203201905
+Bundle-ClassPath: .
+Bundle-Activator: org.eclipse.efbt.cocalimo.core.model.module_management
+ .presentation.Module_managementEditorPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: org.eclipse.efbt.cocalimo.core.model.module_management.p
+ resentation
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources;visi
+ bility:=reexport,org.eclipse.efbt.cocalimo.core.model.module_management
+ .edit;visibility:=reexport,org.eclipse.emf.ecore.xmi;visibility:=reexpo
+ rt,org.eclipse.emf.edit.ui;visibility:=reexport,org.eclipse.ui.ide;visi
+ bility:=reexport
+Bundle-ActivationPolicy: lazy
+

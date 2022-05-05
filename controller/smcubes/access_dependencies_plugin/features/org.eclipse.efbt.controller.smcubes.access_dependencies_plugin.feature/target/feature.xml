@@ -14,7 +14,7 @@
 <feature
       id="org.eclipse.efbt.controller.smcubes.access_dependencies_plugin.feature"
       label="Controller SMCubes Component Dependencies"
-      version="1.0.0.202104171905"
+      version="1.0.0.202203201909"
       provider-name="Bird Software Solutions">
 
    <description url="http://www.example.com/description">
@@ -129,14 +129,14 @@ Exhibit A – Form of Secondary Licenses Notice
          id="org.eclipse.efbt.controller.smcubes.access_dependencies_plugin.jackcess.impl"
          download-size="5"
          install-size="5"
-         version="1.0.0.202104171905"
+         version="1.0.0.202203201909"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.efbt.controller.smcubes.access_dependencies_plugin.access.api"
          download-size="4"
          install-size="2"
-         version="1.0.0.202104171905"
+         version="1.0.0.202203201909"
          unpack="false"/>
 
 </feature>

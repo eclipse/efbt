@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.efbt.cocalimo.core.model.requirements_t
+ ext.edit;singleton:=true
+Automatic-Module-Name: org.eclipse.efbt.cocalimo.core.model.requirements
+ _text.edit
+Bundle-Version: 1.0.0.202203201905
+Bundle-ClassPath: .
+Bundle-Activator: org.eclipse.efbt.cocalimo.core.model.requirements_text
+ .provider.Requirements_textEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: org.eclipse.efbt.cocalimo.core.model.requirements_text.p
+ rovider
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.efbt.cocalimo.core.
+ model.requirements_text;visibility:=reexport,org.eclipse.emf.edit;visib
+ ility:=reexport,org.eclipse.efbt.cocalimo.core.model.module_management;
+ visibility:=reexport,org.eclipse.efbt.cocalimo.core.model.module_manage
+ ment.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy
+
