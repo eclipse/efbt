@@ -5,7 +5,7 @@ Bundle-SymbolicName: org.eclipse.efbt.cocalimo.platform_call.model.platf
  orm_call.edit;singleton:=true
 Automatic-Module-Name: org.eclipse.efbt.cocalimo.platform_call.model.pla
  tform_call.edit
-Bundle-Version: 1.0.0.202203201907
+Bundle-Version: 1.0.0.202202131620
 Bundle-ClassPath: .
 Bundle-Activator: org.eclipse.efbt.cocalimo.platform_call.model.platform
  _call.provider.ControllerEditPlugin$Implementation
@@ -17,15 +17,13 @@ Export-Package: org.eclipse.efbt.cocalimo.platform_call.model.platform_c
 Require-Bundle: org.eclipse.core.runtime,org.eclipse.efbt.cocalimo.platf
  orm_call.model.platform_call;visibility:=reexport,org.eclipse.emf.edit;
  visibility:=reexport,org.eclipse.emf.ecore;visibility:=reexport,org.ecl
- ipse.emf.ecore.edit;visibility:=reexport,org.eclipse.efbt.cocalimo.logi
- cal_transformations.model.logical_transformations;visibility:=reexport,
- org.eclipse.efbt.cocalimo.logical_transformations.model.logical_transfo
- rmations.edit;visibility:=reexport,org.eclipse.efbt.cocalimo.core.model
- .module_management;visibility:=reexport,org.eclipse.efbt.cocalimo.core.
- model.module_management.edit;visibility:=reexport,org.eclipse.efbt.coca
- limo.core.model.requirements_text;visibility:=reexport,org.eclipse.efbt
- .cocalimo.core.model.requirements_text.edit;visibility:=reexport,org.ec
- lipse.efbt.cocalimo.smcubes.model.core;visibility:=reexport,org.eclipse
- .efbt.cocalimo.smcubes.model.core.edit;visibility:=reexport
+ ipse.emf.ecore.edit;visibility:=reexport,org.eclipse.efbt.cocalimo.core
+ .model.logical_transformations;visibility:=reexport,org.eclipse.efbt.co
+ calimo.core.model.logical_transformations.edit;visibility:=reexport,org
+ .eclipse.efbt.cocalimo.core.model.module_management;visibility:=reexpor
+ t,org.eclipse.efbt.cocalimo.core.model.module_management.edit;visibilit
+ y:=reexport,org.eclipse.efbt.cocalimo.core.model.requirements_text;visi
+ bility:=reexport,org.eclipse.efbt.cocalimo.core.model.requirements_text
+ .edit;visibility:=reexport
 Bundle-ActivationPolicy: lazy
 

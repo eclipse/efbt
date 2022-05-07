@@ -13,8 +13,8 @@
  -->
 <feature
       id="org.eclipse.efbt.controller.platformcall.component.core.feature"
-      label="Controller Platfrom Call Component"
-      version="1.0.0.202203201910"
+      label="Controller LDM Component"
+      version="1.0.0.202202131244"
       provider-name="Bird Software Solutions">
 
    <description url="http://www.example.com/description">
@@ -124,7 +124,7 @@ Exhibit A – Form of Secondary Licenses Notice
          id="org.eclipse.efbt.controller.platformcall.component.core"
          download-size="4"
          install-size="5"
-         version="1.0.0.202203201910"
+         version="1.0.0.202202131244"
          unpack="false"/>
 
 </feature>
