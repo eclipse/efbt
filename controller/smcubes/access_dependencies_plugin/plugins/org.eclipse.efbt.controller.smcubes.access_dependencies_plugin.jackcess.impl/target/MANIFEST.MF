@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Jackcess
 Bundle-SymbolicName: org.eclipse.efbt.controller.smcubes.access_dependen
  cies_plugin.jackcess.impl
-Bundle-Version: 1.0.0.202203201909
+Bundle-Version: 1.0.0.202104171905
 Automatic-Module-Name: org.eclipse.efbt.util.access.impl.jackcess
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Require-Bundle: org.eclipse.efbt.controller.smcubes.access_dependencies_
