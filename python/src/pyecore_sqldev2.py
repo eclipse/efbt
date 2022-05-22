@@ -3,8 +3,12 @@ Created on 22 Jan 2022
 
 @author: Neil
 '''
-from bird_model import EntityModule, Entity, DerivedEntity, BasicEntity,Attribute,OneToOneRelationshipAttribute,OneToManyRelationshipAttribute,RelationshipAttribute, MEMBER, DOMAIN, FACET_VALUE_TYPE, SUBDOMAIN,VARIABLE,  DomainModule, BIRDModel, SMCubesCoreModel, MemberModule, VariableModule,SubDomainModule
+from bird_model import BIRDModel
+from data_meta_model import EntityModule, Entity, DerivedEntity, BasicEntity,Attribute,OneToOneRelationshipAttribute,OneToManyRelationshipAttribute,RelationshipAttribute
+from openregspecs_smcubes_core_extension import DomainModule,SMCubesCoreModel, MemberModule, VariableModule,SubDomainModule
+from core import  MEMBER, DOMAIN, FACET_VALUE_TYPE, SUBDOMAIN,VARIABLE
 from pyecore.resources import ResourceSet, URI
+from module_management import Module
 import csv
 class SQLDeveloperImport(object):
         
@@ -12,7 +16,7 @@ class SQLDeveloperImport(object):
         birdModel = BIRDModel() 
         birdpackage = EntityModule( nsURI='"http://www.eclipse.org/bird"', nsPrefix='bird')
         birdpackage.name = 'bird'
-        birdModel.entityModule.extend([birdpackage])
+        birdModel.entityModules.extend([birdpackage])
         
         smcubesCoreModel = SMCubesCoreModel()
         birdModel.smcubesCoreModel = smcubesCoreModel

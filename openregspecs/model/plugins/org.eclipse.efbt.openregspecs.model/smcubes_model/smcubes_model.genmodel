@@ -362,6 +362,11 @@
     </genClasses>
     <genClasses ecoreClass="openregspecs_smcubes_core_extension.ecore#//SMCubesCoreModel">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute openregspecs_smcubes_core_extension.ecore#//SMCubesCoreModel/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference openregspecs_smcubes_core_extension.ecore#//SMCubesCoreModel/domainModules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference openregspecs_smcubes_core_extension.ecore#//SMCubesCoreModel/memberModules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference openregspecs_smcubes_core_extension.ecore#//SMCubesCoreModel/variableModules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference openregspecs_smcubes_core_extension.ecore#//SMCubesCoreModel/subDomainModules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference openregspecs_smcubes_core_extension.ecore#//SMCubesCoreModel/memberHierarchyModules"/>
     </genClasses>
   </genPackages>
   <genPackages prefix="openregspecs_smcubes_extra_extension" basePackage="org.eclipse.efbt.openregspecs.model"

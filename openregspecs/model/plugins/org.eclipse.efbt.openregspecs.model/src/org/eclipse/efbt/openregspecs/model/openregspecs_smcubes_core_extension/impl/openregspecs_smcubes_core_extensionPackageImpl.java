@@ -300,6 +300,51 @@ public class openregspecs_smcubes_core_extensionPackageImpl extends EPackageImpl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getSMCubesCoreModel_DomainModules() {
+		return (EReference)smCubesCoreModelEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSMCubesCoreModel_MemberModules() {
+		return (EReference)smCubesCoreModelEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSMCubesCoreModel_VariableModules() {
+		return (EReference)smCubesCoreModelEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSMCubesCoreModel_SubDomainModules() {
+		return (EReference)smCubesCoreModelEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getSMCubesCoreModel_MemberHierarchyModules() {
+		return (EReference)smCubesCoreModelEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public openregspecs_smcubes_core_extensionFactory getopenregspecs_smcubes_core_extensionFactory() {
 		return (openregspecs_smcubes_core_extensionFactory)getEFactoryInstance();
 	}
@@ -341,6 +386,11 @@ public class openregspecs_smcubes_core_extensionPackageImpl extends EPackageImpl
 
 		smCubesCoreModelEClass = createEClass(SM_CUBES_CORE_MODEL);
 		createEAttribute(smCubesCoreModelEClass, SM_CUBES_CORE_MODEL__NAME);
+		createEReference(smCubesCoreModelEClass, SM_CUBES_CORE_MODEL__DOMAIN_MODULES);
+		createEReference(smCubesCoreModelEClass, SM_CUBES_CORE_MODEL__MEMBER_MODULES);
+		createEReference(smCubesCoreModelEClass, SM_CUBES_CORE_MODEL__VARIABLE_MODULES);
+		createEReference(smCubesCoreModelEClass, SM_CUBES_CORE_MODEL__SUB_DOMAIN_MODULES);
+		createEReference(smCubesCoreModelEClass, SM_CUBES_CORE_MODEL__MEMBER_HIERARCHY_MODULES);
 	}
 
 	/**
@@ -400,6 +450,11 @@ public class openregspecs_smcubes_core_extensionPackageImpl extends EPackageImpl
 
 		initEClass(smCubesCoreModelEClass, SMCubesCoreModel.class, "SMCubesCoreModel", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSMCubesCoreModel_Name(), ecorePackage.getEString(), "name", null, 0, 1, SMCubesCoreModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSMCubesCoreModel_DomainModules(), this.getDomainModule(), null, "domainModules", null, 0, -1, SMCubesCoreModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSMCubesCoreModel_MemberModules(), this.getMemberModule(), null, "memberModules", null, 0, -1, SMCubesCoreModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSMCubesCoreModel_VariableModules(), this.getVariableModule(), null, "variableModules", null, 0, -1, SMCubesCoreModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSMCubesCoreModel_SubDomainModules(), this.getSubDomainModule(), null, "subDomainModules", null, 0, -1, SMCubesCoreModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSMCubesCoreModel_MemberHierarchyModules(), this.getMemberHierarchyModule(), null, "memberHierarchyModules", null, 0, -1, SMCubesCoreModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

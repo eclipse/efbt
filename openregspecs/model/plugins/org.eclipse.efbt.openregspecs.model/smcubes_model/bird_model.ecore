@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="bird_model" nsURI="http://www.eclipse.org/efbt/bird_model" nsPrefix="bird_model">
+  <eClassifiers xsi:type="ecore:EClass" name="BIRDModel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entityModules" upperBound="-1"
+        eType="ecore:EClass ../core_model/data_meta_model.ecore#//EntityModule" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="smcubesCoreModel" eType="ecore:EClass openregspecs_smcubes_core_extension.ecore#//SMCubesCoreModel"
+        containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>
