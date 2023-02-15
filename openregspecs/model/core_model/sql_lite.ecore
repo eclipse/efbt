@@ -12,7 +12,6 @@
         eType="#//LayerSQL" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="LayerSQL">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="selectionLayer" eType="ecore:EClass bpmn_lite.ecore#//SelectionLayer"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="columns" upperBound="-1"
         eType="#//SelectColumn" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="whereClause" upperBound="-1"
