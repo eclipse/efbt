@@ -1,25 +1,24 @@
-@xcore.lang.Ecore(nsURI="http://www.eclipse.org/efbt/ecore_lite")
-@xcore.lang.GenModel(modelDirectory="/org.eclipse.efbt.ecore4reg.model.core_model/src",
-	editDirectory="/org.eclipse.efbt.ecore4reg.model.core_model.edit/src",
-	editorDirectory="/org.eclipse.efbt.ecore4reg.model.core_model.editor/src", modelName="Ecore4reg",
-	editPluginClass="ecore_lite.provider.Ecore4regEditPlugin",
-	editorPluginClass="ecore_lite.presentation.Ecore4regEditorPlugin",
-	testsDirectory="/org.eclipse.efbt.ecore4reg.model.core_model.tests/src",
+@Ecore(nsURI="http://www.eclipse.org/efbt/ecore_lite")
+@GenModel(modelDirectory="/temp/src", editDirectory="/temp.edit/src", editorDirectory="/temp.editor/src",
+	modelName="Ecore4reg", editPluginClass="ecore_lite.provider.Ecore4regEditPlugin",
+	editorPluginClass="ecore_lite.presentation.Ecore4regEditorPlugin", testsDirectory="/temp.tests/src",
 	testSuiteClass="ecore_lite.tests.Ecore4regAllTests", importerID="org.eclipse.emf.importer.ecore",
-	containmentProxies="false", editorPluginID="org.eclipse.efbt.ecore4reg.model.core_model.editor",
-	testsPluginID="org.eclipse.efbt.ecore4reg.model.core_model.tests")
+	containmentProxies="false", editorPluginID="temp.editor", testsPluginID="temp.tests")
 package ecore_lite
 
 import module_management.Module
 
+annotation "keys" as Keys
+
 class ELAttribute extends ELStructuralFeature {
+	@Keys(^type="ForeignKey")
 	boolean iD
 	refers ELDataType eAttributeType
 }
 
 class ELClass extends ELClassifier {
 	boolean ^abstract
-	@xcore.lang.GenModel(suppressedIsSetVisibility="true", suppressedUnsetVisibility="true")
+	@GenModel(suppressedIsSetVisibility="true", suppressedUnsetVisibility="true")
 	refers unsettable ELClass[] eSuperTypes
 	contains ELStructuralFeature[] eStructuralFeatures
 	contains ELOperation[] eOperations
@@ -52,6 +51,10 @@ abstract class ELNamedElement extends ELModelElement {
 
 class ELOperation extends ELTypedElement {
 	String body
+	contains ELParameter[] eParameters
+}
+
+class ELParameter extends ELTypedElement {
 }
 
 class ELPackage extends module_management.Module {
@@ -67,7 +70,7 @@ abstract class ELStructuralFeature extends ELTypedElement {
 }
 
 abstract class ELTypedElement extends ELNamedElement {
-	@xcore.lang.GenModel(suppressedIsSetVisibility="true", suppressedUnsetVisibility="true")
+	@GenModel(suppressedIsSetVisibility="true", suppressedUnsetVisibility="true")
 	refers unsettable ELClassifier eType
 	int upperBound
 	int lowerBound

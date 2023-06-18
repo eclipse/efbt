@@ -1,0 +1,70 @@
+@Ecore(nsURI="http://www.example.org/generation_rules")
+@License(license="Copyright (c) 2021 Bird Software Solutions Ltd\n All rights reserved. This file and the accompanying materials are made available under the terms of the Eclipse Public License v2.0 which accompanies this distribution, and is available at http://www.eclipse.org/legal/epl-v20.html\n\nSPDX-License-Identifier: EPL-2.0 \n\n Contributors:\n Neil Mackenzie - initial API and implementation\r")
+@GenModel(modelDirectory="/temp/src", editDirectory="/temp.edit/src", editorDirectory="/temp.editor/src",
+	modelName="Ecore4reg", editPluginClass="ecore_lite.provider.Ecore4regEditPlugin",
+	editorPluginClass="ecore_lite.presentation.Ecore4regEditorPlugin", testsDirectory="/temp.tests/src",
+	testSuiteClass="ecore_lite.tests.Ecore4regAllTests", importerID="org.eclipse.emf.importer.ecore",
+	containmentProxies="false", editorPluginID="temp.editor", testsPluginID="temp.tests")
+package generation_rules
+
+import ecore_lite.ELAttribute
+import ecore_lite.ELClass
+import ecore_lite.ELEnumLiteral
+import ecore_lite.ELOperation
+import module_management.Module
+
+annotation "license" as License
+
+class RulesForReport {
+	refers ecore_lite.ELClass outputLayerCube
+	contains RulesForILTable[] rulesForTable
+}
+
+class RulesForILTable {
+	contains RuleForILTablePart[] rulesForTablePart
+	refers ecore_lite.ELClass inputLayerTable
+}
+
+class SelectColumn {
+	refers ecore_lite.ELOperation asAttribute
+}
+
+class SelectColumnMemberAs extends SelectColumn {
+	refers ecore_lite.ELEnumLiteral memberAsConstant
+}
+
+class SelectColumnAttributeAs extends SelectColumn {
+	refers ecore_lite.ELAttribute attribute
+}
+
+class SelectDerivedColumnAs extends SelectColumn {
+	refers ecore_lite.ELOperation attribute
+}
+
+class SelectValueAs extends SelectColumn {
+	String value
+}
+
+enum Comparitor {
+	less_than
+	equals = 1
+	greater_than = 2
+	not_equals = 3
+}
+
+class TableFilter {
+	refers ecore_lite.ELAttribute attribute1
+	Comparitor comparitor
+	refers ecore_lite.ELEnumLiteral member
+	String value
+}
+
+class GenerationRulesModule extends module_management.Module {
+	contains RulesForReport[] rulesForReport
+}
+
+class RuleForILTablePart {
+	String name
+	contains SelectColumn[] columns
+	contains TableFilter[] whereClause
+}

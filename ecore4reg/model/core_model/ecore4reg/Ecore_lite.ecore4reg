@@ -1,0 +1,82 @@
+
+
+package ecore_lite
+
+import module_management.*
+import types.*
+
+
+class ELAttribute extends ELStructuralFeature {
+
+	boolean iD
+	refers ELDataType eAttributeType
+}
+
+class ELClass extends ELClassifier {
+	boolean ^abstract
+	refers  ELClass[] eSuperTypes
+	contains ELStructuralFeature[] eStructuralFeatures
+	contains ELOperation[] eOperations
+}
+
+abstract class ELClassifier extends ELNamedElement {
+	refers ELPackage ^package
+}
+
+class ELDataType extends ELClassifier {
+	String industryName
+}
+
+class ELEnum extends ELDataType {
+	contains ELEnumLiteral[] eLiterals
+}
+
+class ELEnumLiteral extends ELNamedElement {
+	int ^value
+	String literal
+}
+
+abstract class ELModelElement {
+	contains ELAnnotation eAnnotations
+}
+
+abstract class ELNamedElement extends ELModelElement {
+	String name
+}
+
+class ELOperation extends ELTypedElement {
+	String body
+	contains ELParameter[] eParameters
+}
+
+class ELParameter extends ELTypedElement {
+}
+
+class ELPackage extends  ^Module {
+	contains ELClassifier[] eClassifiers
+}
+
+class ELReference extends ELStructuralFeature {
+	boolean containment
+	refers ELClassifier[1..1] eReferenceType
+}
+
+abstract class ELStructuralFeature extends ELTypedElement {
+}
+
+abstract class ELTypedElement extends ELNamedElement {
+
+	refers  ELClassifier eType
+	int upperBound
+	int lowerBound
+}
+
+class ELAnnotation extends ELModelElement {
+	contains ELStringToStringMapEntry[] details
+	String source
+}
+
+class ELStringToStringMapEntry {
+	String key
+	String ^value
+}

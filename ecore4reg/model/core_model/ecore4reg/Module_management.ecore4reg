@@ -1,0 +1,21 @@
+package module_management
+import types.*
+
+
+class ^Module {
+	
+	String theDescription
+	String license
+	id String name
+	String version
+	contains Import[] imports
+	refers ^Module dependencies
+}
+
+class ModuleList {
+	contains Module[] modules
+}
+
+class Import {
+	String importedNamespace
+}

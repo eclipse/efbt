@@ -1,0 +1,78 @@
+
+package requirements_text
+
+import module_management.*
+
+annotation "license" as License
+
+
+class AllowedTypes {
+	
+	contains RequirementType[] allowedTypes
+}
+
+
+class RequirementsModule extends module_management.Module {
+
+	contains TitledRequirementsSection[] rules
+	contains AllowedTypes allowedtypes
+}
+
+abstract class RequirementsSection {
+
+	id String name
+}
+
+
+class RequirementsSectionImage extends RequirementsSection {
+
+	String style
+	String uri
+}
+
+class RequirementsSectionLinkWithText extends RequirementsSection {
+
+	refers TitledRequirementsSection linkedRuleSection opposite referencingSections
+	String linkText
+	String subsection
+}
+
+@GenModel(documentation="A section of text")
+class RequirementsSectionText extends RequirementsSection {
+	@GenModel(documentation="The text")
+	String text
+}
+
+@GenModel(documentation="A requirement type such as Article, Chapter, Rulebook")
+class RequirementType {
+	@GenModel(documentation="the name of the requirement type")
+	id String[1] name
+}
+
+@GenModel(documentation="A Requirements Section which has a title, such as an Article 321 or  Chapter 5.\n       Note that this contains other requirements sections, which could in turn be other TitledRequirementsSections ")
+class TitledRequirementsSection extends RequirementsSection {
+	@GenModel(documentation="The sections contained in the titled section")
+	contains RequirementsSection[] sections
+	@GenModel(documentation=" other requirement sections that link to this one (Optional)")
+	refers RequirementsSectionLinkWithText referencingSections opposite linkedRuleSection
+	@GenModel(documentation="The type, from allowed types, such as Article, Chapter,Rulebook etc")
+	refers RequirementType[1] requirementsType
+	@GenModel(documentation="the title of the requirements section")
+	String title
+}
+
+@GenModel(documentation="A Tag for linking things to Requirements, This is Subclassed per thing , e.g. ScenarioTag will link a Scenario to requirements.")
+class Tag {
+	@GenModel(documentation="the tags display name.")
+	String displayName
+	@GenModel(documentation="the tags name, which is also its unique id")
+	id String name
+	@GenModel(documentation="the tags name, which is also its unique id")
+	refers TitledRequirementsSection[] requirements
+}
+
+@GenModel(documentation="A group of Tags")
+class TagGroup extends module_management.Module {
+	@GenModel(documentation="the tags")
+	contains Tag[] tags
+}

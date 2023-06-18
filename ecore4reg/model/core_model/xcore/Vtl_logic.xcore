@@ -1,0 +1,102 @@
+@Ecore(nsURI="http://www.eclipse.org/efbt/vtl_logic")
+@GenModel(modelDirectory="/temp/src", editDirectory="/temp.edit/src", editorDirectory="/temp.editor/src",
+	modelName="Ecore4reg", editPluginClass="ecore_lite.provider.Ecore4regEditPlugin",
+	editorPluginClass="ecore_lite.presentation.Ecore4regEditorPlugin", testsDirectory="/temp.tests/src",
+	testSuiteClass="ecore_lite.tests.Ecore4regAllTests", importerID="org.eclipse.emf.importer.ecore",
+	containmentProxies="false", editorPluginID="temp.editor", testsPluginID="temp.tests")
+package vtl_logic
+
+import ecore_lite.ELClass
+import generation_rules.RuleForILTablePart
+import generation_rules.RulesForReport
+import module_management.Module
+
+class VTLGeneratedOutputlayer {
+	refers VTLGeneratedIntermediateLayer[] dependant_intermediate_layers
+	contains VTLForOutputLayerAndIntermediateLayerCombination[] VTLForOutputLayerAndIntemedateLayerCombinations
+	refers ecore_lite.ELClass outputLayer
+	id String name
+}
+
+class VTLForOutputLayerAndIntermediateLayerCombination {
+	refers VTLTransformation[] transformations
+	refers VTLGeneratedOutputlayer outputLayer
+	refers VTLGeneratedIntermediateLayer intermediateLayer
+	id String name
+}
+
+class VTLGeneratedIntermediateLayer {
+	refers VTLGeneratedIntermediateLayer dependant_enriched_cubes
+	refers VTLTransformation[] transformations
+	id String name
+	boolean isEnrichment
+}
+
+class VTLTransformation {
+	String expression
+	String description
+	id String transformation_id
+	String order_in_scheme
+}
+
+class VTLScheme {
+	contains VTLTransformation[] expressions
+	String scheme_id
+}
+
+class VTLForSelectionLayer {
+	refers generation_rules.RuleForILTablePart selectionLayer
+	refers VTLGeneratedOutputlayer outputLayer
+	refers VTLGeneratedIntermediateLayer intermediateLayer
+	id String name
+}
+
+class VTLModule extends module_management.Module {
+	contains VTLSchemesModule VTLSchemes
+	contains VTLGeneratedOutputlayerModule VTLGeneratedOutputLayers
+	contains VTLGeneratedIntermediateLayerModule VTLGeneratedIntermediateLayers
+	contains VTLGeneratedIntermediateLayerModule VTLEnrichedLayers
+	contains VTLForSelectionLayerModule VTLForSelectionLayers
+	contains EntityToVTLIntermediateLayerLinkModule entityToVTLIntermediateLayerLinks
+	contains VTLForViewModule VTLForViews
+}
+
+class EntityToVTLIntermediateLayerLink {
+	refers VTLGeneratedIntermediateLayer VTLIntermediateLayer
+	refers ecore_lite.ELClass entity
+	String filter
+}
+
+class VTLForView {
+	refers generation_rules.RulesForReport view
+	refers VTLGeneratedOutputlayer vtl
+	id String name
+}
+
+class VTLGeneratedOutputlayerModule extends module_management.Module {
+	contains VTLGeneratedOutputlayer[] vTLGeneratedOutputlayerModules
+}
+
+class VTLForOutputLayerAndIntermediateLayerCombinationModule extends module_management.Module {
+	contains VTLForOutputLayerAndIntermediateLayerCombination[] vTLForOutputLayerAndIntermediateLayerCombinations
+}
+
+class VTLGeneratedIntermediateLayerModule extends module_management.Module {
+	contains VTLGeneratedIntermediateLayer[] vTLGeneratedIntermediateLayers
+}
+
+class VTLSchemesModule extends module_management.Module {
+	contains VTLScheme[] vTLSchemes
+}
+
+class VTLForSelectionLayerModule extends module_management.Module {
+	contains VTLForSelectionLayer[] vTLForSelectionLayers
+}
+
+class EntityToVTLIntermediateLayerLinkModule extends module_management.Module {
+	contains EntityToVTLIntermediateLayerLink[] entityToVTLIntermediateLayerLinks
+}
+
+class VTLForViewModule extends module_management.Module {
+	contains VTLForView[] vTLForViews
+}
