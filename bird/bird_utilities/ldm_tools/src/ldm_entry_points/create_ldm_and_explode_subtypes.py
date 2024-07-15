@@ -24,8 +24,8 @@ if __name__ == '__main__':
     context = Context()
 
     context.persist_to_ecore4reg = True
-    context.file_directory = '/workspaces/efbt/bird/bird_utilities/ldm_tools/resources'
-    context.output_directory = '/workspaces/efbt/bird/bird_utilities/ldm_tools/results' 
+    context.file_directory = 'C:\\Users\\neil\\freebirdtools-develop-July11\\git\\efbt\\bird\\bird_utilities\\ldm_tools\\resources'
+    context.output_directory = 'C:\\Users\\neil\\freebirdtools-develop-July11\\git\\efbt\\bird\\bird_utilities\\ldm_tools\\results' 
     
     SQLDevLDMImport().do_import(context)
     InputLayerLinkEnricher().enrich_with_links_to_input_layer_columns(context)
@@ -63,6 +63,10 @@ if __name__ == '__main__':
     traverser.traverse(context,'Financial_contract',True)
     traverser.traverse(context,'Entity_role',False)
     traverser.traverse(context,'Entity_role',True)
+    traverser.traverse(context,'Fundamental_review_of_the_trading_book_standard_approach_risk_measure',False)
+    traverser.traverse(context,'Fundamental_review_of_the_trading_book_standard_approach_risk_measure',True)
+    
+    
     
 
     

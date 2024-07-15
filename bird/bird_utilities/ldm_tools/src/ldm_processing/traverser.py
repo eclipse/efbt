@@ -13,6 +13,7 @@
 import os
 from regdna import ELAttribute, ELClass,ELReference,ELEnum
 from ldm_utils.utils import Utils
+from setuptools._vendor.importlib_metadata import _text
 
 class SubtypeExploder(object):
     '''
@@ -136,11 +137,17 @@ class SubtypeExploder(object):
                  "a",  encoding='utf-8')
         counter = 0
         written_columns = []
-        f.write('IDENTIFIER')
+        il_table_name = 'unknown'
+        try:
+            il_table_name = SubtypeExploder.get_table_from_column_name(self, input_layer_column_headers[1])    
+        except: 
+            pass
+        table_identifier = il_table_name +'_unique_id'
+        f.write(table_identifier)
         for column in input_layer_column_headers:
             if not (column == 'UNKNOWN'):
                 if not (column in written_columns):
-                    f.write(',' + column)
+                    f.write(',' + SubtypeExploder.get_column_from_column_name(self, column))
                     written_columns.append(column)
                     
         f.write("\n")        
@@ -157,8 +164,80 @@ class SubtypeExploder(object):
                         f.write(',')
                         
             f.write("\n")
+         
+        
+        il_table_names = SubtypeExploder.get_tables_from_column_name(self, input_layer_column_headers)
+        
+        
+        for table_name in il_table_names:
+               
+            if full_or_summary == '_full':
+                f = open(context.output_directory + os.sep + 'csv' +
+                         os.sep + table_name + '.sql',
+                         "a",  encoding='utf-8')
+                counter = 0
+                
+                                  
+                for the_row  in rows:
+                    map = SubtypeExploder.post_process_row(self, context,column_headers,
+                                               input_layer_column_headers, the_row) 
+                    counter = 0
+                    written_columns = []
+                    f.write('INSERT INTO pybird_bird_' + il_table_name.lower() + '_eil(BIRD_' + il_table_name + '_EIL_uniqueID')
+                    for column in input_layer_column_headers:
+                        if not (column == 'UNKNOWN'):
+                            if not (column in written_columns):
+                                if SubtypeExploder.get_table_from_column_name(self, column) == table_name:
+                                    f.write(',' + SubtypeExploder.get_column_from_column_name(self, column))
+                                    written_columns.append(column)
+                    f.write(') VALUES (')
+                    f.write('\'' + map['IDENTIFIER'].replace(':','_') + '\'')
+                    for column in written_columns:
+                        if not (column == 'UNKNOWN'):
+                            try:
+                                f.write(',\'' + SubtypeExploder.strip_special_characters(self,map[column]) + '\'')
+                            except KeyError:
+                                f.write(',NULL')
+                    f.write(');')            
+                    f.write("\n")    
         
           
+    def strip_special_characters(self, text):
+        if '$' in text:
+            splitted = text.split("$")
+            if splitted[0] == 'X':
+                return '0'
+            else:
+                return splitted[0]
+        elif ':' in text:
+            splitted = text.split(":")
+            if splitted[0] == 'X':
+                return '0'
+            else:return splitted[0]
+        else:
+            return text
+        
+    def get_tables_from_column_name(self, columns):
+        
+        table_names = []
+        for column in columns:
+            table = SubtypeExploder.get_table_from_column_name(self, column)
+            if not table in table_names:
+                table_names.append(table)
+                
+        return table_names
+                
+    def get_table_from_column_name(self, text):
+        
+        splitted = text.split(".")
+            
+        return splitted[0]
+    
+    def get_column_from_column_name(self, text):
+        
+        splitted = text.split(".")
+            
+        return splitted[1]
         
     def post_process_row(self, context,column_headers,
                                        input_layer_column_headers, the_row):
@@ -440,7 +519,7 @@ class SubtypeExploder(object):
                 elif type.name == "int" :
                     return "345"
                 elif type.name == "Date" :
-                    return "2018-30-01"
+                    return "2018-09-30 00:00:00" 
                 elif type.name == "boolean" :
                     return "True"
                 else:
