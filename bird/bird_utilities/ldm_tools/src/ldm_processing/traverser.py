@@ -183,7 +183,7 @@ class SubtypeExploder(object):
                                                input_layer_column_headers, the_row) 
                     counter = 0
                     written_columns = []
-                    f.write('INSERT INTO pybird_bird_' + il_table_name.lower() + '_eil(BIRD_' + il_table_name + '_EIL_uniqueID')
+                    f.write('INSERT INTO pybird_bird_' + table_name.lower() + '_eil(BIRD_' + table_name + '_EIL_uniqueID')
                     for column in input_layer_column_headers:
                         if not (column == 'UNKNOWN'):
                             if not (column in written_columns):

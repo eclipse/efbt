@@ -65,6 +65,8 @@ if __name__ == '__main__':
     traverser.traverse(context,'Entity_role',True)
     traverser.traverse(context,'Fundamental_review_of_the_trading_book_standard_approach_risk_measure',False)
     traverser.traverse(context,'Fundamental_review_of_the_trading_book_standard_approach_risk_measure',True)
+    traverser.traverse(context,'Risk_factor_for_standardised_approach',False)
+    traverser.traverse(context,'Risk_factor_for_standardised_approach',True)    
     
     
     
