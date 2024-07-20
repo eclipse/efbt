@@ -183,12 +183,12 @@ class SubtypeExploder(object):
                                                input_layer_column_headers, the_row) 
                     counter = 0
                     written_columns = []
-                    f.write('INSERT INTO pybird_bird_' + table_name.lower() + '_eil(BIRD_' + table_name + '_EIL_uniqueID')
+                    f.write('INSERT INTO ' + context.table_prefix + table_name.lower() + '(\"' + table_name + '_id\"')
                     for column in input_layer_column_headers:
                         if not (column == 'UNKNOWN'):
                             if not (column in written_columns):
                                 if SubtypeExploder.get_table_from_column_name(self, column) == table_name:
-                                    f.write(',' + SubtypeExploder.get_column_from_column_name(self, column))
+                                    f.write(',\"' + SubtypeExploder.get_column_from_column_name(self, column)+'\"')
                                     written_columns.append(column)
                     f.write(') VALUES (')
                     f.write('\'' + map['IDENTIFIER'].replace(':','_') + '\'')
@@ -519,7 +519,7 @@ class SubtypeExploder(object):
                 elif type.name == "int" :
                     return "345"
                 elif type.name == "Date" :
-                    return "2018-09-30 00:00:00" 
+                    return "2018-09-30" 
                 elif type.name == "boolean" :
                     return "True"
                 else:

@@ -83,8 +83,8 @@ class RegdnaGenerator extends AbstractGenerator {
 		from django.contrib import admin
 
 		«FOR elclass : elpackage.EClassifiers.filter(ELClass)»
-		from .models import «elclass.name»				
-		admin.site.register(«elclass.name»)
+		from .models import «elclass.name.amend_name»				
+		admin.site.register(«elclass.name.amend_name»)
 		«ENDFOR»
 		        ''')
 		         }
@@ -389,22 +389,22 @@ class RegdnaGenerator extends AbstractGenerator {
 		«FOR elclass : elpackage.EClassifiers.filter(ELClass)»
 		«IF elclass.ESuperTypes.size > 0»
 				
-		class «elclass.name»(«elclass.ESuperTypes.get(0).name»):
+		class «elclass.name.amend_name()»(«elclass.ESuperTypes.get(0).name.amend_name»):
 		«ELSE»
 				
-		class «elclass.name»(models.Model):
+		class «elclass.name.amend_name()»(models.Model):
 		«ENDIF»
 		
 		«FOR elmember : elclass.EStructuralFeatures»  
 
 		«IF elmember instanceof ELAttribute» 
 		«IF elmember.EAttributeType instanceof ELEnum»    «(elmember.EAttributeType as ELEnum).djangoChoices»«ENDIF» 
-		    «elmember.name» = «elmember.djangoType()»   «ENDIF»
-		«IF elmember instanceof ELReference»    «elmember.name» = models.ForeignKey("«elmember.EType.name»", models.SET_NULL,blank=True,null=True,)«ENDIF» 
+		    «elmember.name.amend_name» = «elmember.djangoType()»   «ENDIF»
+		«IF elmember instanceof ELReference»    «elmember.name.amend_name» = models.ForeignKey("«elmember.EType.name.amend_name»", models.SET_NULL,blank=True,null=True,)«ENDIF» 
 		«ENDFOR»
 		«FOR eloperation : elclass.EOperations»
 		
-		«IF eloperation instanceof ELOperation» 	def  «eloperation.name»(self):
+		«IF eloperation instanceof ELOperation» 	def  «eloperation.name.amend_name»(self):
 
 		«IF eloperation.body !== null »          «findXCoreSubstring(eloperation.body)»
 		«ELSEIF eloperation.EType.name == "double" »        return 0
@@ -417,8 +417,8 @@ class RegdnaGenerator extends AbstractGenerator {
 				«IF annotion.source.name == "long_name"»
 			
 			    class Meta:
-			        verbose_name = '«annotion.details.get(0).value»'
-			        verbose_name_plural = '«annotion.details.get(0).value»s'
+			        verbose_name = '«annotion.details.get(0).value.amend_name»'
+			        verbose_name_plural = '«annotion.details.get(0).value.amend_name»s'
 			«ENDIF»
 			«ENDFOR»
 		«ENDFOR»
@@ -426,6 +426,10 @@ class RegdnaGenerator extends AbstractGenerator {
 		«ENDIF»
 		        ''')
 		         }
+	
+	def amend_name(String string) {
+		return string.replace("BIRD_","").replace("_EIL","").replace("_ELDM","").replace("_uniqueID","_id")
+	}
 	
 	def String djangoChoices(ELEnum theEnum)
 	{
@@ -442,17 +446,17 @@ class RegdnaGenerator extends AbstractGenerator {
 	def djangoType(ELAttribute attribute) {
 		val type = attribute.EAttributeType
 		val pk = attribute.ID
-		var display_name = attribute.name
+		var display_name = attribute.name.amend_name
 		for (annotation : attribute.EAnnotations) {
 			if (annotation.source.name == "long_name") {
-				display_name = annotation.details.get(0).value
+				display_name = annotation.details.get(0).value.amend_name
 			}
 		}
 	
 		if (type instanceof ELEnum)
 			return "models.CharField(\"" + display_name + "\",max_length=255, choices=" + type.name +")"
 		else if ((type.name == "String") && pk)
-			return "models.CharField(\"" + display_name + "\",max_length=255, primary_key=True)"
+			return "models.CharField(\"" + display_name + "\",max_length=2000, primary_key=True)"
 		else if (type.name == "String")
 			return "models.CharField(\"" + display_name + "\",max_length=255)"
 		else if (type.name == "double")

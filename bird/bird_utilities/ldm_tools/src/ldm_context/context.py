@@ -86,6 +86,8 @@ class Context(object):
     
     entity_to_arc_dictionary = {}
     
+    table_prefix = 'pybird_'
+    
     def __init__(self):
 
         key_annotation_directive = ELAnnotationDirective(name='key', sourceURI='key')
