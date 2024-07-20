@@ -149,6 +149,8 @@ class Context(object):
     arc_name_to_arc_class_map = {}
     
     arc_target_to_arc_map = {}
+    
+    load_data_model_from_sdd_file = True
 
     def __init__(self):
 

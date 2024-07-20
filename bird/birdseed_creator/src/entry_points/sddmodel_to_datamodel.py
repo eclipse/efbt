@@ -27,6 +27,9 @@ from utils.ldm_relationship_enricher import ELDMRelationshipEnricher
 class RunSDDModelToDataModel:
     
     def run(self,context,sdd_context):
+        if (context.load_data_model_from_sdd_file):
+            sdd_context.import_sddmodel_from_xmi_file(context,sdd_context)
+            
         TranslateSDDModelToDomainsDataModel().do_import(context,sdd_context,"AE_REF","RC")
         TranslateSDDModelToDomainsDataModel().do_import(context,sdd_context,"FINREP_REF","RC")
         TranslateSDDModelToDomainsDataModel().do_import(context,sdd_context,"BIRD","EIL")
