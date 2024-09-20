@@ -10,42 +10,33 @@
 # Contributors:
 #    Neil Mackenzie - initial API and implementation
 #
-# This script creates an analysis model from an SDD file and saves it as a CSV file
+"""Entry point for creating generation rules."""
+
+import os
+from pathlib import Path
 
 import django
-import os
 from django.apps import AppConfig
-from agilebird.context.sdd_context_django import SDDContext
 from django.conf import settings
 
-class RunImportMappingsFromWebsite(AppConfig):
-    """
-    Django AppConfig for running the website to SDD model conversion process.
-
-    This class sets up the necessary context and runs the import process
-    to convert website data into an SDD  model.
-    """
+class RunCreateExecutableTransformations(AppConfig):
+    """Django AppConfig for running the creation of generation rules."""
 
     path = os.path.join(settings.BASE_DIR, 'birds_nest')
 
     @staticmethod
-    def import_mappings_from_website():
-        """
-        Prepare and execute the website to SDD model conversion process.
-
-        This method sets up the necessary contexts, creates reference domains
-        and variables, and imports the website data into the SDD model.
-        """
-        from agilebird.sdd_models import MAINTENANCE_AGENCY
-        from agilebird.process_steps.website_to_sddmodel.import_website_to_sdd_model_django import (
-            ImportWebsiteToSDDModel
-        )
+    def create_python_transformations():
+        """Execute the process of creating generation rules when the app is ready."""
         from agilebird.process_steps.database_to_sdd_model.import_database_to_sdd_model import (
             ImportDatabaseToSDDModel
         )
+        from agilebird.context.sdd_context_django import SDDContext
         from agilebird.context.context import Context
+        from agilebird.process_steps.pybird.create_python_django_transformations import (
+            CreatePythonTransformations
+        )
 
-        base_dir = settings.BASE_DIR
+        base_dir = settings.BASE_DIR 
         sdd_context = SDDContext()
         sdd_context.file_directory = os.path.join(base_dir, 'resources')
         sdd_context.output_directory = os.path.join(base_dir, 'results')
@@ -55,12 +46,9 @@ class RunImportMappingsFromWebsite(AppConfig):
         context.output_directory = sdd_context.output_directory
 
         ImportDatabaseToSDDModel().import_sdd(sdd_context)
-        ImportWebsiteToSDDModel().import_mappings_from_sdd(sdd_context)
+        CreatePythonTransformations().create_python_transformations(context, sdd_context)
+
 
 def ready(self):
         # This method is still needed for Django's AppConfig
         pass
-
-
-      
-    

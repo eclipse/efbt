@@ -16,8 +16,9 @@ import django
 import os
 from django.apps import AppConfig
 from agilebird.context.sdd_context_django import SDDContext
+from django.conf import settings
 
-class RunImportBasicInfoFromWebsite(AppConfig):
+class RunImportHierarchiesFromWebsite(AppConfig):
     """
     Django AppConfig for running the website to SDD model conversion process.
 
@@ -25,9 +26,10 @@ class RunImportBasicInfoFromWebsite(AppConfig):
     to convert website data into an SDD  model.
     """
 
-    path = '/workspaces/efbt/birds_nest/birds_nest'
+    path = os.path.join(settings.BASE_DIR, 'birds_nest')
 
-    def ready(self):
+    @staticmethod
+    def import_hierarchies():
         """
         Prepare and execute the website to SDD model conversion process.
 
@@ -38,9 +40,12 @@ class RunImportBasicInfoFromWebsite(AppConfig):
         from agilebird.process_steps.website_to_sddmodel.import_website_to_sdd_model_django import (
             ImportWebsiteToSDDModel
         )
+        from agilebird.process_steps.database_to_sdd_model.import_database_to_sdd_model import (
+            ImportDatabaseToSDDModel
+        )
         from agilebird.context.context import Context
 
-        base_dir = '/workspaces/efbt/birds_nest/' 
+        base_dir = settings.BASE_DIR
         sdd_context = SDDContext()
         sdd_context.file_directory = os.path.join(base_dir, 'resources')
         sdd_context.output_directory = os.path.join(base_dir, 'results')
@@ -49,13 +54,16 @@ class RunImportBasicInfoFromWebsite(AppConfig):
         context.file_directory = sdd_context.file_directory
         context.output_directory = sdd_context.output_directory
 
+        ImportDatabaseToSDDModel().import_sdd(sdd_context)
+        ImportWebsiteToSDDModel().import_hierarchies_from_sdd(sdd_context)
 
-        # Import website data to SDD model
-        ImportWebsiteToSDDModel().import_basic_info_from_website(sdd_context)
+    def ready(self):
+        # This method is still needed for Django's AppConfig
+        pass
 
 if __name__ == '__main__':
     django.setup()
-    RunImportBasicInfoFromWebsite('agilebird', 'birds_nest').ready()
+    RunImportHierarchiesFromWebsite('agilebird', 'birds_nest').ready()
 
 
       

@@ -53,6 +53,10 @@ class ImportDatabaseToSDDModel(object):
         ImportDatabaseToSDDModel.create_combination_items(self, sdd_context)
         ImportDatabaseToSDDModel.create_cube_to_combination(self, sdd_context)
 
+        ImportDatabaseToSDDModel.create_cube_links(self, sdd_context)
+        ImportDatabaseToSDDModel.create_cube_structure_item_links(self, sdd_context)
+        
+
     def create_all_mapping_definitions(self, context):
         '''
         import all the mapping definitions
@@ -317,3 +321,39 @@ class ImportDatabaseToSDDModel(object):
                 context.combination_to_rol_cube_map[
                     cube_to_combination.cube_id.cube_id
                 ] = [cube_to_combination]
+
+    def create_cube_links(self, context):
+        '''
+        Import all the cube links
+        '''
+        for cube_link in CUBE_LINK.objects.all():
+            context.cube_link_dictionary[cube_link.cube_link_id] = cube_link
+            foreign_cube = cube_link.foreign_cube_id
+            try:
+                context.cube_link_to_foreign_cube_map[foreign_cube.cube_id].append(cube_link)
+            except KeyError:
+                context.cube_link_to_foreign_cube_map[foreign_cube.cube_id] = [cube_link]
+            join_identifier = cube_link.join_identifier
+            try:
+                context.cube_link_to_join_identifier_map[join_identifier].append(cube_link)
+            except KeyError:
+                context.cube_link_to_join_identifier_map[join_identifier] = [cube_link]
+
+            join_for_report_id = foreign_cube.cube_id + ":" + cube_link.join_identifier
+            try:
+                context.cube_link_to_join_for_report_id_map[join_for_report_id].append(cube_link)
+            except KeyError:
+                context.cube_link_to_join_for_report_id_map[join_for_report_id] = [cube_link]
+
+
+    def create_cube_structure_item_links(self, context):
+        '''
+        Import all the cube structure item links
+        '''     
+        for cube_structure_item_link in CUBE_STRUCTURE_ITEM_LINK.objects.all():
+            context.cube_structure_item_links_dictionary[cube_structure_item_link.cube_structure_item_link_id] = cube_structure_item_link    
+            cube_link = cube_structure_item_link.cube_link_id
+            try:
+                context.cube_structure_item_link_to_cube_link_map[cube_link.cube_link_id].append(cube_structure_item_link)
+            except KeyError:
+                context.cube_structure_item_link_to_cube_link_map[cube_link.cube_link_id] = [cube_structure_item_link]

@@ -18,14 +18,14 @@ import os
 import csv
 from typing import List, Any
 
-from agilebird.process_steps.generation_rules.ldm_search import ELDMSearch
+from agilebird.process_steps.transformation_meta_data.ldm_search import ELDMSearch
 
-class GenerationRuleCreator:
+class TransformationMetaDataCreator:
     """
     A class for creating generation rules for reports and tables.
     """
 
-    def generate_generation_rules(self, context: Any, sdd_context: Any, framework: str) -> None:
+    def generate_transformation_meta_data(self, context: Any, sdd_context: Any, framework: str) -> None:
         """
         Generate generation rules for the given context and framework.
 
@@ -112,7 +112,6 @@ class GenerationRuleCreator:
             if framework == "FINREP_REF" 
             else context.table_and_part_tuple_map_ae
         )
-
         try:
             report_template = generated_output_layer.name
             main_categories = context.report_to_main_category_map[report_template]
@@ -121,7 +120,7 @@ class GenerationRuleCreator:
                     tables = tables_for_main_category_map[mc]
                     for table in tables:
                         inputLayerTable = self.find_input_layer_cube(
-                            sdd_context, table[5:], framework
+                            sdd_context, table, framework
                         )
                         table_parts = table_and_part_tuple_map[mc]
 
@@ -156,16 +155,17 @@ class GenerationRuleCreator:
 
                             for the_table in linked_tables_list:
                                 the_input_table = self.find_input_layer_cube(
-                                    sdd_context, the_table[5:], framework
+                                    sdd_context, the_table, framework
                                 )
                                 if the_input_table:
                                     input_entity_list.append(the_input_table)
 
                             if table_part[0] == table:
                                 cube_link = CUBE_LINK()
-                                cube_link.description = mc
-                                cube_link.name = table_part[1]
-                                primary_cube = sdd_context.rol_cube_dictionary.get(table[5:])
+                                cube_link.description = f"{table_part[0]}:{mc}:{table_part[1]}"
+                                cube_link.name = f"{table_part[0]}:{table_part[1]}"
+                                cube_link.join_identifier = table_part[1]
+                                primary_cube = sdd_context.rol_cube_dictionary.get(table)
                                 if primary_cube:
                                     cube_link.primary_cube_id = primary_cube
                                     cube_link.cube_link_id = (
@@ -176,7 +176,23 @@ class GenerationRuleCreator:
                                     cube_link.cube_link_id = f"{table_part[0]}:{table_part[1]}"
                                     print(f"cube_link.primary_cube_id not found for {table}")
                                 cube_link.foreign_cube_id = generated_output_layer
-                                sdd_context.cube_links.append(cube_link)
+                                sdd_context.cube_link_dictionary[cube_link.cube_link_id] = cube_link
+                                foreign_cube = cube_link.foreign_cube_id
+                                try:
+                                    sdd_context.cube_link_to_foreign_cube_map[foreign_cube.cube_id].append(cube_link)
+                                except KeyError:
+                                    sdd_context.cube_link_to_foreign_cube_map[foreign_cube.cube_id] = [cube_link]
+                                join_identifier = cube_link.join_identifier
+                                try:
+                                    sdd_context.cube_link_to_join_identifier_map[join_identifier].append(cube_link)
+                                except KeyError:
+                                    sdd_context.cube_link_to_join_identifier_map[join_identifier] = [cube_link]
+
+                                join_for_report_id = foreign_cube.cube_id + ":" + cube_link.join_identifier
+                                try:
+                                    sdd_context.cube_link_to_join_for_report_id_map[join_for_report_id].append(cube_link)
+                                except KeyError:
+                                    sdd_context.cube_link_to_join_for_report_id_map[join_for_report_id] = [cube_link]
                                 if context.save_derived_sdd_items:
                                     cube_link.save()
                                 self.add_field_to_field_lineage_to_rules_for_table_part(
@@ -230,7 +246,7 @@ class GenerationRuleCreator:
                             f":{csil.primary_cube_variable_code.variable_id.variable_id}"
                         )
                         csil.cube_link_id = cube_link  
-                        
+                        sdd_context.cube_structure_item_links_dictionary[csil.cube_structure_item_link_id] = csil
                         if context.save_derived_sdd_items:
                             csil.save()
 
@@ -315,7 +331,7 @@ class GenerationRuleCreator:
         related_variables = []
         target_domain = output_item.variable_id.domain_id
 
-        if target_domain:
+        if target_domain and  not ((target_domain.domain_id == "String") or (target_domain.domain_id == "Date") or (target_domain.domain_id == "Integer") or (target_domain.domain_id == "Boolean") or (target_domain.domain_id == "Float")     ):            
             for input_entity in input_entity_list:
                 if input_entity:
                     field_list = sdd_context.rol_cube_structure_item_dictionary[input_entity.cube_structure_id]
@@ -324,7 +340,7 @@ class GenerationRuleCreator:
                         if variable and variable.domain_id.domain_id == target_domain.domain_id:
                             related_variables.append(csi)
         else:
-            output_variable_name = output_item.name
+            output_variable_name = output_item.variable_id.variable_id
             if output_variable_name:
                 for input_entity in input_entity_list:
                     if input_entity:
