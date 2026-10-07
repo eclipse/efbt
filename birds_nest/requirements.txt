@@ -14,7 +14,7 @@ colorama==0.4.6 ; sys_platform == 'win32'
     #   pytest
 defusedxml==0.7.1
     # via birds-nest
-django==5.1.15
+django==5.2.17
     # via birds-nest
 et-xmlfile==1.0.1
     # via openpyxl
